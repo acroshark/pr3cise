@@ -1,0 +1,453 @@
+# -*- coding: utf-8 -*-
+import json
+import xlsxwriter
+import os
+import sys
+
+# ==========================================
+# 06/05/2026 19:58 - Generador Excel adaptado para Juan de Borbón
+# Basado en generar_excel_pciondoan.py
+# Cambios: rutas, campos titulo/desc, logo, GG/BI config, merma 5%
+# ==========================================
+
+JSON_PATH   = os.path.join(os.path.dirname(__file__), 'partidas', 'juandeborbon.json')
+LOGO_PATH   = os.path.join(os.path.dirname(__file__), 'logo', 'logo.png')
+# Si se pasa una ruta como argumento (desde PHP), se usa esa; si no, la ruta por defecto
+OUTPUT_FILE = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), 'Presupuesto_JuandeBorbon.xlsx')
+
+with open(JSON_PATH, 'r', encoding='utf-8') as f:
+    proyecto = json.load(f)
+
+workbook = xlsxwriter.Workbook(OUTPUT_FILE)
+
+# ==========================================
+# ESTILOS
+# ==========================================
+color_bg_page        = '#F8F9F9'
+color_text_primary   = '#2C3E50'
+color_text_secondary = '#7F8C8D'
+
+style_header_main    = workbook.add_format({'bold': True, 'font_size': 14, 'font_color': color_text_primary,   'bg_color': color_bg_page})
+style_subtitle_main  = workbook.add_format({'font_size': 9,  'font_color': color_text_secondary,  'bg_color': color_bg_page})
+style_nav_active     = workbook.add_format({'bold': True, 'font_color': 'white',  'bg_color': '#B08D57', 'align': 'center', 'valign': 'vcenter', 'border': 0})
+style_chapter_bar    = workbook.add_format({'bold': True, 'bg_color': '#EBEDEF', 'font_color': '#17202A', 'valign': 'vcenter', 'top': 1, 'bottom': 1, 'border_color': '#D6DBDF'})
+style_chapter_total  = workbook.add_format({'bold': True, 'bg_color': '#EBEDEF', 'font_color': '#17202A', 'num_format': '#,##0.00 €', 'align': 'right', 'valign': 'vcenter', 'top': 1, 'bottom': 1, 'border_color': '#D6DBDF'})
+
+# Desglose Técnico
+style_tec_main_row   = workbook.add_format({'bold': True, 'bg_color': 'white', 'valign': 'vcenter', 'top': 1, 'border_color': '#EAEDED'})
+style_tec_main_price = workbook.add_format({'bold': True, 'bg_color': 'white', 'num_format': '#,##0.00 €', 'align': 'right', 'valign': 'vcenter', 'top': 1, 'border_color': '#EAEDED'})
+style_sub_header     = workbook.add_format({'bold': True, 'font_size': 7, 'color': '#ABB2B9', 'bg_color': '#FDEDEC'})
+style_desc_header    = workbook.add_format({'italic': True, 'font_size': 7, 'color': '#ABB2B9', 'bg_color': 'white'})
+style_sub_type_mat   = workbook.add_format({'color': '#3498DB', 'border': 1, 'border_color': '#D6EAF8', 'align': 'center', 'font_size': 7})
+style_sub_type_mo    = workbook.add_format({'color': '#E67E22', 'border': 1, 'border_color': '#FAE5D3', 'align': 'center', 'font_size': 7})
+style_sub_type_aux   = workbook.add_format({'color': '#8E44AD', 'border': 1, 'border_color': '#E8DAEF', 'align': 'center', 'font_size': 7})
+style_sub_text       = workbook.add_format({'font_size': 8, 'color': '#566573'})
+style_sub_num        = workbook.add_format({'font_size': 8, 'color': '#566573', 'align': 'center'})
+style_sub_curr       = workbook.add_format({'font_size': 8, 'color': '#566573', 'num_format': '#,##0.00 €', 'align': 'right'})
+style_total_directo  = workbook.add_format({'font_size': 7, 'color': '#AAA', 'align': 'right', 'top': 1, 'border_color': '#EEE'})
+
+# Materiales
+style_mat_header      = workbook.add_format({'bold': True, 'font_size': 8, 'bg_color': '#F8F9F9', 'color': '#777', 'align': 'right', 'valign': 'bottom'})
+style_mat_header_L    = workbook.add_format({'bold': True, 'font_size': 8, 'bg_color': '#F8F9F9', 'color': '#777', 'align': 'left',  'valign': 'bottom'})
+style_mat_row         = workbook.add_format({'font_size': 9, 'color': '#333', 'bg_color': 'white', 'border': 0})
+style_mat_row_bold    = workbook.add_format({'font_size': 9, 'bold': True, 'color': '#333', 'bg_color': 'white', 'border': 0})
+style_mat_row_R       = workbook.add_format({'font_size': 9, 'color': '#333', 'bg_color': 'white', 'border': 0, 'align': 'right'})
+style_mat_row_bold_R  = workbook.add_format({'font_size': 9, 'bold': True, 'color': '#333', 'bg_color': 'white', 'border': 0, 'align': 'right'})
+style_mat_curr        = workbook.add_format({'font_size': 9, 'color': '#333', 'bg_color': 'white', 'border': 0, 'num_format': '#,##0.00 €', 'align': 'right'})
+style_mat_curr_bold   = workbook.add_format({'font_size': 9, 'bold': True, 'color': '#333', 'bg_color': 'white', 'border': 0, 'num_format': '#,##0.00 €', 'align': 'right'})
+style_mat_excluido    = workbook.add_format({'font_size': 8, 'color': '#E74C3C', 'bg_color': 'white', 'italic': True, 'align': 'right'})
+style_mat_total_label = workbook.add_format({'bg_color': '#EBF5FB', 'color': '#1A5276', 'bold': True, 'font_size': 9,  'align': 'right', 'valign': 'vcenter', 'top': 1, 'bottom': 1, 'border_color': '#AED6F1'})
+style_mat_total_val   = workbook.add_format({'bg_color': '#EBF5FB', 'color': '#1A5276', 'bold': True, 'font_size': 14, 'align': 'right', 'num_format': '#,##0.00 €', 'valign': 'vcenter', 'top': 1, 'bottom': 1, 'border_color': '#AED6F1'})
+
+# ==========================================
+# HOJAS
+# ==========================================
+ws_cliente    = workbook.add_worksheet('Cliente')
+ws_tecnico    = workbook.add_worksheet('Desglose Técnico')
+ws_materiales = workbook.add_worksheet('Materiales')
+
+config          = proyecto.get('config', {})
+GG              = config.get('GG',    0.12)
+BI              = config.get('BI',    0.06)
+IVA             = config.get('IVA',   0.10)
+merma           = config.get('merma', 0.05)
+ipc             = config.get('ipc',   0.0)
+info            = proyecto.get('info', {})
+capitulos       = proyecto.get('capitulos', {})
+sorted_chapters = sorted(capitulos.keys())
+FACTOR          = 1 + GG + BI
+
+# ==========================================
+# 1. DESGLOSE TÉCNICO
+# ==========================================
+ws_tecnico.hide_gridlines(2)
+ws_tecnico.set_landscape()
+ws_tecnico.set_column('A:A', 3)
+ws_tecnico.set_column('B:B', 12)
+ws_tecnico.set_column('C:C', 45)
+ws_tecnico.set_column('D:D', 8)
+ws_tecnico.set_column('E:E', 10)
+ws_tecnico.set_column('F:F', 14)
+ws_tecnico.set_column('G:G', 16)
+ws_tecnico.set_column('H:H', 16)
+
+row      = 2
+data_map = {}
+
+for cap_id in sorted_chapters:
+    ws_tecnico.write(row, 1, f"{cap_id}. {capitulos[cap_id]}",
+                     workbook.add_format({'bold': True, 'font_size': 11, 'color': '#2C3E50'}))
+    row += 2
+    items = [x for x in proyecto.get('dataCoste', []) if x.get('cap') == cap_id]
+
+    for item in items:
+        if item.get('subtitulo', False) or item.get('tipo') == 'titulo':
+            continue
+
+        titulo_display = item.get('titulo') or item.get('desc', '')
+        ws_tecnico.write(row, 1, item['id'],         style_tec_main_row)
+        ws_tecnico.write(row, 2, titulo_display,     style_tec_main_row)
+        ws_tecnico.write(row, 3, item.get('ud', ''), style_tec_main_row)
+        ws_tecnico.write(row, 4, item.get('cant', 0),
+                         workbook.add_format({'bold': True, 'align': 'center', 'bg_color': 'white',
+                                              'top': 1, 'border_color': '#EAEDED'}))
+        main_row = row
+        row += 2
+
+        descomp = item.get('descompuesto', [])
+        if descomp:
+            ws_tecnico.write(row, 2, "DESCOMPUESTO DEL PRECIO UNITARIO", style_desc_header)
+            row += 1
+            ws_tecnico.write_row(row, 1,
+                                 ['Tipo', 'Recurso / Concepto', 'Ud', 'Rendim.', 'Precio', 'Importe'],
+                                 style_sub_header)
+            row += 1
+            start_sub_row = row
+            for sub in descomp:
+                tipo = sub.get('tipo', 'mat').upper()
+                if tipo == 'MAT':
+                    tag = style_sub_type_mat
+                elif tipo == 'MO':
+                    tag = style_sub_type_mo
+                else:
+                    tag = style_sub_type_aux
+                ws_tecnico.write(row, 1, tipo,                 tag)
+                ws_tecnico.write(row, 2, sub.get('desc', ''),  style_sub_text)
+                ws_tecnico.write(row, 3, sub.get('ud',   ''),  style_sub_num)
+                ws_tecnico.write(row, 4, sub.get('rend',  0),  style_sub_num)
+                ws_tecnico.write(row, 5, sub.get('precio', 0), style_sub_curr)
+                ws_tecnico.write_formula(row, 6, f"=E{row+1}*F{row+1}", style_sub_curr)
+                row += 1
+            ws_tecnico.write(row, 5, "TOTAL COSTE DIRECTO UNITARIO:", style_total_directo)
+            ws_tecnico.write_formula(row, 6, f"=SUM(G{start_sub_row+1}:G{row})", style_sub_curr)
+            unit_price_cell = f"G{row+1}"
+        else:
+            unit_price_base = item.get('mat', 0) + item.get('mo', 0)
+            unit_price_cell = str(unit_price_base)
+            ws_tecnico.write(row, 5, "PRECIO UNITARIO:", style_total_directo)
+            ws_tecnico.write(row, 6, unit_price_base,   style_sub_curr)
+
+        ws_tecnico.write_formula(main_row, 5, f"={unit_price_cell}",         style_tec_main_price)
+        ws_tecnico.write_formula(main_row, 6, f"=E{main_row+1}*F{main_row+1}", style_tec_main_price)
+        data_map[item['id']] = {
+            'total_cell': f"G{main_row+1}",
+            'unit_cell':  f"F{main_row+1}",
+            'cant_cell':  f"E{main_row+1}",
+        }
+        row += 2
+
+row += 2
+ws_tecnico.write(row, 5, "TOTAL COSTE EJECUCIÓN MATERIAL",
+                 workbook.add_format({'bold': True, 'color': '#566573', 'align': 'right', 'font_size': 10}))
+all_totals   = [v['total_cell'] for v in data_map.values()]
+pem_cell_ref = f"G{row+1}"
+if all_totals:
+    ws_tecnico.write_formula(row, 6, f"=SUM({','.join(all_totals)})",
+                             workbook.add_format({'bold': True, 'font_size': 14, 'num_format': '#,##0.00 €'}))
+
+# Resumen económico en Desglose Técnico
+row += 3
+ws_tecnico.write(row, 1, "Desglose Económico del Presupuesto",
+                 workbook.add_format({'bold': True, 'font_size': 10}))
+row += 2
+
+st_title_center = workbook.add_format({'font_size': 8, 'color': '#000080', 'bg_color': '#F8F9F9', 'bold': True,
+                                       'left': 1, 'top': 1, 'border_color': '#EAEDED', 'align': 'center', 'valign': 'vcenter'})
+st_title_right  = workbook.add_format({'font_size': 8, 'color': '#000080', 'bg_color': '#F8F9F9', 'bold': True,
+                                       'left': 1, 'top': 1, 'right': 1, 'border_color': '#EAEDED'})
+st_percent      = workbook.add_format({'font_size': 9, 'bold': True, 'color': '#2C3E50', 'bg_color': 'white',
+                                       'num_format': '0%', 'align': 'center', 'valign': 'vcenter',
+                                       'border': 1, 'border_color': '#BDC3C7'})
+st_card_val     = workbook.add_format({'font_size': 10, 'bold': True, 'color': '#333', 'bg_color': '#F8F9F9',
+                                       'num_format': '#,##0.00 €', 'align': 'right',
+                                       'left': 1, 'bottom': 1, 'right': 1, 'border_color': '#EAEDED'})
+st_base_val     = workbook.add_format({'font_size': 14, 'bold': True, 'color': '#000080', 'bg_color': '#F8F9F9',
+                                       'num_format': '#,##0.00 €', 'align': 'right',
+                                       'bottom': 1, 'left': 1, 'right': 1, 'border_color': '#EAEDED'})
+
+ws_tecnico.write(row, 1, "CEM",              st_title_right)
+ws_tecnico.write(row, 2, "GASTOS GENERALES", st_title_center)
+ws_tecnico.write(row, 3, GG,                 st_percent)
+ws_tecnico.write(row, 4, "BI",               st_title_center)
+ws_tecnico.write(row, 5, BI,                 st_percent)
+ws_tecnico.write(row, 6, "Base Imp.",        st_title_right)
+
+gg_cell = f"D{row+1}"
+bi_cell = f"F{row+1}"
+
+ws_tecnico.write_formula(row+1, 1, f"={pem_cell_ref}", st_card_val)
+ws_tecnico.merge_range(row+1, 2, row+1, 3, f"={pem_cell_ref}*{gg_cell}", st_card_val)
+ws_tecnico.merge_range(row+1, 4, row+1, 5, f"={pem_cell_ref}*{bi_cell}", st_card_val)
+ws_tecnico.write_formula(row+1, 6, f"={pem_cell_ref}*(1+{gg_cell}+{bi_cell})", st_base_val)
+
+base_imp_cell_tec = f"G{row+2}"
+
+# ==========================================
+# 2. CLIENTE
+# ==========================================
+ws_cliente.hide_gridlines(2)
+ws_cliente.set_portrait()
+ws_cliente.set_column('A:A', 2)
+ws_cliente.set_column('B:B', 27)
+ws_cliente.set_column('C:C', 27)
+ws_cliente.set_column('D:D', 27)
+ws_cliente.set_column('E:E', 2)
+
+if os.path.exists(LOGO_PATH):
+    ws_cliente.insert_image('B2', LOGO_PATH, {'x_offset': 5, 'y_offset': 5, 'x_scale': 0.5, 'y_scale': 0.5})
+else:
+    print(f"Logo no encontrado en: {LOGO_PATH}")
+
+row_cli = 8
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}',
+                       info.get('titulo', 'Presupuesto'), style_header_main)
+row_cli += 1
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}',
+                       info.get('descripcion', ''), style_subtitle_main)
+row_cli += 1
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}',
+                       f"\U0001f4cd {info.get('ubicacion', '')}  |  Ref: {info.get('referencia', '')}",
+                       style_subtitle_main)
+row_cli += 2
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}', "  FICHA TÉCNICA DEL PRESUPUESTO  ", style_nav_active)
+row_cli += 2
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}', "Memoria Técnica y Económica",
+                       workbook.add_format({'bold': True, 'font_size': 12, 'font_color': '#34495E', 'bg_color': color_bg_page}))
+row_cli += 1
+ws_cliente.merge_range(f'B{row_cli}:D{row_cli}', "Detalle pormenorizado de partidas por capítulo.",
+                       workbook.add_format({'font_size': 9, 'font_color': '#7F8C8D', 'bg_color': color_bg_page}))
+row_cli += 2
+
+for cap_id in sorted_chapters:
+    chapter_items = [x for x in proyecto.get('dataCoste', [])
+                     if x.get('cap') == cap_id
+                     and not x.get('subtitulo', False)
+                     and x.get('tipo') != 'titulo']
+    if not chapter_items:
+        continue
+
+    ws_cliente.merge_range(row_cli, 1, row_cli, 3, "", style_chapter_bar)
+    ws_cliente.write(row_cli, 1, f"{cap_id}. {capitulos[cap_id]}", style_chapter_bar)
+
+    # Chapter total with GG+BI factor (each cell prefixed with sheet name)
+    cap_refs = [f"'Desglose Técnico'!{data_map[x['id']]['total_cell']}"
+                for x in chapter_items if x['id'] in data_map]
+    if cap_refs:
+        ws_cliente.write_formula(row_cli, 3,
+                                 f"=({'+'.join(cap_refs)})*{FACTOR}", style_chapter_total)
+    row_cli += 2
+
+    for item in chapter_items:
+        if item['id'] not in data_map:
+            continue
+        ref_d          = data_map[item['id']]
+        titulo_display = item.get('titulo') or item.get('descCliente') or item.get('desc', '')
+        spec_text      = item.get('desc', '')
+
+        fmt_title = workbook.add_format({'bold': True, 'font_size': 10, 'bg_color': 'white',
+                                          'top': 1, 'left': 1, 'border_color': '#E5E8E8', 'font_color': '#2C3E50'})
+        fmt_price = workbook.add_format({'bold': True, 'font_size': 10, 'bg_color': 'white',
+                                          'top': 1, 'right': 1, 'border_color': '#E5E8E8',
+                                          'num_format': '#,##0.00 €', 'align': 'right', 'font_color': '#2C3E50'})
+        ws_cliente.write(row_cli, 0, "\u25b2",
+                         workbook.add_format({'align': 'center', 'valign': 'top',
+                                              'font_color': '#BDC3C7', 'bg_color': color_bg_page}))
+        ws_cliente.merge_range(row_cli, 1, row_cli, 2, titulo_display, fmt_title)
+        ws_cliente.write_formula(row_cli, 3,
+                                 f"='Desglose Técnico'!{ref_d['total_cell']}*{FACTOR}", fmt_price)
+        row_cli += 1
+
+        formula_qty = (f"='Desglose Técnico'!{ref_d['cant_cell']} & \" \" & \"{item['ud']}\" "
+                       f"& \" x \" & TEXT('Desglose Técnico'!{ref_d['unit_cell']}*{FACTOR},\"0.00 €\")")
+        fmt_mid = workbook.add_format({'bg_color': 'white', 'left': 1, 'border_color': '#E5E8E8',
+                                        'font_size': 9, 'font_color': '#7F8C8D', 'italic': True})
+        ws_cliente.merge_range(row_cli, 1, row_cli, 2, "", fmt_mid)
+        ws_cliente.write_formula(row_cli, 1, formula_qty, fmt_mid)
+        ws_cliente.write(row_cli, 3, "",
+                         workbook.add_format({'bg_color': 'white', 'right': 1, 'border_color': '#E5E8E8'}))
+        row_cli += 1
+
+        fmt_spec_lbl = workbook.add_format({'bg_color': 'white', 'left': 1, 'border_color': '#E5E8E8',
+                                             'font_size': 7, 'bold': True, 'font_color': '#ABB2B9',
+                                             'valign': 'bottom', 'top': 1, 'top_color': '#F2F3F4'})
+        ws_cliente.write(row_cli, 1, "ESPECIFICACIÓN TÉCNICA", fmt_spec_lbl)
+        ws_cliente.write(row_cli, 2, "",
+                         workbook.add_format({'bg_color': 'white', 'top': 1, 'top_color': '#F2F3F4'}))
+        ws_cliente.write(row_cli, 3, "",
+                         workbook.add_format({'bg_color': 'white', 'right': 1, 'top': 1,
+                                              'top_color': '#F2F3F4', 'border_color': '#E5E8E8'}))
+        row_cli += 1
+
+        fmt_spec = workbook.add_format({'bg_color': 'white', 'left': 1, 'bottom': 1, 'right': 1,
+                                         'border_color': '#E5E8E8', 'font_size': 8, 'font_color': '#566573',
+                                         'text_wrap': True, 'valign': 'top'})
+        ws_cliente.merge_range(row_cli, 1, row_cli, 3, spec_text, fmt_spec)
+        ws_cliente.set_row(row_cli, 50)
+        row_cli += 2
+
+# Notas
+notas = proyecto.get('notas', [])
+if notas:
+    row_cli += 1
+    ws_cliente.write(row_cli, 1, "Notas Importantes",
+                     workbook.add_format({'bold': True, 'bg_color': color_bg_page, 'font_color': '#E74C3C'}))
+    row_cli += 1
+    for nota in notas:
+        ws_cliente.merge_range(row_cli, 1, row_cli, 3, f"• {nota}",
+                               workbook.add_format({'bg_color': color_bg_page, 'font_size': 8,
+                                                    'text_wrap': True, 'font_color': '#616A6B'}))
+        row_cli += 1
+
+# ==========================================
+# NOTA (07/05/2026): Compresión del encabezado para evitar que el
+# Resumen Económico quede aislado en una página aparte.
+# Cuando el número de filas de contenido supera el umbral de página,
+# se reducen las filas de relleno del encabezado superior (logo/título)
+# que son las filas 1-7 (margen superior y zona del logo), 11, 13 y 16-17.
+# Estas filas son puramente decorativas/espaciadoras y pueden comprimirse
+# sin afectar a la legibilidad del documento.
+# Umbral: si row_cli > UMBRAL_FILAS_COMPRESION → comprimir encabezado.
+# ==========================================
+UMBRAL_FILAS_COMPRESION = 245   # ajustar si el documento cambia de tamaño
+
+if row_cli > UMBRAL_FILAS_COMPRESION:
+    print(f"[INFO] row_cli={row_cli} > umbral {UMBRAL_FILAS_COMPRESION}. "
+          "Comprimiendo filas de encabezado para encajar Resumen Económico.")
+    # Filas 1-7: reducción mínima del margen superior y área del logo
+    # Default Excel = 15pt → 9pt, reducción apenas perceptible
+    for r in range(0, 7):   # 0-indexed = filas 1-7 en Excel
+        ws_cliente.set_row(r, 9)
+    # Fila 11: separador entre logo y título
+    ws_cliente.set_row(10, 9)
+    # Fila 13: separador entre descripción y ubicación
+    ws_cliente.set_row(12, 9)
+    # Filas 16-17: separador antes del bloque de contenido
+    ws_cliente.set_row(15, 9)
+    ws_cliente.set_row(16, 9)
+else:
+    print(f"[INFO] row_cli={row_cli}. Sin compresión necesaria.")
+
+# Resumen Económico
+row_cli += 2
+ws_cliente.write(row_cli, 1, "Resumen Económico",
+                 workbook.add_format({'bold': True, 'font_size': 12, 'bg_color': color_bg_page}))
+row_cli += 1
+st_sum_title = workbook.add_format({'font_size': 9, 'color': '#AAA', 'bg_color': 'white',
+                                     'valign': 'top', 'align': 'left',
+                                     'left': 1, 'top': 1, 'right': 1, 'border_color': '#EEE'})
+st_sum_val   = workbook.add_format({'bold': True, 'font_size': 14, 'color': '#333', 'bg_color': 'white',
+                                     'valign': 'bottom', 'align': 'left',
+                                     'left': 1, 'bottom': 1, 'right': 1,
+                                     'num_format': '#,##0.00 €', 'border_color': '#EEE'})
+
+ws_cliente.write(row_cli,   1, "BASE IMPONIBLE",           st_sum_title)
+ws_cliente.write(row_cli,   2, f"IVA ({int(IVA*100)}%)",  st_sum_title)
+ws_cliente.write(row_cli,   3, "TOTAL PRESUPUESTO",        st_sum_title)
+ws_cliente.write_formula(row_cli+1, 1, f"='Desglose Técnico'!{base_imp_cell_tec}", st_sum_val)
+ws_cliente.write_formula(row_cli+1, 2, f"=B{row_cli+2}*{IVA}",                     st_sum_val)
+ws_cliente.write_formula(row_cli+1, 3, f"=B{row_cli+2}+C{row_cli+2}",              st_sum_val)
+
+# ==========================================
+# 3. MATERIALES
+# ==========================================
+ws_materiales.hide_gridlines(2)
+ws_materiales.set_landscape()
+ws_materiales.set_column('A:A', 2)
+ws_materiales.set_column('B:B', 15)
+ws_materiales.set_column('C:C', 50)
+ws_materiales.set_column('D:D', 6)
+ws_materiales.set_column('E:E', 12)
+ws_materiales.set_column('F:F', 12)
+ws_materiales.set_column('G:G', 12)
+ws_materiales.set_column('H:H', 15)
+
+ws_materiales.merge_range('B2:H2',
+                           f"PREVISIÓN DE MATERIALES — {info.get('titulo', '').upper()}",
+                           style_header_main)
+
+editable = workbook.add_format({'bold': True, 'align': 'center', 'valign': 'vcenter',
+                                  'num_format': '0%', 'bg_color': 'white',
+                                  'border': 1, 'border_color': '#BDC3C7', 'font_color': '#2C3E50'})
+ws_materiales.write('G3', "Ajuste de Mermas / Desperdicio:",
+                    workbook.add_format({'bold': True, 'color': '#555', 'align': 'right',
+                                         'valign': 'vcenter', 'font_size': 9}))
+ws_materiales.write('H3', merma, editable)
+ws_materiales.write('G4', "IPC Materiales:",
+                    workbook.add_format({'bold': True, 'color': '#555', 'align': 'right',
+                                         'valign': 'vcenter', 'font_size': 9}))
+ws_materiales.write('H4', ipc, editable)
+
+row_mat = 6
+headers = ['CÓDIGO', 'MATERIAL', 'UD', 'CANT.\nBASE', 'CANT.\n+MERMAS', 'PRECIO/UD', 'PRECIO TOTAL']
+for i, h in enumerate(headers):
+    ws_materiales.write(row_mat, i+1, h, style_mat_header_L if i < 2 else style_mat_header)
+
+row_mat += 1
+total_cells = []
+
+for mat in proyecto.get('dataMaterial', []):
+    if mat.get('tipo') == 'titulo':
+        is_cap = (mat.get('desc', '')).upper().startswith('CAP')
+        fmt_row = workbook.add_format({'bold': True,
+                                        'bg_color':   '#EBF5FB' if is_cap else '#F2F3F4',
+                                        'font_color': '#1A5276' if is_cap else '#555'})
+        ws_materiales.merge_range(row_mat, 1, row_mat, 7, mat.get('desc', ''), fmt_row)
+        row_mat += 1
+        continue
+
+    if mat.get('cant', 0) <= 0:
+        continue
+
+    ws_materiales.write(row_mat, 1, mat.get('id',   ''), style_mat_row)
+    ws_materiales.write(row_mat, 2, mat.get('desc', ''), style_mat_row_bold)
+    ud = (mat.get('ud', '') or '').lower()
+    ws_materiales.write(row_mat, 3, ud,                   style_mat_row_R)
+    ws_materiales.write(row_mat, 4, mat.get('cant', 0),   style_mat_row_R)
+
+    has_merma = ud not in ['ud', 'kit', 'paq']
+    if has_merma:
+        ws_materiales.write_formula(row_mat, 5, f"=E{row_mat+1}*(1+$H$3)", style_mat_row_bold_R)
+    else:
+        ws_materiales.write_formula(row_mat, 5, f"=E{row_mat+1}",           style_mat_row_bold_R)
+
+    precio = mat.get('precio', 0)
+    if precio > 0:
+        ws_materiales.write_formula(row_mat, 6, f"={precio}*(1+$H$4)",         style_mat_curr)
+        ws_materiales.write_formula(row_mat, 7, f"=F{row_mat+1}*G{row_mat+1}", style_mat_curr_bold)
+        total_cells.append(f"H{row_mat+1}")
+    else:
+        ws_materiales.write(row_mat, 6, "Excluido (cliente)", style_mat_excluido)
+        ws_materiales.write(row_mat, 7, "Excluido (cliente)", style_mat_excluido)
+
+    row_mat += 2
+
+row_mat += 1
+ws_materiales.set_row(row_mat, 28)
+ws_materiales.merge_range(row_mat, 1, row_mat, 6, "TOTAL MATERIALES", style_mat_total_label)
+if total_cells:
+    ws_materiales.write_formula(row_mat, 7, f"=SUM({','.join(total_cells)})", style_mat_total_val)
+else:
+    ws_materiales.write(row_mat, 7, 0, style_mat_total_val)
+
+workbook.close()
+print(f"Archivo generado: {OUTPUT_FILE}")

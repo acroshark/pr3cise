@@ -1,0 +1,14 @@
+{
+  "presupuestos": [
+    {
+      "id": "anne_becher",
+      "nombre": "Extensión Casa Anne Becher",
+      "descripcion": "Ampliación de vivienda unifamiliar. Nuevo módulo: dormitorio, baño 2, almacén y distribuidor. Aprox. 43,86 m²."
+    },
+    {
+      "id": "5viviendas",
+      "nombre": "Edificio Plurifamiliar 5 Viviendas — Milá 28",
+      "descripcion": "Instalación Eléctrica. Calle de Milá, Nº 28. Santa Eulària des Riu, Ibiza."
+    }
+  ]
+}

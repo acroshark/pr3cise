@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 20/11/2024 21:58 - Reestructurado para separar CSS y JS en archivos externos -->
+    <!-- 20/01/2025 - Reestructuración profesional completada con HTML limpio y archivos externos organizados -->
+    <title>Presupuestos detallados para empresas y profesionales</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <style>
+        /* Ocultar contenido por defecto */
+        body {
+            display: none;
+        }
+        
+        /* Estilos del Login Overlay */
+        #auth-overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            z-index: 9999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .auth-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 1px solid #e5e7eb;
+        }
+
+        .auth-input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .auth-btn {
+            background: #B08D57;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 2px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .auth-btn:hover {
+            background: #9A7A45;
+        }
+
+        .auth-error {
+            color: #ef4444;
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Verificar si estamos en un entorno que soporta PHP
+                const response = await fetch('auth.php?check_auth=1');
+                if (!response.ok) throw new Error('Auth server not reachable');
+                
+                const data = await response.json();
+                
+                if (data.authenticated) {
+                    showContent();
+                } else {
+                    showLogin();
+                }
+            } catch (error) {
+                console.error('Error checking auth:', error);
+                // Si falla (ej. si se abre el html directamente sin servidor PHP), 
+                // mostrar login como fallback aunque no funcionará el submit.
+                showLogin();
+                document.getElementById('auth-error').textContent = "Error: Se requiere servidor PHP (XAMPP/WAMP) para funcionar.";
+                document.getElementById('auth-error').style.display = 'block';
+            }
+        });
+
+        function showContent() {
+            document.body.style.display = 'block';
+            const overlay = document.getElementById('auth-overlay');
+            if (overlay) overlay.remove();
+        }
+
+        function showLogin() {
+            // Aseguramos que el body sea visible para mostrar el overlay, 
+            // pero el contenido real del sitio puede estar oculto o cubierto
+            document.body.style.display = 'block';
+            
+            // Crear overlay si no existe
+            if (!document.getElementById('auth-overlay')) {
+                const overlay = document.createElement('div');
+                overlay.id = 'auth-overlay';
+                overlay.innerHTML = `
+                    <div class="auth-box">
+                        <img src="assets/img/logo.png" alt="Pr3cise" style="height: 48px; margin-bottom: 20px; object-fit: contain;">
+                        <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 10px; color: #0F172A; letter-spacing: -0.02em;">Acceso Restringido</h2>
+                        <p style="color: #6b7280; font-size: 14px; margin-bottom: 20px;">Introduce la contraseña para ver el presupuesto</p>
+                        <input type="password" id="auth-pass" class="auth-input" placeholder="Contraseña...">
+                        <button class="auth-btn" onclick="submitAuth()">Entrar</button>
+                        <p id="auth-error" class="auth-error"></p>
+                    </div>
+                `;
+                document.body.prepend(overlay);
+                
+                // Permitir enter para enviar
+                document.getElementById('auth-pass').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') submitAuth();
+                });
+            }
+            
+            // Ocultar el resto del contenido del body visualmente (opcional, ya que el overlay cubre todo)
+            // Array.from(document.body.children).forEach(child => {
+            //     if (child.id !== 'auth-overlay') child.style.display = 'none';
+            // });
+        }
+
+        async function submitAuth() {
+            const password = document.getElementById('auth-pass').value;
+            const errorMsg = document.getElementById('auth-error');
+            
+            try {
+                const response = await fetch('auth.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ password: password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    location.reload(); // Recargar para limpiar estado y mostrar contenido
+                } else {
+                    errorMsg.textContent = "Contraseña incorrecta";
+                    errorMsg.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error submitting auth:', error);
+                errorMsg.textContent = "Error de conexión con el servidor";
+                errorMsg.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased pb-12">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <!-- CABECERA -->
+        <header
+            class="mb-8 pb-6 border-b border-gray-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="flex items-center gap-5">
+                <img id="project-logo" src="assets/img/logo.png" alt="Pr3cise"
+                    class="h-16 w-auto object-contain">
+                <div>
+                    <h2 class="text-sm font-bold uppercase tracking-widest" style="color:#B08D57">Presupuesto</h2>
+                    <h1 id="project-title" class="text-3xl font-extrabold text-gray-800">Refugio Eficiente de Montaña
+                    </h1>
+                    <p id="project-desc" class="text-gray-500 mt-1">Construcción de un mini apartamento de 20m² con
+                        estructura de madera y alta eficiencia energética.</p>
+                    <p id="project-location" class="text-sm text-gray-400 font-medium mt-2">📍 Serra d'En Galceran,
+                        Castellón</p>
+                </div>
+            </div>
+            <div class="text-right flex-shrink-0">
+                <p class="text-xs text-gray-400 uppercase tracking-widest">Referencia</p>
+                <p id="ref-code" class="font-mono text-gray-700">PRE-2025-001-U</p>
+                <div id="ipc-container" class="mt-4 pt-2 border-t border-gray-100 w-48 ml-auto relative">
+                    <div id="ipc-lock-overlay"
+                        class="absolute inset-0 bg-white/90 backdrop-blur-sm flex items-center justify-end z-10 cursor-pointer"
+                        onclick="unlockIPC()">
+                        <span class="text-xs text-gray-400 mr-2">🔒 Ajuste IPC</span>
+                    </div>
+                    <div id="ipc-controls" class="opacity-0 transition-opacity duration-300">
+                        <p class="text-[10px] text-gray-500 uppercase tracking-widest text-right mb-1">Ajuste IPC
+                            Materiales 2023</p>
+                        <div class="flex items-center gap-2 justify-end">
+                            <input type="range" id="ajuste2023-slider" min="0" max="30" step="1" value="0"
+                                class="w-24 h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-gray-500"
+                                oninput="updateAjuste2023Preview(this.value)" onchange="updateAjuste2023(this.value)">
+                            <span id="ajuste2023-value" class="text-xs font-bold text-gray-700 w-8 text-right">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SELECTOR DE PRESUPUESTO -->
+        <div class="budget-selector-container mb-6">
+            <label for="budget-selector" class="text-sm font-semibold text-gray-600 mr-3">📂 Seleccionar
+                Presupuesto:</label>
+            <select id="budget-selector" class="budget-selector">
+                <option value="">Cargando presupuestos...</option>
+            </select>
+        </div>
+
+        <!-- NAVEGACIÓN -->
+        <nav
+            class="bg-gray-200 p-2 md:p-3 rounded-2xl shadow-inner mb-8 sticky top-2 z-20 backdrop-blur-sm bg-opacity-90">
+            <div class="flex flex-col md:flex-row gap-2 md:gap-4">
+                <button id="nav-cliente" class="nav-button active">📋 Ficha Técnica (Cliente)</button>
+                <button id="nav-costes" class="nav-button">💰 Desglose de Costes (Técnico)</button>
+                <button id="nav-materiales" class="nav-button">📦 Materiales</button>
+            </div>
+        </nav>
+
+        <!-- CONTENIDO DINÁMICO -->
+        <main id="content-area" class="min-h-[500px]">
+            <!-- El contenido se cargará dinámicamente mediante JavaScript -->
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

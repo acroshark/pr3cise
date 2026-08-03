@@ -1,0 +1,2576 @@
+{
+  "_changelog": [
+    "15/06/2026 20:42 - Presupuesto reemplazado por completo: de «Reforma Integral Proyecto Alberto» a «Reforma Piscina Torrevieja» (5 partidas: solera, material de agarre, emplaquetado, suministro de pavimento y gestión de residuos). MO ajustada a oficial albañil 40 €/h y auxiliar 25 €/h. GG/BI/IVA = 0 para que el total final sea exactamente la base (7.551,50 €), dentro del rango 6.000-8.000 €."
+  ],
+  "info": {
+    "titulo": "Reforma Piscina Torrevieja",
+    "descripcion": "Reforma del pavimento perimetral de la piscina: recrecido y maestreado de solera (+17 cm), suministro de material de agarre, emplaquetado, suministro de plaqueta porcelánica antideslizante (Clase 3) y gestión de residuos. Superficie aproximada de 75 m². Fecha de emisión: 15/06/2026.",
+    "ubicacion": "Torrevieja, Alicante",
+    "logo": "assets/img/logo.png",
+    "referencia": "PRE-PISCINA-TORREVIEJA-2026-001",
+    "cliente": {
+      "nombre": "—",
+      "nif": "—",
+      "direccion": "Torrevieja (Alicante)",
+      "telefono": "—",
+      "email": "—"
+    }
+  },
+  "notas": [
+    "Presupuesto «Reforma Piscina Torrevieja» emitido el 15/06/2026.",
+    "Tarifas de mano de obra aplicadas: oficial 1ª albañilería 40 €/h, auxiliar 25 €/h.",
+    "Partida 4 (Suministro de pavimento): precio base de referencia de 16 €/m² de plaqueta porcelánica antideslizante (Clase 3); la cantidad (79 m²) incluye un 5% extra sobre los 75 m² de superficie por mermas y cortes. El cliente puede elegir otro modelo, ajustándose la diferencia de precio.",
+    "La formación de la solera (partida 1) respeta las pendientes necesarias para la correcta evacuación de aguas.",
+    "El material de agarre (partida 2) es cemento cola C2TE S1 flexible e impermeable, específico para exteriores y zonas húmedas de piscina, e incluye el mortero de rejuntado (borada) resistente al agua y a productos químicos.",
+    "La gestión de residuos (partida 5) incluye limpieza de la zona, acopio de escombros, traslado a vertedero autorizado y tasas de reciclaje.",
+    "Importes expresados sin IVA.",
+    "Mediciones aproximadas y orientativas; cualquier variación que pueda afectar a costes requerirá comprobación in situ."
+  ],
+  "config": {
+    "GG": 0.05,
+    "BI": 0.05,
+    "IVA": 0,
+    "mermas": 0,
+    "volatilidad": 0,
+    "ajuste2023": 0
+  },
+  "capitulos": {
+    "01": "Reforma de pavimento de piscina",
+    "02": "Fontanería"
+  },
+  "dataCoste": [
+    {
+      "id": "01.001",
+      "cap": "01",
+      "ud": "m²",
+      "titulo": "Solera y maestreado",
+      "desc": "Solera y maestreado",
+      "cant": 75,
+      "mo": 21.5,
+      "mat": 20.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.35,
+          "precio": 40
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO02",
+          "desc": "Auxiliar albañilería",
+          "ud": "h",
+          "rend": 0.3,
+          "precio": 25
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT001",
+          "desc": "Hormigón/mortero para recrecido y maestreado de solera (e≈17 cm)",
+          "ud": "m³",
+          "rend": 0.17,
+          "precio": 90
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT002",
+          "desc": "Mallazo electrosoldado ME 15×15 Ø6 mm",
+          "ud": "m²",
+          "rend": 1,
+          "precio": 2.8
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT003",
+          "desc": "Aditivos, fibras y pequeño material de solera",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 2.4
+        }
+      ],
+      "longDesc": "Elevación de cota de suelo en 17 cm. Formación de solera mediante vertido de hormigón/mortero, armada con mallazo electrosoldado para evitar fisuras. Nivelado y maestreado perfecto de la superficie para recibir el pavimento, respetando las pendientes necesarias para la evacuación de aguas."
+    },
+    {
+      "id": "01.002",
+      "cap": "01",
+      "ud": "m²",
+      "titulo": "Material de agarre",
+      "desc": "Material de agarre",
+      "cant": 75,
+      "mo": 0,
+      "mat": 12.5,
+      "descompuesto": [
+        {
+          "tipo": "mat",
+          "codigo": "MAT004",
+          "desc": "Cemento cola altas prestaciones C2TE S1 (flexible e impermeable, exterior/piscina)",
+          "ud": "kg",
+          "rend": 5,
+          "precio": 1.9
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT005",
+          "desc": "Mortero de rejuntado (borada) resistente al agua y a productos químicos",
+          "ud": "kg",
+          "rend": 1.5,
+          "precio": 2
+        }
+      ],
+      "longDesc": "Suministro de cemento cola de altas prestaciones (Tipo C2TE S1), flexible e impermeable, específico para exteriores y zonas húmedas de piscina. Incluye mortero de rejuntado (borada) resistente al agua y a productos químicos."
+    },
+    {
+      "id": "01.003",
+      "cap": "01",
+      "ud": "m²",
+      "titulo": "Emplaquetado",
+      "desc": "Emplaquetado",
+      "cant": 75,
+      "mo": 25.5,
+      "mat": 0.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería (alicatador)",
+          "ud": "h",
+          "rend": 0.45,
+          "precio": 40
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO02",
+          "desc": "Auxiliar albañilería",
+          "ud": "h",
+          "rend": 0.3,
+          "precio": 25
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT006",
+          "desc": "Crucetas, niveladores y discos de corte",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 0.5
+        }
+      ],
+      "longDesc": "Mano de obra especializada para la colocación, nivelación y corte de plaqueta/azulejo en todo el perímetro de la piscina. Incluye el rejuntado final y la limpieza técnica del pavimento."
+    },
+    {
+      "id": "01.004",
+      "cap": "01",
+      "ud": "m²",
+      "titulo": "Suministro de pavimento",
+      "desc": "Suministro de pavimento",
+      "cant": 79,
+      "mo": 0,
+      "mat": 16,
+      "descompuesto": [
+        {
+          "tipo": "mat",
+          "codigo": "MAT007",
+          "desc": "Plaqueta porcelánica antideslizante Clase 3 (precio base de referencia)",
+          "ud": "m²",
+          "rend": 1,
+          "precio": 16
+        }
+      ],
+      "longDesc": "Partida variable. Suministro de plaqueta porcelánica antideslizante (Clase 3). Se calcula un precio base de referencia de 16 €/m² más un 5% extra por mermas y cortes (75 m² + 5% ≈ 79 m²). El cliente puede elegir otro modelo, ajustándose la diferencia."
+    },
+    {
+      "id": "01.005",
+      "cap": "01",
+      "ud": "ud",
+      "titulo": "Gestión de residuos",
+      "desc": "Gestión de residuos",
+      "cant": 1,
+      "mo": 100,
+      "mat": 150,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO02",
+          "desc": "Auxiliar: limpieza de zona, acopio y carga de escombros",
+          "ud": "h",
+          "rend": 4,
+          "precio": 25
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT008",
+          "desc": "Traslado a vertedero autorizado y tasas de reciclaje",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 150
+        }
+      ],
+      "longDesc": "Limpieza de la zona de trabajo, acopio de escombros y traslados a vertedero autorizado incluyendo tasas de reciclaje."
+    },
+    {
+      "id": "02.001",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Llave general de corte + acometida",
+      "desc": "Llave general de corte + acometida interior, montaje y conexión",
+      "cant": 1,
+      "mo": 40.0,
+      "mat": 45.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT009",
+          "desc": "Materiales llave general de corte",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 45
+        }
+      ],
+      "longDesc": "Suministro e instalación de llave general de corte y acometida interior, incluyendo montaje y conexión."
+    },
+    {
+      "id": "02.002",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF+AC con desagüe",
+      "desc": "Punto completo AF+AC con desagüe (fregadero cocina + fregadero/lavadero) — solo tomas agua",
+      "cant": 2,
+      "mo": 40.0,
+      "mat": 38.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT010",
+          "desc": "Materiales punto AF+AC fregadero",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 38
+        }
+      ],
+      "longDesc": "Punto completo de agua fría y caliente con desagüe para fregadero/lavadero (solo tomas)."
+    },
+    {
+      "id": "02.003",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF electrodoméstico",
+      "desc": "Punto AF para electrodoméstico (lavavajillas/lavadora)",
+      "cant": 1,
+      "mo": 20.0,
+      "mat": 18.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT011",
+          "desc": "Materiales punto AF electrodoméstico",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 18
+        }
+      ],
+      "longDesc": "Punto de agua fría para toma de lavavajillas o lavadora."
+    },
+    {
+      "id": "02.004",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF+AC (lavabos baños)",
+      "desc": "Punto completo AF+AC (lavabos baños)",
+      "cant": 2,
+      "mo": 40.0,
+      "mat": 32.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT012",
+          "desc": "Materiales punto AF+AC lavabos",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 32
+        }
+      ],
+      "longDesc": "Punto completo de agua fría y caliente para lavabos de baños."
+    },
+    {
+      "id": "02.005",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF+AC (bidé / ducha-bañera)",
+      "desc": "Punto AF+AC (bidé / ducha-bañera)",
+      "cant": 1,
+      "mo": 40.0,
+      "mat": 28.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT013",
+          "desc": "Materiales punto AF+AC bidé/ducha",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 28
+        }
+      ],
+      "longDesc": "Punto de agua fría y caliente para bidé o ducha-bañera."
+    },
+    {
+      "id": "02.006",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF inodoro/cisterna",
+      "desc": "Punto AF inodoro/cisterna",
+      "cant": 2,
+      "mo": 20.0,
+      "mat": 12.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT014",
+          "desc": "Materiales punto AF inodoro/cisterna",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 12
+        }
+      ],
+      "longDesc": "Punto de agua fría para inodoro o cisterna."
+    },
+    {
+      "id": "02.007",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Punto AF+AC aseo",
+      "desc": "Punto AF+AC (aseo/lavabo zona inferior derecha)",
+      "cant": 1,
+      "mo": 40.0,
+      "mat": 32.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT015",
+          "desc": "Materiales punto AF+AC aseo",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 32
+        }
+      ],
+      "longDesc": "Punto de agua fría y caliente para aseo/lavabo en zona inferior derecha."
+    },
+    {
+      "id": "02.008",
+      "cap": "02",
+      "ud": "ml",
+      "titulo": "Distribución tubería multicapa",
+      "desc": "Distribución general tubería multicapa AF+AC (montantes, derivaciones, manguitos, aislamiento AC)",
+      "cant": 55,
+      "mo": 8.0,
+      "mat": 4.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.2,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT016",
+          "desc": "Tubería multicapa y accesorios (ml)",
+          "ud": "ml",
+          "rend": 1,
+          "precio": 4.5
+        }
+      ],
+      "longDesc": "Distribución general con tubería multicapa para agua fría y caliente, incluyendo montantes, derivaciones, manguitos y aislamiento para agua caliente."
+    },
+    {
+      "id": "02.009",
+      "cap": "02",
+      "ud": "ud",
+      "titulo": "Colectores y sectorización",
+      "desc": "Colectores/distribuidores y llaves de sectorización por zona húmeda",
+      "cant": 3,
+      "mo": 20.0,
+      "mat": 25.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT017",
+          "desc": "Colectores y llaves",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 25
+        }
+      ],
+      "longDesc": "Instalación de colectores, distribuidores y llaves de sectorización para cada zona húmeda."
+    },
+    {
+      "id": "02.010",
+      "cap": "02",
+      "ud": "pa",
+      "titulo": "Pruebas de estanqueidad",
+      "desc": "Pruebas de estanqueidad, purgado y puesta en carga",
+      "cant": 1,
+      "mo": 80.0,
+      "mat": 10.0,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 2,
+          "precio": 40
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT018",
+          "desc": "Pequeño material pruebas",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 10
+        }
+      ],
+      "longDesc": "Realización de pruebas de estanqueidad en toda la red, purgado de instalaciones y puesta en carga."
+    },
+    {
+      "id": "02.011",
+      "cap": "02",
+      "ud": "pa",
+      "titulo": "Rozas y fijación",
+      "desc": "Rozas, pasos y pequeño material de fijación (no incluye albañilería de cierre)",
+      "cant": 1,
+      "mo": 62.5,
+      "mat": 57.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO02",
+          "desc": "Auxiliar albañilería",
+          "ud": "h",
+          "rend": 2.5,
+          "precio": 25
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT019",
+          "desc": "Material de fijación",
+          "ud": "ud",
+          "rend": 1,
+          "precio": 57.5
+        }
+      ],
+      "longDesc": "Apertura de rozas, pasos en muros y aporte de pequeño material de fijación. No incluye cierre ni enlucido de las rozas."
+    },
+    {
+      "id": "03.001",
+      "cap": "03",
+      "ud": "ud",
+      "titulo": "Demolición de puerta",
+      "desc": "Demolición de puerta",
+      "cant": 10.0,
+      "mo": 18.0,
+      "mat": 1.7,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.2,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.48,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 2.0,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "03.002",
+      "cap": "03",
+      "ud": "ud",
+      "titulo": "Demolición de baño completo",
+      "desc": "Demolición de baño completo",
+      "cant": 2.0,
+      "mo": 150.0,
+      "mat": 31.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.0,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 4.8,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 30.0,
+          "precio": 0.85
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT021",
+          "desc": "Pequeño material de demolición (discos de corte, plásticos, cinta)",
+          "ud": "PA",
+          "rend": 1.0,
+          "precio": 6.0
+        }
+      ]
+    },
+    {
+      "id": "03.003",
+      "cap": "03",
+      "ud": "ud",
+      "titulo": "Demolición de cocina completa",
+      "desc": "Demolición de cocina completa",
+      "cant": 1.0,
+      "mo": 190.0,
+      "mat": 35.75,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.0,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 6.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 35.0,
+          "precio": 0.85
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT021",
+          "desc": "Pequeño material de demolición (discos de corte, plásticos, cinta)",
+          "ud": "PA",
+          "rend": 1.0,
+          "precio": 6.0
+        }
+      ]
+    },
+    {
+      "id": "03.004",
+      "cap": "03",
+      "ud": "ml",
+      "titulo": "Demolición de rodapié y reparación",
+      "desc": "Demolición de rodapié y reparación",
+      "cant": 69.5,
+      "mo": 3.5,
+      "mat": 0.25,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.05,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.08,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 0.1,
+          "precio": 0.85
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 0.5,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "03.005",
+      "cap": "03",
+      "ud": "ml",
+      "titulo": "Demolición de tabique",
+      "desc": "Demolición de tabique",
+      "cant": 25.3,
+      "mo": 9.0,
+      "mat": 1.02,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.1,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.24,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 1.2,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "03.006",
+      "cap": "03",
+      "ud": "ml",
+      "titulo": "Remate de yeso en techo en demolición de tabique",
+      "desc": "Remate de yeso en techo en demolición de tabique",
+      "cant": 25.3,
+      "mo": 6.0,
+      "mat": 0.495,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.2,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 1.5,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "03.007",
+      "cap": "03",
+      "ud": "ud",
+      "titulo": "Demolición de ventana",
+      "desc": "Demolición de ventana",
+      "cant": 8.0,
+      "mo": 22.0,
+      "mat": 0.85,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "03.008",
+      "cap": "03",
+      "ud": "ud",
+      "titulo": "Demolición de armario",
+      "desc": "Demolición de armario",
+      "cant": 2.0,
+      "mo": 35.0,
+      "mat": 2.55,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.8,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 3.0,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "04.001",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Remate en esquina en demolición de tabique",
+      "desc": "Remate en esquina en demolición de tabique",
+      "cant": 10.0,
+      "mo": 18.0,
+      "mat": 2.06,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.12,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT023",
+          "desc": "Guardavivos galvanizado 2,60 m",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 1.4
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 2.0,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "04.002",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Remate en recto en demolición de tabique",
+      "desc": "Remate en recto en demolición de tabique",
+      "cant": 3.0,
+      "mo": 14.0,
+      "mat": 0.66,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.08,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 2.0,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "04.003",
+      "cap": "04",
+      "ud": "m²",
+      "titulo": "Aplicación de yeso",
+      "desc": "Aplicación de yeso",
+      "cant": 25.1,
+      "mo": 9.5,
+      "mat": 3.3000000000000003,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.25,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.08,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 10.0,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "04.004",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Colocación de plato de ducha",
+      "desc": "Colocación de plato de ducha",
+      "cant": 2.0,
+      "mo": 55.0,
+      "mat": 8.3,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 25.0,
+          "precio": 0.14
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT025",
+          "desc": "Silicona neutra sanitaria (cartucho 290 ml)",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 4.8
+        }
+      ]
+    },
+    {
+      "id": "04.005",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Cambio de premarco de obra",
+      "desc": "Cambio de premarco de obra",
+      "cant": 1.0,
+      "mo": 65.0,
+      "mat": 17.2,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.8,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT026",
+          "desc": "Precerco de pino 70×35 mm para puerta de paso",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 16.5
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 5.0,
+          "precio": 0.14
+        }
+      ]
+    },
+    {
+      "id": "04.006",
+      "cap": "04",
+      "ud": "m²",
+      "titulo": "Tabique de ladrillo de 12 cm",
+      "desc": "Tabique de ladrillo de 12 cm",
+      "cant": 4.3,
+      "mo": 38.0,
+      "mat": 16.860000000000003,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.1,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.2,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT027",
+          "desc": "Ladrillo cerámico hueco triple 24×11,5×11,5 cm",
+          "ud": "ud",
+          "rend": 33.0,
+          "precio": 0.46
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 12.0,
+          "precio": 0.14
+        }
+      ]
+    },
+    {
+      "id": "04.007",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Apertura de hueco para puerta con premarco de obra",
+      "desc": "Apertura de hueco para puerta con premarco de obra",
+      "cant": 1.0,
+      "mo": 90.0,
+      "mat": 31.9,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 2.0,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 1.2,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT026",
+          "desc": "Precerco de pino 70×35 mm para puerta de paso",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 16.5
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT028",
+          "desc": "Dintel metálico galvanizado para hueco de paso",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 14.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 10.0,
+          "precio": 0.14
+        }
+      ]
+    },
+    {
+      "id": "04.008",
+      "cap": "04",
+      "ud": "m²",
+      "titulo": "Demolición de revestimiento de azulejo y reparación",
+      "desc": "Demolición de revestimiento de azulejo y reparación",
+      "cant": 23.1,
+      "mo": 12.0,
+      "mat": 1.8000000000000003,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.15,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.3,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 8.0,
+          "precio": 0.14
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 0.8,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "04.009",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Roza de fontanería (hasta 2,5 ml)",
+      "desc": "Roza de fontanería (hasta 2,5 ml)",
+      "cant": 3.0,
+      "mo": 28.0,
+      "mat": 0.8400000000000001,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 6.0,
+          "precio": 0.14
+        }
+      ]
+    },
+    {
+      "id": "04.010",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Instalación de ventanas",
+      "desc": "Instalación de ventanas",
+      "cant": 8.0,
+      "mo": 55.0,
+      "mat": 13.5,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO004",
+          "desc": "Oficial 1ª carpintería",
+          "ud": "h",
+          "rend": 1.0,
+          "precio": 45.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO005",
+          "desc": "Auxiliar carpintería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT025",
+          "desc": "Silicona neutra sanitaria (cartucho 290 ml)",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 4.8
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT029",
+          "desc": "Espuma de poliuretano B2 (bote 750 ml)",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 6.2
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT030",
+          "desc": "Fijaciones y anclajes para colocación de ventana",
+          "ud": "PA",
+          "rend": 1.0,
+          "precio": 2.5
+        }
+      ]
+    },
+    {
+      "id": "04.011",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Ayudas de albañilería a climatización",
+      "desc": "Ayudas de albañilería a climatización",
+      "cant": 4.0,
+      "mo": 35.0,
+      "mat": 1.55,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.8,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 5.0,
+          "precio": 0.14
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT020",
+          "desc": "Saco de escombros de rafia 50 l",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 0.85
+        }
+      ]
+    },
+    {
+      "id": "04.012",
+      "cap": "04",
+      "ud": "m²",
+      "titulo": "Yeso para baño",
+      "desc": "Yeso para baño",
+      "cant": 27.8,
+      "mo": 14.0,
+      "mat": 3.96,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.3,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.2,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT022",
+          "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+          "ud": "kg",
+          "rend": 12.0,
+          "precio": 0.33
+        }
+      ]
+    },
+    {
+      "id": "04.013",
+      "cap": "04",
+      "ud": "ud",
+      "titulo": "Cierre de hueco de puerta con ladrillo",
+      "desc": "Cierre de hueco de puerta con ladrillo",
+      "cant": 1.0,
+      "mo": 65.0,
+      "mat": 26.6,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.8,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT031",
+          "desc": "Ladrillo cerámico hueco doble 24×11,5×7 cm",
+          "ud": "ud",
+          "rend": 80.0,
+          "precio": 0.28
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT024",
+          "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+          "ud": "kg",
+          "rend": 30.0,
+          "precio": 0.14
+        }
+      ]
+    },
+    {
+      "id": "05.001",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Tabique pladur hidrófugo 15 mm — estructura 48 (1 cara)",
+      "desc": "Tabique pladur hidrófugo 15 mm — estructura 48 (1 cara)",
+      "cant": 3.2,
+      "mo": 28.0,
+      "mat": 13.545,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT032",
+          "desc": "Placa de yeso laminado hidrófuga (H1) 15 mm",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 7.9
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.002",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Tabique pladur estándar 15 mm (1 cara)",
+      "desc": "Tabique pladur estándar 15 mm (1 cara)",
+      "cant": 5.9,
+      "mo": 22.0,
+      "mat": 9.765,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.28,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.003",
+      "cap": "05",
+      "ud": "ud",
+      "titulo": "Forrado de pilar en U con pladur",
+      "desc": "Forrado de pilar en U con pladur",
+      "cant": 1.0,
+      "mo": 70.0,
+      "mat": 13.245,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 1.0,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.5,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 1.2,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.5,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.5,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.004",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Incremento por placa hidrófuga (placa verde)",
+      "desc": "Incremento por placa hidrófuga (placa verde)",
+      "cant": 5.4,
+      "mo": 4.5,
+      "mat": 3.7800000000000002,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.15,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT037",
+          "desc": "Incremento placa hidrófuga sobre placa estándar (diferencia)",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 3.6
+        }
+      ]
+    },
+    {
+      "id": "05.005",
+      "cap": "05",
+      "ud": "ud",
+      "titulo": "Mocheta de armario en pladur",
+      "desc": "Mocheta de armario en pladur",
+      "cant": 1.0,
+      "mo": 55.0,
+      "mat": 9.69,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.2,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 0.8,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.006",
+      "cap": "05",
+      "ud": "ud",
+      "titulo": "Hueco de hornacina en pladur",
+      "desc": "Hueco de hornacina en pladur",
+      "cant": 2.0,
+      "mo": 55.0,
+      "mat": 12.430000000000001,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 1.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.4,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT032",
+          "desc": "Placa de yeso laminado hidrófuga (H1) 15 mm",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 7.9
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 0.8,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.007",
+      "cap": "05",
+      "ud": "ml",
+      "titulo": "Viga en L — 2 lados de pladur",
+      "desc": "Viga en L — 2 lados de pladur",
+      "cant": 10.6,
+      "mo": 18.0,
+      "mat": 6.3950000000000005,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.12,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 0.8,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 0.5,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 0.8,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 0.5,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.008",
+      "cap": "05",
+      "ud": "ud",
+      "titulo": "Registro 20×20 en techo",
+      "desc": "Registro 20×20 en techo",
+      "cant": 2.0,
+      "mo": 22.0,
+      "mat": 12.05,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.16,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT038",
+          "desc": "Trampilla de registro para pladur 20×20 cm",
+          "ud": "ud",
+          "rend": 1.0,
+          "precio": 11.5
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 0.5,
+          "precio": 1.1
+        }
+      ]
+    },
+    {
+      "id": "05.009",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Falso techo de pladur (altura 2)",
+      "desc": "Falso techo de pladur (altura 2)",
+      "cant": 6.7,
+      "mo": 24.0,
+      "mat": 10.365,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.24,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT039",
+          "desc": "Perfilería de techo continuo (maestra 60/27, horquillas y varillas)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 4.2
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.010",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Trasdosado directo de pladur estándar",
+      "desc": "Trasdosado directo de pladur estándar",
+      "cant": 0.3,
+      "mo": 18.0,
+      "mat": 6.8149999999999995,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.12,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT040",
+          "desc": "Pasta de agarre para trasdosado directo",
+          "ud": "kg",
+          "rend": 3.0,
+          "precio": 0.4
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        }
+      ]
+    },
+    {
+      "id": "05.011",
+      "cap": "05",
+      "ud": "ml",
+      "titulo": "Viga en U — 3 lados de pladur",
+      "desc": "Viga en U — 3 lados de pladur",
+      "cant": 0.9,
+      "mo": 22.0,
+      "mat": 7.890000000000001,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.16,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT036",
+          "desc": "Placa de yeso laminado estándar 15 mm",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 4.3
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT033",
+          "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+          "ud": "m²",
+          "rend": 0.6,
+          "precio": 3.6
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT035",
+          "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+          "ud": "m²",
+          "rend": 0.6,
+          "precio": 0.55
+        }
+      ]
+    },
+    {
+      "id": "05.012",
+      "cap": "05",
+      "ud": "m²",
+      "titulo": "Trasdosado directo de pladur hidrófugo",
+      "desc": "Trasdosado directo de pladur hidrófugo",
+      "cant": 3.2,
+      "mo": 22.0,
+      "mat": 10.595,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.16,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT032",
+          "desc": "Placa de yeso laminado hidrófuga (H1) 15 mm",
+          "ud": "m²",
+          "rend": 1.05,
+          "precio": 7.9
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT040",
+          "desc": "Pasta de agarre para trasdosado directo",
+          "ud": "kg",
+          "rend": 3.0,
+          "precio": 0.4
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT034",
+          "desc": "Pasta de juntas y cinta de papel",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 1.1
+        }
+      ]
+    },
+    {
+      "id": "06.001",
+      "cap": "06",
+      "ud": "m²",
+      "titulo": "Alicatado de baño (zona de ducha)",
+      "desc": "Alicatado de baño (zona de ducha)",
+      "cant": 10.0,
+      "mo": 22.0,
+      "mat": 2.6399999999999997,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.6,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.16,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT041",
+          "desc": "Cemento cola C2TE blanco (saco 25 kg)",
+          "ud": "kg",
+          "rend": 4.0,
+          "precio": 0.34
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT042",
+          "desc": "Mortero de juntas flexible CG2",
+          "ud": "kg",
+          "rend": 0.7,
+          "precio": 1.4
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT043",
+          "desc": "Crucetas y calzos de nivelación",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.3
+        }
+      ]
+    },
+    {
+      "id": "07.001",
+      "cap": "07",
+      "ud": "m²",
+      "titulo": "Pavimento porcelánico (Suelo 2)",
+      "desc": "Pavimento porcelánico (Suelo 2)",
+      "cant": 14.05,
+      "mo": 18.0,
+      "mat": 2.7,
+      "descompuesto": [
+        {
+          "tipo": "mo",
+          "codigo": "MO01",
+          "desc": "Oficial 1ª albañilería",
+          "ud": "h",
+          "rend": 0.5,
+          "precio": 30.0
+        },
+        {
+          "tipo": "mo",
+          "codigo": "MO003",
+          "desc": "Peón albañilería",
+          "ud": "h",
+          "rend": 0.12,
+          "precio": 25.0
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT041",
+          "desc": "Cemento cola C2TE blanco (saco 25 kg)",
+          "ud": "kg",
+          "rend": 5.0,
+          "precio": 0.34
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT042",
+          "desc": "Mortero de juntas flexible CG2",
+          "ud": "kg",
+          "rend": 0.5,
+          "precio": 1.4
+        },
+        {
+          "tipo": "mat",
+          "codigo": "MAT043",
+          "desc": "Crucetas y calzos de nivelación",
+          "ud": "m²",
+          "rend": 1.0,
+          "precio": 0.3
+        }
+      ]
+    }
+  ],
+  "dataMaterial": [
+    {
+      "id": "TIT-MO",
+      "desc": "MANO DE OBRA",
+      "ud": "",
+      "cant": 0,
+      "precio": 0,
+      "pvp": 0,
+      "tipo": "titulo"
+    },
+    {
+      "id": "MO003",
+      "desc": "Peón albañilería",
+      "ud": "h",
+      "precio": 25.0,
+      "pvp": 25.0,
+      "tipo": "mo"
+    },
+    {
+      "id": "MO004",
+      "desc": "Oficial 1ª carpintería",
+      "ud": "h",
+      "precio": 45.0,
+      "pvp": 45.0,
+      "tipo": "mo"
+    },
+    {
+      "id": "MO005",
+      "desc": "Auxiliar carpintería",
+      "ud": "h",
+      "precio": 25.0,
+      "pvp": 25.0,
+      "tipo": "mo"
+    },
+    {
+      "id": "MO01",
+      "desc": "Oficial 1ª albañilería",
+      "ud": "h",
+      "cant": 0,
+      "precio": 40,
+      "pvp": 40,
+      "tipo": "mo"
+    },
+    {
+      "id": "MO02",
+      "desc": "Auxiliar albañilería",
+      "ud": "h",
+      "cant": 0,
+      "precio": 25,
+      "pvp": 25,
+      "tipo": "mo"
+    },
+    {
+      "id": "TIT-MAT",
+      "desc": "MATERIALES",
+      "ud": "",
+      "cant": 0,
+      "precio": 0,
+      "pvp": 0,
+      "tipo": "titulo"
+    },
+    {
+      "id": "MAT001",
+      "desc": "Hormigón/mortero para recrecido y maestreado de solera (e≈17 cm)",
+      "ud": "m³",
+      "cant": 12.75,
+      "precio": 90,
+      "pvp": 90,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT002",
+      "desc": "Mallazo electrosoldado ME 15×15 Ø6 mm",
+      "ud": "m²",
+      "cant": 75,
+      "precio": 2.8,
+      "pvp": 2.8,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT003",
+      "desc": "Aditivos, fibras y pequeño material de solera",
+      "ud": "ud",
+      "cant": 75,
+      "precio": 2.4,
+      "pvp": 2.4,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT004",
+      "desc": "Cemento cola altas prestaciones C2TE S1 (flexible e impermeable, exterior/piscina)",
+      "ud": "kg",
+      "cant": 375,
+      "precio": 1.9,
+      "pvp": 1.9,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT005",
+      "desc": "Mortero de rejuntado (borada) resistente al agua y a productos químicos",
+      "ud": "kg",
+      "cant": 112.5,
+      "precio": 2,
+      "pvp": 2,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT006",
+      "desc": "Crucetas, niveladores y discos de corte",
+      "ud": "ud",
+      "cant": 75,
+      "precio": 0.5,
+      "pvp": 0.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT007",
+      "desc": "Plaqueta porcelánica antideslizante Clase 3 (precio base de referencia)",
+      "ud": "m²",
+      "cant": 79,
+      "precio": 16,
+      "pvp": 16,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT008",
+      "desc": "Traslado a vertedero autorizado y tasas de reciclaje",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 150,
+      "pvp": 150,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT009",
+      "desc": "Materiales llave general de corte",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 45,
+      "pvp": 45,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT010",
+      "desc": "Materiales punto AF+AC fregadero",
+      "ud": "ud",
+      "cant": 2,
+      "precio": 38,
+      "pvp": 38,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT011",
+      "desc": "Materiales punto AF electrodoméstico",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 18,
+      "pvp": 18,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT012",
+      "desc": "Materiales punto AF+AC lavabos",
+      "ud": "ud",
+      "cant": 2,
+      "precio": 32,
+      "pvp": 32,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT013",
+      "desc": "Materiales punto AF+AC bidé/ducha",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 28,
+      "pvp": 28,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT014",
+      "desc": "Materiales punto AF inodoro/cisterna",
+      "ud": "ud",
+      "cant": 2,
+      "precio": 12,
+      "pvp": 12,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT015",
+      "desc": "Materiales punto AF+AC aseo",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 32,
+      "pvp": 32,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT016",
+      "desc": "Tubería multicapa y accesorios (ml)",
+      "ud": "ml",
+      "cant": 55,
+      "precio": 4.5,
+      "pvp": 4.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT017",
+      "desc": "Colectores y llaves",
+      "ud": "ud",
+      "cant": 3,
+      "precio": 25,
+      "pvp": 25,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT018",
+      "desc": "Pequeño material pruebas",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 10,
+      "pvp": 10,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT019",
+      "desc": "Material de fijación",
+      "ud": "ud",
+      "cant": 1,
+      "precio": 57.5,
+      "pvp": 57.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT020",
+      "desc": "Saco de escombros de rafia 50 l",
+      "ud": "ud",
+      "precio": 0.85,
+      "pvp": 0.85,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT021",
+      "desc": "Pequeño material de demolición (discos de corte, plásticos, cinta)",
+      "ud": "PA",
+      "precio": 6.0,
+      "pvp": 6.0,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT022",
+      "desc": "Pasta de yeso B1 aplicación manual (saco 17 kg)",
+      "ud": "kg",
+      "precio": 0.33,
+      "pvp": 0.33,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT023",
+      "desc": "Guardavivos galvanizado 2,60 m",
+      "ud": "ud",
+      "precio": 1.4,
+      "pvp": 1.4,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT024",
+      "desc": "Mortero de cemento M-7,5 ensacado (saco 25 kg)",
+      "ud": "kg",
+      "precio": 0.14,
+      "pvp": 0.14,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT025",
+      "desc": "Silicona neutra sanitaria (cartucho 290 ml)",
+      "ud": "ud",
+      "precio": 4.8,
+      "pvp": 4.8,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT026",
+      "desc": "Precerco de pino 70×35 mm para puerta de paso",
+      "ud": "ud",
+      "precio": 16.5,
+      "pvp": 16.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT027",
+      "desc": "Ladrillo cerámico hueco triple 24×11,5×11,5 cm",
+      "ud": "ud",
+      "precio": 0.46,
+      "pvp": 0.46,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT028",
+      "desc": "Dintel metálico galvanizado para hueco de paso",
+      "ud": "ud",
+      "precio": 14.0,
+      "pvp": 14.0,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT029",
+      "desc": "Espuma de poliuretano B2 (bote 750 ml)",
+      "ud": "ud",
+      "precio": 6.2,
+      "pvp": 6.2,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT030",
+      "desc": "Fijaciones y anclajes para colocación de ventana",
+      "ud": "PA",
+      "precio": 2.5,
+      "pvp": 2.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT031",
+      "desc": "Ladrillo cerámico hueco doble 24×11,5×7 cm",
+      "ud": "ud",
+      "precio": 0.28,
+      "pvp": 0.28,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT032",
+      "desc": "Placa de yeso laminado hidrófuga (H1) 15 mm",
+      "ud": "m²",
+      "precio": 7.9,
+      "pvp": 7.9,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT033",
+      "desc": "Perfilería galvanizada canal+montante 48 mm con banda estanca",
+      "ud": "m²",
+      "precio": 3.6,
+      "pvp": 3.6,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT034",
+      "desc": "Pasta de juntas y cinta de papel",
+      "ud": "m²",
+      "precio": 1.1,
+      "pvp": 1.1,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT035",
+      "desc": "Tornillería y fijaciones de placa (PM 25/45)",
+      "ud": "m²",
+      "precio": 0.55,
+      "pvp": 0.55,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT036",
+      "desc": "Placa de yeso laminado estándar 15 mm",
+      "ud": "m²",
+      "precio": 4.3,
+      "pvp": 4.3,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT037",
+      "desc": "Incremento placa hidrófuga sobre placa estándar (diferencia)",
+      "ud": "m²",
+      "precio": 3.6,
+      "pvp": 3.6,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT038",
+      "desc": "Trampilla de registro para pladur 20×20 cm",
+      "ud": "ud",
+      "precio": 11.5,
+      "pvp": 11.5,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT039",
+      "desc": "Perfilería de techo continuo (maestra 60/27, horquillas y varillas)",
+      "ud": "m²",
+      "precio": 4.2,
+      "pvp": 4.2,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT040",
+      "desc": "Pasta de agarre para trasdosado directo",
+      "ud": "kg",
+      "precio": 0.4,
+      "pvp": 0.4,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT041",
+      "desc": "Cemento cola C2TE blanco (saco 25 kg)",
+      "ud": "kg",
+      "precio": 0.34,
+      "pvp": 0.34,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT042",
+      "desc": "Mortero de juntas flexible CG2",
+      "ud": "kg",
+      "precio": 1.4,
+      "pvp": 1.4,
+      "tipo": "mat"
+    },
+    {
+      "id": "MAT043",
+      "desc": "Crucetas y calzos de nivelación",
+      "ud": "m²",
+      "precio": 0.3,
+      "pvp": 0.3,
+      "tipo": "mat"
+    }
+  ]
+}

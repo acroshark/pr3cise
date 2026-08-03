@@ -1,0 +1,663 @@
+{
+    "info": {
+        "titulo": "Reforma de Cocina y Baño",
+        "descripcion": "Franci Nelly Linares Rodríguez — Reforma integral de cocina y baño sin cambios estructurales. Acabados modernos, calidades medias.",
+        "ubicacion": "C/ Fuensanta 116, 2.º A, Murcia",
+        "logo": "assets/img/logo.png",
+        "referencia": "Franci Nelly Linares Rodríguez",
+        "cliente": "Franci Nelly Linares Rodríguez",
+        "fecha": "15 de mayo de 2026"
+    },
+    "config": {
+        "BI": 0.06,
+        "GG": 0,
+        "IVA": 0.10
+    },
+    "capitulos": {
+        "01": "DEMOLICIONES Y DESMONTAJES",
+        "02": "ALBAÑILERÍA",
+        "03": "FONTANERÍA",
+        "04": "ELECTRICIDAD",
+        "05": "ALICATADOS Y PAVIMENTOS",
+        "06": "FALSOS TECHOS Y PLADUR",
+        "07": "PINTURA",
+        "08": "MOBILIARIO DE COCINA",
+        "09": "ENCIMERA",
+        "10": "SANITARIOS Y MOBILIARIO DE BAÑO",
+        "11": "CARPINTERÍA Y REMATES",
+        "12": "LICENCIAS Y CONTENEDOR",
+        "13": "LIMPIEZA FINAL"
+    },
+    "notas": [
+        "Mano de obra calculada con: Oficial 1.ª: 25 €/h · Auxiliar: 20 €/h.",
+        "IVA aplicado al tipo reducido del 10% (Art. 91.Uno.2.10.º LIVA), por tratarse de reforma de vivienda de uso habitual.",
+        "Todos los materiales son suministrados e instalados por la empresa constructora. Los electrodomésticos quedan excluidos del presente presupuesto y serán aportados por la propiedad.",
+        "Las mediciones indicadas son estimadas sobre plano. Se ajustarán a los datos reales tomados in situ antes del inicio de los trabajos.",
+        "Presupuesto válido durante 30 días naturales desde la fecha de emisión.",
+        "Cualquier trabajo no contemplado expresamente requerirá orden de cambio escrita firmada por ambas partes."
+    ],
+    "dataCoste": [
+        {
+            "id": "01.01", "cap": "01", "ud": "ud", "cant": 1, "mo": 155, "mat": 10,
+            "titulo": "Desmontaje mobiliario de cocina",
+            "desc": "Desmontaje de mobiliario de cocina existente (muebles altos, bajos y columnas), con retirada de electrodomésticos y fregadero. Clasificación de residuos y protección de solado durante los trabajos. Mano de obra incluida.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 4.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 2.75, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Bolsas reforzadas y material de protección", "ud": "ud", "rend": 1.00, "precio": 10.00}
+            ]
+        },
+        {
+            "id": "01.02", "cap": "01", "ud": "m2", "cant": 18, "mo": 7.00, "mat": 0.50,
+            "titulo": "Picado alicatado paredes cocina",
+            "desc": "Picado y retirada de revestimiento cerámico en paredes de cocina (≈18 m²), con medios manuales, sin deterioro del soporte. Carga de escombros en contenedor.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.35, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Bolsas y consumibles de limpieza", "ud": "m2", "rend": 1.00, "precio": 0.50}
+            ]
+        },
+        {
+            "id": "01.03", "cap": "01", "ud": "ud", "cant": 1, "mo": 135, "mat": 10,
+            "titulo": "Desmontaje instalación sanitaria baño",
+            "desc": "Desmontaje de instalación sanitaria completa en baño: inodoro, lavabo, bañera, conjunto de griferías, accesorios, espejo y mueble auxiliar. Tapado provisional de acometidas.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 3.40, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 2.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Obturadores provisionales y consumibles", "ud": "ud", "rend": 1.00, "precio": 10.00}
+            ]
+        },
+        {
+            "id": "01.04", "cap": "01", "ud": "m2", "cant": 21, "mo": 7.00, "mat": 0.50,
+            "titulo": "Picado alicatado paredes y suelo baño",
+            "desc": "Picado y retirada de revestimiento cerámico de paredes y solado del baño (≈21 m²), con medios manuales. Carga de escombros en contenedor.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.35, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Bolsas y consumibles de limpieza", "ud": "m2", "rend": 1.00, "precio": 0.50}
+            ]
+        },
+        {
+            "id": "01.05", "cap": "01", "ud": "m2", "cant": 4.5, "mo": 5.50, "mat": 0.50,
+            "titulo": "Desmontaje falso techo baño",
+            "desc": "Desmontaje de falso techo existente en baño (≈4,50 m²), con retirada de material y limpieza de zona. Incluye perfilería y placas.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.275, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Bolsas de residuos", "ud": "m2", "rend": 1.00, "precio": 0.50}
+            ]
+        },
+
+        {
+            "id": "02.01", "cap": "02", "ud": "ml", "cant": 12, "mo": 10, "mat": 4,
+            "titulo": "Rozas para fontanería",
+            "desc": "Apertura de rozas en paredes para paso de tuberías de fontanería (agua fría y caliente) en cocina y baño. Incluye cierre posterior con mortero de cemento Portland.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 0.20, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mortero de cemento M5 (cierre de roza)", "ud": "ml", "rend": 1.00, "precio": 4.00}
+            ]
+        },
+        {
+            "id": "02.02", "cap": "02", "ud": "ml", "cant": 18, "mo": 8, "mat": 3,
+            "titulo": "Rozas para instalación eléctrica",
+            "desc": "Apertura de rozas en paredes para canalización de instalación eléctrica en cocina y baño. Cierre posterior con escayola o mortero de cemento.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.40, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mortero de cierre y yeso de reparación", "ud": "ml", "rend": 1.00, "precio": 3.00}
+            ]
+        },
+        {
+            "id": "02.03", "cap": "02", "ud": "m2", "cant": 36, "mo": 5, "mat": 2.50,
+            "titulo": "Regularización de paredes con enfoscado",
+            "desc": "Regularización y saneado de paramentos mediante enfoscado de mortero de cemento Portland, tras picado de revestimientos en cocina y baño (≈36 m²). Espesor medio 1,5 cm.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 0.10, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.125, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mortero de cemento proyección (saco 25 kg)", "ud": "m2", "rend": 1.00, "precio": 2.50}
+            ]
+        },
+        {
+            "id": "02.04", "cap": "02", "ud": "PA", "cant": 1, "mo": 140, "mat": 40,
+            "titulo": "Ayudas de albañilería para instalaciones",
+            "desc": "Ayudas de albañilería para el conjunto de instalaciones: empotramiento de cajas, pasos por forjados, sellados, rellenos y entregas en paramentos. Partida global.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 3.60, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 2.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Material auxiliar de albañilería (yeso, mortero, espuma)", "ud": "ud", "rend": 1.00, "precio": 40.00}
+            ]
+        },
+
+        {
+            "id": "03.01", "cap": "03", "ud": "ud", "cant": 1, "mo": 150, "mat": 120,
+            "titulo": "Red fontanería cocina (a/f + a/c)",
+            "desc": "Suministro e instalación de red de agua fría y caliente para cocina, tuberías multicapa Ø16 mm bajo tubo corrugado, llaves de corte individuales y conexiones a fregadero y lavavajillas.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 5.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 1.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubería multicapa Ø16 + codos + tes + racores + llaves de corte", "ud": "ud", "rend": 1.00, "precio": 120.00}
+            ]
+        },
+        {
+            "id": "03.02", "cap": "03", "ud": "ud", "cant": 1, "mo": 170, "mat": 140,
+            "titulo": "Red fontanería baño (a/f + a/c)",
+            "desc": "Suministro e instalación de red de agua fría y caliente para baño, tuberías multicapa Ø16 mm bajo tubo corrugado, llaves de corte individuales para lavabo, plato de ducha e inodoro.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 5.60, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 1.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubería multicapa Ø16 + accesorios + llaves de corte baño", "ud": "ud", "rend": 1.00, "precio": 140.00}
+            ]
+        },
+        {
+            "id": "03.03", "cap": "03", "ud": "ud", "cant": 1, "mo": 40, "mat": 25,
+            "titulo": "Desagüe y sifón fregadero cocina",
+            "desc": "Suministro e instalación de desagüe y sifón para fregadero de cocina, tubería PVC Ø40 mm, con conexión al bajante existente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 0.75, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubo PVC Ø40 mm + sifón fregadero + manguito", "ud": "ud", "rend": 1.00, "precio": 25.00}
+            ]
+        },
+        {
+            "id": "03.04", "cap": "03", "ud": "ud", "cant": 1, "mo": 75, "mat": 65,
+            "titulo": "Sistema de desagüe completo baño",
+            "desc": "Suministro e instalación de sistema de desagüe para baño: sifón de lavabo, válvula de desagüe para plato de ducha con rejilla cromada, desagüe de inodoro. Conexiones a bajantes existentes.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 2.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 1.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Sifón lavabo + válvula ducha Ø90 + tubería PVC desagüe + bote sifónico", "ud": "ud", "rend": 1.00, "precio": 65.00}
+            ]
+        },
+        {
+            "id": "03.05", "cap": "03", "ud": "ud", "cant": 1, "mo": 25, "mat": 64,
+            "titulo": "Grifo monomando cocina (Grohe Eurosmart)",
+            "desc": "Suministro e instalación de grifo monomando de cocina, modelo Grohe Eurosmart o equivalente, acabado cromo, con aireador regulable y válvulas de cierre.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Grifo monomando cocina Grohe Eurosmart o equivalente", "ud": "ud", "rend": 1.00, "precio": 64.00}
+            ]
+        },
+        {
+            "id": "03.06", "cap": "03", "ud": "ud", "cant": 1, "mo": 22, "mat": 47,
+            "titulo": "Grifo monomando lavabo (Imex Clasic)",
+            "desc": "Suministro e instalación de grifo monomando para lavabo de baño, modelo Imex Clasic o equivalente, acabado cromo, con desagüe válvula clic-clac.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 0.88, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Grifo monomando lavabo Imex Clasic + clic-clac", "ud": "ud", "rend": 1.00, "precio": 47.00}
+            ]
+        },
+        {
+            "id": "03.07", "cap": "03", "ud": "ud", "cant": 1, "mo": 30, "mat": 75,
+            "titulo": "Conjunto ducha empotrado con rociador",
+            "desc": "Suministro e instalación de conjunto de ducha empotrado: mezclador monomando de empotrar + rociador fijo Ø200 mm + barra deslizante con teleducha, modelo Imex o equivalente, acabado cromo.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 0.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Grifo empotrado ducha + rociador Ø200 + barra + teleducha Imex", "ud": "ud", "rend": 1.00, "precio": 75.00}
+            ]
+        },
+        {
+            "id": "03.08", "cap": "03", "ud": "PA", "cant": 1, "mo": 47, "mat": 0,
+            "titulo": "Pruebas de estanqueidad y puesta en marcha",
+            "desc": "Pruebas de estanqueidad a presión, ajuste de caudales y puesta en marcha de la instalación completa de fontanería en cocina y baño.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 1.88, "precio": 25.00}
+            ]
+        },
+
+        {
+            "id": "04.01", "cap": "04", "ud": "ud", "cant": 1, "mo": 185, "mat": 140,
+            "titulo": "Instalación eléctrica completa cocina",
+            "desc": "Instalación eléctrica completa en cocina bajo tubo corrugado: 5 circuitos independientes (horno, vitrocerámica, lavavajillas, frigorífico, iluminación+enchufes), mecanismos BJC Serie 21 o equivalente, conexión a cuadro general.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 5.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Electricidad", "ud": "h", "rend": 3.00, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Cable RV-K, tubo corrugado, cajas, mecanismos BJC, diferencial 2P 30mA", "ud": "ud", "rend": 1.00, "precio": 140.00}
+            ]
+        },
+        {
+            "id": "04.02", "cap": "04", "ud": "ud", "cant": 1, "mo": 100, "mat": 75,
+            "titulo": "Instalación eléctrica baño",
+            "desc": "Instalación eléctrica en cuarto de baño: circuito independiente con diferencial 30 mA, mecanismos estancos IP44, punto de toma exterior al volumen de protección para secador o maquinilla.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 2.50, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Electricidad", "ud": "h", "rend": 1.875, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Cable, tubo corrugado, cajas, mecanismos IP44, diferencial 30mA", "ud": "ud", "rend": 1.00, "precio": 75.00}
+            ]
+        },
+        {
+            "id": "04.03", "cap": "04", "ud": "ud", "cant": 4, "mo": 12, "mat": 8,
+            "titulo": "Downlights LED 7W IP20 cocina (×4)",
+            "desc": "Suministro e instalación de 4 downlights LED empotrados, 7 W, 4.000 K, IP20, acabado blanco, en falso techo de cocina. Incluye conexionado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 0.48, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Downlight LED 7W 4000K IP20 blanco empotrable", "ud": "ud", "rend": 1.00, "precio": 8.00}
+            ]
+        },
+        {
+            "id": "04.04", "cap": "04", "ud": "ud", "cant": 2, "mo": 13, "mat": 9,
+            "titulo": "Downlights LED 7W IP44 baño (×2)",
+            "desc": "Suministro e instalación de 2 downlights LED empotrados, 7 W, 4.000 K, IP44, acabado blanco, en falso techo de baño. Incluye conexionado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 0.52, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Downlight LED 7W 4000K IP44 blanco empotrable", "ud": "ud", "rend": 1.00, "precio": 9.00}
+            ]
+        },
+        {
+            "id": "04.05", "cap": "04", "ud": "ud", "cant": 1, "mo": 25, "mat": 40,
+            "titulo": "Extractor baño temporizador + humedad",
+            "desc": "Suministro e instalación de extractor de baño con temporizador y sensor de humedad, modelo Soler & Palau SILENT-100 CRZ DESIGN o equivalente. Conexión a conducto de ventilación existente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Extractor S&P SILENT-100 CRZ DESIGN temporizador + humedad", "ud": "ud", "rend": 1.00, "precio": 40.00}
+            ]
+        },
+
+        {
+            "id": "05.01", "cap": "05", "ud": "m2", "cant": 9.0, "mo": 16, "mat": 19,
+            "titulo": "Solado cocina porcelánico 60×60 gris",
+            "desc": "Suministro y colocación de pavimento porcelánico rectificado 60×60 cm en cocina (Grespania Evolve Gris Natural o similar), capa delgada, adhesivo C2, crucetas 2 mm, rejuntado cemento. Incluye material y colocación.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Solador", "ud": "h", "rend": 0.44, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Porcelánico 60×60 + adhesivo C2 (4 kg/m²) + lechada rejuntado", "ud": "m2", "rend": 1.00, "precio": 19.00}
+            ]
+        },
+        {
+            "id": "05.02", "cap": "05", "ud": "m2", "cant": 18.0, "mo": 14, "mat": 16,
+            "titulo": "Alicatado paredes cocina azulejo 30×60",
+            "desc": "Suministro y colocación de azulejo rectificado 30×60 cm en paredes de cocina (Venis Brick White o similar), capa delgada, adhesivo C2, rejuntado blanco. Incluye replanteo, cortes y encuentros.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Azulejero", "ud": "h", "rend": 0.44, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.15, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Azulejo 30×60 + adhesivo C2 + lechada blanca", "ud": "m2", "rend": 1.00, "precio": 16.00}
+            ]
+        },
+        {
+            "id": "05.03", "cap": "05", "ud": "m2", "cant": 4.5, "mo": 20, "mat": 20,
+            "titulo": "Solado baño porcelánico antidesl. 45×45",
+            "desc": "Suministro y colocación de pavimento porcelánico antideslizante R10, 45×45 cm, en baño (Aparici Textile o similar), con impermeabilización de membrana líquida perimetral previa. Incluye material y colocación.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Solador", "ud": "h", "rend": 0.60, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Porcelánico 45×45 R10 + impermeabilización + adhesivo C2 + lechada", "ud": "m2", "rend": 1.00, "precio": 20.00}
+            ]
+        },
+        {
+            "id": "05.04", "cap": "05", "ud": "m2", "cant": 17.0, "mo": 14, "mat": 18,
+            "titulo": "Alicatado paredes baño azulejo 30×60",
+            "desc": "Suministro y colocación de azulejo rectificado 30×60 cm en paredes de baño (serie coordinada), con primera hilada sobre impermeabilización, adhesivo C2, rejuntado blanco/crema.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Azulejero", "ud": "h", "rend": 0.44, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Albañilería", "ud": "h", "rend": 0.15, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Azulejo 30×60 + impermeabilización perimetral + adhesivo C2 + lechada", "ud": "m2", "rend": 1.00, "precio": 18.00}
+            ]
+        },
+        {
+            "id": "05.05", "cap": "05", "ud": "ml", "cant": 15, "mo": 5, "mat": 4,
+            "titulo": "Rodapié cerámico porcelánico 8×60 cm",
+            "desc": "Suministro y colocación de rodapié cerámico porcelánico a juego, 8×60 cm, en cocina y baño (≈15 ml total). Incluye adhesivo y rejuntado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Solador", "ud": "h", "rend": 0.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Rodapié porcelánico 8×60 cm + adhesivo + lechada", "ud": "ml", "rend": 1.00, "precio": 4.00}
+            ]
+        },
+
+        {
+            "id": "06.01", "cap": "06", "ud": "m2", "cant": 4.5, "mo": 22, "mat": 20,
+            "titulo": "Falso techo pladur hidrófugo baño (H1)",
+            "desc": "Suministro e instalación de falso techo continuo en baño (≈4,50 m²), placa H1 hidrófuga 12,5 mm sobre perfilería de acero galvanizado Knauf o equivalente. Incluye maestras, cinta, masilla y acabado listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Pladurista", "ud": "h", "rend": 0.52, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Pladur", "ud": "h", "rend": 0.45, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa H1 12,5 mm + perfilería galvanizada + pasta + cinta juntas", "ud": "m2", "rend": 1.00, "precio": 20.00}
+            ]
+        },
+        {
+            "id": "06.02", "cap": "06", "ud": "m2", "cant": 9.0, "mo": 20, "mat": 15,
+            "titulo": "Falso techo pladur estándar cocina (A1)",
+            "desc": "Suministro e instalación de falso techo continuo en cocina (≈9,00 m²), placa estándar A1 12,5 mm sobre perfilería de acero galvanizado. Incluye maestras, cinta, masilla y acabado listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Pladurista", "ud": "h", "rend": 0.50, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Pladur", "ud": "h", "rend": 0.375, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa A1 12,5 mm + perfilería galvanizada + pasta + cinta juntas", "ud": "m2", "rend": 1.00, "precio": 15.00}
+            ]
+        },
+        {
+            "id": "06.03", "cap": "06", "ud": "PA", "cant": 1, "mo": 40, "mat": 10,
+            "titulo": "Aperturas para luminarias y extractor",
+            "desc": "Apertura de huecos y refuerzo de perfilería para 6 luminarias empotradas y extractor en falso techo de baño y cocina. Incluye suplemento de material perimetral.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Pladurista", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Pladur", "ud": "h", "rend": 0.75, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Material de refuerzo perimetral y perfilería adicional", "ud": "ud", "rend": 1.00, "precio": 10.00}
+            ]
+        },
+
+        {
+            "id": "07.01", "cap": "07", "ud": "m2", "cant": 15, "mo": 7, "mat": 2.50,
+            "titulo": "Pintura plástica lavable cocina",
+            "desc": "Imprimación + 2 manos de pintura plástica lavable satinada en paredes y techo de cocina, zonas no revestidas con azulejo (≈15 m²). Color a elección del cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 0.28, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Pintura plástica mate lavable + imprimación fijadora", "ud": "m2", "rend": 1.00, "precio": 2.50}
+            ]
+        },
+        {
+            "id": "07.02", "cap": "07", "ud": "m2", "cant": 4.5, "mo": 7.50, "mat": 2.50,
+            "titulo": "Pintura antihumedad techo baño",
+            "desc": "Imprimación + 2 manos de pintura plástica antihumedad en techo de baño sobre pladur hidrófugo (≈4,50 m²). Color blanco.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 0.30, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Pintura antihumedad + imprimación fijadora", "ud": "m2", "rend": 1.00, "precio": 2.50}
+            ]
+        },
+        {
+            "id": "07.03", "cap": "07", "ud": "PA", "cant": 1, "mo": 165, "mat": 30,
+            "titulo": "Repasos de pintura zona de paso",
+            "desc": "Repaso y pintura de zonas afectadas por el paso de materiales: acceso, pasillo adyacente a cocina y baño. Partida global estimada. Incluye protección de carpinterías y pavimentos.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 4.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Pintura", "ud": "h", "rend": 3.25, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Pintura plástica + imprimación + cinta carrocero + film protector", "ud": "ud", "rend": 1.00, "precio": 30.00}
+            ]
+        },
+        {
+            "id": "07.04", "cap": "07", "ud": "PA", "cant": 1, "mo": 55, "mat": 15,
+            "titulo": "Masillado y preparación de superficies",
+            "desc": "Masillado, preparación y sellado de juntas y encuentros en paramentos de cocina y baño previo al pintado. Incluye lijado, imprimación de poros y corrección de irregularidades menores.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 2.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Masilla plástica de alisado + lija + sellador", "ud": "ud", "rend": 1.00, "precio": 15.00}
+            ]
+        },
+
+        {
+            "id": "08.01", "cap": "08", "ud": "ud", "cant": 1, "mo": 0, "mat": 480,
+            "titulo": "Módulos de cocina línea baja (5 uds.)",
+            "desc": "Suministro de módulos de cocina línea baja: 4 cuerpos de 60 cm + 1 módulo esquinero, línea Ikea Metod o equivalente, con reguladores de pata y zócalo incluidos.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Módulos base Ikea Metod 60 cm (×5 incl. esquinero) + reguladores + zócalo", "ud": "ud", "rend": 1.00, "precio": 480.00}
+            ]
+        },
+        {
+            "id": "08.02", "cap": "08", "ud": "ud", "cant": 1, "mo": 0, "mat": 300,
+            "titulo": "Módulos de cocina línea alta (4 uds.)",
+            "desc": "Suministro de módulos de cocina línea alta: 4 cuerpos de 60 cm, Ikea Metod o equivalente.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Módulos altos Ikea Metod 60 cm (×4)", "ud": "ud", "rend": 1.00, "precio": 300.00}
+            ]
+        },
+        {
+            "id": "08.03", "cap": "08", "ud": "ud", "cant": 1, "mo": 0, "mat": 420,
+            "titulo": "Frentes lacados + herrajes completos",
+            "desc": "Suministro de frentes lacados en blanco mate o gris antracita (a elección del cliente), con tiradores integrados tipo J-pull, bisagras amortiguadas y cajones con guías metálicas de cierre suave.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Puertas lacadas + cajones + bisagras amortiguadas + tiradores + guías", "ud": "ud", "rend": 1.00, "precio": 420.00}
+            ]
+        },
+        {
+            "id": "08.04", "cap": "08", "ud": "ud", "cant": 1, "mo": 0, "mat": 150,
+            "titulo": "Columna horno-microondas 220 cm",
+            "desc": "Suministro de columna para horno y microondas de 220 cm, con frentes lacados a juego con el resto de la cocina.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Columna horno-microondas 220 cm Ikea Metod o equivalente + frente lacado", "ud": "ud", "rend": 1.00, "precio": 150.00}
+            ]
+        },
+        {
+            "id": "08.05", "cap": "08", "ud": "PA", "cant": 1, "mo": 310, "mat": 0,
+            "titulo": "Montaje e instalación completa de cocina",
+            "desc": "Montaje e instalación completa del mobiliario de cocina: replanteo, nivelación, anclaje a pared y suelo, ajuste de puertas y cajones, instalación de accesorios interiores y colocación de zócalo.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero-Montador", "ud": "h", "rend": 8.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Montaje", "ud": "h", "rend": 5.50, "precio": 20.00}
+            ]
+        },
+        {
+            "id": "08.06", "cap": "08", "ud": "ud", "cant": 1, "mo": 20, "mat": 65,
+            "titulo": "Fregadero inox 1 seno + escurridor (Teka)",
+            "desc": "Suministro e instalación de fregadero de acero inoxidable 1 seno + escurridor 86×50 cm, modelo Teka Centroval 50 o equivalente, con rebosadero.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero-Montador", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Fregadero inox 1 seno + escurridor Teka Centroval 50 o equivalente", "ud": "ud", "rend": 1.00, "precio": 65.00}
+            ]
+        },
+
+        {
+            "id": "09.01", "cap": "09", "ud": "ml", "cant": 3.0, "mo": 35, "mat": 80,
+            "titulo": "Encimera cuarzo compacto 2 cm (3 ml)",
+            "desc": "Suministro e instalación de encimera de aglomerado de cuarzo 2 cm, color Blanco Stellar o Gris Expo a elección (Compac Basic, Silestone Entry o equivalente), 3,00 ml. Incluye cortes para fregadero y vitrocerámica, pulido de cantos y sellado con silicona.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Marmolista", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Marmolista", "ud": "h", "rend": 0.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Encimera cuarzo 2 cm por ml lineal (Compac/Silestone Basic o equiv.)", "ud": "ml", "rend": 1.00, "precio": 80.00}
+            ]
+        },
+        {
+            "id": "09.02", "cap": "09", "ud": "ml", "cant": 3.0, "mo": 4, "mat": 4,
+            "titulo": "Perfil zócalo aluminio encimera (3 ml)",
+            "desc": "Suministro e instalación de perfil de aluminio zócalo posterior entre encimera y azulejo, acabado cromo mate, 3,00 ml.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Montaje", "ud": "h", "rend": 0.20, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Perfil aluminio zócalo posterior 3 ml cromo mate", "ud": "ml", "rend": 1.00, "precio": 4.00}
+            ]
+        },
+
+        {
+            "id": "10.01", "cap": "10", "ud": "ud", "cant": 1, "mo": 30, "mat": 155,
+            "titulo": "Inodoro compacto Roca Debba",
+            "desc": "Suministro e instalación de inodoro compacto de suelo con salida horizontal, modelo Roca Debba o equivalente, blanco, cisterna acoplada con mecanismo doble descarga y tapa de cierre amortiguado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 0.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Inodoro compacto Roca Debba + cisterna + tapa amortiguada", "ud": "ud", "rend": 1.00, "precio": 155.00}
+            ]
+        },
+        {
+            "id": "10.02", "cap": "10", "ud": "ud", "cant": 1, "mo": 25, "mat": 270,
+            "titulo": "Mueble baño suspendido 60 cm + lavabo (LM)",
+            "desc": "Suministro e instalación de mueble de baño suspendido 60 cm con lavabo integrado de porcelana, 2 cajones con guías de cierre suave, modelo Leroy Merlin Serie Remix o equivalente, color blanco/roble.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero-Montador", "ud": "h", "rend": 0.60, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Montaje", "ud": "h", "rend": 0.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mueble baño suspendido 60 cm + lavabo integrado LM Remix o equiv.", "ud": "ud", "rend": 1.00, "precio": 270.00}
+            ]
+        },
+        {
+            "id": "10.03", "cap": "10", "ud": "ud", "cant": 1, "mo": 15, "mat": 75,
+            "titulo": "Espejo retroiluminado LED 60×80 cm",
+            "desc": "Suministro e instalación de espejo retroiluminado LED 60×80 cm con interruptor táctil e iluminación perimetral cálida/neutra.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Electricista", "ud": "h", "rend": 0.60, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Espejo retroiluminado LED 60×80 cm con interruptor táctil", "ud": "ud", "rend": 1.00, "precio": 75.00}
+            ]
+        },
+        {
+            "id": "10.04", "cap": "10", "ud": "ud", "cant": 1, "mo": 25, "mat": 135,
+            "titulo": "Plato ducha resina extraplano 70×120 cm Roca",
+            "desc": "Suministro e instalación de plato de ducha de resina mineral extraplano (<4 cm) 70×120 cm, modelo Roca Terran o equivalente, blanco, con válvula de desagüe cromada Ø90 mm.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 0.60, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Fontanería", "ud": "h", "rend": 0.50, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Plato ducha resina 70×120 cm Roca Terran + válvula cromada", "ud": "ud", "rend": 1.00, "precio": 135.00}
+            ]
+        },
+        {
+            "id": "10.05", "cap": "10", "ud": "ud", "cant": 1, "mo": 35, "mat": 175,
+            "titulo": "Mampara ducha fija + abatible (vidrio 6 mm)",
+            "desc": "Suministro e instalación de mampara de ducha fija + hoja abatible, estructura aluminio cromado, vidrio templado transparente 6 mm tratamiento antical, modelo Profiltek Serie S o equivalente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Montador", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Montaje", "ud": "h", "rend": 0.75, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mampara ducha fija+abatible Profiltek o equiv. aluminio + vidrio 6mm", "ud": "ud", "rend": 1.00, "precio": 175.00}
+            ]
+        },
+        {
+            "id": "10.06", "cap": "10", "ud": "ud", "cant": 1, "mo": 20, "mat": 55,
+            "titulo": "Accesorios baño inox (toallero + portarrollos + gancho)",
+            "desc": "Suministro e instalación de juego de accesorios de baño en acero inoxidable mate: toallero de barra 60 cm, portarrollos y gancho de puerta.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Montador", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Set accesorios inox: toallero 60cm + portarrollos + gancho", "ud": "ud", "rend": 1.00, "precio": 55.00}
+            ]
+        },
+
+        {
+            "id": "11.01", "cap": "11", "ud": "ud", "cant": 1, "mo": 60, "mat": 150,
+            "titulo": "Puerta de paso baño 70 cm lacada blanca",
+            "desc": "Suministro e instalación de puerta de paso para baño, hoja ciega 70 cm lacada en blanco, con marco rechapado lacado, pomo inox y rejilla de ventilación inferior. Incluye montaje completo y ajuste.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 1.50, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 1.125, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Puerta lacada blanca 70 cm + marco + tapajuntas + pomo inox + rejilla", "ud": "ud", "rend": 1.00, "precio": 150.00}
+            ]
+        },
+        {
+            "id": "11.02", "cap": "11", "ud": "PA", "cant": 1, "mo": 65, "mat": 20,
+            "titulo": "Remates, tapajuntas y molduras",
+            "desc": "Remates, tapajuntas y molduras en encuentros de falso techo con pared en cocina y baño. Sellado de juntas estructura/tabique con masilla elástica.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero/Albañil", "ud": "h", "rend": 2.60, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tapajuntas MDF + espuma sellado + masilla elástica", "ud": "ud", "rend": 1.00, "precio": 20.00}
+            ]
+        },
+        {
+            "id": "11.03", "cap": "11", "ud": "PA", "cant": 1, "mo": 45, "mat": 15,
+            "titulo": "Sellado silicona sanitaria completo",
+            "desc": "Sellado con silicona sanitaria blanca en todos los encuentros críticos: encimera-azulejo, plato ducha-azulejo, mueble baño-azulejo, rincones de alicatado en baño y cocina.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Albañilería", "ud": "h", "rend": 1.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Silicona sanitaria blanca (5 cartuchos 310 ml) + pistola aplicadora", "ud": "ud", "rend": 1.00, "precio": 15.00}
+            ]
+        },
+
+        {
+            "id": "12.01", "cap": "12", "ud": "ud", "cant": 1, "mo": 0, "mat": 180,
+            "titulo": "Contenedor de escombros 5 m³ (7 días)",
+            "desc": "Alquiler de contenedor de escombros de 5 m³ durante 7 días hábiles, con servicio de entrega, recogida y transporte a vertedero autorizado homologado.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Contenedor 5 m³ alquiler 7 días + transporte + vertido autorizado", "ud": "ud", "rend": 1.00, "precio": 180.00}
+            ]
+        },
+        {
+            "id": "12.02", "cap": "12", "ud": "PA", "cant": 1, "mo": 0, "mat": 85,
+            "titulo": "Tasa municipal ocupación vía pública",
+            "desc": "Tasa municipal por ocupación de vía pública para colocación de contenedor (Excmo. Ayuntamiento de Murcia). Incluye gestión de comunicación previa.",
+            "descompuesto": [
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tasa Ayto. Murcia vía pública + gestión comunicación previa", "ud": "ud", "rend": 1.00, "precio": 85.00}
+            ]
+        },
+        {
+            "id": "12.03", "cap": "12", "ud": "PA", "cant": 1, "mo": 20, "mat": 25,
+            "titulo": "Documentación gestión de residuos RCD",
+            "desc": "Documentación y gestión de residuos de construcción y demolición (RCD), conforme al Real Decreto 105/2008 y normativa autonómica de la Región de Murcia. Incluye certificado de recepción en planta autorizada.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª (gestión documental y traslado)", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Certificado de gestión RCD + empresa autorizada", "ud": "ud", "rend": 1.00, "precio": 25.00}
+            ]
+        },
+
+        {
+            "id": "13.01", "cap": "13", "ud": "PA", "cant": 1, "mo": 130, "mat": 45,
+            "titulo": "Limpieza general final de obra",
+            "desc": "Limpieza general final de obra al término de todos los trabajos: retirada de plásticos y embalajes protectores, limpieza de restos de materiales y polvo acumulado, limpieza de sanitarios, azulejos, encimeras y carpintería. Entrega de la vivienda en condiciones óptimas de habitabilidad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1.ª Limpieza", "ud": "h", "rend": 2.50, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Limpieza", "ud": "h", "rend": 3.375, "precio": 20.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Productos de limpieza profesional + paños + bolsas de residuos", "ud": "ud", "rend": 1.00, "precio": 45.00}
+            ]
+        }
+    ],
+    "dataMaterial": [
+        {"tipo": "titulo", "desc": "CAP 01 - DEMOLICIONES Y DESMONTAJES"},
+        {"id": "MT-01.01", "desc": "Bolsa de escombros reforzada 70 L (paquete 10 ud)", "ud": "ud", "cant": 3, "pvp": 4.50, "precio": 4.50},
+        {"id": "MT-01.02", "desc": "Obturadores provisionales de fontanería 1/2\" (par)", "ud": "ud", "cant": 4, "pvp": 1.20, "precio": 1.20},
+
+        {"tipo": "titulo", "desc": "CAP 02 - ALBAÑILERÍA"},
+        {"id": "MT-02.01", "desc": "Mortero de cemento M5 (saco 25 kg)", "ud": "ud", "cant": 8, "pvp": 2.50, "precio": 2.50},
+        {"id": "MT-02.02", "desc": "Yeso de proyección Y-25 (saco 25 kg)", "ud": "ud", "cant": 4, "pvp": 3.20, "precio": 3.20},
+        {"id": "MT-02.03", "desc": "Tubo corrugado rojo Ø23 mm (rollo 50 m)", "ud": "ud", "cant": 2, "pvp": 11.90, "precio": 11.90},
+
+        {"tipo": "titulo", "desc": "CAP 03 - FONTANERÍA"},
+        {"id": "MT-03.01", "desc": "Tubo multicapa PEX/AL/PEX Ø16 mm (rollo 25 m)", "ud": "ud", "cant": 3, "pvp": 13.50, "precio": 13.50},
+        {"id": "MT-03.02", "desc": "Codo multicapa 90° Ø16 mm", "ud": "ud", "cant": 20, "pvp": 1.20, "precio": 1.12},
+        {"id": "MT-03.03", "desc": "Te multicapa Ø16 mm", "ud": "ud", "cant": 10, "pvp": 1.50, "precio": 1.40},
+        {"id": "MT-03.04", "desc": "Racor macho multicapa M 1/2\" Ø16 mm", "ud": "ud", "cant": 18, "pvp": 1.80, "precio": 1.67},
+        {"id": "MT-03.05", "desc": "Llave de escuadra empotrada 1/2\" latón cromado", "ud": "ud", "cant": 12, "pvp": 2.80, "precio": 2.80},
+        {"id": "MT-03.06", "desc": "Sifón lavabo botella extensible PVC 1 1/4\"", "ud": "ud", "cant": 1, "pvp": 3.50, "precio": 3.50},
+        {"id": "MT-03.07", "desc": "Latiguillo flexible acero inox. 40 cm 3/8\"", "ud": "ud", "cant": 6, "pvp": 2.10, "precio": 2.10},
+        {"id": "MT-03.08", "desc": "Tubo PVC desagüe Ø40 mm (barra 3 m)", "ud": "ud", "cant": 2, "pvp": 5.90, "precio": 5.90},
+        {"id": "MT-03.09", "desc": "Grifo monomando cocina Grohe Eurosmart o equivalente", "ud": "ud", "cant": 1, "pvp": 89.00, "precio": 64.00},
+        {"id": "MT-03.10", "desc": "Grifo monomando lavabo Imex Clasic o equivalente", "ud": "ud", "cant": 1, "pvp": 69.00, "precio": 47.00},
+        {"id": "MT-03.11", "desc": "Conjunto ducha empotrado: mezclador + rociador Ø200 + barra Imex", "ud": "ud", "cant": 1, "pvp": 105.00, "precio": 75.00},
+
+        {"tipo": "titulo", "desc": "CAP 04 - ELECTRICIDAD"},
+        {"id": "MT-04.01", "desc": "Cable flexible 1,5 mm² (rollo 50 m)", "ud": "ud", "cant": 4, "pvp": 14.90, "precio": 14.90},
+        {"id": "MT-04.02", "desc": "Cable flexible 2,5 mm² (rollo 50 m)", "ud": "ud", "cant": 3, "pvp": 22.50, "precio": 22.50},
+        {"id": "MT-04.03", "desc": "Tubo corrugado gris Ø16 mm (rollo 50 m)", "ud": "ud", "cant": 2, "pvp": 9.50, "precio": 9.50},
+        {"id": "MT-04.04", "desc": "Caja empotrar 68 mm universal", "ud": "ud", "cant": 8, "pvp": 0.45, "precio": 0.45},
+        {"id": "MT-04.05", "desc": "Mecanismo BJC Serie 21: interruptor / toma corriente", "ud": "ud", "cant": 8, "pvp": 3.20, "precio": 3.20},
+        {"id": "MT-04.06", "desc": "Diferencial 2P 40A 30 mA (para baño)", "ud": "ud", "cant": 1, "pvp": 22.00, "precio": 22.00},
+        {"id": "MT-04.07", "desc": "Downlight LED 7W 4000K IP20 blanco (cocina)", "ud": "ud", "cant": 4, "pvp": 8.00, "precio": 8.00},
+        {"id": "MT-04.08", "desc": "Downlight LED 7W 4000K IP44 blanco (baño)", "ud": "ud", "cant": 2, "pvp": 9.00, "precio": 9.00},
+        {"id": "MT-04.09", "desc": "Extractor Soler & Palau SILENT-100 CRZ DESIGN temporizador+humedad", "ud": "ud", "cant": 1, "pvp": 65.00, "precio": 40.00},
+
+        {"tipo": "titulo", "desc": "CAP 05 - ALICATADOS Y PAVIMENTOS"},
+        {"id": "MT-05.01", "desc": "Porcelánico 60×60 cm gris natural rectif. (Grespania Evolve o similar)", "ud": "m2", "cant": 9.0, "pvp": 13.00, "precio": 13.00},
+        {"id": "MT-05.02", "desc": "Azulejo 30×60 cm blanco rectificado paredes cocina (Venis Brick o similar)", "ud": "m2", "cant": 18.0, "pvp": 10.50, "precio": 10.50},
+        {"id": "MT-05.03", "desc": "Porcelánico antidesl. 45×45 cm R10 baño (Aparici Textile o similar)", "ud": "m2", "cant": 4.5, "pvp": 13.50, "precio": 13.50},
+        {"id": "MT-05.04", "desc": "Azulejo 30×60 cm rectificado paredes baño (serie coordinada)", "ud": "m2", "cant": 17.0, "pvp": 12.00, "precio": 12.00},
+        {"id": "MT-05.05", "desc": "Rodapié porcelánico 8×60 cm a juego", "ud": "ml", "cant": 15, "pvp": 3.50, "precio": 3.50},
+        {"id": "MT-05.06", "desc": "Adhesivo cementoso C2 TE alta adherencia (saco 25 kg)", "ud": "ud", "cant": 11, "pvp": 9.50, "precio": 9.50},
+        {"id": "MT-05.07", "desc": "Lechada rejuntado color blanco/crema (caja 5 kg)", "ud": "ud", "cant": 5, "pvp": 4.50, "precio": 4.50},
+        {"id": "MT-05.08", "desc": "Membrana impermeabilizante líquida (bote 4 kg)", "ud": "ud", "cant": 1, "pvp": 18.00, "precio": 18.00},
+
+        {"tipo": "titulo", "desc": "CAP 06 - FALSOS TECHOS Y PLADUR"},
+        {"id": "MT-06.01", "desc": "Placa cartón-yeso hidrófugo H1 13 mm (120×250 cm)", "ud": "ud", "cant": 5, "pvp": 8.00, "precio": 7.20},
+        {"id": "MT-06.02", "desc": "Placa cartón-yeso estándar A1 13 mm (120×250 cm)", "ud": "ud", "cant": 9, "pvp": 6.12, "precio": 5.51},
+        {"id": "MT-06.03", "desc": "Perfil montante galvanizado 48/3000 mm", "ud": "ud", "cant": 15, "pvp": 2.02, "precio": 1.88},
+        {"id": "MT-06.04", "desc": "Perfil canal galvanizado 48/3000 mm", "ud": "ud", "cant": 8, "pvp": 1.90, "precio": 1.77},
+        {"id": "MT-06.05", "desc": "Pasta de juntas Placo PR2 (saco 20 kg)", "ud": "ud", "cant": 2, "pvp": 9.50, "precio": 9.50},
+        {"id": "MT-06.06", "desc": "Cinta de juntas papel kraft (rollo 50 m)", "ud": "ud", "cant": 2, "pvp": 3.50, "precio": 3.50},
+        {"id": "MT-06.07", "desc": "Tornillo autotaladrante PB 3,5×25 mm (caja 500 ud)", "ud": "ud", "cant": 1, "pvp": 5.50, "precio": 5.50},
+
+        {"tipo": "titulo", "desc": "CAP 07 - PINTURA"},
+        {"id": "MT-07.01", "desc": "Pintura plástica mate lavable interior (cubo 15 L)", "ud": "ud", "cant": 3, "pvp": 15.00, "precio": 15.00},
+        {"id": "MT-07.02", "desc": "Pintura antihumedad interior (bote 750 mL)", "ud": "ud", "cant": 1, "pvp": 8.50, "precio": 8.50},
+        {"id": "MT-07.03", "desc": "Imprimación fijadora transparente (garrafa 5 L)", "ud": "ud", "cant": 2, "pvp": 10.00, "precio": 10.00},
+        {"id": "MT-07.04", "desc": "Masilla plástica de alisado (cubo 20 kg)", "ud": "ud", "cant": 3, "pvp": 11.00, "precio": 11.00},
+        {"id": "MT-07.05", "desc": "Cinta de carrocero 50 mm (rollo)", "ud": "ud", "cant": 4, "pvp": 2.50, "precio": 2.50},
+        {"id": "MT-07.06", "desc": "Film protector plástico 4m×50m (rollo)", "ud": "ud", "cant": 1, "pvp": 10.50, "precio": 10.50},
+
+        {"tipo": "titulo", "desc": "CAP 08 - MOBILIARIO DE COCINA"},
+        {"id": "MT-08.01", "desc": "Módulos cocina línea baja 60 cm ×5 (incl. esquinero) — Ikea Metod o similar", "ud": "ud", "cant": 1, "pvp": 480.00, "precio": 480.00},
+        {"id": "MT-08.02", "desc": "Módulos cocina línea alta 60 cm ×4 — Ikea Metod o similar", "ud": "ud", "cant": 1, "pvp": 300.00, "precio": 300.00},
+        {"id": "MT-08.03", "desc": "Frentes lacados + herrajes completos (puertas, cajones, bisagras, tiradores)", "ud": "ud", "cant": 1, "pvp": 420.00, "precio": 420.00},
+        {"id": "MT-08.04", "desc": "Columna horno-microondas 220 cm con frente lacado", "ud": "ud", "cant": 1, "pvp": 150.00, "precio": 150.00},
+        {"id": "MT-08.05", "desc": "Fregadero inox 1 seno + escurridor Teka Centroval 50 o equivalente", "ud": "ud", "cant": 1, "pvp": 85.00, "precio": 65.00},
+
+        {"tipo": "titulo", "desc": "CAP 09 - ENCIMERA"},
+        {"id": "MT-09.01", "desc": "Encimera cuarzo compacto 2 cm (Compac Basic / Silestone Entry o equiv.) — 3 ml", "ud": "ud", "cant": 1, "pvp": 345.00, "precio": 240.00},
+        {"id": "MT-09.02", "desc": "Perfil aluminio zócalo posterior 3 ml, acabado cromo mate", "ud": "ud", "cant": 1, "pvp": 12.00, "precio": 12.00},
+
+        {"tipo": "titulo", "desc": "CAP 10 - SANITARIOS Y MOBILIARIO DE BAÑO"},
+        {"id": "MT-10.01", "desc": "Inodoro compacto Roca Debba + cisterna + tapa amortiguada", "ud": "ud", "cant": 1, "pvp": 185.00, "precio": 155.00},
+        {"id": "MT-10.02", "desc": "Mueble baño suspendido 60 cm + lavabo integrado Leroy Merlin Remix o equiv.", "ud": "ud", "cant": 1, "pvp": 295.00, "precio": 270.00},
+        {"id": "MT-10.03", "desc": "Espejo retroiluminado LED 60×80 cm con interruptor táctil", "ud": "ud", "cant": 1, "pvp": 90.00, "precio": 75.00},
+        {"id": "MT-10.04", "desc": "Plato ducha resina extraplano 70×120 cm Roca Terran o equivalente", "ud": "ud", "cant": 1, "pvp": 160.00, "precio": 135.00},
+        {"id": "MT-10.05", "desc": "Mampara ducha fija+abatible alum. cromado vidrio templado 6 mm Profiltek", "ud": "ud", "cant": 1, "pvp": 210.00, "precio": 175.00},
+        {"id": "MT-10.06", "desc": "Set accesorios baño inox: toallero 60cm + portarrollos + gancho", "ud": "ud", "cant": 1, "pvp": 75.00, "precio": 55.00},
+        {"id": "MT-10.07", "desc": "Silicona sanitaria blanca (cartucho 310 ml)", "ud": "ud", "cant": 5, "pvp": 3.80, "precio": 3.80},
+
+        {"tipo": "titulo", "desc": "CAP 11 - CARPINTERÍA Y REMATES"},
+        {"id": "MT-11.01", "desc": "Puerta paso lacada blanca 70 cm + marco + tapajuntas + pomo inox + rejilla", "ud": "ud", "cant": 1, "pvp": 210.00, "precio": 150.00},
+        {"id": "MT-11.02", "desc": "Tapajuntas MDF lacado blanco (par 220 cm)", "ud": "ud", "cant": 3, "pvp": 4.50, "precio": 4.50},
+        {"id": "MT-11.03", "desc": "Espuma de poliuretano baja expansión (bote 750 mL)", "ud": "ud", "cant": 2, "pvp": 7.50, "precio": 7.50},
+        {"id": "MT-11.04", "desc": "Silicona neutra transparente (cartucho 310 mL)", "ud": "ud", "cant": 3, "pvp": 3.80, "precio": 3.80},
+
+        {"tipo": "titulo", "desc": "CAP 12 - LICENCIAS Y CONTENEDOR"},
+        {"id": "MT-12.01", "desc": "Contenedor escombros 5 m³ — alquiler 7 días + transporte + vertido autorizado", "ud": "ud", "cant": 1, "pvp": 180.00, "precio": 180.00},
+        {"id": "MT-12.02", "desc": "Tasa municipal ocupación vía pública Ayto. Murcia", "ud": "ud", "cant": 1, "pvp": 85.00, "precio": 85.00},
+        {"id": "MT-12.03", "desc": "Certificado de gestión RCD — planta autorizada (empresa externa)", "ud": "ud", "cant": 1, "pvp": 25.00, "precio": 25.00},
+
+        {"tipo": "titulo", "desc": "CAP 13 - LIMPIEZA FINAL"},
+        {"id": "MT-13.01", "desc": "Productos de limpieza profesional + paños + bolsas de residuos", "ud": "ud", "cant": 1, "pvp": 45.00, "precio": 45.00}
+    ]
+}

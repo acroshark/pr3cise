@@ -1,0 +1,14 @@
+{
+  "presupuestos": [
+    {
+      "id": "juandeborbon",
+      "nombre": "Juan de Borbón",
+      "descripcion": "Reforma integral de vivienda. Juan de Borbón, Murcia."
+    },
+    {
+      "id": "fuensanta",
+      "nombre": "Fuensanta — Cocina y Baño",
+      "descripcion": "Reforma integral de cocina y baño. C/ Fuensanta 116, 2.º A, Murcia. Franci Nelly Linares Rodríguez."
+    }
+  ]
+}

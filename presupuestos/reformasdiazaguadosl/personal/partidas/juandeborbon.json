@@ -1,0 +1,471 @@
+{
+    "info": {
+        "titulo": "Juan de Borbón",
+        "descripcion": "Reforma integral de vivienda. Albañilería, fontanería, pladur, carpintería y pintura.",
+        "ubicacion": "Juan de Borbón, Murcia",
+        "logo": "assets/img/logo.png",
+        "referencia": "PRE-JDB-2026-001"
+    },
+    "config": {
+        "BI": 0.06,
+        "GG": 0.12,
+        "IVA": 0.1
+    },
+    "capitulos": {
+        "01": "ALBAÑILERÍA Y DEMOLICIÓN",
+        "02": "FONTANERÍA",
+        "03": "PLADUR",
+        "04": "CARPINTERÍA",
+        "05": "PINTURA",
+        "06": "OTROS GASTOS"
+    },
+    "dataCoste": [
+        { "id": "01.01", "cap": "01", "ud": "ud", "cant": 2, "mo": 140, "mat": 0,
+            "titulo": "Vaciado y retirada de baños (×2)",
+            "desc": "Desmontaje completo de sanitarios, grifería y accesorios con medios manuales en dos estancias de baño. Se obturan provisionalmente las conducciones de agua y saneamiento, se desmonta el plato de ducha o bañera existente y se carga el material sobre contenedor para su retirada a vertedero autorizado. Los trabajos se ejecutan sin afectar a la estabilidad estructural del inmueble.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 2.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 3.20, "precio": 25.00}
+            ]
+        },
+        { "id": "01.02", "cap": "01", "ud": "ud", "cant": 1, "mo": 85, "mat": 0,
+            "titulo": "Vaciado completo de cocina",
+            "desc": "Desmontaje de la totalidad del mobiliario de cocina existente: módulos altos, bajos, columnas y encimera. Incluye desconexión de electrodomésticos encastrados, retirada ordenada de todos los elementos y carga del material resultante sobre contenedor para su transporte a vertedero autorizado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 1.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 2.20, "precio": 25.00}
+            ]
+        },
+        { "id": "01.03", "cap": "01", "ud": "ml", "cant": 82, "mo": 5.50, "mat": 0.20,
+            "titulo": "Retirada de rodapié (82 ml)",
+            "desc": "Levantado manual del rodapié existente en toda la vivienda a lo largo de 82 metros lineales. Se actúa con precaución para no dañar el pavimento adyacente. Tras la retirada se repara la banda inferior del paramento vertical con yeso de acabado, dejando la superficie lista para recibir el nuevo rodapié.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.22, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Yeso de reparación (banda inferior paramento)", "ud": "kg", "rend": 0.08, "precio": 2.50}
+            ]
+        },
+        { "id": "01.04", "cap": "01", "ud": "ml", "cant": 22, "mo": 27.50, "mat": 0,
+            "titulo": "Demolición de tabiques (22 ml)",
+            "desc": "Demolición manual de tabiques de fábrica de ladrillo en una longitud de 22 ml. Los trabajos se ejecutan con medios manuales para controlar vibraciones y reducir el polvo. Los escombros se cargan sobre contenedor y se transportan a vertedero autorizado. Incluye limpieza y saneado de la zona de trabajo.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 1.10, "precio": 25.00}
+            ]
+        },
+        { "id": "01.05", "cap": "01", "ud": "ud", "cant": 1, "mo": 57.50, "mat": 18.50,
+            "titulo": "Sustitución de premarco de puerta",
+            "desc": "Retirada del premarco de puerta existente y colocación de nuevo premarco de MDF con las dimensiones exactas del hueco. Incluye aplomado, fijación mecánica al tabique y sellado perimetral con espuma de poliuretano expandido para evitar corrientes de aire y garantizar el correcto asiento de la hoja.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 1.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.50, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Premarco MDF + espuma de poliuretano", "ud": "ud", "rend": 1.00, "precio": 18.50}
+            ]
+        },
+        { "id": "01.06", "cap": "01", "ud": "ud", "cant": 1, "mo": 170, "mat": 23,
+            "titulo": "Tabicado de hueco de puerta de paso",
+            "desc": "Cierre de un hueco de puerta de paso mediante fábrica de ladrillo hueco de 7 cm, recibido con mortero de cemento y replanteo previo. Posterior enlucido de yeso por ambas caras para integrar el nuevo paño con los paramentos existentes. El resultado queda perfectamente acabado y listo para recibir pintura o cualquier otro revestimiento final.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 3.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 3.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Ladrillo hueco + mortero de cemento + yeso", "ud": "ud", "rend": 1.00, "precio": 23.00}
+            ]
+        },
+        { "id": "01.07", "cap": "01", "ud": "m2", "cant": 5, "mo": 20.00, "mat": 0.50,
+            "titulo": "Demolición y preparación de suelo (5 m²)",
+            "desc": "Demolición del pavimento cerámico existente en 5 m² con medios mecánicos controlados. Retirada de escombros y nivelación de la base mediante capa de mortero de regularización, obteniendo una superficie plana, firme y en cota preparada para la colocación del nuevo pavimento porcelánico indicado en proyecto.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.56, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.20, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT02", "desc": "Mortero de regularización", "ud": "m2", "rend": 1.00, "precio": 0.50}
+            ]
+        },
+        { "id": "01.08", "cap": "01", "ud": "m2", "cant": 20, "mo": 18.00, "mat": 0,
+            "titulo": "Demolición de alicatado en baños (20 m²)",
+            "desc": "Demolición del revestimiento cerámico en paramentos verticales de zonas húmedas (20 m²). Se retira el azulejo y se pica el mortero de agarre hasta dejar el soporte de fábrica limpio y saneado. Se aplica capa de mortero de regularización para devolver la superficie a plomo y dejarla en condiciones óptimas para recibir el nuevo alicatado.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.72, "precio": 25.00}
+            ]
+        },
+        { "id": "01.09", "cap": "01", "ud": "ud", "cant": 2, "mo": 15, "mat": 2,
+            "titulo": "Reparación de encuentros en pared (×2)",
+            "desc": "Reparación de dos uniones frontales en paramento vertical generadas al demoler tabiques o revestimientos contiguos. Se aplica yeso de reparación sobre el área afectada para restablecer la continuidad del enlucido existente, integrando el nuevo paño con el antiguo. El acabado queda listo para alisado y pintura.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Yeso de reparación + cinta de juntas", "ud": "ud", "rend": 1.00, "precio": 2.00}
+            ]
+        },
+        { "id": "01.10", "cap": "01", "ud": "ud", "cant": 9, "mo": 22.50, "mat": 3,
+            "titulo": "Reparación de esquinas con cantonera (×9)",
+            "desc": "Reparación de nueve aristas verticales dañadas durante los trabajos de demolición. Se instala cantonera de yeso galvanizada como guía y refuerzo de la esquina, y se aplica yeso de reparación hasta obtener una arista recta y resistente a golpes. Acabado perfectamente integrado con el paramento y listo para pintura.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.75, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Cantonera galvanizada + yeso de reparación", "ud": "ud", "rend": 1.00, "precio": 3.00}
+            ]
+        },
+        { "id": "01.11", "cap": "01", "ud": "ud", "cant": 6, "mo": 15, "mat": 2,
+            "titulo": "Reparación de encuentros en techo (×6)",
+            "desc": "Reparación de seis uniones y roces en el plano del techo originados por los trabajos de demolición o retirada de elementos. Se aplica yeso de reparación para restablecer la continuidad del revestimiento y corregir cualquier irregularidad, dejando la superficie homogénea y lista para alisado y pintura.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Yeso de reparación + cinta de juntas", "ud": "ud", "rend": 1.00, "precio": 2.00}
+            ]
+        },
+        { "id": "01.12", "cap": "01", "ud": "m2", "cant": 23.3, "mo": 7, "mat": 0.35,
+            "titulo": "Guarnecido y enlucido de yeso (23,3 m²)",
+            "desc": "Aplicación de guarnecido y enlucido de yeso en polvo sobre 23,3 m² de paramentos verticales, en las zonas donde se ha demolido o reparado el revestimiento existente. Incluye colocación de maestras de referencia y corrección de irregularidades para obtener una superficie plana, uniforme y con el acabado liso requerido antes de pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería (yesero)", "ud": "h", "rend": 0.233, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT-01.01", "desc": "Yeso en polvo", "ud": "kg", "rend": 3.50, "precio": 0.10}
+            ]
+        },
+        { "id": "01.13", "cap": "01", "ud": "ml", "cant": 15, "mo": 14, "mat": 0.30,
+            "titulo": "Rozas en yeso para instalaciones (15 ml)",
+            "desc": "Apertura de rozas en paramento revestido con yeso a lo largo de 15 ml para el paso de nuevas tuberías o cableado de instalaciones. Una vez ejecutada la instalación correspondiente, la roza se cierra con yeso de reparación, se nivela con el paramento existente y queda lista para pintar sin rastro del corte.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.40, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.133, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Yeso de cierre de roza", "ud": "ml", "rend": 1.00, "precio": 0.30}
+            ]
+        },
+        { "id": "01.14", "cap": "01", "ud": "ml", "cant": 20, "mo": 16.50, "mat": 0.50,
+            "titulo": "Rozas en fábrica para instalaciones (20 ml)",
+            "desc": "Apertura de rozas en tabique o muro de fábrica a lo largo de 20 ml para alojar tuberías de fontanería o conducciones eléctricas. El cierre se realiza con mortero de cemento, consiguiendo solidez y continuidad estructural con el paramento. La superficie queda preparada para recibir el revestimiento o acabado final.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.40, "precio": 25.00},
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 0.217, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT02", "desc": "Mortero de cemento para cierre de roza", "ud": "ml", "rend": 1.00, "precio": 0.50}
+            ]
+        },
+        { "id": "01.15", "cap": "01", "ud": "ud", "cant": 2, "mo": 85, "mat": 6,
+            "titulo": "Instalación de platos de ducha (×2)",
+            "desc": "Colocación e instalación de dos platos de ducha aportados por la propiedad. Incluye nivelación sobre lecho de mortero o patas regulables, sellado perimetral con silicona neutra anti-moho, conexión al desagüe existente mediante bote sifónico y comprobación de estanqueidad. El material es suministrado por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 2.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Silicona neutra anti-moho + bote sifónico", "ud": "ud", "rend": 1.00, "precio": 6.00}
+            ]
+        },
+        { "id": "01.16", "cap": "01", "ud": "ud", "cant": 3, "mo": 170, "mat": 11,
+            "titulo": "Instalación de ventanas nuevas (×3)",
+            "desc": "Desmontaje de la carpintería metálica existente y colocación de tres nuevas ventanas suministradas por el cliente. Incluye sellado perimetral del marco con espuma de poliuretano de baja expansión y silicona exterior, ajuste y regulación de herrajes de apertura y cierre y comprobación del correcto funcionamiento de cada hoja. El material es aportado por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 3.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 3.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Espuma de poliuretano + silicona exterior + consumibles", "ud": "ud", "rend": 1.00, "precio": 11.00}
+            ]
+        },
+        { "id": "01.17", "cap": "01", "ud": "ud", "cant": 1, "mo": 85, "mat": 5,
+            "titulo": "Adecuación de caja de persiana",
+            "desc": "Trabajo adicional por desmontaje del cajón de persiana antiguo y cierre del hueco resultante para permitir la correcta instalación de la nueva ventana. El cierre se ejecuta con yeso o mortero según el soporte, y el acabado queda integrado con los paramentos perimetrales y listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería", "ud": "h", "rend": 1.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 1.60, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Yeso/mortero de cierre + consumibles", "ud": "ud", "rend": 1.00, "precio": 5.00}
+            ]
+        },
+        { "id": "01.18", "cap": "01", "ud": "m2", "cant": 39.1, "mo": 15.00, "mat": 2.25,
+            "titulo": "Alicatado de paredes en zonas húmedas (39,1 m²)",
+            "desc": "Colocación de revestimiento cerámico en paramentos verticales de baños y cocina (39,1 m²) con mortero cola tipo C2TE de alta adherencia y deformabilidad. Se utilizan crucetas de separación para mantener un despiece uniforme y se sellan las juntas con lechada de color. Incluye cortes perimetrales, encuentros con huecos y sellado de remates con silicona neutra. El azulejo es suministrado por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería (azulejero)", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Mortero cola C2TE (4 kg/m²)", "ud": "kg", "rend": 4.00, "precio": 0.45}
+            ]
+        },
+        { "id": "01.19", "cap": "01", "ud": "m2", "cant": 12.3, "mo": 21.25, "mat": 1,
+            "titulo": "Colocación de pavimento porcelánico (12,3 m²)",
+            "desc": "Colocación de pavimento porcelánico sobre capa de mortero cola tipo C1 en las zonas indicadas (12,3 m²). Incluye replanteo del despiece, cortes perimetrales y en esquinas, colocación de rodapié y sellado de juntas con lechada. Los encuentros de distinto pavimento se resuelven con perfil de aluminio. El pavimento y el rodapié son suministrados por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Albañilería (solador)", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería", "ud": "h", "rend": 0.25, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT02", "desc": "Mortero cola C1 (4 kg/m²)", "ud": "kg", "rend": 4.00, "precio": 0.25}
+            ]
+        },
+        { "id": "02.01", "cap": "02", "ud": "ud", "cant": 6, "mo": 160, "mat": 36,
+            "titulo": "Punto de agua completo + desagüe (×6)",
+            "desc": "Instalación de acometida completa de agua fría y caliente más conexión de desagüe para un aparato sanitario (ducha, bañera, lavabo, inodoro, fregadero o lavadora). Incluye tubería multicapa, codos, tes, racores de compresión, llave de corte individual, sifón, latiguillos flexibles, prueba de presión y puesta en servicio. Los aparatos sanitarios son suministrados por el cliente; la empresa aporta todos los materiales de instalación.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 4.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Ayudante Fontanía", "ud": "h", "rend": 1.60, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubería multicapa, racores, llaves, sifón y latiguillos", "ud": "ud", "rend": 1.00, "precio": 36.00}
+            ]
+        },
+        { "id": "02.02", "cap": "02", "ud": "ud", "cant": 1, "mo": 90, "mat": 20,
+            "titulo": "Punto de agua fría y caliente sin desagüe (×1)",
+            "desc": "Instalación de toma de agua fría y caliente sin conexión de desagüe, para acometidas especiales como calentadores, radiadores o tomas auxiliares. Incluye tubería multicapa, racores de compresión, llave de corte y prueba de estanqueidad. El aparato es suministrado por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 2.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Ayudante Fontanía", "ud": "h", "rend": 0.60, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubería multicapa, racores y llave de corte", "ud": "ud", "rend": 1.00, "precio": 20.00}
+            ]
+        },
+        { "id": "02.03", "cap": "02", "ud": "ud", "cant": 2, "mo": 70, "mat": 12,
+            "titulo": "Punto de agua fría (×2)",
+            "desc": "Instalación de dos tomas independientes de agua fría para aparatos con alimentación simple (lavavajillas, nevera con dispensador de agua, etc.). Incluye tubería multicapa, racores de compresión, llave de corte individual para cada punto y prueba de estanqueidad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 2.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Ayudante Fontanía", "ud": "h", "rend": 0.40, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tubería, llave de corte y racores", "ud": "ud", "rend": 1.00, "precio": 12.00}
+            ]
+        },
+        { "id": "02.04", "cap": "02", "ud": "ud", "cant": 4, "mo": 30, "mat": 14,
+            "titulo": "Llaves de sectorización por cuarto húmedo (×4)",
+            "desc": "Instalación de cuatro pares de llaves de paso para el aislamiento independiente de cada cuarto húmedo. Cada unidad incluye una llave de agua fría y otra de agua caliente, ambas de cuerpo de latón cromado, conexionadas con tubería multicapa y verificadas en carga y funcionamiento.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Fontanero", "ud": "h", "rend": 1.00, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "2 llaves de paso latón cromado + racores", "ud": "ud", "rend": 1.00, "precio": 14.00}
+            ]
+        },
+        { "id": "03.01", "cap": "03", "ud": "m2", "cant": 37, "mo": 11, "mat": 7,
+            "titulo": "Tabiques de cartón-yeso estándar (37 m²)",
+            "desc": "Ejecución de 37 m² de tabique de cartón-yeso con estructura de perfiles metálicos galvanizados: montantes de 48 mm a 400 mm de intereje y canales perimetrales atornillados a suelo y techo. Doble aplacado en ambas caras con placa BA13 de 15 mm, masillado de juntas con cinta de papel y pasta, rincones y esquinas rematados. Acabado completamente liso y listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.25, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.14, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa BA13 + perfiles metálicos + pasta y cinta", "ud": "m2", "rend": 1.00, "precio": 7.00}
+            ]
+        },
+        { "id": "03.02", "cap": "03", "ud": "m2", "cant": 10, "mo": 11, "mat": 7,
+            "titulo": "Tabiques hidrófugos en zonas húmedas (10 m²)",
+            "desc": "Ejecución de 10 m² de tabique de cartón-yeso con placa resistente a la humedad PPM13 (placa verde) en ambas caras, para su uso en cuartos de baño y zonas expuestas a vapor de agua. Mismo sistema constructivo que el tabique estándar: estructura metálica, doble aplacado, masillado y acabado listo para recibir alicatado cerámico o pintura especial.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.25, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.14, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa PPM13 hidrófugo + perfiles metálicos + pasta y cinta", "ud": "m2", "rend": 1.00, "precio": 7.00}
+            ]
+        },
+        { "id": "03.03", "cap": "03", "ud": "m2", "cant": 5, "mo": 22.50, "mat": 4.50,
+            "titulo": "Falso techo de cartón-yeso (5 m²)",
+            "desc": "Ejecución de 5 m² de falso techo continuo suspendido del forjado mediante estructura de perfilería metálica galvanizada nivelada. Aplacado con placa BA13 de 15 mm atornillada a la estructura, masillado de juntas con cinta de papel y acabado completamente liso y listo para pintar. Permite ocultar instalaciones, mejorar la acústica y dotar de uniformidad visual al techo.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.30, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa BA13 + perfilería suspendida + pasta y cinta", "ud": "m2", "rend": 1.00, "precio": 4.50}
+            ]
+        },
+        { "id": "03.04", "cap": "03", "ud": "m2", "cant": 5, "mo": 22.50, "mat": 6,
+            "titulo": "Falso techo hidrófugo en baños (5 m²)",
+            "desc": "Ejecución de 5 m² de falso techo suspendido en zonas húmedas con placa PPM13 resistente a la humedad (placa verde), especialmente indicado para baños y cocinas con vapor de agua. Sistema constructivo idéntico al falso techo estándar: estructura metálica, aplacado hidrófugo, masillado y acabado listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.30, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa PPM13 hidrófugo + perfilería suspendida + pasta", "ud": "m2", "rend": 1.00, "precio": 6.00}
+            ]
+        },
+        { "id": "03.05", "cap": "03", "ud": "ml", "cant": 12.5, "mo": 20, "mat": 3.50,
+            "titulo": "Cajones de pladur para cortinas (12,5 ml)",
+            "desc": "Ejecución de 12,5 ml de cajón continuo de cartón-yeso en el encuentro techo-pared para alojar y ocultar el riel o barra de cortina. Incluye estructura metálica interior, aplacado, masillado y acabado completamente listo para pintar. Resuelve la instalación de cortinas de forma limpia, sin molduras ni perfiles volados visibles desde el interior.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Perfilería + placa + pasta y cinta", "ud": "ml", "rend": 1.00, "precio": 3.50}
+            ]
+        },
+        { "id": "03.06", "cap": "03", "ud": "ud", "cant": 3, "mo": 57.50, "mat": 13,
+            "titulo": "Premarcos de puertas integrados en pladur (×3)",
+            "desc": "Colocación de tres premarcos de madera o MDF integrados en la estructura del tabique de cartón-yeso para recibir correctamente las hojas de puerta. Incluye aplomado, fijación mecánica a la perfilería existente y refuerzo de la zona del hueco con montantes adicionales para garantizar la rigidez y estabilidad del conjunto.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 1.50, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.50, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Premarco MDF + tornillería y montantes de refuerzo", "ud": "ud", "rend": 1.00, "precio": 13.00}
+            ]
+        },
+        { "id": "03.07", "cap": "03", "ud": "ud", "cant": 3, "mo": 90, "mat": 15,
+            "titulo": "Mochetas en baños y armarios (×3)",
+            "desc": "Ejecución de tres mochetas en cartón-yeso para rematar los laterales de los huecos de paso en baños o armarios empotrados. Cada mocheta incluye estructura metálica independiente, aplacado de placa BA13 o hidrófuga según la zona, masillado de juntas y acabado completamente listo para pintar o alicatar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 2.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 1.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa + perfilería + pasta y cinta", "ud": "ud", "rend": 1.00, "precio": 15.00}
+            ]
+        },
+        { "id": "03.08", "cap": "03", "ud": "ud", "cant": 2, "mo": 85, "mat": 10,
+            "titulo": "Huecos para hornacinas empotradas (×2)",
+            "desc": "Ejecución de dos cavidades en tabique de cartón-yeso para alojar hornacinas prefabricadas de baño. Incluye replanteo del hueco, refuerzo perimetral de la estructura metálica, aplacado interior con placa hidrófuga, masillado y acabado nivelado para recibir la hornacina suministrada por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 2.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 1.00, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Placa hidrófuga + perfilería + pasta", "ud": "ud", "rend": 1.00, "precio": 10.00}
+            ]
+        },
+        { "id": "03.09", "cap": "03", "ud": "ud", "cant": 7, "mo": 35, "mat": 5,
+            "titulo": "Refuerzos internos en tabiques (×7)",
+            "desc": "Instalación de siete refuerzos interiores de tablero de madera fenólica o perfil metálico adicional dentro del espesor del tabique de cartón-yeso, en los puntos previstos para anclar elementos pesados: barras de armario, toalleros eléctricos, espejos con marco pesado, soportes de TV o similares. Invisible desde el exterior y de máxima resistencia.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 1.00, "precio": 30.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Pladur", "ud": "h", "rend": 0.20, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Tablero fenólico de refuerzo + tornillería", "ud": "ud", "rend": 1.00, "precio": 5.00}
+            ]
+        },
+        { "id": "03.10", "cap": "03", "ud": "ud", "cant": 9, "mo": 15, "mat": 5.12,
+            "titulo": "Tapas de registro 20×20 cm (×9)",
+            "desc": "Ejecución e instalación de nueve tapas de registro de 20×20 cm en tabiques o techos de cartón-yeso para facilitar el acceso a válvulas, conexiones y tramos de instalaciones ocultas. Cada registro incluye marco metálico atornillado al aplacado y tapa abatible o desmontable, con acabado listo para pintar.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.50, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Marco metálico + tapa registro 20×20 cm", "ud": "ud", "rend": 1.00, "precio": 5.12}
+            ]
+        },
+        { "id": "03.11", "cap": "03", "ud": "ud", "cant": 6, "mo": 22.50, "mat": 7.91,
+            "titulo": "Tapas de registro 30×30 cm (×6)",
+            "desc": "Ejecución e instalación de seis tapas de registro de 30×30 cm en tabiques o techos de cartón-yeso. Mayor apertura que el registro estándar, indicado para el acceso a arquetas de fontanería, cajas de derivación de gran formato o válvulas de cierre de mayor diámetro. Marco metálico con tapa desmontable y acabado pintable.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial 1ª Pladur", "ud": "h", "rend": 0.75, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Marco metálico + tapa registro 30×30 cm", "ud": "ud", "rend": 1.00, "precio": 7.91}
+            ]
+        },
+        { "id": "04.01", "cap": "04", "ud": "ud", "cant": 5, "mo": 110, "mat": 8,
+            "titulo": "Colocación de puertas de paso (×5)",
+            "desc": "Instalación de cinco hojas de puerta de paso aportadas por la propiedad sobre los premarcos existentes. Incluye colocación de tapajuntas en ambas caras, montaje de bisagras, instalación de pomo o manilla, ajuste del cierre magnético o de resbalón y sellado de los encuentros con silicona incolora. El material completo (hoja, marco, tapajuntas y herrajes) es suministrado por el cliente.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 2.00, "precio": 45.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 0.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Silicona incolora + tornillería de montaje", "ud": "ud", "rend": 1.00, "precio": 8.00}
+            ]
+        },
+        { "id": "04.02", "cap": "04", "ud": "ml", "cant": 83, "mo": 7, "mat": 1,
+            "titulo": "Instalación de tarima flotante y rodapié (83 ml)",
+            "desc": "Instalación de tarima flotante suministrada por el cliente en todas las estancias indicadas, sobre lámina separadora amortiguadora. Incluye la colocación del rodapié perimetral con adhesivo de contacto, los perfiles de transición entre estancias o diferentes acabados y todos los cortes de ajuste perimetral. La tarima, el rodapié y la lámina base son aportados por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 0.28, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Adhesivo rodapié + perfiles de transición", "ud": "ml", "rend": 1.00, "precio": 1.00}
+            ]
+        },
+        { "id": "04.03", "cap": "04", "ud": "ud", "cant": 1, "mo": 435, "mat": 10,
+            "titulo": "Montaje completo de cocina",
+            "desc": "Montaje e instalación completa del mobiliario de cocina suministrado por el cliente: módulos bajos y altos con nivelación y anclaje a pared, columnas, colocación e instalación de la encimera, montaje del fregadero y conexión al suministro de agua. Ajuste final de bisagras, cajones y herrajes de cierre. El mobiliario, electrodomésticos y encimera son aportados por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 7.00, "precio": 45.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 4.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Adhesivos, silicona y consumibles de montaje", "ud": "ud", "rend": 1.00, "precio": 10.00}
+            ]
+        },
+        { "id": "04.04", "cap": "04", "ud": "ud", "cant": 1, "mo": 205, "mat": 5,
+            "titulo": "Montaje de armario — zona 1",
+            "desc": "Montaje e instalación del primer armario empotrado o exento suministrado por el cliente, en la ubicación indicada en plano. Incluye nivelación, anclaje mecánico a suelo, techo y pared según corresponda, colocación de puertas correderas o batientes, instalación de herrajes y barras interiores y ajuste de cierres. El armario completo es aportado por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 3.00, "precio": 45.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 2.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Material de anclaje y herrajes auxiliares", "ud": "ud", "rend": 1.00, "precio": 5.00}
+            ]
+        },
+        { "id": "04.05", "cap": "04", "ud": "ud", "cant": 1, "mo": 205, "mat": 5,
+            "titulo": "Montaje de armario — zona 2",
+            "desc": "Montaje e instalación del segundo armario suministrado por el cliente en la ubicación designada. Mismas condiciones técnicas que la partida anterior: nivelación, anclaje, colocación de puertas y ajuste de todos los herrajes interiores y de cierre. El armario completo es aportado por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 3.00, "precio": 45.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 2.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Material de anclaje y herrajes auxiliares", "ud": "ud", "rend": 1.00, "precio": 5.00}
+            ]
+        },
+        { "id": "04.06", "cap": "04", "ud": "ud", "cant": 1, "mo": 205, "mat": 5,
+            "titulo": "Montaje de armario — zona 3",
+            "desc": "Montaje e instalación del tercer armario suministrado por el cliente en la ubicación designada. Mismas condiciones técnicas que las partidas anteriores. El armario completo, puertas y herrajes son aportados por la propiedad.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Carpintero", "ud": "h", "rend": 3.00, "precio": 45.00},
+                {"tipo": "mo", "codigo": "MO02", "desc": "Auxiliar Carpintería", "ud": "h", "rend": 2.80, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Material de anclaje y herrajes auxiliares", "ud": "ud", "rend": 1.00, "precio": 5.00}
+            ]
+        },
+        { "id": "05.01", "cap": "05", "ud": "m2", "cant": 177, "mo": 7, "mat": 1.10,
+            "titulo": "Alisado y preparación de paramentos (177 m²)",
+            "desc": "Aplicación de masilla plástica de acabado sobre 177 m² de paramentos verticales y techos para eliminar poros, marcas de juntas de pladur, irregularidades del yeso y cualquier otra imperfección superficial. Incluye lijado intermedio, lijado final con lija de grano fino y aplicación de imprimación selladora que prepara el soporte para recibir la pintura en condiciones óptimas de adherencia.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 0.233, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Masilla plástica de acabado + lija", "ud": "m2", "rend": 1.00, "precio": 1.10}
+            ]
+        },
+        { "id": "05.02", "cap": "05", "ud": "m2", "cant": 240, "mo": 5.75, "mat": 0.40,
+            "titulo": "Pintura plástica mate lavable (240 m²)",
+            "desc": "Aplicación de pintura plástica mate lavable en dos manos sobre 240 m² de paramentos verticales y techos previamente alisados e imprimados. Incluye protección de carpinterías, rodapiés y encuentros con film plástico y cinta de carrocero, aplicación de fondo y dos capas de acabado con rodillo de pelo corto. El color definitivo será elegido por el cliente antes del inicio de los trabajos.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO01", "desc": "Oficial Pintor", "ud": "h", "rend": 0.192, "precio": 30.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Pintura plástica mate lavable + fondo sellador", "ud": "m2", "rend": 1.00, "precio": 0.40}
+            ]
+        },
+        { "id": "06.01", "cap": "06", "ud": "dia", "cant": 20, "mo": 10.83, "mat": 2.86,
+            "descCliente": "Desplazamientos a obra (20 días · 5,5 km ida/vuelta)",
+            "desc": "Desplazamiento diario ida y vuelta a obra. Trayecto: C. Sta. Rosa, 10, Santiago El Mayor, 30012, Murcia → Av. Juan de Borbón, Murcia. Distancia: 5,5 km (11 km ida y vuelta). Tiempo: ~13 min/trayecto. Coste combustible/desgaste vehículo: 11 km × 0,26 €/km = 2,86 €/día. Tiempo de desplazamiento: 26 min × tarifa peón = 10,83 €/día. Estimación: 20 días de obra.",
+            "descompuesto": [
+                {"tipo": "mo", "codigo": "MO02", "desc": "Peón Albañilería (tiempo desplazamiento, 26 min)", "ud": "h", "rend": 0.433, "precio": 25.00},
+                {"tipo": "mat", "codigo": "MT01", "desc": "Combustible y desgaste vehicular (11 km × 0,26 €/km)", "ud": "dia", "rend": 1.00, "precio": 2.86}
+            ]
+        },
+        { "id": "06.02", "cap": "06", "ud": "ud", "cant": 1, "mo": 0, "mat": 100,
+            "descCliente": "Consumibles y gastos auxiliares menores de obra",
+            "desc": "Consumibles, material auxiliar menor y gastos varios no incluidos en otras partidas: protecciones plásticas, cinta de carrocero, lija manual, clavos, tacos, tornillería de pequeño formato, cubos, espumas de limpieza y gestión de pequeños residuos. Estimación para obra de reforma completa de vivienda."
+        },
+        { "id": "06.03", "cap": "06", "ud": "ud", "cant": 1, "mo": 0, "mat": 150,
+            "descCliente": "Gestión de RCD y retirada a vertedero autorizado",
+            "desc": "Gestión integral de los residuos de construcción y demolición (RCD) generados durante la obra: separación en origen de las fracciones principales (escombro cerámico, madera y metal), carga, transporte y entrega en planta de gestión autorizada con emisión del certificado legal de recepción del vertido. Precio estimado mínimo para la volumetría de residuos prevista en esta reforma."
+        }
+    ],
+    "dataMaterial": [
+        {"tipo": "titulo", "desc": "CAP 01 - ALBAÑILERÍA Y DEMOLICIÓN"},
+        {"id": "MT-01.01", "desc": "Yeso en polvo (saco 25 kg)", "ud": "ud", "cant": 15, "pvp": 2.50, "precio": 2.50},
+        {"id": "MT-01.02", "desc": "Mortero de cemento gris (saco 25 kg)", "ud": "ud", "cant": 5, "pvp": 1.81, "precio": 1.81},
+        {"id": "MT-01.03", "desc": "Ladrillo tabicón hueco 7 cm", "ud": "ud", "cant": 35, "pvp": 0.48, "precio": 0.48},
+        {"id": "MT-01.04", "desc": "Cantonera de yeso 2,5 m", "ud": "ud", "cant": 9, "pvp": 1.85, "precio": 1.85},
+        {"id": "MT-01.05", "desc": "Premarco de puerta MDF", "ud": "ud", "cant": 1, "pvp": 18.50, "precio": 18.50},
+        {"id": "MT-01.06", "desc": "Plato de ducha", "ud": "ud", "cant": 2, "precio": 0},
+        {"id": "MT-01.07", "desc": "Ventana PVC hasta 140×140 cm", "ud": "ud", "cant": 3, "precio": 0},
+        {"id": "MT-01.08", "desc": "Espuma de poliuretano expansivo (bote 750 ml)", "ud": "ud", "cant": 3, "pvp": 7.50, "precio": 7.50},
+        {"id": "MT-01.09", "desc": "Adhesivo cementoso C2 TE para alicatado (saco 25 kg)", "ud": "ud", "cant": 7, "pvp": 9.50, "precio": 9.50},
+        {"id": "MT-01.10", "desc": "Azulejo 31×98 cm", "ud": "m2", "cant": 39.1, "precio": 0},
+        {"id": "MT-01.11", "desc": "Lechada de rejuntado para azulejo (caja 5 kg)", "ud": "ud", "cant": 4, "pvp": 4.50, "precio": 4.50},
+        {"id": "MT-01.12", "desc": "Adhesivo cementoso C1 para pavimento (saco 25 kg)", "ud": "ud", "cant": 3, "pvp": 3.10, "precio": 3.10},
+        {"id": "MT-01.13", "desc": "Pavimento porcelánico 65×65 cm", "ud": "m2", "cant": 12.3, "precio": 0},
+        {"id": "MT-01.14", "desc": "Lechada de rejuntado para pavimento (caja 5 kg)", "ud": "ud", "cant": 1, "pvp": 4.50, "precio": 4.50},
+        {"id": "MT-01.15", "desc": "Silicona sanitaria blanca (cartucho 310 ml)", "ud": "ud", "cant": 6, "pvp": 3.80, "precio": 3.80},
+        {"id": "MT-01.16", "desc": "Crucetas separadoras para azulejo (bolsa 200 ud)", "ud": "ud", "cant": 2, "pvp": 1.80, "precio": 1.80},
+
+        {"tipo": "titulo", "desc": "CAP 02 - FONTANERÍA"},
+        {"id": "MT-02.01", "desc": "Tubo multicapa PEX/AL/PEX Ø16 mm (rollo 25 m)", "ud": "ud", "cant": 4, "pvp": 12.93, "precio": 12.02},
+        {"id": "MT-02.02", "desc": "Tubo multicapa PEX/AL/PEX Ø20 mm (rollo 25 m)", "ud": "ud", "cant": 2, "pvp": 18.50, "precio": 17.21},
+        {"id": "MT-02.03", "desc": "Codo multicapa 90° Ø16 mm", "ud": "ud", "cant": 20, "pvp": 1.20, "precio": 1.12},
+        {"id": "MT-02.04", "desc": "Te multicapa Ø16 mm", "ud": "ud", "cant": 12, "pvp": 1.50, "precio": 1.40},
+        {"id": "MT-02.05", "desc": "Racor multicapa M 1/2\" Ø16 mm", "ud": "ud", "cant": 20, "pvp": 1.80, "precio": 1.67},
+        {"id": "MT-02.06", "desc": "Llave de escuadra interior Ø1/2\"", "ud": "ud", "cant": 18, "pvp": 2.80, "precio": 2.60},
+        {"id": "MT-02.07", "desc": "Sifón lavabo botella extensible PVC 1 1/2\"", "ud": "ud", "cant": 2, "pvp": 3.50, "precio": 3.26},
+        {"id": "MT-02.08", "desc": "Latiguillo flexible acero inox. 40 cm Ø1/2\"", "ud": "ud", "cant": 18, "pvp": 2.10, "precio": 1.95},
+        {"id": "MT-02.09", "desc": "Llave de paso de cuarto húmedo Ø3/4\"", "ud": "ud", "cant": 8, "pvp": 7.50, "precio": 6.98},
+        {"id": "MT-02.10", "desc": "Cinta de teflón PTFE (rollo)", "ud": "ud", "cant": 5, "pvp": 0.85, "precio": 0.79},
+        {"id": "MT-02.11", "desc": "Abrazadera para tubería Ø16 mm (bolsa 25 ud)", "ud": "ud", "cant": 3, "pvp": 2.80, "precio": 2.60},
+        {"id": "MT-02.12", "desc": "Manguito unión Ø16 mm", "ud": "ud", "cant": 10, "pvp": 0.95, "precio": 0.88},
+
+        {"tipo": "titulo", "desc": "CAP 03 - PLADUR"},
+        {"id": "MT-03.01", "desc": "Placa de cartón-yeso estándar 13 mm (120×250 cm)", "ud": "ud", "cant": 31, "pvp": 6.12, "precio": 5.51},
+        {"id": "MT-03.02", "desc": "Placa de cartón-yeso hidrófugo PPM 13 mm (120×250 cm)", "ud": "ud", "cant": 10, "pvp": 8.00, "precio": 7.20},
+        {"id": "MT-03.03", "desc": "Perfil montante 48/3000 mm", "ud": "ud", "cant": 60, "pvp": 2.02, "precio": 1.88},
+        {"id": "MT-03.04", "desc": "Perfil canal 48/3000 mm", "ud": "ud", "cant": 20, "pvp": 1.90, "precio": 1.77},
+        {"id": "MT-03.05", "desc": "Tornillo autotaladrante PB 3,5×25 mm (caja 1000 ud)", "ud": "ud", "cant": 2, "pvp": 7.50, "precio": 6.98},
+        {"id": "MT-03.06", "desc": "Tornillo autotaladrante PM 3,5×35 mm (caja 500 ud)", "ud": "ud", "cant": 1, "pvp": 5.50, "precio": 5.12},
+        {"id": "MT-03.07", "desc": "Cinta de juntas papel kraft (rollo 50 m)", "ud": "ud", "cant": 3, "pvp": 3.50, "precio": 3.26},
+        {"id": "MT-03.08", "desc": "Pasta de juntas Placo PR2 (saco 25 kg)", "ud": "ud", "cant": 2, "pvp": 11.00, "precio": 10.23},
+        {"id": "MT-03.09", "desc": "Lana de roca 45 mm", "ud": "m2", "cant": 47, "pvp": 4.50, "precio": 4.19},
+        {"id": "MT-03.10", "desc": "Perfil angular de arranque (2 m)", "ud": "ud", "cant": 15, "pvp": 1.80, "precio": 1.67},
+        {"id": "MT-03.11", "desc": "Perfil cortinero tipo omega Ω", "ud": "ml", "cant": 12.5, "pvp": 2.00, "precio": 1.86},
+        {"id": "MT-03.12", "desc": "Premarco de madera para pladur", "ud": "ud", "cant": 3, "pvp": 12.00, "precio": 12.00},
+        {"id": "MT-03.13", "desc": "Registro de inspección 20×20 cm (marco + tapa)", "ud": "ud", "cant": 9, "pvp": 5.50, "precio": 5.12},
+        {"id": "MT-03.14", "desc": "Registro de inspección 30×30 cm (marco + tapa)", "ud": "ud", "cant": 6, "pvp": 8.50, "precio": 7.91},
+        {"id": "MT-03.15", "desc": "Taco de nylon con tornillo Ø8×60 mm (bolsa 50 ud)", "ud": "ud", "cant": 3, "pvp": 4.80, "precio": 4.46},
+
+        {"tipo": "titulo", "desc": "CAP 04 - CARPINTERÍA"},
+        {"id": "MT-04.01", "desc": "Puerta de paso con premarco y herrajes", "ud": "ud", "cant": 5, "precio": 0},
+        {"id": "MT-04.02", "desc": "Tarima flotante", "ud": "m2", "cant": 83, "precio": 0},
+        {"id": "MT-04.03", "desc": "Rodapié", "ud": "ml", "cant": 83, "precio": 0},
+        {"id": "MT-04.04", "desc": "Mueble de cocina (conjunto)", "ud": "ud", "cant": 1, "precio": 0},
+        {"id": "MT-04.05", "desc": "Armario empotrado 1", "ud": "ud", "cant": 1, "precio": 0},
+        {"id": "MT-04.06", "desc": "Armario empotrado 2", "ud": "ud", "cant": 1, "precio": 0},
+        {"id": "MT-04.07", "desc": "Armario empotrado 3", "ud": "ud", "cant": 1, "precio": 0},
+        {"id": "MT-04.08", "desc": "Lámina separadora de polietileno bajo tarima", "ud": "m2", "cant": 90, "pvp": 0.75, "precio": 0.75},
+        {"id": "MT-04.09", "desc": "Cola de contacto para rodapié (bote 1 L)", "ud": "ud", "cant": 2, "pvp": 8.00, "precio": 8.00},
+        {"id": "MT-04.10", "desc": "Tornillos y tacos surtidos para carpintería (bolsa)", "ud": "ud", "cant": 2, "pvp": 5.50, "precio": 5.50},
+        {"id": "MT-04.11", "desc": "Silicona transparente de acabado (cartucho 310 ml)", "ud": "ud", "cant": 3, "pvp": 3.80, "precio": 3.80},
+
+        {"tipo": "titulo", "desc": "CAP 05 - PINTURA"},
+        {"id": "MT-05.01", "desc": "Masilla en pasta para alisado de paramentos (cubo 20 kg)", "ud": "ud", "cant": 11, "pvp": 11.00, "precio": 11.00},
+        {"id": "MT-05.02", "desc": "Imprimación fijadora (garrafa 5 L)", "ud": "ud", "cant": 6, "pvp": 10.00, "precio": 10.00},
+        {"id": "MT-05.03", "desc": "Pintura plástica interior blanca mate (cubo 15 L)", "ud": "ud", "cant": 4, "pvp": 15.00, "precio": 15.00},
+        {"id": "MT-05.04", "desc": "Cinta de carrocero 50 mm (rollo)", "ud": "ud", "cant": 5, "pvp": 2.50, "precio": 2.50},
+        {"id": "MT-05.05", "desc": "Film protector plástico (rollo 4 m × 50 m)", "ud": "ud", "cant": 2, "pvp": 10.50, "precio": 10.50},
+        {"id": "MT-05.06", "desc": "Lija grano 120 (paquete 25 ud)", "ud": "ud", "cant": 2, "pvp": 6.50, "precio": 6.50}
+    ]
+}

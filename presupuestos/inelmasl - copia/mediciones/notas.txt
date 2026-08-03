@@ -1,0 +1,39 @@
+No hace falta el capitulo de la toma de tierra
+ni tampoco nada de albañileria
+
+
+
+
+Creo necesario añadir 250 metros aproximadamente de circuito de 3x1,5 mm2 H07Vk, bajo tubo corrugado de 20 mm2.
+
+hay que calucular cuanto vale la mano de obra, si el trabajador está cobrando 1800€/mes netos en Ibiza.
+los proveedores son: 
+CB Electric
+Electrostock
+
+algunos precios de los materiales son estos:
+
+donde pone porcentajes son el descuento que les hacen en CB Electric
+en Schneider (magnetotermicos) 75%, en envolventes 55%
+MEcanismos Jun ls990 blanco.....50%
+en tubo me hacen un precio neto
+tubo 20.....18 ctm, tubo
+tubo 25.......0.23 céntimos
+tubo corrugado reforzado
+Cable unipolar H07V-K de 2,5 mm2.............0.39
+
+ CABLE FLEX L.HALG. 0.5/0.7KV 1X1.5mm2 AZ.........0.191
+CABLE FLEX L.HALG. 0.5/0.7KV 1X2.5mm2 AZ............0.336
+CABLE FLEX L.HALOG. 0.5/0.7KV 1X6mm2 AZ...............0.803
+
+
+El cliente añade:
+los cuadros de las viviendas me salen PVP 2336.87 euros cada uno en SCHNEIDER
+Envolvente 896.01 euros, y aparatos 1440.86 euros.
+me falta calcular los otros
+lo calculo con el programa de Schneider eDesing.
+en Schneider tengo un 70/75% de descuento en aparatos y en envolvente un 50/55%.
+
+aparatos .....3266.01, envolvente....1247.14 esto para Zonas comunes.
+aparatos 526.15 y envolvente 139.15 esto para cuadro del RITU
+aparatos 917.52, envolvente 212.94 esto para el cuadro de piscina.

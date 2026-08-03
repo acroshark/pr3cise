@@ -1,0 +1,630 @@
+/* ============================================================================
+   PR3CISE BUDGET STYLESHEET
+   Primary: #0F172A (Navy Midnight) + Accent: #B08D57 (Old Gold)
+   Typography: Montserrat (headings) + Inter (body) + IBM Plex Mono (data)
+   ============================================================================ */
+
+/* --- CSS CUSTOM PROPERTIES --- */
+:root {
+    /* Paleta Pr3cise */
+    --color-base: #0F172A;        /* Navy Midnight - Autoridad */
+    --color-accent: #B08D57;      /* Old Gold - Exclusividad */
+    --color-accent-hover: #9A7A45;
+    --color-accent-light: #D4BA8A;
+
+    /* Fondos */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8FAFC;      /* Stone - igual que pr3cise */
+    --bg-tertiary: #F1F5F9;
+
+    /* Grises (Slate scale) */
+    --gray-100: #F8FAFC;
+    --gray-200: #E2E8F0;
+    --gray-300: #CBD5E1;
+    --gray-400: #94A3B8;
+    --gray-500: #64748B;
+    --gray-600: #334155;
+
+    /* Tipografía */
+    --font-display: 'Montserrat', 'Helvetica Neue', sans-serif;
+    --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    /* Espaciado Generoso (Lujo es Espacio) */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+
+    /* Transiciones */
+    --transition-slow: 0.4s ease;
+    --transition-medium: 0.25s ease;
+}
+
+/* --- RESET Y BASE --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #B08D57;
+    color: #0F172A;
+}
+
+/* Fila total materiales: texto blanco normal, negro en hover para legibilidad */
+tfoot tr.bg-black td,
+tfoot tr.bg-black th {
+    color: #ffffff;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+tfoot tr.bg-black:hover td,
+tfoot tr.bg-black:hover th {
+    color: #0F172A !important;
+    background-color: #B08D57 !important;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    background-color: #07111c;
+    background-image:
+        linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    background-attachment: fixed;
+    color: var(--gray-600);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- TIPOGRAFÍA --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-base);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Texto pequeño elegante */
+.text-caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--gray-500);
+}
+
+/* --- BOTONES LUXURY (Arquitectónicos y Minimalistas) --- */
+.btn-luxury {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all var(--transition-slow);
+    text-decoration: none;
+    user-select: none;
+}
+
+.btn-luxury:hover {
+    background-color: var(--color-accent);
+    color: var(--bg-primary);
+    border-color: var(--color-accent);
+}
+
+.btn-luxury:active {
+    transform: scale(0.98);
+}
+
+/* Botón sólido */
+.btn-luxury-solid {
+    background-color: var(--color-base);
+    color: var(--bg-primary);
+    border-color: var(--color-base);
+}
+
+.btn-luxury-solid:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-base);
+}
+
+/* --- NAVEGACIÓN PREMIUM --- */
+.nav-button {
+    flex: 1;
+    padding: 1.25rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray-500);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--gray-300);
+    border-radius: 2px;
+    transition: all var(--transition-slow);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav-button.active {
+    background-color: var(--color-base);
+    color: var(--bg-primary);
+    border-color: var(--color-base);
+    box-shadow: 0 4px 20px rgba(16, 24, 32, 0.15);
+}
+
+.nav-button:not(.active):hover {
+    color: var(--color-base);
+    border-color: var(--color-accent);
+    background-color: var(--bg-secondary);
+}
+
+/* --- TARJETAS Y CONTENEDORES --- */
+.summary-card {
+    background-color: var(--bg-primary);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+    box-shadow: 0 2px 20px rgba(16, 24, 32, 0.04);
+}
+
+/* --- TABLAS ELEGANTES --- */
+.table-header {
+    background-color: var(--bg-tertiary);
+    color: var(--gray-500);
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table-chapter {
+    background-color: var(--bg-secondary);
+    color: var(--color-base);
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: var(--spacing-sm);
+    border-top: 1px solid var(--gray-300);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: var(--spacing-sm);
+    text-align: left;
+}
+
+td {
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-600);
+}
+
+tr:hover td {
+    background-color: var(--bg-tertiary);
+}
+
+.number {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.85rem;
+}
+
+/* --- ACORDEÓN VISTA CLIENTE --- */
+.item-container {
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--gray-200);
+    transition: all var(--transition-medium);
+}
+
+.item-container:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.item-container:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom: 0;
+}
+
+.item-container:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.item-header {
+    padding: var(--spacing-md);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.item-details {
+    display: none;
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-top: 1px solid var(--gray-200);
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+.item-details.open {
+    display: block;
+    animation: revealLuxury 0.4s ease forwards;
+}
+
+@keyframes revealLuxury {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- VISTA COSTES (TABLA DESPLEGABLE) --- */
+.cost-row {
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.cost-row:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.cost-row.expanded {
+    background-color: var(--bg-secondary);
+    border-bottom-color: var(--color-accent-light);
+}
+
+.cost-detail-row {
+    display: none;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.cost-detail-row.open {
+    display: table-row;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Badges de recursos */
+.badge-res {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    border: 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.res-mo {
+    background-color: #FEF7F5;
+    color: #8B5A47;
+    border-color: #E8D5CE;
+}
+
+.res-mat {
+    background-color: #F5F8FE;
+    color: #4A6B8A;
+    border-color: #D1DEE8;
+}
+
+.res-maq {
+    background-color: #FBF9F5;
+    color: #7A6B4E;
+    border-color: #E5DFD2;
+}
+
+.res-aux {
+    background-color: var(--bg-tertiary);
+    color: var(--gray-500);
+    border-color: var(--gray-300);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* --- SELECTOR DE PRESUPUESTO REFINADO --- */
+.budget-selector-container {
+    background: var(--bg-primary);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    box-shadow: 0 2px 12px rgba(16, 24, 32, 0.03);
+}
+
+.budget-selector {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.875rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-base);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--gray-300);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all var(--transition-medium);
+}
+
+.budget-selector:hover {
+    border-color: var(--color-accent);
+}
+
+.budget-selector:focus {
+    outline: none;
+    border-color: var(--color-base);
+    box-shadow: 0 0 0 2px rgba(16, 24, 32, 0.08);
+}
+
+.budget-selector option {
+    padding: 0.75rem;
+    font-weight: 400;
+}
+
+/* --- SLIDER DE MERMAS ELEGANTE --- */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: var(--gray-300);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: var(--color-accent);
+    border: 2px solid var(--bg-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(16, 24, 32, 0.15);
+    transition: all var(--transition-medium);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: var(--color-accent-hover);
+    transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: var(--color-accent);
+    border: 2px solid var(--bg-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(16, 24, 32, 0.15);
+}
+
+/* --- LÍNEAS SEPARADORAS FINAS --- */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-200);
+    margin: var(--spacing-lg) 0;
+}
+
+.divider-accent {
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+/* --- HEADER REFINADO --- */
+header {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--gray-200);
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+/* --- UTILIDADES DE ESPACIADO --- */
+.mt-lg {
+    margin-top: var(--spacing-lg);
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+.py-lg {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+}
+
+.px-lg {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+}
+
+/* --- TEXTO CON ACENTO --- */
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-base {
+    color: var(--color-base);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+    color: var(--bg-primary);
+}
+
+/* --- IMPRESIÓN / PDF — Ficha Técnica Cliente --- */
+@media print {
+    /* Página A4 portrait con márgenes ajustados */
+    @page {
+        size: A4 portrait;
+        margin: 15mm 12mm 15mm 12mm;
+    }
+
+    /* Fondo blanco limpio, fuente ligeramente más pequeña */
+    body {
+        background: white !important;
+        background-image: none !important;
+        color: #111 !important;
+        font-size: 10pt !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+    }
+
+    /* Ocultar elementos de interfaz que no deben aparecer en el PDF */
+    header .budget-selector-container,
+    header select,
+    header button,
+    .nav-button,
+    nav,
+    [class*="nav-"],
+    input[type="range"],
+    input[type="number"],
+    details summary ~ *,  /* paneles de ayuda abiertos */
+    .mt-8.bg-gray-50.p-6.rounded-xl  /* bloque de botones de descarga */
+    {
+        display: none !important;
+    }
+
+    /* El header principal (logo + título) se imprime pero compacto */
+    header {
+        background: white !important;
+        border-bottom: 1px solid #ccc !important;
+        padding: 8pt 0 6pt 0 !important;
+        margin-bottom: 10pt !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    /* El área de contenido ocupa todo el ancho */
+    #content-area {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Acordeón: mostrar todos los detalles expandidos en el PDF */
+    .item-details {
+        display: block !important;
+        animation: none !important;
+        border-top: 1px solid #eee;
+        padding: 6pt 12pt !important;
+        background: #fafafa !important;
+    }
+
+    /* Evitar que una partida se corte entre páginas */
+    .item-container {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Capítulos no se separan del primer ítem */
+    .bg-gray-100 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    /* Resumen económico siempre en la misma página */
+    .mt-8.bg-white.rounded-xl {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Notas importantes no se separan */
+    .mt-8.bg-gray-50 {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Texto y bordes en negro para mejor legibilidad impresa */
+    .text-gray-500, .text-gray-400, .text-gray-600 {
+        color: #444 !important;
+    }
+
+    /* Sombras y bordes redondeados innecesarios en impresión */
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}

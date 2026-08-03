@@ -1,0 +1,12 @@
+{
+  "_changelog": [
+    "15/06/2026 20:42 - Renombrado el presupuesto «alberto» de «Reforma Integral Proyecto Alberto» a «Reforma Piscina Torrevieja» (mismo id interno para no romper la descarga de Excel)."
+  ],
+  "presupuestos": [
+    {
+      "id": "alberto",
+      "nombre": "Reforma Piscina Torrevieja",
+      "descripcion": "Reforma del pavimento perimetral de piscina en Torrevieja (Alicante): solera y maestreado, material de agarre, emplaquetado, suministro de plaqueta porcelánica antideslizante y gestión de residuos."
+    }
+  ]
+}

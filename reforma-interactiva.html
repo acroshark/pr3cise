@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Reforma Interactivo | Presupuesto en Tiempo Real | Pr3cise</title>
+    <meta name="description" content="Demostración interactiva: recorre un plano de reforma de 85 m² y ve cómo se acumula el presupuesto partida a partida.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://pr3cise.com/reforma-interactiva.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pr3cise">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://pr3cise.com/reforma-interactiva.html">
+    <meta property="og:title" content="Plano de Reforma Interactivo | Presupuesto en Tiempo Real | Pr3cise">
+    <meta property="og:description" content="Demostración interactiva: recorre un plano de reforma de 85 m² y ve cómo se acumula el presupuesto partida a partida.">
+    <meta property="og:image" content="https://pr3cise.com/assets/img/portada.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1004">
+    <meta property="og:image:height" content="623">
+    <meta property="og:image:alt" content="Pr3cise — estimación de costes de construcción de alta precisión">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plano de Reforma Interactivo | Presupuesto en Tiempo Real | Pr3cise">
+    <meta name="twitter:description" content="Demostración interactiva: recorre un plano de reforma de 85 m² y ve cómo se acumula el presupuesto partida a partida.">
+    <meta name="twitter:image" content="https://pr3cise.com/assets/img/portada.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --blue:#38bdf8;
+  --yellow:#fcd34d;
+  --red:#f87171;
+  --green:#4ade80;
+  --bg:#07111c;
+  --wall:#8fafc8;
+  --grid:rgba(56,189,248,0.04);
+}
+
+html{scroll-behavior:auto}
+
+body{
+  background:var(--bg);
+  color:#d0e4f4;
+  font-family:'Space Mono',monospace;
+  overflow-x:hidden;
+}
+
+/* Grid bg */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:48px 48px;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:200;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:linear-gradient(to bottom,rgba(7,17,28,.98) 70%,transparent);
+  border-bottom:1px solid rgba(56,189,248,.08);
+}
+
+.logo{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.6rem;
+  letter-spacing:6px;
+  color:var(--blue);
+  opacity:.85;
+}
+
+.header-right{text-align:right}
+.total-label{
+  font-size:9px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  opacity:.4;
+  display:block;
+  margin-bottom:2px;
+}
+.total-amount{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.8rem;
+  letter-spacing:2px;
+  color:var(--yellow);
+  transition:color .3s;
+}
+
+/* PROGRESS */
+#progress-bar{
+  position:fixed;
+  top:0;left:0;
+  height:2px;
+  background:linear-gradient(to right,var(--blue),var(--yellow),var(--red),var(--green));
+  z-index:300;
+  width:0%;
+  transition:width .08s linear;
+}
+
+/* LEGEND */
+.legend{
+  position:fixed;
+  left:28px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  z-index:200;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:9px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  opacity:.15;
+  transition:opacity .5s,transform .4s;
+  transform:translateX(-6px);
+  cursor:default;
+}
+
+.legend-item.active{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.legend-dash{
+  width:26px;
+  height:3px;
+  border-radius:2px;
+  flex-shrink:0;
+}
+
+/* SCROLL SPACE */
+.scroll-space{height:580vh;position:relative}
+
+/* STICKY */
+.sticky-scene{
+  position:sticky;
+  top:0;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1;
+  overflow:hidden;
+}
+
+.plan-wrapper{
+  position:relative;
+  width:min(92vw,860px);
+}
+
+#floorplan{
+  width:100%;
+  height:auto;
+  display:block;
+  filter:drop-shadow(0 0 60px rgba(56,189,248,.06));
+}
+
+/* SVG wall styles */
+.w{stroke:var(--wall);stroke-width:2;fill:none;stroke-linejoin:round;stroke-linecap:round}
+.wt{stroke:var(--wall);stroke-width:3;fill:none}
+.rf{fill:rgba(100,150,200,.04);stroke:none}
+.rl{font-size:10px;fill:rgba(140,175,200,.2);font-family:'Space Mono',monospace;text-anchor:middle;letter-spacing:2px}
+
+/* Systems */
+.sp{stroke:var(--blue);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.se{stroke:var(--yellow);stroke-width:2;fill:none;stroke-linecap:round;stroke-dasharray:8 4}
+.sw{stroke:var(--red);stroke-width:6;fill:none;stroke-linecap:butt}
+.sd{stroke:var(--green);stroke-width:2.2;fill:none;stroke-linecap:round}
+.sdf{stroke:var(--green);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-dasharray:4 3;opacity:.5}
+
+/* Fixture shapes */
+.fix-p{stroke:var(--blue);stroke-width:1.5;fill:rgba(56,189,248,.08)}
+.fix-e{stroke:var(--yellow);stroke-width:1.5;fill:rgba(252,211,77,.08)}
+
+/* System layers */
+.sys-layer{opacity:0;transition:opacity .2s}
+
+/* PRICE TAGS */
+.price-tag{
+  position:absolute;
+  background:rgba(7,17,28,.94);
+  border-width:1px;
+  border-style:solid;
+  border-radius:3px;
+  padding:8px 14px;
+  font-size:11px;
+  line-height:1.7;
+  opacity:0;
+  transform:translateY(8px) scale(.94);
+  transition:opacity .45s,transform .45s;
+  pointer-events:none;
+  white-space:nowrap;
+  z-index:50;
+}
+.price-tag.show{opacity:1;transform:translateY(0) scale(1)}
+.pt-name{
+  display:block;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  opacity:.6;
+  margin-bottom:1px;
+}
+.pt-amount{
+  display:block;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.35rem;
+  letter-spacing:2px;
+  line-height:1.2;
+}
+.pt-desc{font-size:10px;opacity:.55}
+
+/* PHASE LABEL */
+#phase-label{
+  position:fixed;
+  top:76px;
+  right:36px;
+  font-size:9px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  opacity:0;
+  transition:opacity .5s;
+  color:rgba(208,228,244,.5);
+  z-index:200;
+}
+#phase-label.vis{opacity:1}
+
+/* SCROLL HINT */
+#scroll-hint{
+  position:fixed;
+  bottom:32px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:9px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  opacity:.35;
+  z-index:200;
+  animation:hint 2.5s ease-in-out infinite;
+}
+@keyframes hint{
+  0%,100%{opacity:.1;transform:translateX(-50%) translateY(0)}
+  50%{opacity:.4;transform:translateX(-50%) translateY(5px)}
+}
+
+/* SUMMARY BAR */
+#summary{
+  position:fixed;
+  bottom:0;left:0;right:0;
+  background:rgba(7,17,28,.96);
+  border-top:1px solid rgba(56,189,248,.1);
+  display:flex;
+  justify-content:center;
+  gap:48px;
+  padding:10px 40px;
+  z-index:200;
+  opacity:0;
+  transform:translateY(100%);
+  transition:opacity .6s,transform .6s;
+}
+#summary.vis{opacity:1;transform:translateY(0)}
+.sum-item{text-align:center}
+.sum-label{font-size:8px;letter-spacing:3px;text-transform:uppercase;opacity:.4;display:block}
+.sum-val{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:1px}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header>
+  <div class="logo">REFORMA · PLAN</div>
+  <div class="header-right">
+    <span class="total-label">presupuesto acumulado</span>
+    <div class="total-amount" id="total-amount">0 €</div>
+  </div>
+</header>
+
+<div class="legend" id="legend">
+  <div class="legend-item" data-sys="p">
+    <div class="legend-dash" style="background:var(--blue)"></div>
+    <span>Fontanería</span>
+  </div>
+  <div class="legend-item" data-sys="e">
+    <div class="legend-dash" style="background:var(--yellow);height:2px;border-top:2px dashed var(--yellow);background:transparent"></div>
+    <span>Electricidad</span>
+  </div>
+  <div class="legend-item" data-sys="w">
+    <div class="legend-dash" style="background:var(--red);height:5px"></div>
+    <span>Ventanas</span>
+  </div>
+  <div class="legend-item" data-sys="d">
+    <div class="legend-dash" style="background:var(--green)"></div>
+    <span>Puertas</span>
+  </div>
+</div>
+
+<div id="phase-label"></div>
+
+<div class="scroll-space">
+  <div class="sticky-scene">
+    <div class="plan-wrapper" id="plan-wrapper">
+
+      <svg id="floorplan" viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Room fills -->
+        <rect class="rf" x="61" y="71" width="379" height="219"/>
+        <rect class="rf" x="61" y="291" width="189" height="179"/>
+        <rect class="rf" x="251" y="291" width="189" height="179"/>
+        <rect class="rf" x="441" y="71" width="299" height="159"/>
+        <rect class="rf" x="441" y="231" width="299" height="239"/>
+
+        <!-- Room labels -->
+        <text class="rl" x="251" y="185">SALÓN / COMEDOR</text>
+        <text class="rl" x="152" y="388">COCINA</text>
+        <text class="rl" x="346" y="388">BAÑO</text>
+        <text class="rl" x="590" y="160">DORMITORIO 1</text>
+        <text class="rl" x="590" y="360">DORMITORIO 2</text>
+
+        <!-- Area callouts -->
+        <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'Space Mono',monospace;text-anchor:middle" x="251" y="200">~ 29 m²</text>
+        <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'Space Mono',monospace;text-anchor:middle" x="590" y="173">~ 14 m²</text>
+        <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'Space Mono',monospace;text-anchor:middle" x="590" y="373">~ 16 m²</text>
+
+        <!-- EXTERIOR WALLS -->
+        <!-- Top wall segments -->
+        <line class="wt" x1="60" y1="70" x2="740" y2="70"/>
+        <!-- Left wall with front-door gap (y=240–290) -->
+        <line class="wt" x1="60" y1="70" x2="60" y2="235"/>
+        <line class="wt" x1="60" y1="290" x2="60" y2="470"/>
+        <!-- Bottom wall -->
+        <line class="wt" x1="60" y1="470" x2="740" y2="470"/>
+        <!-- Right wall -->
+        <line class="wt" x1="740" y1="70" x2="740" y2="470"/>
+
+        <!-- INTERIOR WALLS -->
+        <!-- Main vertical divider x=440 (with door gaps) -->
+        <line class="w" x1="440" y1="70" x2="440" y2="110"/>
+        <line class="w" x1="440" y1="155" x2="440" y2="265"/>
+        <line class="w" x1="440" y1="310" x2="440" y2="470"/>
+        <!-- Left horizontal y=290 (with door gap x=120–168) -->
+        <line class="w" x1="60" y1="290" x2="115" y2="290"/>
+        <line class="w" x1="163" y1="290" x2="440" y2="290"/>
+        <!-- Bottom-left vertical x=250 (with baño door gap y=290–335) -->
+        <line class="w" x1="250" y1="335" x2="250" y2="470"/>
+        <!-- Right horizontal y=230 -->
+        <line class="w" x1="440" y1="230" x2="740" y2="230"/>
+
+        <!-- Door/wall edge marks -->
+        <line class="w" x1="56" y1="235" x2="64" y2="235"/>
+        <line class="w" x1="56" y1="290" x2="64" y2="290"/>
+        <line class="w" x1="115" y1="286" x2="115" y2="294"/>
+        <line class="w" x1="163" y1="286" x2="163" y2="294"/>
+        <line class="w" x1="436" y1="110" x2="444" y2="110"/>
+        <line class="w" x1="436" y1="155" x2="444" y2="155"/>
+        <line class="w" x1="436" y1="265" x2="444" y2="265"/>
+        <line class="w" x1="436" y1="310" x2="444" y2="310"/>
+        <line class="w" x1="246" y1="335" x2="254" y2="335"/>
+
+        <!-- Scale / meta -->
+        <text style="font-size:8px;fill:rgba(143,175,200,.18);font-family:'Space Mono',monospace;text-anchor:end" x="736" y="490">ESCALA 1:50 · 85 m² · PLANTA BAJA</text>
+
+        <!-- North arrow -->
+        <text style="font-size:9px;fill:rgba(143,175,200,.25);font-family:'Space Mono',monospace;text-anchor:middle" x="72" y="510">N↑</text>
+
+        <!-- ===== PLUMBING LAYER ===== -->
+        <g id="layer-p" class="sys-layer">
+          <!-- Kitchen supply main -->
+          <path class="sp" id="p1" d="M152,291 L152,340"/>
+          <path class="sp" id="p2" d="M152,340 L118,340 L118,380"/>
+          <!-- Kitchen sink -->
+          <rect class="fix-p" x="106" y="380" width="24" height="15" rx="2"/>
+          <path class="sp" id="p3" d="M185,291 L185,355 L215,355"/>
+          <!-- Hot water connection -->
+          <path class="sp" id="p4" d="M250,291 L250,260 L420,260 L420,291" style="stroke-dasharray:5 3;opacity:.45"/>
+          <!-- Bathroom supply -->
+          <path class="sp" id="p5" d="M350,291 L350,330"/>
+          <!-- Toilet -->
+          <path class="sp" id="p6" d="M350,330 L308,330 L308,370"/>
+          <ellipse class="fix-p" cx="308" cy="386" rx="17" ry="21"/>
+          <!-- Sink bathroom -->
+          <path class="sp" id="p7" d="M350,330 L398,330 L398,360"/>
+          <rect class="fix-p" x="387" y="360" width="23" height="16" rx="2"/>
+          <!-- Shower -->
+          <path class="sp" id="p8" d="M350,345 L288,345 L288,460"/>
+          <rect class="fix-p" x="265" y="405" width="46" height="60" rx="3"/>
+          <!-- Drain dotted -->
+          <circle class="fix-p" cx="288" cy="435" r="5" style="stroke-dasharray:2 2"/>
+        </g>
+
+        <!-- ===== ELECTRICAL LAYER ===== -->
+        <g id="layer-e" class="sys-layer">
+          <!-- Main panel box -->
+          <rect class="fix-e" x="60" y="215" width="14" height="20" rx="1"/>
+          <line class="se" id="e1" x1="74" y1="225" x2="252" y2="225"/>
+          <!-- Salon ceiling light -->
+          <circle class="fix-e" cx="252" cy="185" r="13"/>
+          <line class="se" id="e2" x1="252" y1="212" x2="252" y2="198"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="246" y1="185" x2="258" y2="185"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="252" y1="179" x2="252" y2="191"/>
+          <!-- Sockets salon -->
+          <line class="se" id="e3" x1="100" y1="225" x2="100" y2="280"/>
+          <rect class="fix-e" x="93" y="280" width="14" height="9" rx="1"/>
+          <line class="se" id="e4" x1="380" y1="225" x2="380" y2="282"/>
+          <rect class="fix-e" x="373" y="282" width="14" height="9" rx="1"/>
+          <!-- Kitchen circuit -->
+          <line class="se" id="e5" x1="74" y1="225" x2="74" y2="320 " />
+          <line class="se" id="e6" x1="74" y1="320" x2="160" y2="320"/>
+          <line class="se" id="e7" x1="160" y1="320" x2="160" y2="378"/>
+          <circle class="fix-e" cx="160" cy="386" r="11"/>
+          <line class="se" id="e8" x1="190" y1="320" x2="230" y2="320"/>
+          <rect class="fix-e" x="230" y="313" width="14" height="9" rx="1"/>
+          <!-- Bathroom light -->
+          <line class="se" id="e9" x1="74" y1="320" x2="74" y2="430"/>
+          <line class="se" id="e10" x1="74" y1="430" x2="346" y2="430"/>
+          <circle class="fix-e" cx="346" cy="385" r="11"/>
+          <line class="se" id="e11" x1="346" y1="419" x2="346" y2="396"/>
+          <!-- Bedrooms -->
+          <line class="se" id="e12" x1="740" y1="155" x2="592" y2="155"/>
+          <circle class="fix-e" cx="592" cy="155" r="13"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="586" y1="155" x2="598" y2="155"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="592" y1="149" x2="592" y2="161"/>
+          <line class="se" id="e13" x1="740" y1="350" x2="592" y2="350"/>
+          <circle class="fix-e" cx="592" cy="350" r="13"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="586" y1="350" x2="598" y2="350"/>
+          <line style="stroke:var(--yellow);stroke-width:1;opacity:.6" x1="592" y1="344" x2="592" y2="356"/>
+          <!-- Sockets bedrooms -->
+          <line class="se" id="e14" x1="592" y1="155" x2="592" y2="110"/>
+          <rect class="fix-e" x="620" y="110" width="14" height="9" rx="1"/>
+          <line class="se" id="e15" x1="592" y1="350" x2="592" y2="445"/>
+          <rect class="fix-e" x="620" y="445" width="14" height="9" rx="1"/>
+        </g>
+
+        <!-- ===== WINDOWS LAYER ===== -->
+        <g id="layer-w" class="sys-layer">
+          <!-- Salon top wall -->
+          <line class="sw" id="w1" x1="110" y1="70" x2="300" y2="70"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="110" y1="70" x2="110" y2="86"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="300" y1="70" x2="300" y2="86"/>
+          <line style="stroke:var(--red);stroke-width:.8;opacity:.5" x1="205" y1="70" x2="205" y2="86"/>
+          <!-- Salon left wall -->
+          <line class="sw" id="w2" x1="60" y1="90" x2="60" y2="200"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="60" y1="90" x2="76" y2="90"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="60" y1="200" x2="76" y2="200"/>
+          <line style="stroke:var(--red);stroke-width:.8;opacity:.5" x1="60" y1="145" x2="76" y2="145"/>
+          <!-- Kitchen left wall -->
+          <line class="sw" id="w3" x1="60" y1="320" x2="60" y2="430"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="60" y1="320" x2="76" y2="320"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="60" y1="430" x2="76" y2="430"/>
+          <!-- Bedroom 1 top -->
+          <line class="sw" id="w4" x1="480" y1="70" x2="680" y2="70"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="480" y1="70" x2="480" y2="86"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="680" y1="70" x2="680" y2="86"/>
+          <line style="stroke:var(--red);stroke-width:.8;opacity:.5" x1="580" y1="70" x2="580" y2="86"/>
+          <!-- Bedroom 2 right wall -->
+          <line class="sw" id="w5" x1="740" y1="270" x2="740" y2="440"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="740" y1="270" x2="724" y2="270"/>
+          <line style="stroke:var(--red);stroke-width:1.5" x1="740" y1="440" x2="724" y2="440"/>
+          <line style="stroke:var(--red);stroke-width:.8;opacity:.5" x1="740" y1="355" x2="724" y2="355"/>
+        </g>
+
+        <!-- ===== DOORS LAYER ===== -->
+        <g id="layer-d" class="sys-layer">
+          <!-- Front door (left wall gap y=235–290) -->
+          <line class="sd" x1="60" y1="235" x2="60" y2="290"/>
+          <path class="sdf" d="M60,235 A55,55 0 0,1 115,290"/>
+          <line class="sdf" x1="60" y1="235" x2="115" y2="235" style="opacity:.35"/>
+
+          <!-- Salon → Cocina (y=290 gap x=115–163) -->
+          <line class="sd" x1="115" y1="290" x2="163" y2="290"/>
+          <path class="sdf" d="M115,290 A48,48 0 0,0 115,242"/>
+          <line class="sdf" x1="115" y1="242" x2="163" y2="242" style="opacity:.35"/>
+
+          <!-- Salon → Dorm 1 (x=440 gap y=110–155) -->
+          <line class="sd" x1="440" y1="110" x2="440" y2="155"/>
+          <path class="sdf" d="M440,110 A45,45 0 0,0 395,110"/>
+          <line class="sdf" x1="395" y1="110" x2="395" y2="155" style="opacity:.35"/>
+
+          <!-- Dorm 2 (x=440 gap y=265–310) -->
+          <line class="sd" x1="440" y1="265" x2="440" y2="310"/>
+          <path class="sdf" d="M440,265 A45,45 0 0,1 485,265"/>
+          <line class="sdf" x1="485" y1="265" x2="485" y2="310" style="opacity:.35"/>
+
+          <!-- Baño (x=250 gap y=291–335) -->
+          <line class="sd" x1="250" y1="291" x2="250" y2="335"/>
+          <path class="sdf" d="M250,291 A44,44 0 0,1 294,291"/>
+          <line class="sdf" x1="294" y1="291" x2="294" y2="335" style="opacity:.35"/>
+        </g>
+
+      </svg>
+
+      <!-- ===== PRICE TAGS ===== -->
+
+      <!-- PLUMBING -->
+      <div class="price-tag" data-sys="p" data-idx="0"
+        style="top:60%;left:2%;color:var(--blue);border-color:rgba(56,189,248,.35)">
+        <span class="pt-name">fontanería · cocina</span>
+        <span class="pt-amount">850 €</span>
+        <span class="pt-desc">Fregadero + lavavajillas + grifo</span>
+      </div>
+
+      <div class="price-tag" data-sys="p" data-idx="1"
+        style="top:68%;left:50%;color:var(--blue);border-color:rgba(56,189,248,.35)">
+        <span class="pt-name">fontanería · baño</span>
+        <span class="pt-amount">1.650 €</span>
+        <span class="pt-desc">Ducha, WC, lavabo, bañera</span>
+      </div>
+
+      <div class="price-tag" data-sys="p" data-idx="2"
+        style="top:18%;left:52%;color:var(--blue);border-color:rgba(56,189,248,.2)">
+        <span class="pt-name">fontanería · red</span>
+        <span class="pt-amount">620 €</span>
+        <span class="pt-desc">Tubería distribución general</span>
+      </div>
+
+      <!-- ELECTRICAL -->
+      <div class="price-tag" data-sys="e" data-idx="0"
+        style="top:10%;left:4%;color:var(--yellow);border-color:rgba(252,211,77,.35)">
+        <span class="pt-name">eléctrico · cuadro</span>
+        <span class="pt-amount">780 €</span>
+        <span class="pt-desc">ICP + 9 circuitos protegidos</span>
+      </div>
+
+      <div class="price-tag" data-sys="e" data-idx="1"
+        style="top:24%;left:52%;color:var(--yellow);border-color:rgba(252,211,77,.35)">
+        <span class="pt-name">eléctrico · iluminación</span>
+        <span class="pt-amount">1.240 €</span>
+        <span class="pt-desc">Puntos de luz LED toda la vivienda</span>
+      </div>
+
+      <div class="price-tag" data-sys="e" data-idx="2"
+        style="top:46%;left:2%;color:var(--yellow);border-color:rgba(252,211,77,.35)">
+        <span class="pt-name">eléctrico · enchufes</span>
+        <span class="pt-amount">490 €</span>
+        <span class="pt-desc">24 puntos de corriente</span>
+      </div>
+
+      <!-- WINDOWS -->
+      <div class="price-tag" data-sys="w" data-idx="0"
+        style="top:1%;left:8%;color:var(--red);border-color:rgba(248,113,113,.35)">
+        <span class="pt-name">ventanas · salón</span>
+        <span class="pt-amount">1.900 €</span>
+        <span class="pt-desc">2× PVC doble acristalamiento</span>
+      </div>
+
+      <div class="price-tag" data-sys="w" data-idx="1"
+        style="top:1%;left:55%;color:var(--red);border-color:rgba(248,113,113,.35)">
+        <span class="pt-name">ventanas · dormitorios</span>
+        <span class="pt-amount">2.200 €</span>
+        <span class="pt-desc">3× ventana + persiana enrollable</span>
+      </div>
+
+      <div class="price-tag" data-sys="w" data-idx="2"
+        style="top:52%;left:2%;color:var(--red);border-color:rgba(248,113,113,.35)">
+        <span class="pt-name">ventanas · cocina</span>
+        <span class="pt-amount">680 €</span>
+        <span class="pt-desc">Corredera con mosquitera</span>
+      </div>
+
+      <!-- DOORS -->
+      <div class="price-tag" data-sys="d" data-idx="0"
+        style="top:42%;left:2%;color:var(--green);border-color:rgba(74,222,128,.35)">
+        <span class="pt-name">puertas · entrada</span>
+        <span class="pt-amount">1.150 €</span>
+        <span class="pt-desc">Blindada clase 3 + cerrojo</span>
+      </div>
+
+      <div class="price-tag" data-sys="d" data-idx="1"
+        style="top:24%;left:2%;color:var(--green);border-color:rgba(74,222,128,.35)">
+        <span class="pt-name">puertas · interiores</span>
+        <span class="pt-amount">1.750 €</span>
+        <span class="pt-desc">4× puerta lacada blanca</span>
+      </div>
+
+    </div><!-- /plan-wrapper -->
+  </div><!-- /sticky-scene -->
+</div><!-- /scroll-space -->
+
+<div id="scroll-hint">↓ desplaza para explorar ↓</div>
+
+<div id="phase-label"></div>
+
+<!-- SUMMARY BAR -->
+<div id="summary">
+  <div class="sum-item">
+    <span class="sum-label">Fontanería</span>
+    <span class="sum-val" style="color:var(--blue)">3.120 €</span>
+  </div>
+  <div class="sum-item">
+    <span class="sum-label">Electricidad</span>
+    <span class="sum-val" style="color:var(--yellow)">2.510 €</span>
+  </div>
+  <div class="sum-item">
+    <span class="sum-label">Ventanas</span>
+    <span class="sum-val" style="color:var(--red)">4.780 €</span>
+  </div>
+  <div class="sum-item">
+    <span class="sum-label">Puertas</span>
+    <span class="sum-val" style="color:var(--green)">2.900 €</span>
+  </div>
+  <div class="sum-item" style="border-left:1px solid rgba(255,255,255,.1);padding-left:48px">
+    <span class="sum-label">Total reforma</span>
+    <span class="sum-val" style="color:var(--yellow);font-size:1.4rem">13.310 €</span>
+  </div>
+</div>
+
+<script>
+// ─── CONFIG ──────────────────────────────────────────
+const PHASES = {
+  p: { start: 0.04, end: 0.28, cost: 3120, label: '01 · FONTANERÍA' },
+  e: { start: 0.28, end: 0.52, cost: 2510, label: '02 · ELECTRICIDAD' },
+  w: { start: 0.52, end: 0.72, cost: 4780, label: '03 · VENTANAS' },
+  d: { start: 0.72, end: 0.92, cost: 2900, label: '04 · PUERTAS' }
+};
+const GRAND = 13310;
+const ORDER = ['p','e','w','d'];
+
+// ─── INIT PATHS ───────────────────────────────────────
+function initPaths() {
+  ['p','e','w','d'].forEach(sys => {
+    const layer = document.getElementById('layer-' + sys);
+    layer.querySelectorAll('path,line').forEach(el => {
+      if (!el.getTotalLength) return;
+      const len = el.getTotalLength();
+      el.dataset.len = len;
+      el.style.strokeDasharray = len;
+      el.style.strokeDashoffset = len;
+    });
+  });
+}
+
+// ─── COUNTER ─────────────────────────────────────────
+let displayedTotal = 0;
+let rafId = null;
+
+function updateCounter(target) {
+  const el = document.getElementById('total-amount');
+  if (rafId) cancelAnimationFrame(rafId);
+  function tick() {
+    const diff = target - displayedTotal;
+    if (Math.abs(diff) < 5) {
+      displayedTotal = target;
+      el.textContent = Math.round(displayedTotal).toLocaleString('es-ES') + ' €';
+      return;
+    }
+    displayedTotal += diff * 0.1;
+    el.textContent = Math.round(displayedTotal).toLocaleString('es-ES') + ' €';
+    rafId = requestAnimationFrame(tick);
+  }
+  tick();
+}
+
+// ─── SCROLL HANDLER ──────────────────────────────────
+function lerp(a,b,t){return a+(b-a)*Math.max(0,Math.min(1,t))}
+
+function onScroll() {
+  const scrollY = window.scrollY;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const sp = maxScroll > 0 ? scrollY / maxScroll : 0;
+
+  // progress bar
+  document.getElementById('progress-bar').style.width = (sp * 100) + '%';
+
+  // scroll hint
+  document.getElementById('scroll-hint').style.opacity = sp > 0.025 ? '0' : '';
+
+  let totalVisible = 0;
+  let activePhase = null;
+  let allDone = true;
+
+  ORDER.forEach(sys => {
+    const ph = PHASES[sys];
+    const raw = (sp - ph.start) / (ph.end - ph.start);
+    const p = Math.max(0, Math.min(1, raw));
+
+    if (p < 1) allDone = false;
+    if (p > 0 && p < 1) activePhase = sys;
+
+    totalVisible += ph.cost * p;
+
+    // layer visibility
+    const layer = document.getElementById('layer-' + sys);
+    layer.style.opacity = p > 0 ? 1 : 0;
+
+    // animate paths
+    layer.querySelectorAll('path,line').forEach((el, i) => {
+      if (!el.dataset.len) return;
+      const len = parseFloat(el.dataset.len);
+      const stagger = i * 0.06;
+      const ep = Math.max(0, Math.min(1, (p - stagger) / (1 - Math.min(stagger, 0.7))));
+      el.style.strokeDashoffset = len * (1 - ep);
+    });
+
+    // legend
+    const legItem = document.querySelector(`.legend-item[data-sys="${sys}"]`);
+    if (p > 0) legItem.classList.add('active');
+    else legItem.classList.remove('active');
+
+    // price tags
+    const tags = [...document.querySelectorAll(`.price-tag[data-sys="${sys}"]`)]
+      .sort((a,b) => +a.dataset.idx - +b.dataset.idx);
+    tags.forEach((tag, i) => {
+      const threshold = (i + 1) / (tags.length + 1);
+      if (p >= threshold) tag.classList.add('show');
+      else tag.classList.remove('show');
+    });
+  });
+
+  // phase label
+  const phaseEl = document.getElementById('phase-label');
+  if (activePhase) {
+    phaseEl.textContent = PHASES[activePhase].label;
+    phaseEl.classList.add('vis');
+  } else if (allDone) {
+    phaseEl.textContent = 'REFORMA COMPLETA';
+    phaseEl.classList.add('vis');
+  } else {
+    phaseEl.classList.remove('vis');
+  }
+
+  // summary bar
+  const summary = document.getElementById('summary');
+  if (allDone) summary.classList.add('vis');
+  else summary.classList.remove('vis');
+
+  // counter
+  updateCounter(Math.round(totalVisible));
+}
+
+// ─── BOOT ─────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  initPaths();
+  onScroll();
+});
+window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+37.83   neto 22.50
+31.89   neto 19.21
+
+1. ver de donde sale la mano de obra
+2. precio de materiales entrelazados con las 3 hojas.
+3. aumentar los metros de los cables en puntos de luz, interruptor y toma de corriente
+punto de luz 5 metros, punto de interruptor 7, y toma de corriente 8 metros.
+4. revisar precios de comunicaciones, antenas y demás.
+
+**Generador de precios de la construcción.
+Revisar el RITU porque está duplicado

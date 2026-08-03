@@ -1,0 +1,2538 @@
+Vivienda   plurifamiliar  aislada
+Presupuesto
+Código Nat Ud Resumen Comentario N LongitudAnchuraAlturaCantidad CanPresPres ImpPres
+02.02 Capítulo RED DE SANEAMIENTO ENTERRADO
+11.02 Partida UD SUMIDERO SIFÓNICO 3,000
+Instalación de sumidero sifónico de PVC, S-246 autolimpiante "JIMTEN", de salida vertical de 110 mm de diámetro, con rejilla 
+plana de PVC de 250x250 mm, color gris, para recogida de aguas pluviales o de locales húmedos. Incluso accesorios de 
+montaje, piezas especiales y elementos de sujeción.
+Incluye: Replanteo y trazado. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+11.030 Partida m COLECTOR EMPOTRADO EN SOLERA DN90 14,000
+Colector enterrado de red horizontal de saneamiento, sin arquetas, mediante sistema integral registrable, en losa de 
+cimentación, con una pendiente mínima del 3%, para la evacuación de aguas residuales y/o pluviales, formado por tubo de 
+PVC liso, serie SN-4, rigidez anular nominal 4 kN/m², de 90 mm de diámetro exterior, con junta elástica, empotrada en losa 
+de cimentación. Incluso accesorios, registros, uniones y piezas especiales, lubricante para montaje y fijación a la armadura 
+de la losa.
+Incluye: Replanteo y trazado del conducto en planta y pendientes. Presentación en seco de tubos y piezas especiales. 
+Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto, incluyendo los tramos ocupados por piezas especiales.
+11.03 Partida m COLECTOR EMPOTRADO EN SOLERA DN110 20,000
+Colector enterrado de red horizontal de saneamiento, sin arquetas, mediante sistema integral registrable, en losa de 
+cimentación, con una pendiente mínima del 3%, para la evacuación de aguas residuales y/o pluviales, formado por tubo de 
+PVC liso, serie SN-4, rigidez anular nominal 4 kN/m², de 110 mm de diámetro exterior, con junta elástica, empotrada en losa 
+de cimentación. Incluso accesorios, registros, uniones y piezas especiales, lubricante para montaje y fijación a la armadura 
+de la losa.
+Incluye: Replanteo y trazado del conducto en planta y pendientes. Presentación en seco de tubos y piezas especiales. 
+Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto, incluyendo los tramos ocupados por piezas especiales.
+11.03A Partida m COLECTOR EMPOTRADO EN SOLERA DN160 2,000
+Colector enterrado de red horizontal de saneamiento, sin arquetas, mediante sistema integral registrable, en losa de 
+cimentación, con una pendiente mínima del 3%, para la evacuación de aguas residuales y/o pluviales, formado por tubo de 
+PVC liso, serie SN-4, rigidez anular nominal 4 kN/m², de 160 mm de diámetro exterior, con junta elástica, empotrada en losa 
+de cimentación. Incluso accesorios, registros, uniones y piezas especiales, lubricante para montaje y fijación a la armadura 
+de la losa.
+Incluye: Replanteo y trazado del conducto en planta y pendientes. Presentación en seco de tubos y piezas especiales. 
+Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto, incluyendo los tramos ocupados por piezas especiales.
+11.07 Partida UD TUBERÍA PEAD PARA EVACUACIÓN AGUAS BOMBEO 5,000
+Acometida evacuación de pluviales bombeado de aparcamiento, de 63 mm de diámetro exterior, PN=10 atm y 3,8 mm de 
+espesor, colocada superficialmente por techo en planta baja, según trazado previsto en documentación gráfica. Incluso 
+accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+11.04 Partida UD DECANTADOR DE HIDROCARBUROS 1,000
+Arqueta doble de paso, registrable, enterrada, para albergar separador de hidrocarburos con BYPASS incluido. Arqueta 
+construida con fábrica de ladrillo cerámico hueco, de 1/2 pie de espesor, recibido con mortero de cemento M-5, de 
+dimensiones interiores 2x125x125x160 cm, sobre solera de hormigón en masa HM-30/B/20/I+Qb de 15 cm de espesor, 
+formación de pendiente mínima del 2%, con el mismo tipo de hormigón, enfoscada y bruñida interiormente con mortero de 
+cemento, industrial, con aditivo hidrófugo, M-15 formando aristas y esquinas a media caña, cerrada superiormente con tapa 
+prefabricada de hormigón armado con cierre hermético al paso de los olores mefíticos. Incluso mortero para sellado de 
+juntas y colector de conexión de PVC, de tres entradas y una salida, con tapa de registro, para encuentros.
+Incluye: Replanteo. Vertido y compactación del hormigón en formación de solera. Formación de la obra de fábrica con 
+ladrillos, previamente humedecidos, colocados con mortero. Conexionado de los colectores a la arqueta. Relleno de 
+hormigón para formación de pendientes. Enfoscado y bruñido con mortero, redondeando los ángulos del fondo y de las 
+paredes interiores de la arqueta. Colocación del colector de conexión de PVC en el fondo de la arqueta. Realización del cierre 
+hermético y colocación de la tapa y los accesorios. Comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós.
+Separador de hidrocarburos de polietileno de alta densidad (PEAD/HDPE), clase I según UNE-EN 858, serie SIMOP, 
+"SH2/6649/08", de 8 litros/s de caudal máximo y de 2220x940x1630 mm, deflector de caudal, zona de retención de arenas, 
+zona con filtro coalescente, cámara de almacenamiento de hidrocarburos con obturador automático y boca de salida de 125 
+mm de diámetro.
+Incluye: Replanteo. Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 Decantador 1,0 1,00
+Total 11.04 1,000
+11.05 Partida UD ARQUETA REGISTRO 1,000
+Arqueta con sumidero sifónico y desagüe directo lateral, registrable, enterrada, construida con fábrica de ladrillo cerámico 
+hueco, de 1/2 pie de espesor, recibido con mortero de cemento M-5, de dimensiones interiores 60x60x60 cm, sobre solera de 
+hormigón en masa HM-30/B/20/I+Qb de 15 cm de espesor, formación de pendiente mínima del 2%, con el mismo tipo de 
+hormigón, enfoscada y bruñida interiormente con mortero de cemento, industrial, con aditivo hidrófugo, M-15 formando 
+aristas y esquinas a media caña, cerrada superiormente con marco y tapa de fundición clase B-125 según UNE-EN 124. 
+Incluso mortero para sellado de juntas.
+Incluye: Replanteo. Vertido y compactación del hormigón en formación de solera. Formación de la obra de fábrica con 
+ladrillos, previamente humedecidos, colocados con mortero. Conexionado de los colectores a la arqueta. Relleno de 
+hormigón para formación de pendientes. Enfoscado y bruñido con mortero, redondeando los ángulos del fondo y de las 
+paredes interiores de la arqueta. Colocación del sumidero sifónico en el dado de hormigón y montaje de la rejilla de 
+sumidero. Realización del cierre hermético y colocación de la tapa y los accesorios. Comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós.
+11.06 Partida UD ARQUETA BOMBEO - SISTEMA ELEVACIÓN AGUAS PLUVIALES 1,000
+Arqueta de bombeo enterrada, de dimensiones interiores 150x150x200 cm, construida con fábrica de ladrillo cerámico 
+hueco, de 1/2 pie de espesor, recibido con mortero de cemento, industrial, M-5, sobre solera de hormigón en masa HM-
+30/B/20/I+Qb de 15 cm de espesor, enfoscada y bruñida interiormente con mortero de cemento, industrial, con aditivo 
+hidrófugo, M-15 formando aristas y esquinas a media caña, con sifón formado por un codo de 87°30' de PVC largo, cerrada 
+superiormente con tablero cerámico hueco machihembrado, losa de hormigón HA-30/B/20/IIb+Qb de 20 cm de espesor 
+armada con malla electrosoldada y tapa prefabricada de hormigón armado con cierre hermético al paso de los olores 
+mefíticos; conjunto de dos bombas iguales en funcionamiento alternativo, siendo cada una de ellas una bomba sumergible, 
+para achique de aguas fecales domésticas, con carcasa de acero inoxidable, modelo UNILIFT AP – 35.40.08.1.V 
+"GRUNDFOS", de una etapa, centrífuga, apta para temperaturas desde 0 hasta 55°C, tamaño máximo de partículas 50 mm, 
+con impulsor vórtex, conexión de descarga Rp 2", con interruptor de flotador, motor asíncrono de 2 polos, 1,2 kW de potencia 
+y 1,8 kW de consumo, con protección de sobrecarga térmica con rearme automático, alimentación trifásica, protección IP68 
+y aislamiento clase F, válvula antirretorno y cable de alimentación de 10 m, conectadas a conductos de impulsión de aguas 
+residuales realizados con tubo de PVC. Incluso accesorios, uniones y piezas especiales para la instalación de dos bombas y 
+su conexión a las redes eléctrica y de saneamiento.
+Incluye: Replanteo. Vertido y compactación del hormigón en formación de solera. Formación de la obra de fábrica con 
+ladrillos, previamente humedecidos, colocados con mortero. Conexionado de los colectores a la arqueta. Enfoscado y 
+bruñido con mortero, redondeando los ángulos del fondo y de las paredes interiores de la arqueta. Formación del tablero 
+armado. Colocación de las bombas. Conexión a la red eléctrica. Conexión a la red de saneamiento. Realización del cierre 
+hermético y colocación de la tapa y los accesorios. Comprobación de su correcto funcionamiento. Realización de pruebas de 
+servicio.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós.
+Spc0010 ARQUETA BOMBEO 1,0 1,00
+Total 11.06 1,000
+11 Capítulo EQUIPAMIENTO
+ITA010b Partida Ud ASCENSOR 6 PERSONAS / 450 KG / 4 paradas 1,000
+Ascensor eléctrico sin cuarto de máquinas de frecuencia variable de 1 m/s de velocidad, 4 paradas, 450 kg de carga nominal, 
+con capacidad para 6 personas, nivel medio de acabado en cabina de 1000x1250x2200 mm, maniobra universal simple, 
+puertas interiores automáticas de acero inoxidable y puertas exteriores automáticas en acero para pintar de 800x2000 mm.
+Incluye: Replanteo de guías y niveles. Colocación de los puntos de fijación. Instalación de las lámparas de alumbrado del 
+hueco. Montaje de guías, cables de tracción y pasacables. Colocación de los amortiguadores de foso. Colocación de 
+contrapesos. Presentación de las puertas de acceso. Montaje del grupo tractor. Montaje del cuadro y conexión del cable de 
+maniobra. Montaje del bastidor, el chasis y las puertas de cabina con sus acabados. Instalación del limitador de velocidad y el 
+paracaídas. Instalación de las botoneras de piso y de cabina. Instalación del selector de paradas. Conexionado con la red 
+eléctrica. Instalación de la línea telefónica y de los sistemas de seguridad. Comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 ascensor 1,0 1,00
+Spc0010
+Total ITA010b 1,000
+SAI120 Partida Ud CISTERNA EMPOTRADA GEBERIT S/MURO LADRILLO/HORMIGÓN 10,000
+Cisterna de polietileno, con acceso y accionamiento frontal, descarga doble de 6-3 litros o única interrumpible, ajustable a 
+4,5, 6 ó 7 litros para descarga total y a 3 ó 4 litros para descarga parcial, modelo Sigma 12 cm, de 120 mm de profundidad, 
+sobre bastidor autoportante, premontado, de 500 mm de anchura y 1120 mm de altura, acabado pintado al horno, con patas 
+de apoyo antideslizantes de acero galvanizado ajustables en altura hasta 200 mm y orientables, tubo guía para tubo de 
+alimentación de aparatos sanitarios serie AquaClean, para inodoro suspendido, código de pedido 111.374.00.5, serie Duofix 
+"GEBERIT", y pulsador para accionamiento de cisterna, de plástico, lacado de color blanco acabado mate con molduras de 
+color blanco, de descarga doble, código de pedido 115.883.01.1, modelo Sigma30,. Instalación empotrada en muro de 
+fábrica.
+Incluye: Replanteo. Colocación y fijación de la cisterna. Conexión a la red de evacuación. Conexión a la red de agua fría. 
+Montaje de accesorios y complementos. Comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Cisternas empotradas 10,0 10,00
+Spc0010
+Total SAI120 10,000
+SAI020 Partida Ud MONTAJE (suministro no incluido) DE INODORO SUSPENDIDO 10,000
+Montaje de inodoro suspendido LAUFEN PRO S WALL-HUNG WC RIMLESS COMPACT (no incluido el suministro en este 
+precio) sobre bastidor. Incluso elementos de fijación y silicona para sellado de juntas.
+Incluye: Replanteo. Colocación y fijación del aparato. Montaje del desagüe. Conexión a la red de evacuación. Conexión a la 
+red de agua fría. Comprobación de su correcto funcionamiento. Sellado de juntas.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Inodoros 10,0 10,00
+Spc0010
+Total SAI020 10,000
+SAL005 Partida Ud rev02_MONTAJE (suminitro no incluido) DE ENCIMERA + LAVABO INBANI C/ALMACENAMIENTO 10,000
+Montaje mueble-encimera marca INBANI modelo STRATO A acabado verde de medidas 80x50cm y lavabo integrado INBANI 
+H2 SOLISSURFACE acabado verde. Suministros de mueble y lavabo no incluidos . Incluso juego de fijación y silicona para 
+sellado de juntas.
+Incluye: Replanteo. Colocación y fijación del aparato. Montaje del desagüe. Conexión a la red de evacuación. Comprobación 
+de su correcto funcionamiento. Sellado de juntas.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Muebles + lavabos 10,0 10,00
+Spc0010
+Total SAL005 10,000
+SGL020 Partida Ud MONTAJE (suministro no incluido) DE GRIFERIA MONOMANDO LAVABO 10,000
+Montaje de GRIFERIA (parte empotrada y parte vista) GRIFO 362103NC NIQUEL CEPILLADO LAVABO EMP. 2 FLORONES 
+(Suministros de griferia no incluido). Incluso elementos de conexión, enlaces de alimentación flexibles de 3/8" de diámetro y 
+350 mm de longitud, válvula antirretorno y dos llaves de paso.
+Incluye: Replanteo. Colocación. Conexionado. Comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Griferia lavabos 10,0 10,00
+Spc0010
+Total SGL020 10,000
+SGD020 Partida Ud MONTAJE (suministro no incluido) DE GRIFERIA MONOMANDO DUCHA 10,000
+Montaje de GRIFERIA (parte empotrada y parte vista) GRIFO K3615021NC NIQUEL CEPILLADO 361502SNC DUCHA 
+(Suministros de griferia no incluido). Incluso elementos de conexión, válvula antirretorno y dos llaves de paso.
+Incluye: Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Griferia ducha 10,0 10,00
+Spc0010
+Total SGD020 10,000
+SAD025 Partida Ud MONTAJE (suministro no incluido) DE PLATO DE DUCHA 9,000
+Montaje (suministro no incluido) de PLATO DE DUCHA QUO STONE SAND 80X150 cm. Incluso conexión desague y recibido y 
+sellado de plato de ducha.
+Incluye: Replanteo. Colocación y fijación del aparato. Montaje del desagüe. Conexión a la red de evacuación. Comprobación 
+de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Plato de ducha 9,0 9,00
+Spc0010
+Total SAD025 9,000
+SAB010 Partida Ud MONTAJE (suministro no incluido) DE BAÑERA 1,000
+Montaje (suministro no incluido) de Bañera ROCA VYTHOS, de 140x70x43 Cm. Incluso silicona para sellado de juntas.
+Incluye: Replanteo. Colocación y fijación del aparato. Montaje del desagüe. Conexión a la red de evacuación. Comprobación 
+de su correcto funcionamiento. Sellado de juntas.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Bañera 1 1,0 1,00
+Spc0010
+Total SAB010 1,000
+ACC01 Partida Ud MONTAJE (suministro no incluidos) DE ACCESORIOS DE BAÑO 10,000
+Montaje (Suministros no incluidos) de los siguientes accesorios por baño:
+- 3 ud de colgador inox cepillado
+- 1 unidad de toallero L 400mm
+- 1 UD DE PORTARROLLOS wc
+- 1 UD de escobillero inox cepillado
+Criterio de medición de proyecto: Número de baños, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades de baños realmente colocadas según especificaciones de 
+Proyecto.
+Spc0010 Baños 10,0 10,00
+Spc0010
+Total ACC01 10,000
+12 Capítulo URBANIZACIÓN
+12.4 Capítulo OBRA COMPLEM. PISCINA
+RBE010 Partida m² CAPA REGULARIZACIÓN MORTERO CSIII W2 PARA IMP. PISCINA 42,470
+Capa base de mortero de cemento, tipo GP CSIII W2, según UNE-EN 998-1, color gris, de 10 mm de espesor, maestreado, con 
+acabado rugoso, aplicado manualmente, sobre paramento exterior de hormigón, vertical para regularización y posterior 
+aplicación de impemreabilización en piscina; previa aplicación de puente de adherencia, compuesto de resinas sintéticas, 
+cargas minerales y aditivos orgánicos e inorgánicos, para regularizar la porosidad y mejorar la adherencia del soporte, 
+deficiente en el 100% de la superficie soporte. Incluso malla de fibra de vidrio antiálcalis en los cambios de material para 
+evitar fisuras.
+Criterio de valoración económica: El precio incluye la protección de los elementos del entorno que puedan verse afectados 
+durante los trabajos y la resolución de puntos singulares, pero no incluye la capa de terminación de mortero.
+Incluye: Preparación de la superficie soporte. Despiece de paños de trabajo. Colocación de reglones y lienzas. Colocación de 
+tientos. Formación de maestras. Aplicación del producto regulador de la absorción. Preparación del mortero. Colocación de 
+la malla entre distintos materiales y en los frentes de forjado. Aplicación del mortero. Realización de juntas y puntos 
+singulares. Ejecución del acabado. Curado del mortero.
+Criterio de medición de proyecto: Superficie medida según documentación gráfica de Proyecto, deduciendo el 50% de los 
+huecos entre 2 y 4 m² y el 100% de los huecos mayores de 4 m², añadiendo a cambio, en estos últimos, la superficie de la 
+parte interior del hueco, correspondiente al desarrollo de jambas y dinteles. En los huecos que no se deduzcan, o que se 
+deduzcan parcialmente, están incluidos los trabajos de realizar la superficie interior del hueco.
+Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto, deduciendo 
+el 50% de los huecos entre 2 y 4 m² y el 100% de los huecos mayores de 4 m², añadiendo a cambio, en estos últimos, la 
+superficie de la parte interior del hueco, correspondiente al desarrollo de jambas y dinteles. En los huecos que no se 
+deduzcan, o que se deduzcan parcialmente, están incluidos los trabajos de realizar la superficie interior del hueco.
+Spc0010 Piscina
+Spc0010 Base 1,0 1,00
+Spc0010 Paredes 1,0 1,88 1,62 3,05
+Spc0010 1,0 3,90 1,62 6,32
+Spc0010 1,0 7,46 1,62 12,09
+Spc0010 1,0 2,02 0,62 1,25
+Spc0010 1,0 5,58 1,17 6,53
+Spc0010 1,0 1,87 1,17 2,19
+Spc0010 Playa 1,0 1,00
+Spc0010 Paredes 1,0 5,58 0,45 2,51
+Spc0010 1,0 1,87 0,45 0,84
+Spc0010 Coronación 1,0 18,96 0,30 5,69
+Spc0010
+Total RBE010 42,470
+UPE040 Partida Ud DUCHA PARA PISCINA ACERO INOX 1,000
+Ducha con grifo monomando para piscina, de 43 mm de diámetro, de acero inoxidable AISI 304, acabado pulido brillante, con 
+rociador, válvula de apertura y grifo lavapiés, fijada a una base de hormigón HM-20/B/20/X0 de 40x40x40 cm, con anclajes 
+dotados de mecanismo para conexión equipotencial.
+Incluye: Replanteo. Excavación. Hormigonado de la base de apoyo. Montaje de la ducha. Eliminación y limpieza del material 
+sobrante.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 Dcuha piscina 1,0 1,00
+Spc0010
+Total UPE040 1,000
+SAD025b Partida Ud PLATO DUCHA EXTERIOR PISCINA 160X100cm 1,000
+Plato de ducha rectangular para piscina exterior, de resina, color blanco, acabado mate imitación piedra, con fondo 
+antideslizante y orificio de desagüe en un lateral de 90 mm de diámetro, de 1000x1600x40 mm, con válvula sifónica de 30 mm 
+de altura de sifón.
+Criterio de valoración económica: El precio no incluye la grifería.
+Incluye: Replanteo. Colocación y fijación del aparato. Montaje del desagüe. Conexión a la red de evacuación. Comprobación 
+de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Spc0010 Ducha piscina 1,0 1,00
+Spc0010
+Total SAD025b 1,000
+14 Capítulo INSTALACIÓN ELÉCTRICA/TELECO/AUDIOVISUALES
+14_1 Capítulo INSTALACIÓN ENLACE
+07.01.01 Partida ud CAJA GENERAL DE PROTECCIÓN 160A 1,000
+Suministro e instalación en el interior de hornacina mural de caja general de protección, equipada con bornes de conexión, 
+bases unipolares previstas para colocar fusibles de intensidad máxima 160 A-con fusibles de 100A, esquema 9, para 
+protección de la línea general de alimentación, formada por una envolvente aislante, precintable y autoventilada, según UNE-
+EN 60439-1, grado de inflamabilidad según se indica en UNE-EN 60439-3, con grados de protección IP43 según UNE 20324 e 
+IK08 según UNE-EN 50102, que se cerrará con puerta metálica con grado de protección IK10 según UNE-EN 50102, protegida 
+de la corrosión y con cerradura o candado. Normalizada por la empresa suministradora y preparada para acometida 
+subterránea. Incluso fusibles y elementos de fijación y conexión con la conducción enterrada de puesta a tierra. Totalmente 
+montada, conexionada y probada.
+Incluye: Replanteo de la situación de los conductos y anclajes de la caja. Fijación del marco. Colocación de la puerta. 
+Colocación de tubos y piezas especiales. Conexionado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+07.01.03 Partida m CANALIZACIÓN DN160mm ENTRE CGP Y CENTRALIZACIONES 10,000
+Suministro e instalación de canalización de tubo curvable, suministrado en rollo, de polietileno de doble pared (interior lisa y 
+exterior corrugada), de color naranja, de 160 mm de diámetro nominal, resistencia a la compresión 450 N. Instalado 
+enterrado.
+Incluye: Replanteo. Colocación del tubo.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Criterio de valoración económica: El precio incluye los equipos y la maquinaria necesarios para el desplazamiento y la 
+disposición en obra de los elementos, pero no incluye la excavación ni el relleno principal.
+Spc0010 DE CGP A ARMARIO 1,0 10,00 10,00
+Spc0010
+Total 07.01.03 10,000
+07.01.02 Partida m CABLE RZ1-K (AS) 4x50mm2 7,000
+Cable eléctrico multiconductor, Afumex Class 1000 V (AS) "PRYSMIAN", de fácil pelado y tendido (ahorro del 30% del tiempo 
+de mano de obra), tipo RZ1-K (AS), tensión nominal 0,6/1 kV, de alta seguridad en caso de incendio (AS), reacción al fuego 
+clase Cca-s1b,d1,a1, con conductores de cobre recocido, flexible (clase 5), de 4x50 mm² de sección, aislamiento de 
+polietileno reticulado (XLPE), de tipo DIX3, cubierta de poliolefina termoplástica, de tipo Afumex Z1, de color verde, y con las 
+siguientes características: no propagación de la llama, no propagación del incendio, baja emisión de humos opacos, 
+reducida emisión de gases tóxicos, libre de halógenos, nula emisión de gases corrosivos, resistencia a la absorción de agua, 
+resistencia al frío, resistencia a los rayos ultravioleta y resistencia a los agentes químicos. Incluye pequeño material auxiliar 
+necesari opara su montaje e instalación.
+07.01.06 Partida ud CENTRALIZACIÓN CONTADORES: MS+T1+3T+2x4M 1,000
+Suministro e instalación de centralización de contadores sobre paramento vertical, en armario de contadores, compuesta 
+por: unidad funcional de interruptor general de maniobra de 160 A; unidad de protecciones transitorias tipo 1 según normas 
+de compañía distribuidora con conexión directa al embarrado; unidad funcional de embarrado general de la concentración 
+formada por 1 módulo; unidad funcional de fusibles de seguridad formada por 1 módulo; unidad funcional de medida formada 
+por 2 módulos de 4 contadores monofásicos y 1 módulo de 3 contadores trifásicos, con seccionamiento; unidad funcional de 
+mando que contiene los dispositivos de mando para el cambio de tarifa de cada suministro; unidad funcional de embarrado 
+de protección, bornes de salida (DOBLES PARA CADA UNA DE LAS VIVIENDAS, PERMITIÉNDOSE ASÍ SALIDA A VIVIENDA Y 
+SALIDA A VEHÍCULO ELÉCTRICO) y conexión a tierra formada por 1 módulo. Incluso conexiones de la línea repartidora y de 
+las derivaciones individuales a sus correspondientes bornes y embarrados, cableado y cuantos accesorios sean necesarios 
+para su correcta instalación. Totalmente montada, conexionada y probada.
+Incluye: Replanteo del conjunto prefabricado. Colocación y nivelación del conjunto prefabricado. Fijación de módulos al 
+conjunto prefabricado. Conexionado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+07.01.08 Partida m TUBO CORRUGADO 50mm EN CONDUCTO OBRA FABRICA 237,000
+Suministro e instalación empotrada en elemento de construcción de obra de fábrica de canalización de tubo curvable de 
+PVC, corrugado, de color negro, de 50 mm de diámetro nominal, con grado de protección IP545.
+Spc0010 SSCC 1,0 36,00 36,00
+Spc0010 VIV 1 1,0 35,00 35,00
+Spc0010 VIV 2 1,0 41,00 41,00
+Spc0010 VIV 3 1,0 39,00 39,00
+Spc0010 VIV 4 1,0 44,00 44,00
+Spc0010 VIV 5 1,0 42,00 42,00
+Spc0010
+Total 07.01.08 237,000
+07.01.009 Partida m CABLE H07Z1K 1x10mm² INSTALADO BAJO TUBO 180,000
+Cable unipolar H07Z1-K (AS), siendo su tensión asignada de 450/750 V, reacción al fuego clase Cca-s1a,d1,a1, con conductor 
+multifilar de cobre clase 5 (-K) de 10 mm² de sección, con aislamiento de compuesto termoplástico a base de poliolefina libre 
+de halógenos con baja emisión de humos y gases corrosivos (Z1). Incluso accesorios y elementos de sujeción.
+Spc0010 SSCC 5,0 36,00 180,00
+Spc0010
+Total 07.01.009 180,000
+07.01.10 Partida m CABLE H07Z1K 1x35mm² INSTALADO BAJO TUBO 612,000
+Cable unipolar H07Z1-K (AS), siendo su tensión asignada de 450/750 V, reacción al fuego clase Cca-s1a,d1,a1, con conductor 
+multifilar de cobre clase 5 (-K) de 35 mm² de sección, con aislamiento de compuesto termoplástico a base de poliolefina libre 
+de halógenos con baja emisión de humos y gases corrosivos (Z1). Incluso accesorios y elementos de sujeción.
+Spc0010 V0.1 3,0 38,00 114,00
+Spc0010 V1.1 3,0 41,00 123,00
+Spc0010 V1.2 3,0 39,00 117,00
+Spc0010 V2.1 3,0 44,00 132,00
+Spc0010 V2.2 3,0 42,00 126,00
+Spc0010
+Total 07.01.10 612,000
+07.01.11 Partida ud RABILLO CABLEADO PARA CONEXIÓN CGP-CSS 50mm² 1,000
+Suministro e instalación rabillo 4x50mm² RZ1-K(AS) para interconexión CGP-CSS distribuidora. En canalización, totalmente 
+instalado y montado.
+07.01.12 Partida m CANAL PROTECCIÓN LGA ARMARIO CONTADORES 6,000
+Suministro e instalación canal protectora LGA en armario contadores.
+07.02.14 Partida UD TRAMITACIÓN Y LEGALIZACIÓN DE INSTALACIÓN 1,000
+Tramitación, certificación y legalización de instalación eléctrica ante organismos competentes.
+Incluye pago de tasas.
+Total 14_1 1,000
+14_2 Capítulo TOMA TIERRA EDIFICIO
+07.01.1 Partida PUESTA A TIERRA 1,000
+Conexión de toma de tierra compuesta por 6 pICAS  acero cobreado de 2 m de longitud, hincadas en el terreno, conectada 
+puente para comprobación, dentro de una arqueta de registro de polipropileno de 30x30 cm. Incluso grapa abarcón para la 
+conexión del electrodo con la línea de enlace y aditivos para disminuir la resistividad del terreno. Se incluirá cableado 
+perimetral por dentro de la estructura de forma que se forme puesta a tierra de estructura de todos sus elementos metálicos, 
+estimados 150 metros de cable desnudos CU 35mm².
+Incluye: Replanteo. Excavación con medios manuales. Eliminación de las tierras sueltas del fondo de la excavación. Hincado 
+de la pica. Colocación de la arqueta de registro. Conexión del electrodo con la línea de enlace. Relleno del trasdós. Conexión 
+a la red de tierra. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Total 14_2 1,000
+14_3 Capítulo INSTALACIÓN ZONAS COMUNES-ESCALERAS
+07.02.02 Partida UD CUADRO COMUNES 1,000
+Suministro e instalación de cuadro general de mando y protección para una potencia máxima admisible de 17,32kW (25A) 
+con tensión de servicio trifásica para servicios comunes de escalera aparcamiento. Envolvente preparada para 25A de 
+potencia de disipación. Incluye envolvente para instalación en superficie o para empotrar en obra, para albergar un total de 
+hasta 72 móduos, aparamenta de protección, incluyendo 1 interruptor general 25A, protecciones generales de 
+sobretensiones permanentes y transitorias T2, diferenciales 30mA y protecciones magnetotérmicas para: iluminación 
+escalera, emergencias, luz exterior, video portero, tomas de corriente generales, Salida para ascensor, Salida para cuadro de 
+aparcamiento. Todo ello según documentación gráfica de proyecto y esquemas, Totalmente montado y probado.
+07.02.04 Partida UD SUBCUADRO RITU-A 1,000
+Suministro e instalación de subcuadro de mando y protección para una potencia máxima admisible de 5,75kW (25A) con 
+tensión de servicio monofásica para servicios de RITU-A de telecomunicaciones. Envolvente preparada para 25A de potencia 
+de disipación. Incluye envolvente para superficie IP55, para albergar un total de 18 móduos, aparamenta de protección, 
+incluyendo protecciones para suministro a todos los equipos todo ello según documentación gráfica de proyecto y esquemas, 
+Totalmente montado y probado.
+07.01.08 Partida m TUBO CORRUGADO 50mm EN CONDUCTO OBRA FABRICA 20,000
+Suministro e instalación empotrada en elemento de construcción de obra de fábrica de canalización de tubo curvable de 
+PVC, corrugado, de color negro, de 50 mm de diámetro nominal, con grado de protección IP545.
+Spc0010 ALIMENTACION SUBCUADRO RITU-A 1,0 20,00 20,00
+Spc0010
+Total 07.01.08 20,000
+07.01.085 Partida m CABLE H07Z1K 1x6mm² INSTALADO BAJO TUBO 30,000
+Cable unipolar H07Z1-K (AS), siendo su tensión asignada de 450/750 V, reacción al fuego clase Cca-s1a,d1,a1, con conductor 
+multifilar de cobre clase 5 (-K) de 6 mm² de sección, con aislamiento de compuesto termoplástico a base de poliolefina libre 
+de halógenos con baja emisión de humos y gases corrosivos (Z1). Incluso accesorios y elementos de sujeción.
+Spc0010 ALIMENTACION SUBCUADRO RITU-A 3,0 10,00 30,00
+Spc0010
+Total 07.01.085 30,000
+07.01.009 Partida m CABLE H07Z1K 1x10mm² INSTALADO BAJO TUBO
+Cable unipolar H07Z1-K (AS), siendo su tensión asignada de 450/750 V, reacción al fuego clase Cca-s1a,d1,a1, con conductor 
+multifilar de cobre clase 5 (-K) de 10 mm² de sección, con aislamiento de compuesto termoplástico a base de poliolefina libre 
+de halógenos con baja emisión de humos y gases corrosivos (Z1). Incluso accesorios y elementos de sujeción.
+07.02.05 Partida UD PUNTO LUZ SIMPLE ZONAS COMUNES INTERIOR Y EXTERIOR 66,000
+Suministro e Instalación de Punto de luz sencillo interior y exterior, en zonas comunes circuito alumbrado de acceso, 
+rellanos, escaleras, zonas técnicas azotea y exteriores. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V unipolar de 1,5 mm2. Totalmente instalado. No se incluye en ningún caso la instalación de 
+luminaria, sin haberse prescrito marca-modelo de luminaria, pendiente de definición.
+07.02.07 Partida UD PUNTO CRUZAMIENTO-PULSADOR 5,000
+Suministro e Instalación de Punto de cruzamiento o pulsador Con p.p., de instalacion, caja de registro, regletas de conexión, 
+tubo AISCAN de 20 mm y cable V-750V de 1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos 
+o similar a  JUNG SERIE LS 990 ACABADO BLANCO. indicado en memoria calidades Totalmente instalado
+07.02.08 Partida UD SENSOR MOVIMIENTO INTERIOR 6,000
+Suministro instalación detector de presencia dicromatico programable de empotrar en techo. Totalmente instalado.
+07.02.09 Partida UD PUNTO TOMA CORRIENTE EXTERIOR IP44 16A P-N-T 10,000
+Suministro e Instalación de punto de toma de corriente exterior 16A+T. Con p.p., de instalacion, caja de registro, regletas de 
+conexión, tubo AISCAN de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, interruptor acorde a acabados 
+requeridos .  JUNG SERIE LS 990 PARA EXTERIOR CON TAPETA ACABADO BLANCO. Totalmente instalado
+07.02.10 Partida UD PUNTO VIDEOPORTERO 1,000
+Suministro e Instalación de punto de video portero. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, sin terminaciones. Totalmente instalado
+07.02.11 Partida UD RELOJ PROGRAMADO 1MOD LUCES 3,000
+Suministro e instalación relé programador de iluminación y servicios auxiliares.
+07.02.12 Partida m ALIMENTACIÓN EN PUNTA CUADRO ASCENSOR 12,000
+Suministro e Instalación de LÍNEA 5X6mm² bajo tubo 25mm. Con p.p., de instalacion, caja de registro, regletas de conexión, 
+tubo AISCAN de 25 mm y cable Z1-750V de 5x6 mm2. Totalmente instalado - Se incluye instalación hasta cuarto ascensor, 
+pendiente definición con ascensorista si necesita cuadro de protecciones o viene todo integrado según modelo, marca e 
+instalación.
+07.02.13 Partida UD PUNTO EMERGENCIA Y SUMINISTRO EMERGENCIA 150LM 7,000
+Suministro e Instalación de Punto de luz sencillo interior y luminaria de emergencia de 150LM empotrada en falso techo, 
+clase II, IP42, con baterías de Ni-Cd de alta temperatura, autonomía de 1 h, alimentación a 230 V, tiempo de carga 24 h. Con 
+p.p., de instalacion, caja de registro, regletas de conexión, tubo AISCAN de 20 mm y cable V-750V de 1,5 mm2. Totalmente 
+instalado y comprobado.
+07.02.14 Partida UD TRAMITACIÓN Y LEGALIZACIÓN DE INSTALACIÓN 1,000
+Tramitación, certificación y legalización de instalación eléctrica ante organismos competentes.
+Incluye pago de tasas.
+Total 14_3 1,000
+14_4 Capítulo INSTALACIÓN VIVIENDAS
+CUADRO40A9.2K Partida UD CUADRO PROTECCIONES VIVIENDA 5,000
+Suministro e instalación de cuadro general de mando y protección para una potencia máxima admisible de 9,2kW con 
+tensión de servicio monofásica. Envolvente preparada para 40A de potencia de disipación. Incluye envolvente para empotrar 
+en obra, para albergar un total de 48 móduos, aparamenta de protección, incluyendo 1 interruptor general 40A, protecciones 
+generales de sobretensiones permanentes POP y transitorias T2, 3 diferenciales 40A-30mA y protecciones magnetotérmicas 
+para alimentación de circuitos domésticos de Vivienda con Electrifiación Elevada: C1-ILUMINACIÓN, C2-TCS GENERALES, 
+C3-HORNO YPLACA COCINA, C4-RESISTENCIA AEROTERMO, LAVADORA Y LAVAVAJILLAS, C5-TC CUARTOS HÚMEDOS, C6 - 
+ADICIONAL ILUMINACIÓN , C7-ADICIONAL TCS, C9- ALIMENTACIÓN AIRE ACONDICIONADO, C10- ALIMENTACIÓN 
+SECADORA ,PERSIANAS Y EQUIPOS EXTERIORES Y ALIMENTACAIÓN PISCINA según indicado en documentación gráfica 
+adjunta. Totalmente montado y probado.
+SUBCPISC Partida UD SUBCUADRO PISCINA 1,000
+Cuadro eléctrico de mando y protección de unidades de piscina (bombeo, cloración, automatización, electroválvulas, 
+maniobras...). Todo montado probado y conexionado, completamente en funcionamiento. 
+Incluye envolvente IP65 y aparamenta interior según documentaicón gráfica.
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+PLUZIMPLE Partida UD PUNTO LUZ SENCILLO 135,000
+Suministro e Instalación de Punto de luz sencillo interior. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V unipolar de 1,5 mm2. Totalmente instalado. No se incluye en ningún caso la instalación de 
+luminaria, sin haberse prescrito marca-modelo de luminaria, pendiente de definición.
+Spc0010 V0.1 down superficie 12,0 12,00
+Spc0010 V0.1 luminaria decorativa pie/mesita 10,0 10,00
+Spc0010 V0.1 luminaria decorativa suspendida 1,0 1,00
+Spc0010 V0.1 downlight superficie IP44 6,0 6,00
+Spc0010 V1.1 down superficie 9,0 9,00
+Spc0010 V1.1 luminaria decorativa pie/mesita 11,0 11,00
+Spc0010 V1.1 luminaria decorativa suspendida 1,0 1,00
+Spc0010 V1.1 downlight superficie IP44 6,0 6,00
+Spc0010 V1.2 down superficie 10,0 10,00
+Spc0010 V1.2 luminaria decorativa pie/mesita 8,0 8,00
+Spc0010 V1.2 luminaria decorativa suspendida 1,0 1,00
+Spc0010 V1.2 downlight superficie IP44 7,0 7,00
+Spc0010 V2.1 down superficie 9,0 9,00
+Spc0010 V2.1 luminaria decorativa pie/mesita 11,0 11,00
+Spc0010 V2.1 luminaria decorativa suspendida 1,0 1,00
+Spc0010 V2.1 downlight superficie IP44 6,0 6,00
+Spc0010 V2.2 down superficie 10,0 10,00
+Spc0010 V2.2 luminaria decorativa pie/mesita 8,0 8,00
+Spc0010 V2.2 luminaria decorativa suspendida 1,0 1,00
+Spc0010 V2.2 downlight superficie IP44 7,0 7,00
+Spc0010
+Total PLUZIMPLE 135,000
+PLUZEXTERIOR Partida ud PUNTO LUZ EXTERIORES 46,000
+Suministro e Instalación de Punto de luz sencillo interior. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V manguera de 3x1,5 mm2. Totalmente instalado. No se incluye en ningún caso la instalación 
+de luminaria, sin haberse prescrito marca-modelo de luminaria, pendiente de definición.
+Spc0010 V0.1 Lum pared alta exterior 3,0 3,00
+Spc0010 V0.1 Lum pared baja exterior 9,0 9,00
+Spc0010 V0.1 lum decorativa pie ext 1,0 1,00
+Spc0010 V0.1 lum decorativa suspendida ext 1,0 1,00
+Spc0010 V1.1 Lum pared alta exterior 2,0 2,00
+Spc0010 V1.1 Lum pared baja exterior 1,0 1,00
+Spc0010 V1.2 Lum pared alta exterior 4,0 4,00
+Spc0010 V1.2 Lum pared baja exterior 1,0 1,00
+Spc0010 V2.1 Lum pared alta exterior 3,0 3,00
+Spc0010 V2.1 Lum pared baja exterior 8,0 8,00
+Spc0010 V2.2 Lum pared alta exterior 4,0 4,00
+Spc0010 V2.2 Lum pared baja exterior 9,0 9,00
+Spc0010
+Total PLUZEXTERIOR 46,000
+TIRALEDCORTIN Partida UD PUNTO TIRA LED 11,000
+Instalación de Punto de luz sencillo para tira de led de 2 a 5 metros. Con p.p., de instalacion, caja de registro, regletas de 
+conexión, tubo AISCAN de 20 mm y cable V-750V de 1,5 mm2. Totalmente instalado. No se incluye en ningún caso la 
+instalación de luminaria/tira led pendiente de definición, sin haberse prescrito marca-modelo de luminaria, pendiente de 
+definición.
+Spc0010 V0.1 3,0 3,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total TIRALEDCORTIN 11,000
+07.02.06 Partida UD PUNTO INTERRUPTOR SIMPLE 88,000
+Suministro e Instalación de Punto de interruptor simple con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V de 1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos o 
+similar a JUNG SERIE LS 990 ACABADO BLANCO. Indicado en memoria calidades. Totalmente instalado
+Spc0010 V0.1 26,0 26,00
+Spc0010 V1.1 16,0 16,00
+Spc0010 V1.2 15,0 15,00
+Spc0010 V2.1 16,0 16,00
+Spc0010 V2.2 15,0 15,00
+Spc0010
+Total 07.02.06 88,000
+PINTCOMUTADO Partida UD PUNTO INTERRUPTOR CONMUTADO 20,000
+Suministro e Instalación de Punto de conmutado. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo 
+AISCAN de 20 mm y cable V-750V de 1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos o 
+similar a  JUNG SERIE LS 990 ACABADO BLANCO. indicado en memoria calidades. Totalmente instalado
+Spc0010 V0.1 12,0 12,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total PINTCOMUTADO 20,000
+07.02.07 Partida UD PUNTO CRUZAMIENTO-PULSADOR 39,000
+Suministro e Instalación de Punto de cruzamiento o pulsador Con p.p., de instalacion, caja de registro, regletas de conexión, 
+tubo AISCAN de 20 mm y cable V-750V de 1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos 
+o similar a  JUNG SERIE LS 990 ACABADO BLANCO. indicado en memoria calidades Totalmente instalado
+Spc0010 V0.1 3,0 3,00
+Spc0010 V1.1 9,0 9,00
+Spc0010 V1.2 9,0 9,00
+Spc0010 V2.1 9,0 9,00
+Spc0010 V2.2 9,0 9,00
+Spc0010
+Total 07.02.07 39,000
+PINTCONMIP44 Partida UD PUNTO INTERRUPTOR CONMUTADO EXTERIOR IP44 MÍNIMO 15,000
+Suministro e Instalación de Punto de conmutado con junta estanqueidad de la propia marca con garantía de IP44 incluso 
+cajas especiales y demás. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo AISCAN de 20 mm y cable V-
+750V de 1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos o similar a  JUNG SERIE LS 990 
+PARA EXTERIOR ACABADO BLANCO. indicado en memoria calidades. Totalmente instalado
+Spc0010 V0.1 9,0 9,00
+Spc0010 V1.1
+Spc0010 V1.2
+Spc0010 V2.1 3,0 3,00
+Spc0010 V2.2 3,0 3,00
+Spc0010
+Total PINTCONMIP44 15,000
+PPUNTOPERSIAN Partida UD PUNTO PERSIANA CON PULSADOR 15,000
+Suministro e Instalación de punto de alimentación a persianas con mecanismo de la marca y generado con 5 cables y 
+conectado con pulsadores según ubicación contenida en documentación gráfica. Con p.p., de instalacion, caja de registro, 
+regletas de conexión, tubo AISCAN de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, interruptor acorde a 
+acabados requeridos o similar a  JUNG SERIE LS 990 ACABADO BLANCO. Totalmente instalado
+Spc0010 V0.1 3,0 3,00
+Spc0010 V1.1 3,0 3,00
+Spc0010 V1.2 3,0 3,00
+Spc0010 V2.1 3,0 3,00
+Spc0010 V2.2 3,0 3,00
+Spc0010
+Total PPUNTOPERSIAN 15,000
+PTC16AINT Partida UD PUNTO TOMA CORRIENTE 16A P-N-TT 285,000
+Suministro e Instalación de punto de toma de corriente 16A+T. Con p.p., de instalacion, caja de registro, regletas de conexión, 
+tubo AISCAN de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos 
+o similar a  JUNG SERIE LS 990 ACABADO BLANCO.. Totalmente instalado
+Spc0010 V0.1 51,0 51,00
+Spc0010 V1.1 56,0 56,00
+Spc0010 V1.2 61,0 61,00
+Spc0010 V2.1 56,0 56,00
+Spc0010 V2.2 61,0 61,00
+Spc0010
+Total PTC16AINT 285,000
+07.02.09 Partida UD PUNTO TOMA CORRIENTE EXTERIOR IP44 16A P-N-T 20,000
+Suministro e Instalación de punto de toma de corriente exterior 16A+T. Con p.p., de instalacion, caja de registro, regletas de 
+conexión, tubo AISCAN de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, interruptor acorde a acabados 
+requeridos .  JUNG SERIE LS 990 PARA EXTERIOR CON TAPETA ACABADO BLANCO. Totalmente instalado
+Spc0010 V0.1 7,0 7,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 5,0 5,00
+Spc0010 V2.2 5,0 5,00
+Spc0010
+Total 07.02.09 20,000
+PTC25ACOC Partida UD PUNTO TOMA CORRIENTE COCINA 25A+T 5,000
+Suministro e Instalación de punto de toma de corriente para placa de cocina-horno de intensidad asignada 25A+T. Con p.p., 
+de instalacion, caja de registro, regletas de conexión, tubo AISCAN de 25 mm y cable V-750V de 6 mm2, caja universal de 
+mecanismo, interruptor acorde a acabados requeridos. Totalmente instalado
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total PTC25ACOC 5,000
+PTUSB Partida UD PUNTO TOMA USB
+Suministro e Instalación de punto de toma USB. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo AISCAN 
+de 20 mm y cable V-750V de 2,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos o similar a  
+JUNG SERIE LS 990 ACABADO BLANCO.. Totalmente instalado
+PALAAEXT Partida UD PUNTO DE ALIMENTACIÓN A UNIDAD EXTERIOR CLIMATIZACIÓN 5,000
+Punto de alimentación a unidad exterior de unidad de climatización de aire acondicionado. Con p.p., de instalacion, caja de 
+registro, regletas de conexión, tubo AISCAN de 25 mm y cable RV-1000V de 6 mm2, caja universal de mecanismo, interruptor 
+acorde a acabados requeridos. Totalmente instalado
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total PALAAEXT 5,000
+PPULSTIMB Partida UD PUNTO PULSADOR TIMBRE 5,000
+Punto de pulsador. Con p.p., de instalacion, caja de registro, regletas de conexión, tubo AISCAN de 20 mm y cable V-750V de 
+1,5 mm2, caja universal de mecanismo, interruptor acorde a acabados requeridos  JUNG SERIE LS 990 ACABADO BLANCO. 
+Totalmente instalado
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total PPULSTIMB 5,000
+UDTIMBRE Partida UD TIMBRE INTERIOR VIVIENDA 5,000
+Zumbador electromecánico. Sonido de zumbador con una sonoridad de 82dB.Tapa blanca.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total UDTIMBRE 5,000
+PTOVENTILADOR Partida UD PUNTO DE ALIMENTACIÓN EXTRACTORES 10,000
+Suministro e Instalación de Punto de alimentación para unidad de ventilación independiente en cuarto húmedo . Con p.p., de 
+instalacion, caja de registro, regletas de conexión, tubo AISCAN de 20 mm y cable V-750V unipolar de 1,5 mm2. Totalmente 
+instalado. No se incluye en ningún caso la instalación de luminaria, sin haberse prescrito marca-modelo de luminaria, 
+pendiente de definición.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total PTOVENTILADOR 10,000
+LEGALIZA Partida UD TRAMITACIÓN Y CERTIFICACIÓN DE INSTALACIÓN ELÉCTRICA 5,000
+Tramitación, certificación y legalización de instalación eléctrica ante administraciones competentes.
+Incluye pago de tasas.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total LEGALIZA 5,000
+Total 14_4 1,000
+14_5 Capítulo APARCAMIENTO - ELECTRICIDAD
+12.01 Partida UD CUADRO GENERAL APARCAMIENTO 1,000
+Suministro einstalción de envolvente IP55 de 54módulos, instalación en superficie para albergar aparamenta protección 
+circuitos según esquema unifilar.
+12.03 Partida UD SAI 2KW AUTONOMIA 10H 1,000
+Sistema de alimentación ininterrumpida, de 2 kVA de potencia, para alimentación monofásica con salida monofásica, 
+compuesto por rectificador de corriente y cargador de batería, baterías, inversor estático electrónico, bypass estático y 
+conmutador. Incluso accesorios necesarios para su correcta instalación. Marca y modelo LEGRAND SAIDAKER DK PLUS - 2 
+kW, con autonomía para mínimo 1 hora. Totalmente montado, conexionado y puesto en marcha por la empresa instaladora 
+para la comprobación de su correcto funcionamiento.
+12.05 Partida UD CIRCUITOS ALUMBRADO Y MANIOBRA PULSADORES 6,000
+Suministro e instalación de cable unipolar H07Z1-K 1,5mm² (3 conductores) instalados bajo tubo rígido de PVC DN 20mm.
+12.06 Partida UD CIRCUITOS TOMAS CORRIENTE 3,000
+Suministro e instalación de cable unipolar H07Z1-K 2,5mm² (3 conductores) instalados bajo tubo rígido de PVC DN 25mm.
+12.08 Partida UD TOMA DE CORRIENTE SUPERFICIE IP55 14,000
+Suministro e instalación de tomas de corriente tipo Schuko superficiales y estancas de mantenimiento y servicio para el 
+garaje. Se incluye suministro, montaje, totalmente conexionado y probado.
+12.10 Partida UD INTERRUPTOR SIMPLE SUPERFICIE IP55 8,000
+Suministro e instalación de interruptores unipolares tipo interruptor unipolar simple superficiales y estancos para la situarlos 
+en los trasteros, así como distribución en documentación gráfica. Se incluye suministro, montaje, totalmente conexionado y 
+probado.
+12.11 Partida UD CIRCUITO PUERTA APARCAMIENTO 1,000
+Suministro e instalación de cable unipolar H07Z1-K 2,5mm² (3 conductores) instalados bajo tubo rígido de PVC DN 25mm.
+12.12 Partida UD CIRCUITO BOMBEOS 2,000
+Suministro e instalación de cable multipolar RV-K 3x2,5mm² instalados bajo tubo rígido de PVC DN 25mm.
+12.14 Partida UD CIRCUITO BOMBEO ACHIQUE 1,000
+Suministro e instalación de líneas monofásicas con cableado SZ1-K(AS+) 3x2,5mm² en instalación bajo tubo rígido de PVC de 
+diámetro nominal DN20mm superficial (con calificación 4321 en impactos, acorde a las ITC del REBT pertinentes) para el 
+sistema de bombeo de agua pluvial de achique previsto.
+12.14B Partida UD CIRCUITO SEPARADOR HIDROCARBUROS (SI PROCEDE AIREACION) 1,000
+Suministro e instalación de cable unipolar H07Z1-K 2,5mm² (3 conductores) instalados bajo tubo rígido de PVC DN 25mm.
+12.15 Partida UD SEMAFOROS 1,000
+Suministro e instalación de parejas de semáforos de control de accesos y control de circulación en el interior de garaje 
+subterráneo, incluso accesorios de soporte y control. Totalmente montados y probados.
+12.16 Partida UD BANDAS PASO VEHÍCULOS 1,000
+Suministro e instalación de bandas de detección de vehículos en movimiento embebido en solera mediante arcos 
+magnéticos registrables, con sellado específico de fabricante, 3 en carrill de maniobra y distribución interior garaje y un 
+circuito en acceso y conmutación con semáforo para lógica de control y evitar cruces en rampa considerada de sentido único.
+12.17A Partida m CANALADURA RESERVA PASO CIRCUITOS VE 200x60 24,000
+Bandeja perforada de U23X, color gris RAL 7035, código de pedido 66200, serie 66 "UNEX", de 50x400 mm, resistencia al 
+impacto 20 julios, propiedades eléctricas: aislante, no propagador de la llama, estable frente a los rayos UV y con buen 
+comportamiento a la intemperie y frente a la acción de los agentes químicos, con 1 compartimento, con soporte horizontal, 
+de U23X, color gris RAL 7035, código de pedido 66203.
+Incluye: Replanteo. Fijación del soporte. Colocación y fijación de la bandeja.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+12.18 Partida m CANALADURA COLGADO LUMINARIAS ALTURA DETERMINADA 50,000
+Bandeja perforada de U23X, color gris RAL 7035, código de pedido 66090, serie 66 "UNEX", de 60x75 mm, resistencia al 
+impacto 5 julios, propiedades eléctricas: aislante, no propagador de la llama, estable frente a los rayos UV y con buen 
+comportamiento a la intemperie y frente a la acción de los agentes químicos, con 1 compartimento, con soporte horizontal, 
+de U23X, color gris RAL 7035, código de pedido 66103. - Podrá sustituirse por tubo H según detalle del promotor
+Incluye: Replanteo. Fijación del soporte. Colocación y fijación de la bandeja.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+12.19 Partida UD DETECTORES PRESENCIA 9,000
+Suministro e instalación de sensores detectores de movimiento estancos con radio de detección 6m y con tensión asignada 
+220-240Vac alimentados con cable de 1,5mm² y vuelta al cuadro para la instalación y excitación de 
+contactores/temporizadores. Se incluye suministro, instalación y montaje completo (incluso pequeño material), regulación y 
+pruebas.
+Total 14_5 1,000
+14_6 Capítulo INFRAESTRUCTURA COMÚN TELECOMUNICACIONES
+IAO012 Partida Ud PUNTOS DE INTERCONEXIÓN DE CABLES DE FIBRA ÓPTICA 1,000
+Punto de interconexión de cables de fibra óptica, para 36 fibras ópticas, formado por caja mural de acero galvanizado, como 
+registro principal de cables de fibra óptica; 36 conectores y 36 adaptadores SC simple para fibras ópticas monomodo. Incluso 
+cierre con llave, accesorios necesarios para su correcta instalación, piezas especiales y fijaciones.
+Incluye: Colocación del armario mural. Colocación de los conectores. Conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAO020b Partida m CABLE DE FIBRA ÓPTICA 2 FIBRAS 220,000
+Cable dieléctrico para interiores, de 2 fibras ópticas monomodo G657 en tubo central holgado, reacción al fuego clase Dca-
+s2,d2,a2 según UNE-EN 50575, cabos de aramida como elemento de refuerzo a la tracción y cubierta de material 
+termoplástico ignífugo, libre de halógenos de 4,2 mm de diámetro, reacción al fuego clase Dca-s2,d2,a2 según UNE-EN 
+50575. Incluso accesorios y elementos de sujeción.
+Incluye: Tendido de cables.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+IAO030 Partida Ud PUNTO DE DISTRIBUCIÓN DE FIBRA ÓPTICA 5,000
+Punto de distribución de fibra óptica formado por caja de segregación, de acero galvanizado, de 80x80x30 mm, con 
+capacidad para fusionar 8 cables. Incluso elementos para el guiado de las fibras, cierre con llave, accesorios y fijaciones.
+Incluye: Replanteo. Colocación y fijación de la caja.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAO030 5,000
+IAO035 Partida Ud ROSETA DE FIBRA ÓPTICA 5,000
+Roseta de fibra óptica formada por conector tipo SC doble y caja de superficie.
+Incluye: Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAO035 5,000
+IAO040 Partida Ud TOMA FIBRA ÓPTICA TIPO SC 5,000
+Toma de fibra óptica con conector tipo SC simple, soporte y marco.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAO040 5,000
+IAF020 Partida Ud PUNTO DE INTERCONEXIÓN DE CABLES TRENZADOS 1,000
+Punto de interconexión de cables de pares trenzados, para red de distribución de 36 pares, formado por un registro principal 
+metálico de 450x450x120 mm provisto de 9 conectores tipo RJ-45 y 1 panel con capacidad para 24 conectores. Incluso 
+accesorios de fijación.
+Incluye: Colocación y fijación del armario. Colocación del panel. Colocación de los conectores. Conexionado y comprobación 
+de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAF070 Partida m CABLE RIGIDO U/UTP 230,000
+Cable rígido U/UTP no propagador de la llama de 4 pares trenzados de cobre, categoría 6, reacción al fuego clase Dca-
+s2,d2,a2 según UNE-EN 50575, con conductor unifilar de cobre, aislamiento de polietileno y vaina exterior de poliolefina 
+termoplástica LSFH libre de halógenos, con baja emisión de humos y gases corrosivos, de 6,2 mm de diámetro. Incluso 
+accesorios y elementos de sujeción.
+Incluye: Tendido de cables.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 60,00 60,00
+Spc0010 V1.1 1,0 40,00 40,00
+Spc0010 V1.2 1,0 45,00 45,00
+Spc0010 V2.1 1,0 40,00 40,00
+Spc0010 V2.2 1,0 45,00 45,00
+Spc0010
+Total IAF070 230,000
+IAF075 Partida Ud ROSETA DE TERMINACIÓN DE RED RJ-45 5,000
+Roseta de terminación de red de dispersión formada por conector hembra tipo RJ-45 de 8 contactos, categoría 6 y caja de 
+superficie, de 47x64,5x25,2 mm, color blanco.
+Incluye: Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAF075 5,000
+IAF085b Partida Ud MULTIPLEXOR 1/8 5,000
+Multiplexor pasivo de 1 entrada y 8 salidas, con conectores hembra tipo RJ-45 de 8 contactos, categoría 6, color blanco y 
+latiguillo de conexión de 0,5 m de longitud formado por cable rígido U/UTP no propagador de la llama de 4 pares de cobre, 
+categoría 6, con conductor unifilar de cobre, aislamiento de polietileno y vaina exterior de PVC LSFH libre de halógenos, con 
+baja emisión de humos y gases corrosivos y conector macho tipo RJ-45 de 8 contactos, categoría 6, en ambos extremos.
+Incluye: Colocación del multiplexor. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAF085b 5,000
+IAF090 Partida Ud TOMA SIMPLE RJ-45 20,000
+Toma simple con conector tipo RJ-45 de 8 contactos, categoría 6, marco y embellecedor.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 4,0 4,00
+Spc0010 V1.1 4,0 4,00
+Spc0010 V1.2 4,0 4,00
+Spc0010 V2.1 4,0 4,00
+Spc0010 V2.2 4,0 4,00
+Spc0010
+Total IAF090 20,000
+IAF090b Partida Ud TOMA DOBLE RJ-45 5,000
+Toma doble con conectores tipo RJ-45 de 8 contactos, categoría 6, marco y embellecedor.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAF090b 5,000
+IAA031 Partida Ud MASTIL PARA FIJACIÓN DE 3 ANTENAS 1,000
+Mástil para fijación de 3 antenas, de tubo de acero con tratamiento anticorrosión, de 4,15 m de altura, 35 mm de diámetro y 
+1,5 mm de espesor. Incluso, anclajes y cuantos accesorios sean necesarios para su correcta instalación.
+Incluye: Replanteo. Montaje.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA034 Partida Ud ANTENA EXTERIOR FM 1,000
+Antena exterior FM, circular, para captación de señales de radiodifusión sonora analógica procedentes de emisiones 
+terrenales, de 1 dBi de ganancia y 500 mm de longitud. Incluso anclajes y cuantos accesorios sean necesarios para su 
+correcta instalación.
+Incluye: Replanteo.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA034b Partida Ud ANTENA EXTERIOR DAB 1,000
+Antena exterior DAB para captación de señales de radiodifusión sonora digital procedentes de emisiones terrenales, de 3 
+elementos, 8 dBi de ganancia, relación D/A mayor de 15 dB y 555 mm de longitud. Incluso anclajes y cuantos accesorios sean 
+necesarios para su correcta instalación.
+Incluye: Replanteo.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA034c Partida Ud ANTENA EXTERIOR UHF 1,000
+Antena exterior UHF para captación de señales de televisión analógica, televisión digital terrestre (TDT) y televisión de alta 
+definición (HDTV) procedentes de emisiones terrenales, canales del 21 al 48, 17 dBi de ganancia con funcionamiento en 
+modo pasivo, 42 dBi de ganancia con funcionamiento en modo activo, y relación D/A mayor de 20 dB. Incluso anclajes y 
+cuantos accesorios sean necesarios para su correcta instalación.
+Incluye: Replanteo.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA040 Partida Ud EQUIPO DE CABECERA 1,000
+Equipo de cabecera, formado por: 5 amplificadores monocanal UHF, de 50 dB de ganancia; 2 amplificadores multicanal UHF, 
+de 50 dB de ganancia; 1 amplificador FM; 1 amplificador DAB, todos ellos con autoseparación en la entrada y automezcla en 
+la salida (alojados en el RITS o RITU). Incluso fuente de alimentación, soporte, puentes de interconexión, cargas resistivas, 
+repartidor, mezcladores y cuantos accesorios sean necesarios para su correcta instalación.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA042 Partida Ud PUNTO DE INTERCONEXIÓN DE CABLES COAXIALES 1,000
+Punto de interconexión de cables coaxiales para red de distribución con tipología en estrella, formado por armario de 
+poliéster reforzado con fibra de vidrio, de 210x310x160 mm, como registro principal de cables coaxiales y 6 conectores tipo 
+"F" a compresión, para cable RG-6. Incluso placa de montaje, puerta con cerradura, accesorios necesarios para su correcta 
+instalación, piezas especiales y fijaciones.
+Incluye: Colocación del armario. Colocación de los conectores. Conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA100 Partida m CABLE COAXIAL RG-6 475,000
+Cable coaxial RG-6 no propagador de la llama, de 75 Ohm de impedancia característica media, reacción al fuego clase Dca-
+s2,d2,a2, con conductor central de cobre de 1,15 mm de diámetro, dieléctrico de polietileno celular, pantalla de cinta de 
+aluminio/polipropileno/aluminio, malla de hilos trenzados de cobre y cubierta exterior de PVC LSFH libre de halógenos, con 
+baja emisión de humos y gases corrosivos de 6,9 mm de diámetro de color blanco. Incluso accesorios y elementos de 
+sujeción.
+Incluye: Tendido de cables.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 125,00 125,00
+Spc0010 V1.1 1,0 80,00 80,00
+Spc0010 V1.2 1,0 95,00 95,00
+Spc0010 V2.1 1,0 80,00 80,00
+Spc0010 V2.2 1,0 95,00 95,00
+Spc0010
+Total IAA100 475,000
+IAA100b Partida m CABLE COAXIAL CLASE A 50,000
+Cable coaxial clase A, de 75 ± 2 Ohm, reacción al fuego clase Dca-s2,d2,a2 según UNE-EN 50575, con conductor central de 
+cobre de 1,2 ± 0,02 mm de diámetro, dieléctrico de polietileno expanso de 5,0 ± 0,1 mm de diámetro, pantalla de cinta de 
+cobre y poliéster, malla de hilos trenzados de cobre y cubierta exterior de LSFH libre de halógenos, con baja emisión de 
+humos y gases corrosivos de 6,9 ± 0,1 mm de diámetro de color gris. Incluso accesorios y elementos de sujeción.
+Incluye: Tendido de cables.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+IAA110b Partida Ud DERIVADOR DE 5-2400 MHZ 4,000
+Derivador de 5-2400 MHz, de 2 derivaciones y 15 dB de pérdida de derivación, con conectores tipo "F".
+Incluye: Colocación del derivador. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA115 Partida Ud REPARTIDOR DE 5-1000 MHZ 5,000
+Repartidor de 5-1000 MHz de 2 salidas, de 5 dB de pérdidas de inserción.
+Incluye: Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA115b Partida Ud REPARTIDOR DE 5-2400 MHZ 7,000
+Repartidor de 5-2400 MHz de 2 salidas, de 57x49x26 mm, 3,9 dB de pérdidas de inserción a 862 MHz y 5,1 dB de pérdidas de 
+inserción a 2150 MHz.
+Incluye: Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+IAA120 Partida Ud TOMA DOBLE TV-R (TBA) 5,000
+Toma doble, TV-R, de 5-1000 MHz, marco y embellecedor.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total IAA120 5,000
+IAA120b Partida Ud TOMA SEPARADORA DOBLE TV/SAT 10,000
+Toma separadora doble, TV/R-SAT, de 5-2150 MHz, marco y embellecedor.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total IAA120b 10,000
+ILI001 Partida Ud REGISTRO DE TERMINACIÓN DE RED 5,000
+Registro de terminación de red, formado por caja de plástico para disposición del equipamiento principalmente en vertical, 
+de 500x600x80 mm. Instalación empotrada. Incluso tapa, accesorios, piezas especiales y fijaciones.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Colocación y fijación de la caja.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total ILI001 5,000
+ILI010 Partida m CANALIZACIÓN INTERIOR DE USUARIO 705,000
+Canalización interior de usuario por el interior de la vivienda que une el registro de terminación de red con los distintos 
+registros de toma, formada por 1 tubo de PVC flexible, reforzados de 20 mm de diámetro, resistencia a la compresión 320 N, 
+resistencia al impacto 2 julios, para el tendido de cables. Instalación empotrada. Incluso accesorios, elementos de sujeción e 
+hilo guía.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo del recorrido de la canalización. Colocación y fijación de los tubos. Colocación del hilo guía.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 185,00 185,00
+Spc0010 V1.1 1,0 120,00 120,00
+Spc0010 V1.2 1,0 140,00 140,00
+Spc0010 V2.1 1,0 120,00 120,00
+Spc0010 V2.2 1,0 140,00 140,00
+Spc0010
+Total ILI010 705,000
+ILI011 Partida Ud REGISTRO DE PASO 8,000
+Registro de paso para canalizaciones interiores de usuario de cables coaxiales de ICT, tipo C, de poliéster reforzado, de 
+100x160x40 mm, con 3 entradas laterales preiniciadas e iguales en sus cuatro paredes, a las que se podrán acoplar conos 
+ajustables multidiámetro para entradas de conductos de hasta 25 mm. Instalación empotrada. Incluso accesorios, piezas 
+especiales y fijaciones.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Colocación y fijación de la caja.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+ILI020 Partida Ud REGISTRO DE TOMA 65,000
+Registro de toma, formado por caja universal, con enlace por los 2 lados y toma para registro de BAT o toma de usuario, gama 
+media, con tapa ciega de color blanco y bastidor con garras, en previsión de nuevos servicios. Instalación empotrada. Incluso 
+accesorios, piezas especiales y fijaciones.
+Incluye: Replanteo. Colocación y fijación de la caja.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+ILS010 Partida m CANALIZACIÓN SECUNDARIA 30,000
+Canalización secundaria en tramo de acceso a las viviendas, entre el registro secundario y el registro de terminación de red 
+en el interior de la vivienda, formada por 3 tubos (1 RTV, 1 cable de pares o cable de pares trenzados y cable de fibra óptica, 1 
+TBA) de PVC flexible, corrugados, reforzados de 25 mm de diámetro, resistencia a la compresión 320 N, resistencia al 
+impacto 2 julios. Instalación empotrada. Incluso accesorios, elementos de sujeción e hilo guía.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo del recorrido de la canalización. Colocación y fijación de los tubos. Colocación del hilo guía.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+ILP010 Partida m CANALIZACIÓN PRIPAL 15,000
+Canalización principal, entre el RITI o RITM inferior y el RITS o RITM superior a través de las distintas plantas del edificio, en 
+edificación de 4 PAU, formada por 6 tubos (1 RTV, 1 cable de pares o cable de pares trenzados, 1 cable coaxial, 1 cable de 
+fibra óptica, 2 reserva) de polipropileno flexible, corrugados de 50 mm de diámetro, resistencia a la compresión 320 N, 
+resistencia al impacto 2 julios. Instalación en conducto de obra de fábrica. Incluso accesorios, elementos de sujeción e hilo 
+guía.
+Criterio de valoración económica: El precio no incluye el conducto de obra de fábrica.
+Incluye: Replanteo del recorrido de la canalización. Colocación y fijación de los tubos. Colocación del hilo guía.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+ILP021 Partida Ud REGISTRO SECUNDARIO PARA PASO Y DISTRIBUCIÓN 3,000
+Registro secundario para paso y distribución de instalaciones de ICT, formado por armario con cuerpo y puerta de plancha de 
+acero lacado con aislamiento interior de 450x450x150 mm. Instalación en superficie. Incluso cierre con llave, accesorios, 
+piezas especiales y fijaciones.
+Incluye: Replanteo. Colocación y fijación del armario.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+ILR030 Partida Ud EQUIPAMIENTO COMPLETO PARA RITU 1,000
+Equipamiento completo para RITU, recinto único de instalaciones de telecomunicaciones, de 6 a 16 puntos de acceso a 
+usuario, en armario de 200x100x50 cm, compuesto de: cuadro de protección instalado en superficie con un grado de 
+protección mínimo IP4X + IK05 y con regletero para la conexión del cable de puesta a tierra dotado de 1 interruptor general 
+automático de corte omnipolar de tensión nominal mínima 230/400 Vca, intensidad nominal de 25 A y poder de corte 
+suficiente para la intensidad de cortocircuito que pueda producirse en el punto de su instalación, de 4500 A como mínimo, 1 
+interruptor diferencial de corte omnipolar de tensión nominal mínima 230/400 Vca, frecuencia 50-60 Hz, intensidad nominal 
+de 25 A, intensidad de defecto 300 mA de tipo selectivo y 3 interruptores automáticos magnetotérmicos de corte omnipolar 
+de tensión nominal mínima 230/400 Vca y poder de corte mínimo de 4500 A para la protección del alumbrado (10 A), de las 
+bases de toma de corriente del recinto (16 A) y de los equipos de cabecera de la infraestructura de radiodifusión y televisión 
+(16 A); un interruptor unipolar y 4 bases de enchufe con toma de tierra y 16 A de capacidad, con sus cajas de empotrar y de 
+derivación y tubo protector; toma de tierra formada por un anillo cerrado interior de cobre, de 25 mm² de sección, unido a la 
+toma de tierra del edificio; un punto de luz que proporcione un mínimo de 300 lux y un aparato de alumbrado de emergencia; 
+placa de identificación de 200x200 mm. Incluso previsión de dos canalizaciones fijas en superficie de 10 m desde la 
+centralización de contadores, mediante tubos protectores de PVC rígido, para su utilización por posibles compañías 
+operadoras de servicios de telecomunicación.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Paso de tubos de protección en rozas. Nivelación y sujeción de herrajes. Ejecución del circuito de tierra. 
+Tendido de cables. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+ILE030 Partida m CANALIZACIÓN DE ENLACE SUPERIOR 20,000
+Canalización de enlace superior entre el punto de entrada general superior del edificio y el RITS, RITU o RITM, para edificio 
+plurifamiliar, formada por 3 tubos de PVC rígido de 50 mm de diámetro, resistencia a compresión mayor de 1250 N, 
+resistencia al impacto 2 julios, con IP547. Instalación en superficie. Incluso accesorios, elementos de sujeción e hilo guía.
+Incluye: Replanteo del recorrido de la canalización. Colocación y fijación de los tubos. Colocación del hilo guía.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+ILE031 Partida Ud REGISTRO DE ENLACE SUPERIOR 1,000
+Registro de enlace superior para paso y distribución de instalaciones de ICT, formado por armario con cuerpo y puerta de 
+plancha de acero lacado con aislamiento interior de 360x360x120 mm. Instalación en superficie. Incluso cierre con llave, 
+accesorios, piezas especiales y fijaciones.
+Incluye: Replanteo. Colocación y fijación del armario.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+ILA020 Partida m CANALIZACIÓN EXTERNA ENTERRADA 35,000
+Canalización externa, entre la arqueta de entrada y el registro de enlace inferior en el interior del edificio o directamente en el 
+RITI o RITU, en edificación con un número de PAU comprendido entre 5 y 20, formada por 5 tubos (2 TBA+STDP, 5 reserva) de 
+polietileno de 63 mm de diámetro, suministrado en rollo, resistencia a la compresión 450 N, resistencia al impacto 20 julios, 
+ejecutada en zanja de 45x75 cm, con los tubos embebidos en un prisma de hormigón en masa HM-20/B/20/X0 con 6 cm de 
+recubrimiento superior e inferior y 5,5 cm de recubrimiento lateral. Instalación enterrada. Incluso soportes separadores de 
+tubos de PVC colocados cada 100 cm e hilo guía.
+Criterio de valoración económica: El precio no incluye la excavación ni el relleno perimetral posterior.
+Incluye: Replanteo del recorrido de la canalización. Refinado de fondos y laterales a mano, con extracción de las tierras. 
+Vertido y compactación del hormigón en formación de solera. Presentación en seco de los tubos. Vertido y compactación del 
+hormigón para formación del prisma.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Total 14_6 1,000
+14_7 Capítulo VIDEOPORTERO
+15.01 Partida UD PORTERO ESCALERA 1,000
+Instalación de videoportero digital para hasta 5 viviendas compuesto de: placa exterior de calle digital con 5 pulsadores de 
+llamada y cámara, placa exterior puerta peatonal interior con 5 pulsadores de llamada y cámara, cierre superior e inferior y 
+telecámara color, alimentador y monitores con base de conexión. Incluso abrepuertas, visera, distribuidores de vídeo, 
+módulo transmisor y módulos receptores de vídeo, cableado y cajas.
+Incluye: Replanteo y trazado. Colocación y fijación de tubos y cajas. Tendido de cables. Montaje, conexionado y 
+comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Spc0010 Videportero 1,0 1,00
+Spc0010
+Total 15.01 1,000
+Total 14_7 1,000
+14_8 Capítulo CONTADOR DE OBRAS
+Suministro e instalación con pruebas de cuadro de obra homologado, con seta de seguridad, con interruptor general de 40A y 
+diferencial, así como disponiendo de 3 tomas de salida trifásicas de intensidad asignada 25A como mínimo y 3 circuitos de 
+tomas de corriente monofásicos.
+00.01 Partida UD ARMARIO DE FIBRA HOMOLOGADO ENDESA 100x500x300 1,000
+Armario homologado por ENDESA para ubicar contador de OBRAS.
+00.02 Partida UD MODULO CONTADOR TRIFASICO CPM-T16 1,000
+Modulo Pinazo para contador trifásico de medida directa hasta 63A, incluyendo Bases Buc y fusible entrada y/o posiciones 
+libres para magnetotérmico de salida de 63A trifásico, de 4P. Se incluye puente con cableado de aluminio y canalización de 
+protección hasta CDU.
+00.03 Partida m DERIVACION CUADRO OBRAS 3,000
+Cableado tipo RZ1-K 4x25mm²  y canalización mediante tubo de protección de cableado desde CDU a Contador provisional 
+de obra, tipo tubo binker con protección metálica, de 50mm DN.
+00.05 Partida UD INTERRUPTOR MAGNETOTÉRMICO 4P 40A SALIDA CONTADOR 1,000
+Suministro e instalación magnetotérmico 40A 4P 10kA
+00.06 Partida M CABLEADO Y CANALIZACION RZ1-K 5x16mm² 70,000
+Suministro e instalación bajo tubo de PE DN50mm de cableado 4x16mm² RZ1-K, a instalar para alimentación de subcuadros 
+de obra. Distribución de las líneas por las plantas de ambas escaleras del edificio.
+Spc0010 LINEA A GRUA 1,0 25,00 25,00
+Spc0010 LINEA GRAL PLANTAS 1,0 45,00 45,00
+Spc0010
+Total 00.06 70,000
+00.07 Partida UD SUMINISTRO INSTALACIÓN DE TOMA A TIERRA OBRAS 1,000
+Suministro e instalación de pica de cobre de 2m, grapa y cableado aislado de 1kV para llevar toma tierra a cuadro de obras y 
+comprobación de valor de dicha toma de tierra.
+00.08 Partida UD SUMINISTRO E INSTALACIÓN CUADRO DE OBRA PREMONTADO HASTA 22KW 3,000
+Suministro e instalación con pruebas de cuadro de obra homologado, con seta de seguridad, con interruptor general de 40A y 
+diferencial, así como disponiendo de 3 tomas de salida trifásicas de intensidad asignada 25A como mínimo y 3 circuitos de 
+tomas de corriente monofásicos.
+00.09 Partida UD CUADRO GENERAL OBRA 1,000
+Suministro e instalación con pruebas de cuadro general de obra homologado, con seta de seguridad, con interruptor general 
+de 40A trifásico y 3 salidas a subcuadros de obra trifásicas mediante magnetotérmicos de 40A 4P.
+Incluye tomas de corriente trifásicas tipo CETAC y monofásicas.
+Total 14_8 1,000
+Total 14 1
+15 Capítulo INSTALACIÓN FONTANERIA Y RIEGO
+15_1 Capítulo FONTANERÍA - SUMINISTRO DE AGUA
+03.01b Partida UD NICHO CONTADOR GENERAL-VALVULAS CORTE 1,000
+Preinstalación de contador general de agua 2 1/2" DN 65 mm, colocado en hornacina, conectado al ramal de acometida y al 
+tubo de alimentación, formada por llave de corte general de esfera de latón niquelado; grifo de comprobación; filtro retenedor 
+de residuos; válvula de retención de latón y llave de salida de esfetra de latón niquelado. Incluso marco y tapa de fundición 
+dúctil para registro y demás material auxiliar. Totalmente montada, conexionada y probada. EL NICHO DE UBICACIÓN 
+TENDRÁ MEDIAS 60x40x25 cm (ancho - alto - profundidad) a unos 40cm del suelo. 
+Incluye: Replanteo. Colocación y fijación de accesorios y piezas especiales. Conexionado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmene ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye el contador.
+03.02b Partida m TUBERÍA GENERAL DISTRIBUCIÓN PE-100 5,000
+Acometida para abastecimiento de agua potable de tubo de polietileno PE 100, de 2"/DN50mm de diámetro exterior, PN=10 
+atm y 3,8 mm de espesor, empotrada en solera planta baja, según trazado previsto en documentación gráfica. Incluso 
+accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+03.03 Partida UD VALVULAS CORTE 2" TUBERÍA GENERAL 5,000
+Suministro e instalación de válvula de corte esfera en tubería de alimentación general de agua 2" DN. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo. Colocación y fijación de accesorios y piezas especiales. Conexionado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+03.04 Partida UD BATERÍA CONTADORES 1,000
+Batería de polipropileno copolímero random (PP-R),BAHISA - Gama: BH003 o similar, de 75 mm de diámetro y salidas con 
+conexión embridada, para centralización de un máximo de 8 contadores en dos filas, con llave de corte, llaves de entrada, 
+grifos de comprobación, válvulas de retención, llaves de salida, latiguillos y cuadro de clasificación. Incluso soportes para la 
+batería y demás material auxiliar. Totalmente montada dentro de cuarto o armario específico, conexionada y probada. Sin 
+incluir el precio de los contadores divisionarios.
+Dimensiones de la batería (An x Al) 620 x 1233 mm. 
+Incluye: Replanteo. Colocación y fijación del soporte de batería. Colocación y fijación de accesorios y piezas especiales. 
+Colocación de la batería. Colocación del cuadro de clasificación. Conexionado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+03.06 Partida m TUBERÍA DE ALIMENTACIÓN DN32 PEX 197,000
+Tubería para alimentación general de fontanería, colocada superficialmente y fijada al paramento, formada por tubo de 
+polietileno reticulado (PE-Xa), serie 5, de 32 mm de diámetro exterior, PN=6 atm y 2,9 mm de espesor, sistema de unión 
+Quick and Easy, suministrado en rollos. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales. Totalmente montada, conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías. Colocación y fijación de tubos, accesorios y piezas especiales.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 35,00 35,00
+Spc0010 V1.1 1,0 38,00 38,00
+Spc0010 V1.2 1,0 40,00 40,00
+Spc0010 V2.1 1,0 41,00 41,00
+Spc0010 V2.2 1,0 43,00 43,00
+Spc0010
+Total 03.06 197,000
+03.06.BIS Partida m AISLAMIENTO TÉRMICO ACOMETIDAS VIVIENDAS 197,000
+Aislamiento térmico de tubería en instalación de A.F.S., colocada superficialmente/enterrada, para la distribución de fluidos 
+fríos 10-20ºC, formado por coquilla de espuma elastomérica, de 34mm de diámetro interior y 12mm de espesor, a base de 
+caucho sintético flexible, de estructura celular cerrada.
+Incluye: Preparación de la superficie soporte. Replanteo y corte del aislamiento. Colocación del aislamiento.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 35,00 35,00
+Spc0010 V1.1 1,0 38,00 38,00
+Spc0010 V1.2 1,0 40,00 40,00
+Spc0010 V2.1 1,0 41,00 41,00
+Spc0010 V2.2 1,0 43,00 43,00
+Spc0010
+Total 03.06.BIS 197,000
+03.07 Partida UD VÁLVULA DE CORTE VIVIENDA 10,000
+Válvula de esfera, en U, de latón, de 32 mm de diámetro, "FITTINGS ESTÁNDAR", mando de palanca, con embellecedor. Se 
+prevé ubicación de una válvula en la entrada de cada vivienda y otra en la planta sótano en sala técnica para salvaguardar 
+cualquier problema y sectorización de instalación enterrada e instalación vista. 
+Incluye: Replanteo. Colocación, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total 03.07 10,000
+03.08 Partida m TUBERÍA PEX DISTRIBUCIÓN INTERIOR DN20 39,000
+Tubería para instalación interior, colocada superficialmente y fijada al paramento, formada por tubo de polietileno reticulado 
+(PE-Xa), "FITTINGS ESTÁNDAR", de 20 mm de diámetro exterior, serie 5, clase 1-2-5/6 bar y clase 4/8 bar, suministrado en 
+rollos. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo y trazado. Colocación y fijación de tubo y accesorios.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 15,00 15,00
+Spc0010 V1.1 1,0 6,00 6,00
+Spc0010 V1.2 1,0 6,00 6,00
+Spc0010 V2.1 1,0 6,00 6,00
+Spc0010 V2.2 1,0 6,00 6,00
+Spc0010
+Total 03.08 39,000
+03.09 Partida m TUBERÍA PEX DISTRIBUCIÓN INTERIOR DN25 98,000
+Tubería para instalación interior, colocada superficialmente y fijada al paramento, formada por tubo de polietileno reticulado 
+(PE-Xa), "FITTINGS ESTÁNDAR", de 25 mm de diámetro exterior, serie 5, clase 1-2-5/6 bar y clase 4/8 bar, suministrado en 
+rollos. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo y trazado. Colocación y fijación de tubo y accesorios.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 22,00 22,00
+Spc0010 V1.1 1,0 12,00 12,00
+Spc0010 V1.2 1,0 26,00 26,00
+Spc0010 V2.1 1,0 12,00 12,00
+Spc0010 V2.2 1,0 26,00 26,00
+Spc0010
+Total 03.09 98,000
+03.10 Partida m TUBERÍA PEX DISTRIBUCIÓN INTERIOR DN32 38,000
+Tubería para instalación interior, colocada superficialmente y fijada al paramento, formada por tubo de polietileno reticulado 
+(PE-Xa), "FITTINGS ESTÁNDAR", de 32 mm de diámetro exterior, serie 5, clase 1-2-5/6 bar y clase 4/8 bar, suministrado en 
+rollos. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo y trazado. Colocación y fijación de tubo y accesorios.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 6,00 6,00
+Spc0010 V1.1 1,0 10,00 10,00
+Spc0010 V1.2 1,0 6,00 6,00
+Spc0010 V2.1 1,0 10,00 10,00
+Spc0010 V2.2 1,0 6,00 6,00
+Spc0010
+Total 03.10 38,000
+03.11 Partida UD VÁLVULAS CUARTO HÚMEDO 32,000
+Válvula de asiento, con regulación oculta, para tubo de polietileno (PEX-a), con embellecedor cromado. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo. Conexión de la válvula a los tubos.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 8,0 8,00
+Spc0010 V1.1 6,0 6,00
+Spc0010 V1.2 6,0 6,00
+Spc0010 V2.1 6,0 6,00
+Spc0010 V2.2 6,0 6,00
+Spc0010
+Total 03.11 32,000
+03.12 Partida UD INSTALACIÓN INTERIOR CUARTO HÚMEDO COCINA 5,000
+Instalación interior de fontanería para cocina con dotación para: fregadero, toma y llave de paso para lavavajillas, realizada 
+con tubo de polietileno reticulado (PE-Xa), para la red de agua fría y caliente que conecta la derivación particular o una de sus 
+ramificaciones con cada uno de los aparatos sanitarios, con los diámetros necesarios para cada punto de servicio. Incluso 
+material auxiliar para montaje y sujeción a la obra, derivación particular, accesorios de derivaciones. Totalmente montada, 
+conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías. Colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 03.12 5,000
+03.13 Partida UD INSTALACIÓN INTERIOR CUARTO HÚMEDO LAVADERO 5,000
+Instalación interior de fontanería para galería con dotación para lavadora y reserva para secadora, realizada con tubo de 
+polipropileno copolímero random (PP-R), de color verde, serie 3,2, "JIMTEN", para la red de agua fría y caliente que conecta la 
+derivación particular o una de sus ramificaciones con cada uno de los aparatos sanitarios, con los diámetros necesarios para 
+cada punto de servicio. Incluso material auxiliar para montaje y sujeción a la obra, derivación particular, accesorios de 
+derivaciones. Totalmente montada, conexionada y probada.
+INCLUYE CONVERSIÓN DE TUBERÍA PEX A PPR.
+Incluye: Replanteo del recorrido de las tuberías. Colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 03.13 5,000
+03.15 Partida UD INSTALACIÓN INTERIOR CUARTO HÚMEDO BAÑO 3 ELEMENTOS 10,000
+Instalación interior de fontanería para cuarto de baño con dotación para: inodoro, lavabo sencillo, ducha-bañera, realizada 
+con tubo de polipropileno copolímero random (PP-R), de color verde, serie 3,2, "JIMTEN", para la red de agua fría y caliente 
+que conecta la derivación particular o una de sus ramificaciones con cada uno de los aparatos sanitarios, con los diámetros 
+necesarios para cada punto de servicio según documentación gráfica, acabado en válvula de media vuelta o punta con 
+tapones pendiente de grifería. Incluso material auxiliar para montaje y sujeción a la obra, derivación particular, accesorios de 
+derivaciones. Totalmente montada, conexionada y probada.
+INCLUYE CONVERSIÓN DE TUBERÍA PEX A PPR.
+Incluye: Replanteo del recorrido de las tuberías. Colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total 03.15 10,000
+03.17 Partida m AISLAMIENTO TÉRMICO TUBERÍAS DN20 25,000
+Aislamiento térmico de tubería en instalación interior de A.C.S., colocada superficialmente, para la distribución de fluidos 
+calientes (de +60°C a +100°C), formado por coquilla de espuma elastomérica, de 23 mm de diámetro interior y 30 mm de 
+espesor, a base de caucho sintético flexible, de estructura celular cerrada, con adhesivo para las uniones.
+Incluye: Preparación de la superficie soporte. Replanteo y corte del aislamiento. Colocación del aislamiento.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 13,00 13,00
+Spc0010 V1.1 1,0 3,00 3,00
+Spc0010 V1.2 1,0 3,00 3,00
+Spc0010 V2.1 1,0 3,00 3,00
+Spc0010 V2.2 1,0 3,00 3,00
+Spc0010
+Total 03.17 25,000
+03.18 Partida m AISLAMIENTO TÉRMICO TUBERÍAS DN25 49,000
+Aislamiento térmico de tubería en instalación interior de A.C.S., colocada superficialmente, para la distribución de fluidos 
+calientes (de +60°C a +100°C), formado por coquilla de espuma elastomérica, de 26 mm de diámetro interior y 30 mm de 
+espesor, a base de caucho sintético flexible, de estructura celular cerrada, con adhesivo para las uniones.
+Incluye: Preparación de la superficie soporte. Replanteo y corte del aislamiento. Colocación del aislamiento.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 11,00 11,00
+Spc0010 V1.1 1,0 6,00 6,00
+Spc0010 V1.2 1,0 13,00 13,00
+Spc0010 V2.1 1,0 6,00 6,00
+Spc0010 V2.2 1,0 13,00 13,00
+Spc0010
+Total 03.18 49,000
+03.19 Partida m AISLAMIENTO TÉRMICO TUBERÍAS DN32 19,000
+Aislamiento térmico de tubería en instalación interior de A.C.S., colocada superficialmente, para la distribución de fluidos 
+calientes (de +60°C a +100°C), formado por coquilla de espuma elastomérica, de 34 mm de diámetro interior y 30 mm de 
+espesor, a base de caucho sintético flexible, de estructura celular cerrada, con adhesivo para las uniones.
+Incluye: Preparación de la superficie soporte. Replanteo y corte del aislamiento. Colocación del aislamiento.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 3,00 3,00
+Spc0010 V1.1 1,0 5,00 5,00
+Spc0010 V1.2 1,0 3,00 3,00
+Spc0010 V2.1 1,0 5,00 5,00
+Spc0010 V2.2 1,0 3,00 3,00
+Spc0010
+Total 03.19 19,000
+03.20 Partida UD DERIVACIÓN DE CIRCUITO PARA GRIFO TERRAZA 7,000
+Extensiones de tubería en PEX-a desde instalación interior privada, para terrazas para 1 grifo privativo en cada cubierta o 
+terraza en planta baja privada, de latón cromado para jardín o terraza, con racor de conexión a manguera, de 3/4" de 
+diámetro.
+Incluye: Replanteo. Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 (reserva) 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total 03.20 7,000
+IFONT20 Partida ud SISTEMA RECIRCULACION ACS 1,000
+Sistema recirculación ACS, funcionamiento automatico, con bomba circuladora, para recirculación de A.C.S., modelo 
+59643500 UP 20-30 N 150 "GRUNDFOS", cuerpo de acero inoxidable, conexiones G 1 1/4", presión máxima 10 bar, de 150 
+mm de longitud, apta para temperaturas desde -25 hasta 110°C, motor con alimentación monofásica, protección IPX2D y 
+aislamiento clase F, con juego de racores con conexiones G 1 1/4" x Rp 1/2". Incluso puente de manómetros formado por 
+manómetro, válvulas de esfera y tubería de cobre; elementos de montaje; caja de conexiones eléctricas con condensador y 
+accesorios necesarios para su correcto funcionamiento.
+Incluye: Replanteo. Colocación de la bomba de circulación. Conexión a la red de distribución.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 v0.1 1,0 1,00
+Spc0010
+Total IFONT20 1,000
+03.21 Partida UD DERIVACIÓN DE CIRCUITO PARA GRIFO EN ZONA CONTADORES 1,000
+Extension de tubería en PPR desde contador comunitario para 1 grifos comunitario ubicado en la batería de contadores donde 
+se emplaza el contador comunitario de latón cromado para jardín o terraza, con racor de conexión a manguera, de 3/4" de 
+diámetro.
+Incluye: Replanteo. Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+3.20A Partida UD DERIVACIÓN DE CIRCUITO PARA PISCINA 1,000
+Extensiones de tubería en PEX-a DN25 desde el propio contador de piscina - instalación interior privada, para piscina con 1 
+grifo de alimentación, de latón cromado para jardín o terraza, con racor de conexión a manguera, de 3/4" de diámetro. Se 
+consideran 20 metros tubo continuo desde batería contadores. 
+Incluye: Replanteo. Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+03.24 Partida m TUBERÍA PEAD DN25 PARA ALIMENTACIÓN GRIFOS COMUNITARIO 15,000
+Acometida para abastecimiento de agua pluviales a grifos jardines de tubo de polietileno PE 100, de 25mm de diámetro 
+exterior, PN=10 atm y 3,8 mm de espesor, colocada superficialmente por sótano, según trazado previsto en documentación 
+gráfica. Incluso accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+03.26 Partida UD GRIFO COMUNITARIO EXTERIOR 4,000
+Grifo de latón cromado para jardín o terraza, con racor de conexión a manguera, de 3/4" de diámetro.
+Incluye: Replanteo. Colocación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+03.25 Partida m TUBERÍA PEAD DN20 PARA ALIMENTACIÓN GRIFOS COMUNITARIO 40,000
+Derivación en punta para abastecimiento de agua pluviales a grifos jardines de tubo de polietileno PE 100, de 20 mm de 
+diámetro exterior, PN=10 atm y 3,8 mm de espesor, colocada superficialmente por sótano, según trazado previsto en 
+documentación gráfica. Incluso accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+03.28 Partida Ud GRUPO PRESION RESERVA EDIFICIO Y ALIMENTACIÓN 1,000
+Suministro e instalación de grupo de presión de agua con doble bomba, modelo Espa CKE2M Multi 35 6, con 2 Variador de 
+Frecuencia Espa Speedrive V2 M22 para mantenimiento de la presión constante y control de funcionamiento del número de 
+bombas y de la alternancia entre ellas, formado por dos bombas centrífugas multicelulares horizontales, bombas, colector y 
+bancada de acero inoxidable AISI 304, cierre mecánico AQQE, interruptor de presión para protección contra marcha en seco, 
+conexiones R 2", presión máxima 16 bar, apta para temperaturas desde 0 hasta 40°C, motores trifásicos, con convertidores 
+de frecuencia de alta eficiencia, eficiencia energética clase IE5, protección IP55, aislamiento clase F y protección térmica, 
+depósito de membrana de 8 litros, una válvula antirretorno por bomba, dos válvulas de corte por bomba, presostato y caja de 
+frenado para la conexión del suministro eléctrico monofásico a 230 V.
+INCLUYE VALVULERIA, TUBERÍAS Y ELEMENTOS NECESARIOS PARA EL ADECUADO SUMINISTRO DE AGUA DEL GRUPO DE 
+PRESIÓN, PARA CASOS DE DEFICIENTE PRESIÓN DE SUMINISTRO DEL AGUA DE LA RED.
+03.30 Partida Ud SISTEMA LLENADO AUTO ALJIBE 2,000
+Suministro e instalación de sistema automático de llenado de aljibe de aguas pluviales/potable desde suministro de Agua 
+Fría de la red de distriución. Incluye 1 electroválvula, boya de nivel que activa el llenado cuando se vacía la cisterna de 
+pluviales y se apaga cuando llega a un nivel establecido y cuadro de control del sistema ubicado en sala técnica. Se incluye 
+boya mecánica de cierre también como medida adicional. 
+SE INSTALA UNA ALARMA DE AVISO CUANDO SE LLENA EL ALJIBE PLUVIALES DESDE AGUA DE RED.
+Se incluye cableado de control entre cisterna y sala técnica,  valvulería y accesorios, la parte proporcional de mano de obra y 
+desplazamientos. Totalmente instalado y comprobado.
+03.31 Partida UD INSTALACIÓN BOMBA ALJIBE PLUVIALES EN SALA COMUNES 1,000
+Grupo de presión en sala técnica comunes para aprovechamiento pluviales modelo COMPACT AM/10G "EBARA", para 
+suministro de agua en aspiración con carga, formado por: electrobomba centrífuga multietapa horizontal, COMPACT AM/10, 
+con una potencia de 0,75 kW, para una presión máxima de trabajo de 10 bar, temperatura máxima del líquido conducido 35°C 
+según UNE-EN 60335-2-41, cuerpo de impulsión y soporte de hierro fundido, camisa externa de acero inoxidable AISI 304, 
+impulsor y difusor de tecnopolímero, eje de acero inoxidable AISI 416, cierre mecánico de carbón/cerámica/NBR, motor 
+asíncrono de 2 polos, aislamiento clase F, protección IP44, para alimentación monofásica a 230 V a 230 V y 50 Hz de 
+frecuencia, condensador y protección termoamperimétrica de rearme automático incorporados, con regulación automática 
+de presión mediante presurizador electrónico Presscomfort, y cable eléctrico de conexión con enchufe tipo shuko. Incluso 
+tubos entre los distintos elementos y accesorios. Totalmente montado, conexionado y puesto en marcha por la empresa 
+instaladora para la comprobación de su correcto funcionamiento. Sin incluir la instalación eléctrica.
+Incluye: Replanteo. Colocación y fijación del grupo de presión. Colocación y fijación de tuberías y accesorios. Conexionado. 
+Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+03.33 Partida m TUBERIA PEAD DN50 DE GENERAL A GPH RESERVA Y SUMINISTRO 75,000
+Acometida para abastecimiento de agua general a GPH instalado en reserva en cuarto técnico y vuelta para suministro de 
+agua a presión, tubo de polietileno PE 100, de 50 mm de diámetro exterior, PN=10 atm y 3,8 mm de espesor, colocada 
+superficialmente por sótano, según trazado previsto en documentación gráfica. Incluso accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Total 15_1 1,000
+15_2 Capítulo TRATAMIENTO SANITARIO ALJIBE
+17.1 Partida UD PANEL CONTROL CLORO 1,000
+PANEL DE CONTROL NIVEL DE CLORO INCLUYENDO Bomba dosificadora proporcional multifunción ED-AM2 - 
+Funcionamiento por sonda amperométrica incluída - Centralita multiparamétrica CL T° - Sonda de cloro amperimétrica con 
+sensor de flujo, sonda tª y sondas bajo nivel - Filtro - Panel en PVC 80x60 cm - Comunicación MODBUS RS485 ya integrada - 
+Todo montado y cableado listo para ser instalado - Tratamiento de agua 
+TIPO HELIOS 05CLA SALVADOR ESCODA O SIMILAR
+17.2 Partida UD BIDON 1,000
+Depósito dosificación 300 litros y productos químicos para almenos 2 usos.
+17.3 Partida UD BOMBA RECIRCULADORA ALJIBE 1,000
+Bomba recirculadora 3/4 CV par aljibes hasta 40m³, con caudal en cumplimiento de parámetros sanitarios, incluso prefiltro. 
+Cuerpo de bomba, disco porta sello y difusor en polipropileno resistente a productos químicos y reforzado con fibra de vidrio o 
+similar incluso con garantía de duración. Eje de acero inoxidable AISI 304. Incluye sistema de soportación y antivibratorios.
+17.4 Partida m CANALIZACIÓN DN 90 PVC-PRESIÓN 15,000
+Canalización PVC Presión PN16 para aspiración y retorno de aljibe de agua potable.
+17.5 Partida UD FILTRO AUTILIMIPIANTE CINTROPUR 1,000
+FILTRO AUTOLIMPIANTE CINTROPUR nw 2 1/2" dn 65 con bolsa de 5 mallas y soporte de fijación manual
+17.6 Partida UD BYPASS DE INSTALACIONES 1,000
+Suministro e instalación de materiales para ejecución de BYPASS de sistema de filtración en caso de avería, con 5 válvulas de 
+PVC-Presión. Totalmente rotulado y ejecutado.
+Total 15_2 1,000
+Total 15 1
+16 Capítulo SISTEMA CLIMATIZACION Y AEROTERMIA
+01.01 Partida UD UNIDAD EXTERIOR MITSUBISHI PXZ-5F85VG 1,000
+Suministro e instalación de Unidad exterior MITSUBISHI PXZ-5F85VG. Compatible con unidades interiores tipo mural, 
+consola, de conductos o cassette y producción ACS. Número de unidades conectadas min/máx. 1/5 + unidad producción ACS 
+(no incluidos). Potencia frigorífica 8,3 kW y potencia calorífica 7,0 kW. Consumo eléctrico 1,97 kW en refrigeración y 2,0 kW 
+en calefacción. EER-COP 4,21-4,65. Clase energética A+++ para refrigeración y A++ para calefacción. SEER-COP de 
+8,50/4,70. Nivel de presión sonora en refrigeración de 49 dB(A) y calefacción de 51 dB(A). Caudal de aire frigorífica y calorífica 
+de 3.720 m3/h. Alimentación de 220-240V,1Ph, 50-60 Hz. Diámetro de tuberías (liq. / gas) de 1/4" x 5 - 3/8" x 4 - 1/2" x 1. 
+Compresor DC Inverter. Fluido refrigerante R32. Dimensiones de 796x950x330 mm (AxLxP) y peso de 68 Kg.
+Marca/modelo: MITSUBISHI PXZ-4F75VG
+Incluso elementos antivibratorios de suelo.
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Conexión a la red de 
+desagüe. Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V0.1 1,0 1,00
+Spc0010
+Total 01.01 1,000
+01.02 Partida UD UNIDAD EXTERIOR MITSUBISHI PXZ-4F75VG 4,000
+Suministro e instalación de Unidad exterior MITSUBISHI PXZ-4F75VG. Compatible con unidades interiores tipo mural, 
+consola, de conductos o cassette y producción ACS. Número de unidades conectadas min/máx. 1/4 + unidad producción ACS 
+(no incluidos). Potencia frigorífica 7,2 kW y potencia calorífica 7,0 kW. Consumo eléctrico 1,85 kW en refrigeración y 1,87 kW 
+en calefacción. EER-COP 3,89-4,21. Clase energética A++ para refrigeración y A+ para calefacción. SEER-COP de 8,10/4,10. 
+Nivel de presión sonora en refrigeración de 49 dB(A) y calefacción de 51 dB(A). Caudal de aire frigorífica y calorífica de 2.562 
+m3/h. Alimentación de 220-240V,1Ph, 50-60 Hz. Diámetro de tuberías (liq. / gas) de 1/4" x 4 - 3/8" x 3 - 1/2" x 1. Compresor DC 
+Inverter. Fluido refrigerante R32. Dimensiones de 170x840x330 mm (AxLxP) y peso de 74 Kg.
+Marca/modelo: MITSUBISHI PXZ-5F85VG
+Incluso elementos antivibratorios de suelo.
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Conexión a la red de 
+desagüe. Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 01.02 4,000
+01.04 Partida UD UNIDAD INTERIOR MITSUBISHI SEZ-M25DA(2) 4,000
+Suministro e instalación de Unidad interior de conductos, sistema Multisplit MXZ R32, gama doméstica, modelo SEZ-
+M25DA(2) de MITSUBISHI ELECTRIC, color blanco, capacidad nominal frío/calor 2,5/2,9 kW, nivel sonoro (B/M/A) 22/25/29 
+dB(A), dimensiones (HxAxF) 200x790x700 mm.
+Incluye el suministro e instalación de TERMOSTATO wired controller con programación semanal. 
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Colocación y fijación 
+del tubo entre la unidad interior y el control remoto por cable. Tendido de cables entre la unidad interior y el control remoto 
+por cable. Conexionado de cables entre la unidad interior y el control remoto por cable. Conexión a la red de desagüe con 
+bote sifónico. Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 01.04 4,000
+01.05 Partida UD UNIDAD INTERIOR MITSUBISHI SEZ-M35DA(2) 1,000
+Suministro e instalación de Unidad interior de conductos, sistema Multisplit MXZ R32, gama doméstica, modelo SEZ-
+M35DA(2) de MITSUBISHI ELECTRIC, color blanco, capacidad nominal frío/calor 3,5/4,2 kW, nivel sonoro (B/M/A) 23/28/33 
+dB(A), dimensiones (HxAxF) 200x990x700 mm.
+Incluye el suministro e instalación de TERMOSTATO wired controller con programación semanal. 
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Colocación y fijación 
+del tubo entre la unidad interior y el control remoto por cable. Tendido de cables entre la unidad interior y el control remoto 
+por cable. Conexionado de cables entre la unidad interior y el control remoto por cable. Conexión a la red de desagüe con 
+bote sifónico. Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V0.1 1,0 1,00
+Spc0010
+Total 01.05 1,000
+01.06 Partida UD UNIDAD INTERIOR MITSUBISHI PEAD-M50JA(2) 5,000
+Unidad interior de conductos, modelo PEAD-M50JA(2) de MITSUBISHI ELECTRIC, capacidad nominal frío/calor 5/6 kW, nivel 
+sonoro (B/M/A) 26/31/35 dB(A), dimensiones (HxAxF) 250x900x732 mm, peso 26,5 kg.
+Incluye el suministro e instalación de TERMOSTATO wired controller con programación semanal. 
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Colocación y fijación 
+del tubo entre la unidad interior y el control remoto por cable. Tendido de cables entre la unidad interior y el control remoto 
+por cable. Conexionado de cables entre la unidad interior y el control remoto por cable. Conexión a la red de desagüe con 
+bote sifónico. Puesta en marcha.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 01.06 5,000
+01.07 Partida UD DEPÓSITO ACS CERTIFICADO 170LITROS 5,000
+Suministro e instalación Unidad interior Hydrobox Duo Reversible modelo ERST17D-VM2D de MITSUBISHI ELECTRIC, 
+capacidad 170 litros, 3 - 8 kW, alimentación (V, Hz) -, -, vaso expansión L, dimensiones (HxAxP) 1400x595x680 mm, peso 104 
+kg. 
+Incluye: Replanteo. Colocación y fijación. Conexión a las líneas frigoríficas. Conexión a la red eléctrica. Colocación y fijación 
+del tubo entre la unidad interior y el control remoto por cable. Tendido de cables entre la unidad interior y el control remoto 
+por cable. Conexionado de cables entre la unidad interior y el control remoto por cable. Conexión a la red de desagüe con 
+bote sifónico. Puesta en marcha. IMPORTANTE: INCLUYE KIT TRATAMIENTO POLIFOSFATOS PARA EL TRATAMIENTO DE AGUA 
+Y CUMPLIMIENTO DE LOS PARÁMETROS FIJADOS POR EL FABRICANTE
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la canalización ni el cableado eléctrico de alimentación.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 01.07 5,000
+01.08 Partida m LINEA FRIGORIFICA 1/4"-3/8" AISLADA 182,000
+Línea frigorífica doble realizada con tubería flexible de cobre sin soldadura, formada por un tubo para líquido de 1/4" de 
+diámetro y 0,8 mm de espesor con aislamiento de 9 mm de espesor y un tubo para gas de 3/8" de diámetro y 0,8 mm de 
+espesor con aislamiento de 9 mm de espesor, teniendo el cobre un contenido de aceite residual inferior a 4 mg/m y siendo el 
+aislamiento de coquilla flexible de espuma elastomérica con revestimiento superficial de película de polietileno, para una 
+temperatura de trabajo entre -45 y 100°C, suministrada en rollo, para conexión entre las unidades interior y exterior.
+Incluye: Replanteo del recorrido de la línea. Encintado de los extremos. Montaje y fijación de la línea. Abocardado. Vaciado 
+para su carga.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 42,00 42,00
+Spc0010 V1.1 1,0 34,00 34,00
+Spc0010 V1.2 1,0 42,00 42,00
+Spc0010 V2.1 1,0 28,00 28,00
+Spc0010 V2.2 1,0 36,00 36,00
+Spc0010
+Total 01.08 182,000
+01.09 Partida m LINEA FRIGORIFICA 1/4"-1/2"" AISLADA 90,000
+Línea frigorífica doble realizada con tubería flexible de cobre sin soldadura, formada por un tubo para líquido de 1/4" de 
+diámetro y 0,8 mm de espesor con aislamiento de 9 mm de espesor y un tubo para gas de 1/2" de diámetro y 0,8 mm de 
+espesor con aislamiento de 10 mm de espesor, teniendo el cobre un contenido de aceite residual inferior a 4 mg/m y siendo 
+el aislamiento de coquilla flexible de espuma elastomérica con revestimiento superficial de película de polietileno, para una 
+temperatura de trabajo entre -45 y 100°C, suministrada en rollo, para conexión entre las unidades interior y exterior.
+Incluye: Replanteo del recorrido de la línea. Encintado de los extremos. Montaje y fijación de la línea. Abocardado. Vaciado 
+para su carga.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 20,00 20,00
+Spc0010 V1.1 1,0 19,00 19,00
+Spc0010 V1.2 1,0 19,00 19,00
+Spc0010 V2.1 1,0 16,00 16,00
+Spc0010 V2.2 1,0 16,00 16,00
+Spc0010
+Total 01.09 90,000
+1.10 Partida m CANALETA PROTECCIÓN FRIGORIFICAS CUBIERTA 50,000
+Canal protectora tuberías frigoríficas y cable eléctrico en cubierta, de 50x120mm, aislante, no propagador de la llama, 
+estable frente a los rayos UV y con buen comportamiento a la intemperie y frente a la acción de los agentes químicos, según 
+UNE-EN 50085-1, suministrada en tramos de 3 m de longitud, con film de protección, incluso puentes, piezas de unión, tacos 
+y tornillos.
+Incluye: Replanteo del recorrido de la línea. Encintado de los extremos. Montaje y fijación de la línea. Abocardado. Vaciado 
+para su carga.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+1.11 Partida m² CONDUCTO DE DISTRIBUCIÓN CLIMATIZACIÓN 96,000
+Conducto rectangular para la distribución de aire climatizado formado por panel rígido de alta densidad de lana de vidrio 
+Climaver A2 Neto "ISOVER", según UNE-EN 14303, de 25 mm de espesor, revestido por aluminio reforzado por el exterior y 
+tejido NETO por el interior, resistencia térmica 0,78 m²K/W, conductividad térmica 0,032 W/(mK). Incluso codos, 
+derivaciones, sellado de uniones con cola Climaver, embocaduras, soportes metálicos galvanizados, elementos de fijación, 
+sellado de tramos con cinta Climaver Neto de aluminio, accesorios de montaje y piezas especiales.
+INCLUYE EMBOCADURAS A REJILLAS, CONDUCTO PARA CONDUCCIÓN DE RETORNO DE CLIMATIZACIÓN POR PLENUM Y 
+SECTORIZACIONES POR PLENUM NECESARIAS.
+Incluye: Replanteo del recorrido de los conductos. Marcado y posterior anclaje de los soportes de los conductos. Montaje y 
+fijación de conductos. Sellado de las uniones. Comprobación de su correcto funcionamiento. Limpieza final.
+Criterio de medición de proyecto: Superficie proyectada, según documentación gráfica de Proyecto, calculada como 
+producto del perímetro exterior por la longitud del tramo, medida entre los ejes de los elementos o de los puntos a conectar, 
+sin descontar las piezas especiales.
+Criterio de medición de obra: Se medirá la superficie realmente ejecutada según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 20,00 20,00
+Spc0010 V1.1 1,0 18,00 18,00
+Spc0010 V1.2 1,0 19,00 19,00
+Spc0010 V2.1 1,0 18,00 18,00
+Spc0010 V2.2 1,0 19,00 19,00
+Spc0010 METROS PANELADO-FALSEO REJILLAS 5,0 2,00 0,20 2,00
+Spc0010
+Total 1.11 96,000
+1.17 Partida m FOSEADO PLADUR RETORNO CLIMA 34,400
+Montaje de foseado en tabiquería de pladur para retorno por plénum, según documentación gráfica, lineal. Apertura de 4 cm 
+de ancho en encuentro sobre armarios y tabiquería, longitud según documentación gráfica 2 a 4 m. 
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 4,0 1,60 6,40
+Spc0010 V1.1 4,0 2,00 8,00
+Spc0010 V1.2 3,0 2,00 6,00
+Spc0010 V2.1 4,0 2,00 8,00
+Spc0010 V2.2 3,0 2,00 6,00
+Spc0010
+Total 1.17 34,400
+ICNAI04 Partida UD REJILLA E-LO/ATPEY 400X75 8,000
+Rejilla lineal de aluminio de 400x75 mm con marco reducido para empotrar en pared. La parrilla tipo LS/A de aletas fijas a  0º 
+es desmontable por la parte inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY.
+Totalmente montada e instalada.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total ICNAI04 8,000
+ICNAI07 Partida UD REJILLA E-LO/ATPEY 500X100 1,000
+Rejilla lineal de aluminio de 500x100 mm con marco reducido para empotrar en pared. La parrilla tipo LS/A de aletas fijas a  
+0º es desmontable por la parte inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY.
+Totalmente montada e instalada.
+Spc0010 V0.1 1,0 1,00
+Spc0010
+Total ICNAI07 1,000
+ICANI09 Partida UD REJILLA E-LO/ATPEY 700X100 5,000
+Rejilla lineal de aluminio de 700x100 mm con marco reducido para empotrar en pared. La parrilla tipo LS/A de aletas fijas a  
+0º es desmontable por la parte inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY.
+Totalmente montada e instalada.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010
+Total ICANI09 5,000
+ICNAI10 Partida UD REJILLA E-LO/ATPEY 800X100 6,000
+Rejilla lineal de aluminio de 800x100 mm con marco reducido para empotrar en pared. La parrilla tipo LS/A de aletas fijas a  
+0º es desmontable por la parte inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY.
+Totalmente montada e instalada.
+Spc0010 V1.2 3,0 3,00
+Spc0010 V2.2 3,0 3,00
+Spc0010
+Total ICNAI10 6,000
+ICNAII10 Partida UD REJILLA E-LO/ATPEY 1000X100 2,000
+Rejilla lineal de aluminio de 1000x100 mm con marco reducido para empotrar en pared. La parrilla de aletas fijas a  0º es 
+desmontable por la parte inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY.
+Totalmente montada e instalada.
+Spc0010 V 0.1 2,0 2,00
+Spc0010
+Total ICNAII10 2,000
+ICNAIII20 Partida UD REJILLA E-LO/ATPEY 2000X100 2,000
+Spc0010 V1.1 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010
+Total ICNAIII20 2,000
+16.018 Partida SISTEMA AIRZONE 1,000
+Partida alzada a petición del proyectista para implementación de sistema  Airzone en los 5 apartamentos con controles en 
+cada dormitorio y estancia. 
+Nota AS: a definir por proyectista.
+Spc0010 1,0 1,00
+Total 16.018 1,000
+Total 16 1
+17 Capítulo INSTALACIÓN SANEAMIENTO
+17_1 Capítulo SANEAMIENTO VIVIENDAS Y LOCALES
+04.01b Partida Ud POZO REGISTRO PREVIO CONEXIÓN 1,000
+Pozo de registro de fábrica de ladrillo cerámico hueco de 1 pie de espesor, de 1,00 m de diámetro interior y de 1,8 m de altura 
+útil interior, formado por: solera de 25 cm de espesor de hormigón armado HA-30/B/20/IIb+Qb ligeramente armada con malla 
+electrosoldada ME 20x20 Ø 8-8 B 500 T 6x2,20 UNE-EN 10080; pozo cilíndrico y cono asimétrico en coronación de 0,50 m de 
+altura, construidos ambos con fábrica de ladrillo cerámico hueco de 25x12x5 cm, recibido con mortero de cemento, 
+industrial, M-5, de 1 cm de espesor, enfoscado y bruñido por el interior con mortero de cemento, industrial, con aditivo 
+hidrófugo, M-15 formando aristas y esquinas a media caña y losa alrededor de la boca del cono de 150x150 cm y 20 cm de 
+espesor de hormigón en masa HM-30/B/20/I+Qb; con cierre de tapa circular con bloqueo y marco de fundición clase D-400 
+según UNE-EN 124, instalado en calzadas de calles, incluyendo las peatonales, o zonas de aparcamiento para todo tipo de 
+vehículos. Incluso hormigón en masa HM-30/B/20/I+Qb para formación de canal en el fondo del pozo y del brocal asimétrico 
+en la coronación del pozo y mortero para sellado de juntas.
+Incluye: Replanteo. Colocación de la malla electrosoldada. Vertido y compactación del hormigón en formación de solera. 
+Formación de muro de fábrica. Enfoscado y bruñido por el interior con mortero de cemento, redondeando ángulos. Formación 
+del canal en el fondo del pozo. Conexionado de los colectores al pozo. Sellado de juntas. Colocación de los pates. Vertido y 
+compactación del hormigón para formación de la losa alrededor de la boca del cono. Colocación de marco, tapa de registro y 
+accesorios. Comprobación de su correcto funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye la excavación ni el relleno del trasdós.
+04.02b Partida m COLECTOR SN4 DN200 3,000
+Colector enterrado de red horizontal de saneamiento, sin arquetas, mediante sistema integral registrable, en losa de 
+cimentación, con una pendiente mínima del 3%, para la evacuación de aguas residuales y/o pluviales a red de saneamiento, 
+formado por tubo de PVC liso, serie SN-4, rigidez anular nominal 4 kN/m², de 200 mm de diámetro exterior, con junta elástica, 
+empotrada en losa de cimentación. Incluso accesorios, registros, uniones y piezas especiales, lubricante para montaje y 
+fijación a la armadura de la losa.
+Incluye: Replanteo y trazado del conducto en planta y pendientes. Presentación en seco de tubos y piezas especiales. 
+Montaje, conexionado y comprobación de su correcto funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto, incluyendo los tramos ocupados por piezas especiales.
+04.04b Partida Ud INSTALACIÓN EVACUACIÓN BAÑO SIMPLE 10,000
+Instalación interior de evacuación de aguas de baño formado por: lavabo simple, inodoro y ducha, realizada con tubo de PVC-
+B  INSONORIZADO y resistente al fuego colgado, que conecta al colector de saneamiento principal o una de sus 
+ramificaciones con cada uno de los aparatos sanitarios, con los diámetros necesarios para cada punto de servicio. Incluso 
+material auxiliar para montaje y sujeción a la obra, derivación particular, accesorios de derivaciones.
+Instalación de saneamiento realizada en forjado sanitario.
+Totalmente montada, conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías, colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total 04.04b 10,000
+04.06C Partida Ud INSTALACIÓN EVACUACIÓN LAVADERO 5,000
+Instalación interior de evacuación de aguas de lavadero formado por: lavadora+secadora, realizada con tubo de PVC-B  
+INSONORIZADO y resistente al fuego colgado, que conecta al colector de saneamiento principal o una de sus ramificaciones 
+con cada uno de los aparatos sanitarios, con los diámetros necesarios para cada punto de servicio. Incluso material auxiliar 
+para montaje y sujeción a la obra, derivación particular, accesorios de derivaciones.
+Instalación de saneamiento realizada en forjado sanitario.
+Totalmente montada, conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías, colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 04.06C 5,000
+04.06B Partida Ud INSTALACIÓN EVACUACIÓN COCINA 5,000
+Instalación interior de evacuación de aguas de cocina formado por: fregadero, lavavajillas, realizada con tubo de PVC-B  
+INSONORIZADO y resistente al fuego colgado, que conecta al colector de saneamiento principal o una de sus ramificaciones 
+con cada uno de los aparatos sanitarios, con los diámetros necesarios para cada punto de servicio. Incluso material auxiliar 
+para montaje y sujeción a la obra, derivación particular, accesorios de derivaciones.
+Instalación de saneamiento realizada en forjado sanitario.
+Totalmente montada, conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías, colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 04.06B 5,000
+04.07A Partida Ud EVACUACION CONDENSADOS UNIDADES CLIMA/ACS 20,000
+Instalación de evacuación de condensados de unidades interior de clima, realizada con tubo de PVC-B aislado con coquilla, 
+que conecta con instalación de fecales o pluviales, al colector de saneamiento principal o una de sus ramificaciones con 
+cada uno de los aparatos sanitarios, con los diámetros necesarios para cada punto de servicio. Incluso material auxiliar para 
+montaje y sujeción a la obra, derivación particular, accesorios de derivaciones. Se incluyen unidades de ventilación, 
+unidades de conductos y aerotermo. 
+Totalmente montada, conexionada y probada.
+Incluye: Replanteo del recorrido de las tuberías, colocación y fijación de tuberías.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 4,0 4,00
+Spc0010 V1.1 4,0 4,00
+Spc0010 V1.2 4,0 4,00
+Spc0010 V2.1 4,0 4,00
+Spc0010 V2.2 4,0 4,00
+Spc0010
+Total 04.07A 20,000
+04.07AA Partida Ud SUMIDERO SANEAMIENTO ZONAS COMUNES 5,000
+Instalación de sumidero sifónico de PVC, S-246 autolimpiante, de salida vertical de 50 mm de diámetro, con rejilla plana de 
+PVC de 250x250 mm, color gris, para recogida de aguas pluviales o de locales húmedos. Instalado en cuarto RITU, Cuarto 
+contadores de agua y accesos. Incluso p/p de accesorios de montaje, piezas especiales, material auxiliar y elementos de 
+sujeción. Totalmente montado, conexionado a la red general de desagüe y probado.
+04.08 Partida m BAJANTE INTERIOR DN90 - FECALES/PLUVIALES 52,000
+Bajante interior insonorizada y con resistencia al fuego de la red de evacuación de aguas residuales, formada por tubo de 
+PVC, serie B, multicapa,  sistema EVAC ENERGY PLUS "ABN" o sistema RAUPIANO PLUS "REHAU", de 90 mm de diámetro y 
+3,2 mm de espesor; unión a presión con junta elástica. Incluso material auxiliar para montaje y sujeción a la obra, accesorios 
+y piezas especiales.
+Incluye: Replanteo del recorrido de la bajante y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 BAJANTE 3,0 10,00 30,00
+Spc0010 BAJANTE COCINAS 2,0 10,00 20,00
+Spc0010 BAJANTE V2.1 + V2.2 2,0 1,00 2,00
+Spc0010
+Total 04.08 52,000
+04.11 Partida m BAJANTE INTERIOR DN110 - FECALES/PLUVIALES 50,000
+Bajante interior insonorizada y con resistencia al fuego de la red de evacuación de aguas pluviales, formada por tubo de PVC, 
+serie B, sistema EVAC ENERGY PLUS "ABN" o sistema RAUPIANO PLUS "REHAU", de 110 mm de diámetro y 3,2 mm de 
+espesor; unión a presión con junta elástica. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales.
+Incluye: Replanteo del recorrido de la bajante y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 BAJANTE 4,0 10,00 40,00
+Spc0010 BAJANTES PLUV CENTRAL 2,0 5,00 10,00
+Spc0010
+Total 04.11 50,000
+04.09 Partida m BAJANTE INTERIOR DN125 - FECALES/PLUVIALES 32,000
+Bajante interior insonorizada y con resistencia al fuego de la red de evacuación de aguas residuales, formada por tubo de 
+PVC, serie B, multicapa,  sistema EVAC ENERGY PLUS "ABN" o sistema RAUPIANO PLUS "REHAU", de 125 mm de diámetro y 
+3,2 mm de espesor; unión a presión con junta elástica. Incluso material auxiliar para montaje y sujeción a la obra, accesorios 
+y piezas especiales.
+Incluye: Replanteo del recorrido de la bajante y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 BAJANTE 2,0 10,00 20,00
+Spc0010 BAJANTE PLUV 2,0 6,00 12,00
+Spc0010
+Total 04.09 32,000
+04.15 Partida m COLECTOR HORIZONTAL DN90 - FECALES/PLUVIAL 96,000
+Colector suspendido insonorizado de red horizontal, formado por tubo PVC, serie B, multicapa  sistema EVAC ENERGY PLUS 
+"ABN" o sistema RAUPIANO PLUS "REHAU", de 90 mm de diámetro y 3,2 mm de espesor, unión a presión con junta elástica, 
+con una pendiente mínima del 1,00%, para la evacuación de aguas residuales (a baja y alta temperatura) y/o pluviales en el 
+interior de la estructura de los edificios. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales.
+Incluye: Replanteo del recorrido del colector y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Spc0010 DESAGUES 1,0 9,00 9,00
+Spc0010 SOTANO 1,0 14,00 14,00
+Spc0010 COLECTOR SUSPENDIDO REBOSADERO 4,0 11,00 44,00
+Spc0010 REBOSADERO ALJIBE POTABLE EMPOTRA EN PARED 1,0 20,00 20,00
+Spc0010 COLECTOR PLUV V2.1 1,0 9,00 9,00
+Spc0010 COLECTOR PLUV V2.2
+Total 04.15 96,000
+04.16 Partida m COLECTOR HORIZONTAL DN110 - FECALES/PLUVIAL 37,000
+Colector suspendido insonorizado de red horizontal, formado por tubo PVC, serie B, multicapa  sistema EVAC ENERGY PLUS 
+"ABN" o sistema RAUPIANO PLUS "REHAU", de 110 mm de diámetro y 3,2 mm de espesor, unión a presión con junta elástica, 
+con una pendiente mínima del 1,00%, para la evacuación de aguas residuales (a baja y alta temperatura) y/o pluviales en el 
+interior de la estructura de los edificios. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales.
+Incluye: Replanteo del recorrido del colector y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Spc0010 PB ENTERRADO A EXTERIOR 1,0 8,00 8,00
+Spc0010 SOTANO 1,0 29,00 29,00
+Spc0010
+Total 04.16 37,000
+04.17 Partida m COLECTOR HORIZONTAL DN125 - FECALES/PLUVIAL 12,000
+Colector suspendido insonorizado de red horizontal, formado por tubo PVC, serie B, multicapa sistema EVAC ENERGY PLUS 
+"ABN" o sistema RAUPIANO PLUS "REHAU", de 125 mm de diámetro y 3,2 mm de espesor, unión a presión con junta elástica, 
+con una pendiente mínima del 1,00%, para la evacuación de aguas residuales (a baja y alta temperatura) y/o pluviales en el 
+interior de la estructura de los edificios. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales.
+Incluye: Replanteo del recorrido del colector y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Spc0010 SOTANO 1,0 12,00 12,00
+Spc0010
+Total 04.17 12,000
+04.18 Partida m COLECTOR HORIZONTAL DN160 - FECALES/PLUVIAL 17,000
+Colector suspendido insonorizado de red horizontal, formado por tubo PVC, serie B, multicapa  sistema EVAC ENERGY PLUS 
+"ABN" o sistema RAUPIANO PLUS "REHAU", de 160 mm de diámetro y 3,2 mm de espesor, unión a presión con junta elástica, 
+con una pendiente mínima del 1,00%, para la evacuación de aguas residuales (a baja y alta temperatura) y/o pluviales en el 
+interior de la estructura de los edificios. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales.
+Incluye: Replanteo del recorrido del colector y de la situación de los elementos de sujeción. Presentación en seco de los 
+tubos. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de su correcto 
+funcionamiento.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Spc0010 SOTANO 1,0 17,00 17,00
+Spc0010
+Total 04.18 17,000
+ASI050c Partida m CANALETA LINEA H.POLIM 100 mm+ REJILLA OCULTA CERO INOX 30 mm 67,500
+Canaleta prefabricada de hormigón polímero, de 1000 mm de longitud, 127 mm de ancho exterior, 100 mm de ancho interior 
+y 95 mm de altura, con rejilla oculta de acero inoxidable de 30 mm de altura, colocada sobre solera de hormigón en masa HM-
+20/B/20/X0 de 10 cm de espesor. Incluso accesorios de montaje, piezas especiales y elementos de sujeción.
+Criterio de valoración económica: El precio no incluye la excavación.
+Incluye: Replanteo del recorrido de la canaleta de drenaje. Vertido y compactación del hormigón en formación de solera. 
+Montaje, conexionado y comprobación de su correcto funcionamiento. Colocación de la rejilla.
+Criterio de medición de proyecto: Longitud medida en proyección horizontal, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá, en proyección horizontal, la longitud realmente ejecutada según especificaciones 
+de Proyecto.
+Spc0010 Cubierta intalaciones 1,0 17,00 17,00
+Spc0010 Cubierta viviendas 1,0 18,70 18,70
+Spc0010 Terraza 2-planta primera 1,0 2,80 2,80
+Spc0010 Terraza planta baja 1,0 3,00 3,00
+Spc0010 Previsión terrazas planta primera 1,0 5,00 5,00
+Spc0010 1,0 8,00 8,00
+Spc0010 Previsión terrazas planta segunda 1,0 5,00 5,00
+Spc0010 1,0 8,00 8,00
+Spc0010
+Total ASI050c 67,500
+04.24A Partida UD SUMIDERO PLUVIALES CUBIERTA 4,000
+Instalación de sumidero sifónico de PVC, S-246 autolimpiante, de salida vertical, con rejilla plana de PVC de 250x250 mm, 
+color gris, para recogida de aguas pluviales de terrazas. Incluso p/p de accesorios de montaje, piezas especiales, material 
+auxiliar y elementos de sujeción. Totalmente montado, conexionado a la red general de desagüe y probado.
+04.25 Partida UD SIFON EN LINEA DN160 1,000
+Sifón en línea de PVC, "JIMTEN", color gris, registrable, con unión macho/hembra, de 160 mm de diámetro, colocado entre el 
+colector de salida y la acometida.
+Incluye: Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+11.07 Partida UD TUBERÍA PEAD PARA EVACUACIÓN AGUAS BOMBEO 15,000
+Acometida evacuación de pluviales bombeado de aparcamiento, de 63 mm de diámetro exterior, PN=10 atm y 3,8 mm de 
+espesor, colocada superficialmente por techo en planta baja, según trazado previsto en documentación gráfica. Incluso 
+accesorios y piezas especiales.
+Incluye: Replanteo del recorrido de la acometida, coordinado con el resto de instalaciones o elementos que puedan tener 
+interferencias. Colocación de la tubería. 
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+04.28 Partida M TETRATUBO EVACUACION PLUVIALES DN90MM 28,000
+Red de pequeña evacuación, empotrada en suelo, de PVC, serie B, para evacuación de aguas pluviales bajo bordillo de acera 
+a la calzada. Compuesto por 4 tubos de 90 mm de diámetro, unión pegada con adhesivo, desde aljibe pluviales a bordillo 
+acera. - Instalación enterrada
+Spc0010 medicion 4,0 7,00 28,00
+Spc0010
+Total 04.28 28,000
+Total 17_1 1,000
+Total 17 1
+18 Capítulo INSTALACIÓN DE VENTILACIÓN
+18_1 Capítulo VENTILACIÓN VIVIENDAS
+02.00 Partida UD UNIDAD EXTRACCION MECANICA CONTROLADA 5,000
+Grupo de Ventilación Mecánica Controlada para sistema higrorregulable, marca y modelo JAGA MVS-15RH. Compuesto por 
+ventilador centrífugo, con motor AC de curva plana para alimentación monofásica a 230 V y 50 Hz de frecuencia, El cuerpo del 
+equipo está fabricado en Polipropileno expandido. Montaje en falso techo o pared. Dimensiones 390x450x303 mm y caja de 
+bornes con condensador, de potencia nominal 20 W, caudal máximo 500 m³/h, con 4 bocas de entrada, 3 para conexión a 
+conductos de extracción de 125 mm de diámetro y 1 para conexión a conducto de extracción de 125/160 mm de diámetro, 
+con funcionamiento por sensor de humedad. Incluso elementos de fijación, tubo protector del cableado y cables.
+Incluye: Replanteo mediante plantilla. Colocación y fijación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 02.00 5,000
+02.01b Partida m CONDUCTO VENTILACIÓN SEMIFLEXIBLE 92mm 98,000
+Conducto de ventilación semiflexible circular y accesorios. JAGA 400470400 diámetro exterior 92mm. Suministrado en rollos 
+de 50 metros. Para ubicar en falso techo con poco espacio disponible. Superficie interior lisa. Colocado en posición 
+horizontal según documentación gráfica. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas 
+especiales para la ejecución completa.
+Características:
+- Conducto de PE
+ - Antibacteriano.
+- Antimoho.
+- Antiestático.
+- Fácil instalación.
+- Montaje por encaje.
+- Accesorio de regulación de caudal.
+- Rango de temperatura de funcionamiento:
+-50ºC/+60ºC.
+Incluye: Replanteo del recorrido del conducto y de la situación de los elementos de sujeción. Presentación en seco de tubos y 
+piezas especiales. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de 
+su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud proyectada, según documentación gráfica de Proyecto, medida entre los ejes de 
+los elementos o de los puntos a conectar, sin descontar las piezas especiales.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye las compuertas de regulación, las compuertas cortafuego, las rejillas 
+ni los difusores.
+Spc0010 V0.1 1,0 22,00 22,00
+Spc0010 V1.1 1,0 18,00 18,00
+Spc0010 V1.2 1,0 20,00 20,00
+Spc0010 V2.1 1,0 18,00 18,00
+Spc0010 V2.2 1,0 20,00 20,00
+Spc0010
+Total 02.01b 98,000
+02.01A Partida m CONDUCTO VENTILACIÓN 125mm 32,000
+Conducto de ventilación, formado por tubo liso circular, de PVC, color blanco, código 5416840800 TUBCIR de S&P , de 125 
+mm de diámetro, temperatura de trabajo entre 0°C y 60°C, colocado en posición horizontal/vertical según documentación 
+gráfica. Incluso material auxiliar para montaje y sujeción a la obra, accesorios y piezas especiales para la ejecución 
+completa. 
+Gama de conductos rectangulares y circulares y sus accesorios para instalaciones en viviendas unifamiliares y colectivas. 
+Especialmente indicados para instalaciones en falso techo con poco espacio disponible. Ofrecen instalaciones estéticas con 
+buen acabado.
+Características
+- Conducto termoplástico (PVC) ignífugo autoextinguible.
+- Accesorios de poliestireno de alto impacto. 
+- Alta estanqueidad.
+- Antihongo.
+- Antibacteriano.
+- Libre metales pesados.
+- Conducto termoplástico ignífugo autoextinguible.
+- Temperatura de trabajo: 90ºC.
+- 100% antiputrefacción.
+- Higiénico antiadherente partículas sólidas.
+- Anticorrosión.
+- Atérmico y dieléctrico.
+- Atenuador acústico.
+Incluye: Replanteo del recorrido del conducto y de la situación de los elementos de sujeción. Presentación en seco de tubos y 
+piezas especiales. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y comprobación de 
+su correcto funcionamiento.
+Spc0010 V0.1 10,0 10,00
+Spc0010 V1.1 7,0 7,00
+Spc0010 V1.2 7,0 7,00
+Spc0010 V2.1 4,0 4,00
+Spc0010 V2.2 4,0 4,00
+Spc0010
+Total 02.01A 32,000
+02.03 Partida m CONDUCTO VENTILACIÓN COCINAS 150mm 43,000
+Conducto circular de extracción de cocinas, formado por tubo de 150 mm de diámetro exterior, específico para extractores 
+de cocinas domésticos, resistente a altas temperaturas, colocado en posición vertical. Incluso material auxiliar para montaje 
+y sujeción a la obra, accesorios y piezas especiales.
+Incluye: Replanteo del recorrido del conducto y de la situación de los elementos de sujeción. Presentación de tubos, 
+accesorios y piezas especiales. Fijación del material auxiliar para montaje y sujeción a la obra. Montaje, conexionado y 
+comprobación de su correcto funcionamiento. Realización de pruebas de servicio.
+Criterio de medición de proyecto: Longitud proyectada, según documentación gráfica de Proyecto, medida entre los ejes de 
+los elementos o de los puntos a conectar, sin descontar las piezas especiales.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Criterio de valoración económica: El precio no incluye las compuertas de regulación, las compuertas cortafuego, las rejillas 
+ni los difusores.
+Spc0010 V0.1 11,0 11,00
+Spc0010 V1.1 9,0 9,00
+Spc0010 V1.2 9,0 9,00
+Spc0010 V2.1 7,0 7,00
+Spc0010 V2.2 7,0 7,00
+Spc0010
+Total 02.03 43,000
+02.04 Partida UD CAMPANA COCINA 5,000
+Suministro e instalación de campana extractora con un motor, modelo PANDO INTEGRAL COOKING IES SEC SYSTEM (o 
+similar, pendiente confirmación), acabado inox, de ancho 60 cm para ocultarse tras frente de armarios, con conducto de 150 
+mm de diámetro de salida, con visera telescópica filtrante, selector de velocidad de tres posiciones, filtro metálico y 
+compuerta antirretorno, con tramo de conexión de tubo flexible de aluminio a conducto de extracción para salida de humos. 
+Incluso elementos de fijación.Totalmente instalada y operativa. 
+Incluye: Replanteo mediante plantilla. Colocación y fijación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 02.04 5,000
+02.10 Partida UD BOCA EXTRACCIÓN REGULABLE 100 10,000
+Boca de extracción regulable de chapa de acero en ejecución redonda, de 80 mm de diámetro, color blanco RAL 9010, S&P 
+BOC-100, fijación mediante tornillos ocultos. Incluso accesorios de montaje y elementos de fijación. Totalmente instalado y 
+comprobado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 2,0 2,00
+Spc0010 V1.1 2,0 2,00
+Spc0010 V1.2 2,0 2,00
+Spc0010 V2.1 2,0 2,00
+Spc0010 V2.2 2,0 2,00
+Spc0010
+Total 02.10 10,000
+02.11 Partida UD BOCA EXTRACCIÓN REGULABLE 125 5,000
+Boca de extracción regulable de chapa de acero en ejecución redonda, de 100 mm de diámetro, color blanco RAL 9010, S&P 
+BOC-125, fijación mediante tornillos ocultos. Incluso accesorios de montaje y elementos de fijación. Totalmente instalado y 
+comprobado.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 V0.1 1,0 1,00
+Spc0010 V1.1 1,0 1,00
+Spc0010 V1.2 1,0 1,00
+Spc0010 V2.1 1,0 1,00
+Spc0010 V2.2 1,0 1,00
+Spc0010
+Total 02.11 5,000
+02.09 Partida UD CHIMENEA VENTILACIÓN AZOTEA 3,000
+Chimenea para extracción de aire enrarecido de ventilación forzada de interior viviendas y garaje, instalado en cubierta, con 
+altura de salida de aire igual o superior a 2 m respecto cubierta transitable, protección contra la entrada de lluvia, de chapa 
+galvanizada, exterior en cubierta plana, acabado liso, con malla de protección contra la entrada de hojas y pájaros, babero de 
+plomo y cuello de conexión a conducto cuello de conexión a conductos. Diseño y modelo pendiente de definición por 
+propiedad y coordinación DF según dimensión definitiva chimenea de obra. 
+Conductos de extracción de aire en cubierta protegidos por chimenea de obra en cubierta hasta altura de aproximadamente 
+2 metros.
+Total 18_1 1,000
+18_2 Capítulo APARCAMIENTO - VENTILACIÓN
+09.16 Partida Ud REJILLA VENT APARCAMIENTO 9,000
+Suministro e instalación de rejilla con lamas de aluminio horizontales fijas a 45º y paralelas, con malla antipajaros, para 
+toma de aire exterior natural, con elementos de fijación. Dimensiones 1000x600 mm. Marca y modelo MADEL "DMT-X" o 
+similar.
+Incluye: Replanteo. Colocación y fijación. Conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmene ejecutadas según especificaciones de Proyecto
+Total 18_2 1,000
+Total 18 1
+19 Capítulo ENERGIA SOLAR / GEOTERMIA / EÓLICA
+19_1 Capítulo INSTALACIÓN FOTOVOLTAICA
+08.01 Partida UD INVERSOR FOTOVOLTAICO 5.0kWn FRONIUS SYMO 1,000
+Suministro e instalación de inversor trifásico FRONIUS SYMO 5.0-3-M-FULL de conexión a red de potencia nominal de salida 
+CA 5000W, tensión salida 230/400Vac, frecuencia 50Hz, con corriente máxima de salida continua 7,2A en conexión con 
+neutro y servicio de monitorización de red (debiendo de disponerse de cableado UTP hasta la ubicación del inversor, incluido 
+en el precio). Potencia máxima de entrada CC 10.000Wdc, con tensión máxima de entrada 1000Vdc y tensión nominal de 
+entrada 595Vdc, sin transformador ni puesta a tierra, con protección contra polaridad inversa y rendimiento máximo del 98%. 
+Totalmente montado y conexiones realizadas, además de configurado y facilitado acceso a la app para el uso de las 
+personas. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.02 Partida ud CONTADOR ELECTRÓNICO INVERSOR 1,000
+Suministro e instalación de contador bidireccional trifásico de medida indirecta, instalado en punto de frontera de instalación 
+interior/receptora, junto a centralización de contadores, conectado al inversor fotovoltaico para la transferencia de 
+información mediante interfaz RS485. Equipo compatible con inversor fotovoltaico instalado.
+Incluye suministro e instalación de cofret modular estanco IP 65 con carril DIN, instalado en superfície en el exterior de 
+CGPM, certificado con resistencia a rayos ultravioleta,
+Marca y modelo FRONIUS SMART METER TS 5 kA-3.
+Incluye pinzas amperimétricas conectadas al equipo para medición del flujo de energía eléctrica entre la instalación 
+receptora y red de distribución.
+Totalmente instalado, configurado y en funcionamiento.
+08.03 Partida M CABLEADO PFV 60,000
+Suministro e instalación de cable eléctrico unipolar, TOPSOLAR PV DUAL H1Z2Z2-K/PV WIRE de TOP CABLE o similar, incluso 
+tubos y canalizaciones, siendo un cable resistente a la intemperie, para instalaciones fotovoltaicas, garantizado por 30 años, 
+tipo ZZ-F, tensión nominal 1,5 kV, tensión máxima en corriente continua 1,8 kV, reacción al fuego NO PROPAGADOR DE 
+LLAMA, con conductor de cobre electrolítico estañado, flexible (clase 5), de 1x6 mm² de sección, aislamiento de goma libre 
+de halógenos (tipo XLEVA según UL tipo EI6 según TUV), cubierta de go libre de halógenos, de color negro/rojo, y con las 
+siguientes características: no propagación de la llama, baja emisión de humos opacos, reducida emisión de gases tóxicos, 
+libre de halógenos, nula emisión de gases corrosivos, resistencia a la absorción de agua, resistencia al frío, resistencia a los 
+rayos ultravioleta, resistencia a los agentes químicos, resistencia a las grasas y aceites, resistencia a los golpes y resistencia 
+a la abrasión. Totalmente montado, conexionado, con accesorios de conexiones y probado.
+Incluye: Tendido del cable. Conexionado.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+08.04 Partida UD ESTRUCTURA METÁLICA PARA PANELES 9,000
+Suministro estructrua metálica de inclinación 15º integrada y lastrada con contrapesos además de contar con tirantes a peto 
+estructural de cubierta según documentación gráfica. Repercusión de estructura por unidad de panel.
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.05 Partida UD PANELES FOTOVOLTAICOS 550Wp 9,000
+Suministro e instalación de paneles solares fotovoltaicos de silicio monocristalinos, con una potencia pico de 550 W y 
+dimensiones establecidas y/o similares, no mayores a las indicadas en cuanto a anchura, y modificable altura hasta 2,20 
+metros a efectos de justificar que no se generan sombreados entre filas. Los paneles dispondrán de certificado europeo IEC 
+61215 y marcado CE y garantía de almenos 12 años. Eficiencia superior al 20%. Totalmente conectado y funcionando.
+Modelo propuesto JA SOLAR JAM72S30 550/MR ó similar. Dimensiones 2.27x1.134x30 mm.
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.06 Partida M CABLEADO ALTERNA 45,000
+Cableado RZ1-K 5x4mm² para puente de conexión hasta contador dedicado en instalación bajo tubo de DN40. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.07 Partida UD CUADRO DE PROTECCIONES CONTINUA Y ALTERNA 1,000
+Suministro e instalación de cuadro de evacuación en CA junto a inversor, para salida de cable hacia centralización de 
+contadores con interruptor magnetotérmico 4P 25A, diferencial 25A 30mA y protección contra sobretensiones transitorias 
+tipo 2 así como disposición de 2 protecciones con fusiles de 25A para corte de STRINGS. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.08 Partida UD SECCIONADOR ENTRADA A CONTADOR 1,000
+Suministro e instalación de cuadro con aparamenta de seccionamiento en CA junto a centralización de contadores en 
+cumplimiento de legilación vigente. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+08.09 Partida UD PUESTA EN MARCHA Y TRAMITACIONES INSTALACIÓN 1,000
+Puesta en marcha y tramitaicones para legalización/certificación de instalación fotovoltaica con conexión a red.
+Total 19_1 1,000
+Total 19 1
+20 Capítulo INSTALACIÓN SEGURIDAD Y CONTRAINCENDIOS
+20_01 Capítulo PROTECCIÓN CONTRA INCENDIOS ZZCC
+20.01.01 Partida Ud PLACA SEÑALIZACIÓN EQUIPOS PCI 6,000
+Placa de señalización de equipos contra incendios, de PVC fotoluminiscente, con categoría de fotoluminiscencia A según 
+UNE 23035-4, de 210x210 mm. Incluso elementos de fijación.
+Incluye: Replanteo. Fijación al paramento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.01.02 Partida Ud PLACA SEÑALIZACIÓN EVACUACIÓN 5,000
+Placa de señalización de medios de evacuación, de PVC fotoluminiscente, con categoría de fotoluminiscencia A según UNE 
+23035-4, de 224x224 mm. Incluso elementos de fijación.
+Incluye: Replanteo. Fijación al paramento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.01.03 Partida Ud EXTINTOR PORTATIL POLVO ABC 6kg 4,000
+Extintor portátil de polvo químico ABC polivalente antibrasa, con presión incorporada, de eficacia 21A-144B-C, con 6 kg de 
+agente extintor, con manómetro y manguera con boquilla difusora. Incluso soporte y accesorios de montaje.
+Incluye: Replanteo. Colocación y fijación del soporte. Colocación del extintor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+20.01.04 Partida Ud EXTINTOR PORTATIL CO2 5kg 2,000
+Extintor portátil de nieve carbónica CO2, de eficacia 89B, con 5 kg de agente extintor, con manguera y trompa difusora. 
+Incluso soporte y accesorios de montaje.
+Incluye: Replanteo. Colocación y fijación del soporte. Colocación del extintor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+Total 20_01 1,000
+20_02 Capítulo APARCAMIENTO - CONTRA INCENDIOS
+20.02.01 Partida Ud PLACA SEÑALIZACIÓN EQUIPOS CONTRA INCENDIOS 4,000
+Placa de señalización de equipos contra incendios, de PVC fotoluminiscente, con categoría de fotoluminiscencia A según 
+UNE 23035-4, de 297x297 mm. Incluso elementos de fijación.
+Incluye: Replanteo. Fijación al paramento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.02 Partida Ud PLACA SEÑALIZACIÓN EVACUACIÓN 4,000
+Placa de señalización de medios de evacuación, de PVC fotoluminiscente, con categoría de fotoluminiscencia A según UNE 
+23035-4, de 224x224 mm. Incluso elementos de fijación.
+Incluye: Replanteo. Fijación al paramento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.03 Partida Ud EXTINTOR PORTATIL ABC 6kg 3,000
+Extintor portátil de polvo químico ABC polivalente antibrasa, con presión incorporada, de eficacia 21A-144B-C, con 6 kg de 
+agente extintor, con manómetro y manguera con boquilla difusora. Incluso soporte y accesorios de montaje.
+Incluye: Replanteo. Colocación y fijación del soporte. Colocación del extintor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+20.02.04 Partida Ud EXTINTOR PORTATIL CO2 5kg 1,000
+Extintor portátil de nieve carbónica CO2, de eficacia 89B, con 5 kg de agente extintor, con manguera y trompa difusora. 
+Incluso soporte y accesorios de montaje.
+Incluye: Replanteo. Colocación y fijación del soporte. Colocación del extintor.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente colocadas según especificaciones de Proyecto.
+20.02.05 Partida Ud PROTECCIÓN PASIVA PCI - COLLARIN DN110 10,000
+Sellado de paso de tubería de PVC, de 110 mm de diámetro nominal exterior, y de 3,7 mm de espesor, en muro-forjado de 25 
+cm de espesor, para protección pasiva contra incendios y garantizar la resistencia al fuego EI 120, formado por dos capas de 
+banda intumescente, de 45x5 mm, por ambas caras y sellador acrílico con propiedades ignífugas, color blanco como material 
+de relleno.
+Incluye: Limpieza y preparación del paramento. Inserción del material de relleno. Colocación de la banda alrededor del tubo. 
+Inserción de la banda en la abertura. Sellado de la junta. Limpieza final.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.06 Partida Ud PROTECCIÓN PASIVA PCI - COLLARIN DN125 5,000
+Sellado de paso de tubería de PVC, de 160 mm de diámetro nominal exterior, y de entre 2,5 y 11,8 mm de espesor, en muro de 
+25 cm de espesor, para protección pasiva contra incendios y garantizar la resistencia al fuego EI 180, formado por tres capas 
+de banda intumescente, modelo CFS-W EL "HILTI", de 45x5 mm, por ambas caras y sellador acrílico con propiedades 
+ignífugas, modelo CFS-S ACR CW "HILTI", color blanco como material de relleno.
+Incluye: Limpieza y preparación del paramento. Inserción del material de relleno. Colocación de la banda alrededor del tubo. 
+Inserción de la banda en la abertura. Sellado de la junta. Limpieza final.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.07 Partida Ud PROTECCIÓN PASIVA PCI - COLLARÍN DN90 12,000
+Sellado de paso de tubería de PVC, de 90 mm de diámetro nominal exterior, y de entre 2,2 y 3,6 mm de espesor, en muro de 
+25 cm de espesor, para protección pasiva contra incendios y garantizar la resistencia al fuego EI 120, formado por una capa 
+de banda intumescente, modelo CFS-W EL "HILTI", de 45x5 mm, por ambas caras y sellador acrílico con propiedades 
+ignífugas, modelo CFS-S ACR CW "HILTI", color blanco como material de relleno.
+Incluye: Limpieza y preparación del paramento. Inserción del material de relleno. Colocación de la banda alrededor del tubo. 
+Inserción de la banda en la abertura. Sellado de la junta. Limpieza final.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.08 Partida Ud PROTECCIÓN PASIVA PCI - PATINEJOS Y CANAL VE 2,000
+Sellado de paso de bandejas de cables, con cables con aislamiento de diámetro exterior menor o igual de 21 mm, a través de 
+una abertura de 400 cm², en forjado de 30 cm de espesor, para protección pasiva contra incendios y garantizar la resistencia 
+al fuego EI 60, con malla de triple torsión, hexagonal, 17x19-5, de alambre galvanizado de 1 mm de diámetro, 8 almohadillas 
+intumescentes con propiedades ignífugas, modelo CFS-CU L "HILTI", de 300x170x30 mm, color blanco, y 1 almohadilla 
+intumescente, modelo CFS-CU L "HILTI", de 300x170x30 mm, color blanco, para revestimiento adicional, por la cara 
+superior. Incluso tornillos de fijación de la malla de triple torsión al forjado.
+Incluye: Limpieza y preparación del paramento. Fijación de la malla de triple torsión al forjado, por su cara inferior. 
+Colocación de las almohadillas intumescentes. Colocación de las almohadillas intumescentes para revestimiento adicional. 
+Limpieza final.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+20.02.09 Partida Ud PUERTAS CORTAFUEGOS APARCAMIENTO 8,000
+Puerta cortafuegos pivotante homologada, EI2 60-C5, de una hoja de 62 mm de espesor, modelo Delta "ANDREU", 800x2000 
+mm de luz y altura de paso, acabado lacado en color blanco formada por 2 chapas de acero galvanizado de 0,7 mm de 
+espesor, plegadas, ensambladas y montadas, con cámara intermedia de lana de roca de alta densidad y placas de cartón 
+yeso, sobre cerco de acero galvanizado tipo CS5 de 1,2 mm de espesor con garras de anclaje a obra, incluso cierrapuertas 
+para uso intensivo modelo Geze TS 5000. Elaborada en taller, con ajuste y fijación en obra. Totalmente montada y probada.
+Incluye: Marcado de puntos de fijación y aplomado del cerco. Fijación del cerco al paramento. Sellado de juntas perimetrales. 
+Colocación de la hoja. Colocación de herrajes de cierre y accesorios.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Total 20_02 1,000
+Total 20 1
+21 Capítulo INSTALACIÓN DE ILUMINACIÓN
+21_1 Capítulo ILUMINACIÓN INTERIOR
+III101 Partida Ud I01_DOWNLIGHT SIMPLE EMPOTRADO LAMP KOMBIC 100 2700K 100,000
+rior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Totalmente 
+montada e 
+instalada.}_sect}}{_rtf_ansi_deftab720_paperw12240_paperh15840_margl1800_margt1440_margr1800_margb1440_gutter0{
+_fonttbl{_f0_fcharset1_fswiss_fprq2Arial 
+Narrow;}}{_colortbl_red0_green0_blue0;_red255_green255_blue255;}{_sectd_cols1_colsx0_plain_pard_uc1{_header_pard_fi0
+_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0}{_footer_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_st
+rike0_cf0}{_plain_pard_uc1_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0 Rejilla lineal de aluminio de 
+1000x100 mm con marco reducido para empotrar en pared. La parrilla de aletas fijas a  0_u186? es desmontable por la parte 
+inferior de cada tubo que une las aletas. Modelo EUROCLIMA E-LO/ATPEY._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Totalmente 
+montada e 
+instalada.}_sect}}{_rtf_ansi_deftab720_paperw12240_paperh15840_margl1800_margt1440_margr1800_margb1440_gutter0{
+_fonttbl{_f0_fcharset1_fswiss_fprq2Arial 
+Narrow;}}{_colortbl_red0_green0_blue0;_red255_green255_blue255;}{_sectd_cols1_colsx0_p
+Spc0010 SÓTANO
+Spc0010 sala técnica 3,0 3,00
+Spc0010 zona comun ascensor 2,0 2,00
+Spc0010 distribudor 3,0 3,00
+Spc0010 PLANTA BAJA
+Spc0010 zonas comunes 2,0 2,00
+Spc0010 vivienda 12,0 12,00
+Spc0010 baños 6,0 6,00
+Spc0010 PLANTA PRIMERA
+Spc0010 viviendas 24,0 24,00
+Spc0010 baños 12,0 12,00
+Spc0010 PLANTA SEGUNDA
+Spc0010 viviendas 24,0 24,00
+Spc0010 baños 12,0 12,00
+Spc0010
+Spc0010
+Total III101 100,000
+III220 Partida Ud I02_PROYECTOR DE SUPERFICIE FARO SATAN 2700 K DIMER 20,000
+440_gutter0{_fonttbl{_f0_fcharset1_fswiss_fprq2Arial 
+Narrow;}}{_colortbl_red0_green0_blue0;_red255_green255_blue255;}{_sectd_cols1_colsx0_plain_pard_uc1{_header_pard_fi0
+_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0}{_footer_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_st
+rike0_cf0}{_plain_pard_uc1_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0 Tira LED con perfil de aluminio 
+(incluido en este precio) de la marca LAMP y 2700 K. Colocado en superficie o encastrado seg_u250?n el caso (trabajos para 
+el encastrado valorados como ayudas a instalaciones y no incluidos en este precio)_par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 
+Criterio de valoraci_u243?n econ_u243?mica: El precio no incluye las ayudas de alba_u241?iler_u237?a para 
+instalaciones._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Incluye: Replanteo y trazado. Montaje, conexionado y 
+comprobaci_u243?n de su correcto funcionamiento._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Criterio de medici_u243?n de 
+proyecto: Longitud medida seg_u250?n documentaci_u243?n gr_u225?fica de Proyecto._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 
+Criterio de medici_u243?n de obra: Se medir_u225? la longitud realmente ejecutada seg_u250?n especificaciones de 
+Proyecto.}_sect}}{_rtf_ansi_deftab720_paperw12240_paperh15840_margl1800_margt1440_margr1
+Spc0010 PLANTA BAJA
+Spc0010 4,0 4,00
+Spc0010 PLANTA PRIMERA
+Spc0010 8,0 8,00
+Spc0010 PLANTA SEGUNDA
+Spc0010 8,0 8,00
+Spc0010
+Total III220 20,000
+III200 Partida m I03_TIRA LED INTERIORCON PERFIL ALUM LAMP 2700K 48,950
+lain_pard_uc1{_header_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0}{_footer_pard_fi0_li0_ri0_ql_sb0_s
+a0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf0}{_plain_pard_uc1_pard_fi0_li0_ri0_ql_sb0_sa0_sl0_f0_fs22_b0_i0_ulnone_strike0_cf
+0 Sistema recirculaci_u243?n ACS, funcionamiento automatico, con bomba circuladora, para recirculaci_u243?n de A.C.S., 
+modelo 59643500 UP 20-30 N 150 "GRUNDFOS", cuerpo de acero inoxidable, conexiones G 1 1/4", presi_u243?n 
+m_u225?xima 10 bar, de 150 mm de longitud, apta para temperaturas desde -25 hasta 110_u176?C, motor con 
+alimentaci_u243?n monof_u225?sica, protecci_u243?n IPX2D y aislamiento clase F, con juego de racores con conexiones G 1 
+1/4" x Rp 1/2". Incluso puente de man_u243?metros formado por man_u243?metro, v_u225?lvulas de esfera y tuber_u237?a 
+de cobre; elementos de montaje; caja de conexiones el_u233?ctricas con condensador y accesorios necesarios para su 
+correcto funcionamiento._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Incluye: Replanteo. Colocaci_u243?n de la bomba de 
+circulaci_u243?n. Conexi_u243?n a la red de distribuci_u243?n._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Criterio de 
+medici_u243?n de proyecto: N_u250?mero de unidades previstas, seg_u250?n documentaci_u243?n gr_u225?fica de 
+Proyecto._par_pard_fi0_li0_ri0_ql_sb0_sa0_sl0 Criterio de
+Spc0010 PLANTA BAJA
+Spc0010 zonas comunes 1,0 3,80 3,80
+Spc0010 vivienda 1,0 2,90 2,90
+Spc0010 1,0 4,15 4,15
+Spc0010 1,0 2,50 2,50
+Spc0010 PLANTA PRIMERA
+Spc0010 zonas comunes 1,0 3,80 3,80
+Spc0010 vivienda 4,0 3,50 14,00
+Spc0010 PLANTA SEGUNDA
+Spc0010 zonas comunes 1,0 3,80 3,80
+Spc0010 vivienda 4,0 3,50 14,00
+Spc0010
+Spc0010
+Spc0010
+Total III200 48,950
+Total 21_1 1,000
+21_2 Capítulo ILUMINACIÓN EXTERIOR
+21.2.1 Partida Ud E01_LUMINARIA DE PARED BAJA SUPER FARO GRANT R 3000K 25,000
+Luminaria de pared baja colocada en superficie de marca FARO modelo GRANT R 3000K, IRC 80, 65,lm, IP65 acabado en gris 
+oscuro. Drivers incluidos. Instalaciónen pared. Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 SOTANO 11,0 11,00
+Spc0010 PLANTA BAJA 10,0 10,00
+Spc0010 PLANTA PRIMERA 2,0 2,00
+Spc0010 PLANTA SEGUNDA 2,0 2,00
+Spc0010
+Total 21.2.1 25,000
+21.2.2 Partida Ud E02_LUMINARIA PARED ALTA FARO TOND 2700 K 21,000
+Luminaria de pared alta colocada en superficie de marca FARO modelo TOND 2700K, IRC 80, 195lm, IP54 acabado en gris 
+oscuro. Drivers incluidos. Instalaciónen pared. Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 PLANTA BAJA 10,0 10,00
+Spc0010 PLANTA PRIMERA 6,0 6,00
+Spc0010 PLANTA SEGUNDA 5,0 5,00
+Spc0010
+Total 21.2.2 21,000
+21.2.3 Partida Ud E03_LUMINARIA ESTANCA SUPERF. ROBLAN JX39236LED 28,000
+Luminaria estanca de superficie colocada en techo marca ROBLAN modelo JX39236LED con dos tubos LED de 120cm 3000k y 
+portección IP65. Acabado gris. Colocados en aparcamientos,trasteros... Instalación empotrada en techo. Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 SÓTANO
+Spc0010 28,0 28,00
+Spc0010
+Total 21.2.3 28,000
+21.2.4 Partida Ud E04_PROYECTOR JARDIN CON PIQUETA ONE LIGHT 3000K 23,000
+Proyector exterior con piqueta marca ONE LIGHT modelo 7046/AN/W de 3000K, IRC 80, 850 lm, en color antracita. Drivers 
+incluidos.. Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 PLANTA BAJA 23,0 23,00
+Spc0010
+Total 21.2.4 23,000
+21.2.5 Partida Ud E05_BOLARDO EXTERIOR LINEA LIGHT PEAK h:75 3000K 4,000
+Bolardo de la marca LINEALIGHT y modelo PEAK L de altura 75 cm con 3000K, IRC 80, 850 lm, IP66. Acabado en negro gris. 
+Drivers incluidos.  Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 PLANTA BAJA 4,0 4,00
+Spc0010
+Total 21.2.5 4,000
+21.2.6 Partida Ud E07_LUMINARIA DE EMERGENCIA DAISALUX SOL 13,000
+Luminaria de emergencia de la marca DAISALUX modelo SOL acabado en blanco Drivers incluidos. Incluso lámparas.
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Número de unidades previstas, según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá el número de unidades realmente ejecutadas según especificaciones de Proyecto.
+Spc0010 SÓTANO 7,0 7,00
+Spc0010 PLANTA BAJA 2,0 2,00
+Spc0010 PLANTA PRIMERA 1,0 1,00
+Spc0010 PLANTA SEGUNDA 1,0 1,00
+Spc0010 CONTADORES 2,0 2,00
+Spc0010
+Total 21.2.6 13,000
+21.2.7 Partida m TIRA LED EXTERIOR CON PERFIL ALUM LAMP 2700K 11,950
+Tira LED con perfil de aluminio (incluido en este precio) de la marca LAMP y 2700 K protección para exterior. Colocado en 
+superficie o encastrado según el caso (trabajos para el encastrado valorados como ayudas a instalaciones y no incluidos en 
+este precio)
+Criterio de valoración económica: El precio no incluye las ayudas de albañilería para instalaciones.
+Incluye: Replanteo y trazado. Montaje, conexionado y comprobación de su correcto funcionamiento.
+Criterio de medición de proyecto: Longitud medida según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirá la longitud realmente ejecutada según especificaciones de Proyecto.
+Spc0010 PLANTA BAJA
+Spc0010 vestibulo 2,0 2,55 5,10
+Spc0010 porche 1,0 6,85 6,85
+Spc0010
+Total 21.2.7 11,950
+Total 21_2 1,000
+Total 21 1
+22 Capítulo INSTALACIONES PISCINA
+22_1 Capítulo PISCINA
+22.1.1 Partida UD EQUIPO COMPACTO PISCINA 1,000
+Caseta enterrada inyectada en plástico. Completa, incluye en su interior un filtro de hasta 560 mm de diámetro, una bomba 
+de 3/4CV, un armario de maniobra, una batería de válvulas y un dosificador. Para filtros Cantabric, Millennium y Aster. 
+Incluido dosificador de tabletas de cloro y bromo 4 Kg off-line.
+Código de equipo compacto, con filtro Aster diámetro 560mm, bomba victoria plus 3/4CV y con armario de maniobras 
+ASTRALPOOL KEOPS 18797 o similar. 
+Incluye tuberías, valvulería, conexionado eléctrico, equipos de control de PH, sistema de desinfección con cloración 
+automática y demás equipos auxiliares necesarios para su correcto funcionamiento.
+Totalmente instalado, comprobado y en funcionamiento.
+Para piscinas de hasta 30 m3.
+22.1.2 Partida UD PUNTO DESAGÜE 1,000
+Ejecución de punto de desagüe de vaso piscina y de vaso de compesación mediante arqueta y valvulería necesaria según 
+memoria gráfica de proyecto. Incluso arqueta de dimensiones necesarias y demás accesorios previstos. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+22.1.3 Partida UD SKIMMER PISCINA 2,000
+Skimmer con boca estándar, de resinas termoplásticas de ABS, color blanco, con tapa circular, flotador de compuerta, 
+clapeta para regulación de caudal y cesto recogehojas, incluso piezas de conexión.
+22.1.4 Partida UD BOQUILLAS IMPULSIÓN 4,000
+Boquilla de impulsión, de resinas termoplásticas de ABS, color blanco, para encolar a tubo de 50 mm de diámetro.
+22.1.5 Partida UD CIRCUITOS TUBERÍAS VÁLVULAS Y ACCESORIOS 1,000
+Canalizaciones de PVC a presión, según diámetro en memoria gráfica de proyecto, incluso accesorios y demás precisos para 
+instalación, totalmente montado y probado, con expedición de certificado de pruebas de presión de las canalizaciones. 
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadsa según especificaciones de Proyecto.
+22.1.6 Partida UD CANAL SUMIDERO PERIMETRAL PISCINA 1,000
+SUMIDERO en canal perimetral piscina, a conectar con instalación de saneamiento, en bronce con toma R´int 2" con tapa 
+antitorbellino en acero inox. 168Ø V4A
+22.1.7 Partida UD ILUMINACION PISCINAS ASTRALPOOL 4,000
+Sistema de iluminación de pisicna mediante proyector LED ASTRAPOOL ON/OFF 3000K acabado en blanco a definir. 
+Alimentación a 12VDC. Incluso sistema de control, accesorios, sujeciones y material auxiliar para empotrarlo y conexión 
+estanca. Totalmente montado, conexionado y comprobado.
+Criterio de medición de proyecto: Medición según documentación gráfica de Proyecto.
+Criterio de medición de obra: Se medirán las unidades realmente ejecutadas según especificaciones de Proyecto.
+Total 22_1 1,000
+Total 22 1
