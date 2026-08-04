@@ -41,15 +41,20 @@ ErrorDocument 404 /404.html
 
 # ── Protección de áreas privadas ──────────────────────────────────────
 # robots.txt solo pide a los rastreadores que no entren; NO impide el acceso.
-# Esto sí lo bloquea de verdad a nivel de servidor.
-<IfModule mod_authz_core.c>
-    <DirectoryMatch "^.*/(presupuestos|admin)/">
-        Require all denied
-    </DirectoryMatch>
-</IfModule>
+# Impide que Apache genere un índice navegable cuando una carpeta no tiene
+# index. Era el problema real detectado: /admin/ y /presupuestos/ devolvían
+# un listado con los nombres de archivo de clientes.
+#
+# NOTA: aquí NO se usa "Require all denied" sobre esas carpetas. Bloquearlas
+# dejaría fuera de servicio el panel de administración y el acceso de los
+# clientes a sus presupuestos. Impedir el listado es lo que hacía falta; el
+# control de acceso real corresponde a la autenticación de la aplicación.
+Options -Indexes
 
-# Evita que se sirvan archivos fuente si acaban subidos por error
-<FilesMatch "\.(psd|xlsx?|docx?|md|py|log|bak)$">
+# Archivos que nunca deben servirse por URL directa aunque acaben subidos.
+# Se excluyen a propósito .xlsx y .docx: los presupuestos de clientes se
+# descargan desde la aplicación y bloquearlos rompería esas descargas.
+<FilesMatch "\.(psd|md|py|log|bak|sql|ini)$">
     <IfModule mod_authz_core.c>
         Require all denied
     </IfModule>
