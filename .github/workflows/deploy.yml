@@ -68,6 +68,8 @@ jobs:
             open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST};
             echo '───── RAÍZ DE LA CONEXIÓN ─────'; cls -l ./;
             echo; echo '───── www/ (destino) ─────'; cls -l www/;
+            echo; echo '───── .htaccess ACTUAL DEL SERVIDOR ─────';
+            cat www/.htaccess || echo '  (no existe)';
           "
 
       - name: Sincronizar por SFTP
