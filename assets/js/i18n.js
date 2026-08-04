@@ -881,32 +881,38 @@
     location.reload();
   }
 
-  /* ─── IP-based detection (async, only when no preference stored) ───
-     2026-08-03 | SEO: antes esto podía forzar 'en' por IP. Googlebot rastrea
-     mayoritariamente desde EE.UU., así que el sitio en español se servía traducido
-     al inglés sobre la MISMA URL: contenido duplicado y señal de idioma contradictoria.
-     Ahora la detección solo cubre alemán y francés (que no tienen URL propia) y nunca
-     inglés: el inglés vive en /en/ con su URL real y se alcanza vía hreflang o el
-     selector de idioma. */
-  var COUNTRY_LANG = {
-    /* German — Germany, Austria, Switzerland */
-    DE: 'de', AT: 'de', CH: 'de',
-    /* French — France, Belgium, Luxembourg */
-    FR: 'fr', BE: 'fr', LU: 'fr'
-  };
+  /* ─── Detección de idioma ──────────────────────────────────────────
+     2026-08-03 | Sustituye a la antigua detección por IP contra api.country.is.
+     Dos motivos:
 
-  function detectIP() {
-    if (localStorage.getItem('pr3cise_lang')) return; /* already set */
-    fetch('https://api.country.is/')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        var detected = COUNTRY_LANG[(data && data.country) || ''];
-        if (!detected || detected === currentLang) return;
-        localStorage.setItem('pr3cise_lang', detected);
-        currentLang = detected;
-        applyTranslations(detected);
-      })
-      .catch(function () { /* keep default */ });
+     1. RGPD. Aquella llamada enviaba la IP del visitante (dato personal) a un
+        tercero en cada carga, antes de cualquier consentimiento.
+     2. SEO. Podía forzar 'en' por IP, y como Googlebot rastrea sobre todo desde
+        EE.UU., servía la web española traducida al inglés sobre la MISMA URL:
+        contenido duplicado y señal de idioma contradictoria.
+
+     navigator.language es además mejor señal que la IP: refleja el idioma que
+     la persona ha elegido, no dónde está físicamente. No sale ningún dato del
+     navegador y desaparece una petición externa.
+
+     Solo cubre alemán y francés, que no tienen URL propia. El inglés nunca se
+     autodetecta: vive en /en/ con su URL real y se alcanza por hreflang o por
+     el selector de idioma. */
+  function detectBrowserLang() {
+    if (localStorage.getItem('pr3cise_lang')) return; /* el usuario ya eligió */
+
+    var langs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) {
+      var code = String(langs[i]).slice(0, 2).toLowerCase();
+      /* 'es' y 'en' se ignoran a propósito: cada uno tiene su propia URL */
+      if (code === 'de' || code === 'fr') {
+        if (code === currentLang) return;
+        currentLang = code;
+        applyTranslations(code);
+        return;
+      }
+      if (code === 'es' || code === 'en') return; /* preferencia clara: no tocar */
+    }
   }
 
   /* ─── Initialise ─────────────────────────────────────────────────── */
@@ -977,7 +983,7 @@
     if (redirectToChosenEnglish()) return;
     if (!T[currentLang]) currentLang = 'es';
     applyTranslations(currentLang);
-    detectIP();
+    detectBrowserLang();
     /* 2025-04-26 02:09 | Try init dropdown immediately, fallback to main.js call */
     initDropdown();
   }

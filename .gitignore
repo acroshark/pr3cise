@@ -21,3 +21,10 @@ desktop.ini
 
 # Logs
 *.log
+
+# 2026-08-04 | Originales de imagen apartados del directorio servido (~26 MB).
+# Se conservan en local como copia de seguridad, pero no van al repositorio.
+_source-no-deploy/
+
+# Paquetes de despliegue generados: son artefactos, se regeneran cuando haga falta
+_deploy-*.zip

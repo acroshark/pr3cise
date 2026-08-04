@@ -1,0 +1,20 @@
+# robots.txt — pr3cise.com
+# Actualizado 2026-08-03
+
+User-agent: *
+Allow: /
+
+# ── Áreas privadas ────────────────────────────────────────────────────
+# Panel de administración, endpoints y documentación de clientes.
+# AVISO: robots.txt no es un mecanismo de seguridad. Solo pide a los
+# rastreadores que no entren; no impide el acceso directo por URL.
+# Estos directorios deben protegerse además en el servidor.
+Disallow: /admin/
+Disallow: /api/
+Disallow: /presupuestos/
+
+# ── No son páginas ────────────────────────────────────────────────────
+# Archivos fuente que no deben servirse (por si acaban subidos por error).
+Disallow: /_source-no-deploy/
+
+Sitemap: https://pr3cise.com/sitemap.xml

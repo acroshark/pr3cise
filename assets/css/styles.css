@@ -98,6 +98,9 @@
     font-weight: 700;
 }
 
+/* 2026-08-03 | Los fondos de Unsplash se descargaron y ahora se sirven en local:
+   eliminan una dependencia externa (DNS + conexión de terceros) y bajan de 555 KB a 205 KB. */
+
 /* Reset Básico */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -453,7 +456,7 @@ a {
 /* Nosotros Section */
 #nosotros {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.95)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2070&q=40');
+    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.95)), image-set(url('../img/bg-philosophy.webp') type('image/webp'), url('../img/bg-philosophy.jpg') type('image/jpeg'));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1900,7 +1903,7 @@ a {
 /* CTA Final Section */
 .cta-final-section {
     background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)),
-        url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=80');
+        image-set(url('../img/bg-cta.webp') type('image/webp'), url('../img/bg-cta.jpg') type('image/jpeg'));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

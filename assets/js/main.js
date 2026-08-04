@@ -95,6 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submit-btn');
 
     if (contactForm) {
+        /* 2026-08-03 | Los textos de estado del formulario salen de data-msg-* en el <form>.
+           Las páginas en /en/ los declaran en inglés; si no hay atributo, se usa el castellano. */
+        const msg = (key, fallback) => contactForm.dataset[key] || fallback;
         // 2025-04-26 01:42 | Email mask: strip spaces on input, live valid/invalid border
         const emailInput = document.getElementById('email');
         if (emailInput) {
@@ -141,20 +144,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const mensaje = document.getElementById('mensaje').value.trim();
             
             if (!nombre || !empresa || !email || !tipoProyecto || !mensaje) {
-                showMessage('Por favor, completa todos los campos obligatorios.', 'error');
+                showMessage(msg('msgRequired', 'Por favor, completa todos los campos obligatorios.'), 'error');
                 return;
             }
             
             // Validación de email
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                showMessage('Por favor, introduce un correo electrónico válido.', 'error');
+                showMessage(msg('msgEmail', 'Por favor, introduce un correo electrónico válido.'), 'error');
                 return;
             }
 
             // Cambiar estado a "Enviando..."
             const originalBtnText = submitBtn.innerText;
-            submitBtn.innerText = 'Enviando...';
+            submitBtn.innerText = msg('msgSending', 'Enviando...');
             submitBtn.disabled = true;
             showMessage('', ''); // Disimula msjs previos
             
@@ -163,9 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
             /* 2025-04-26 01:00 | Updated to contact@pr3cise.com */
             formData.append('lead_destination', 'contact@pr3cise.com');
             /* 2025-04-26 01:55 | Append current page language for multilingual confirmation email */
-            const _lang = (window.I18N && typeof window.I18N.getLang === 'function')
-                ? window.I18N.getLang()
-                : (localStorage.getItem('pr3cise_lang') || 'es');
+            /* 2026-08-03 | El idioma del email de confirmación se toma del <html lang> de la
+               página. Antes dependía de window.I18N, que no se carga en /en/: un contacto
+               desde la web inglesa recibía la confirmación en castellano. */
+            const _lang = document.documentElement.lang
+                || (window.I18N && typeof window.I18N.getLang === 'function' ? window.I18N.getLang() : null)
+                || localStorage.getItem('pr3cise_lang')
+                || 'es';
             formData.append('user_lang', _lang);
             /* 2025-04-26 01:42 | Combine country prefix + number into legacy telefono field */
             const _pref = document.getElementById('telefono_prefijo');
@@ -186,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (response.ok) {
                     // Éxito:
-                    showMessage('¡Éxito! Tu mensaje ha sido enviado. Te responderemos pronto.', 'success');
+                    showMessage(msg('msgSuccess', '¡Éxito! Tu mensaje ha sido enviado. Te responderemos pronto.'), 'success');
                     contactForm.reset();
                 } else {
                     throw new Error('Respuesta inválida del servidor (' + response.status + ')');
@@ -194,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (error) {
                 // Manejo de Error:
                 console.error('Error enviando formulario:', error);
-                showMessage('Error enviando el mensaje. Inténtalo de nuevo más tarde.', 'error');
+                showMessage(msg('msgError', 'Error enviando el mensaje. Inténtalo de nuevo más tarde.'), 'error');
             } finally {
                 // Restaurar botón
                 submitBtn.innerText = originalBtnText;

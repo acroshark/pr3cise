@@ -1,0 +1,115 @@
+# ═══════════════════════════════════════════════════════════════════════
+# Despliegue automático a FTP (OVH)
+#
+# Flujo: editas en local -> git push -> la web se actualiza sola.
+#
+# La PRIMERA ejecución hay que lanzarla a mano desde la pestaña Actions
+# ("Run workflow"), para poder comprobar el resultado con calma. A partir
+# de ahí se dispara solo con cada push a main.
+#
+# Secrets necesarios en GitHub (Settings -> Secrets and variables -> Actions):
+#   FTP_SERVER    servidor FTP de OVH (p. ej. ftp.cluster0XX.hosting.ovh.net)
+#   FTP_USERNAME  usuario FTP
+#   FTP_PASSWORD  contraseña FTP
+# ═══════════════════════════════════════════════════════════════════════
+
+name: Desplegar a FTP
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      # Cambios que no afectan a la web publicada: no gastan un despliegue
+      - 'presupuestos/**'
+      - '_source-no-deploy/**'
+      - '**.md'
+      - '.gitignore'
+  workflow_dispatch:        # permite lanzarlo a mano desde la pestaña Actions
+    inputs:
+      dry_run:
+        description: 'Simulacro: conecta y lista qué subiría, pero no sube nada'
+        type: boolean
+        default: true
+
+concurrency:
+  # Si se empujan dos commits seguidos, solo se despliega el último.
+  # Evita que dos subidas FTP simultáneas se pisen.
+  group: ftp-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # Permite subir cambios sin desplegar, escribiendo [skip deploy] en el
+    # mensaje del commit. En ejecuciones manuales no aplica (no hay head_commit).
+    if: "!contains(github.event.head_commit.message, '[skip deploy]')"
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Sincronizar por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          # FTPS = FTP con TLS explícito. OVH lo soporta y evita que las
+          # credenciales viajen en claro. Si diese error de certificado,
+          # cambiar a "ftp" es la vía rápida, pero mejor resolver el TLS.
+          protocol: ftps
+
+          # Carpeta pública del hosting de OVH. En la mayoría de planes es
+          # /www/. CONFIRMAR conectando por FTP antes de la primera ejecución:
+          # si aquí hubiese una barra de más o de menos, el sitio se subiría
+          # en el sitio equivocado.
+          server-dir: /www/
+
+          # Nunca borrar el destino antes de subir. Con esto en false, los
+          # archivos que existen en el servidor y no en el repositorio se
+          # quedan como están.
+          dangerous-clean-slate: false
+
+          # Registro de estado que la acción deja en el servidor para subir
+          # solo lo que cambió. La primera vez no existe y sube todo.
+          state-name: .ftp-deploy-sync-state.json
+
+          # En ejecución manual se puede pedir un simulacro: conecta al FTP y
+          # dice qué subiría, sin escribir nada. Sirve para validar server-dir
+          # sin riesgo. En los push automáticos siempre es despliegue real.
+          dry-run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+            # ── Datos vivos: NO tocar desde git ───────────────────────────
+            # presupuestos/ lo modifica la propia aplicación en el servidor
+            # (save_budget.php escribe ahí). Desplegarlo desde el repositorio
+            # sobrescribiría presupuestos reales de clientes con versiones
+            # viejas. Se sube a mano si alguna vez hace falta.
+            presupuestos/**
+            admin/data/**
+            admin/config.php
+            **/*.db
+            **/*.sqlite
+
+            # ── Material de trabajo que no es la web ─────────────────────
+            _source-no-deploy/**
+            _deploy-*.zip
+            .claude/**
+            assets/Textos legales/**
+            **/*.psd
+            **/scratch/**
+            **/*.md
+
+      - name: Resumen
+        run: |
+          echo "### Despliegue completado" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Commit: \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Comprobar: https://pr3cise.com/ · /en/ · /robots.txt · /sitemap.xml" >> $GITHUB_STEP_SUMMARY
