@@ -9,9 +9,14 @@
 # opciones eran FTP plano (contraseña viajando en claro por la red) o SFTP.
 # Se usa SFTP, que va cifrado sobre SSH en el puerto 22.
 #
-# OJO CON LA RUTA: la conexión SFTP aterriza en el home del usuario, no en
-# la raíz del sistema. El destino es 'www/' RELATIVO. Con '/www/' absoluto
-# lftp intentaría escribir en la raíz del servidor y fallaría.
+# OJO CON LA RUTA. Dos trampas, ambas detectadas con el simulacro:
+#  1. La conexión SFTP aterriza en el HOME del usuario, no en la raíz del
+#     sistema: '/www/' absoluto no existe.
+#  2. 'www/' NO es la raíz de pr3cise.com. Es un hosting compartido con
+#     decenas de proyectos (Silkbliss, Ibiza-Journey, grupolasabina...) y
+#     un .htaccess común con cabeceras CORS. Desplegar ahí habría volcado
+#     el sitio sobre la raíz compartida y pisado ese .htaccess.
+#  El destino correcto es 'www/pr3cise/'.
 #
 # Secrets necesarios (Settings -> Secrets and variables -> Actions):
 #   FTP_SERVER    ftp.clusterXXX.hosting.ovh.net
@@ -67,9 +72,7 @@ jobs:
             set sftp:auto-confirm yes;
             open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST};
             echo '───── RAÍZ DE LA CONEXIÓN ─────'; cls -l ./;
-            echo; echo '───── www/ (destino) ─────'; cls -l www/;
-            echo; echo '───── .htaccess ACTUAL DEL SERVIDOR ─────';
-            cat www/.htaccess || echo '  (no existe)';
+            echo; echo '───── www/pr3cise/ (destino) ─────'; cls -l www/pr3cise/;
           "
 
       - name: Sincronizar por SFTP
@@ -113,7 +116,7 @@ jobs:
               --exclude '^presupuestos/' \
               --exclude '^admin/data/' \
               --exclude '^admin/config\.php\$' \
-              ./ www/;
+              ./ www/pr3cise/;
           "
 
           # ── Sobre las exclusiones ──────────────────────────────────────
