@@ -65,6 +65,9 @@ jobs:
             echo '───── RAÍZ DE LA CONEXIÓN ─────'; cls -l ./;
             echo; echo '───── /www ─────';          cls -l /www/ || echo '  /www NO EXISTE';
           "
+
+      - name: Sincronizar por SFTP
+        env:
           SFTP_HOST: ${{ secrets.FTP_SERVER }}
           SFTP_USER: ${{ secrets.FTP_USERNAME }}
           SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
