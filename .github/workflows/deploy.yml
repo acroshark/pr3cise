@@ -9,6 +9,10 @@
 # opciones eran FTP plano (contraseña viajando en claro por la red) o SFTP.
 # Se usa SFTP, que va cifrado sobre SSH en el puerto 22.
 #
+# OJO CON LA RUTA: la conexión SFTP aterriza en el home del usuario, no en
+# la raíz del sistema. El destino es 'www/' RELATIVO. Con '/www/' absoluto
+# lftp intentaría escribir en la raíz del servidor y fallaría.
+#
 # Secrets necesarios (Settings -> Secrets and variables -> Actions):
 #   FTP_SERVER    ftp.clusterXXX.hosting.ovh.net
 #   FTP_USERNAME  usuario
@@ -63,7 +67,7 @@ jobs:
             set sftp:auto-confirm yes;
             open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST};
             echo '───── RAÍZ DE LA CONEXIÓN ─────'; cls -l ./;
-            echo; echo '───── /www ─────';          cls -l /www/ || echo '  /www NO EXISTE';
+            echo; echo '───── www/ (destino) ─────'; cls -l www/;
           "
 
       - name: Sincronizar por SFTP
@@ -107,7 +111,7 @@ jobs:
               --exclude '^presupuestos/' \
               --exclude '^admin/data/' \
               --exclude '^admin/config\.php\$' \
-              ./ /www/;
+              ./ www/;
           "
 
           # ── Sobre las exclusiones ──────────────────────────────────────
