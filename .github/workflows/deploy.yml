@@ -50,8 +50,21 @@ jobs:
       - name: Instalar lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
-      - name: Sincronizar por SFTP
+      # Solo en simulacro: muestra la estructura real del servidor para poder
+      # confirmar que server-dir apunta donde debe antes de subir nada.
+      - name: Inspeccionar el servidor (solo simulacro)
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run
         env:
+          SFTP_HOST: ${{ secrets.FTP_SERVER }}
+          SFTP_USER: ${{ secrets.FTP_USERNAME }}
+          SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -c "
+            set sftp:auto-confirm yes;
+            open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST};
+            echo '───── RAÍZ DE LA CONEXIÓN ─────'; cls -l ./;
+            echo; echo '───── /www ─────';          cls -l /www/ || echo '  /www NO EXISTE';
+          "
           SFTP_HOST: ${{ secrets.FTP_SERVER }}
           SFTP_USER: ${{ secrets.FTP_USERNAME }}
           SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
