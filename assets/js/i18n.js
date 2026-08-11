@@ -965,23 +965,34 @@
     });
   }
 
-  /* 2026-08-03 | Si el visitante ya eligió inglés y aterriza en una URL española,
-     lo llevamos a la URL inglesa equivalente declarada en hreflang. Es seguro para
-     SEO porque los rastreadores no tienen localStorage: a ellos nunca se les redirige
-     y siempre indexan la versión española de esta URL. */
-  function redirectToChosenEnglish() {
-    if (currentLang !== 'en') return false;
-    var alt = document.querySelector('link[rel="alternate"][hreflang="en"]');
-    if (!alt) return false;
-    var target = new URL(alt.getAttribute('href'), location.href);
-    if (target.pathname === location.pathname) return false;
-    location.replace(target.href);
-    return true;
-  }
+  /* 2026-08-10 | RETIRADA la redirección automática a /en/.
+
+     Se añadió para llevar al visitante que ya había elegido inglés desde una URL
+     española a su equivalente en /en/. Creaba una trampa sin salida:
+
+       1. Con 'en' guardado, entrar en / te mandaba a /en/.
+       2. Las páginas /en/ no cargan este script, así que el enlace "Español"
+          del selector no podía guardar la preferencia antes de navegar.
+       3. Volvías a / … y / te rebotaba otra vez a /en/.
+
+     El resultado era que la home española quedaba inalcanzable: desaparecía el
+     plano interactivo (que solo existe en /) y el selector de idioma parecía
+     roto. La navegación entre idiomas se resuelve con los enlaces reales del
+     selector y las etiquetas hreflang, que es lo que recomienda Google. */
 
   function init() {
-    if (redirectToChosenEnglish()) return;
     if (!T[currentLang]) currentLang = 'es';
+
+    /* 2026-08-10 | El inglés tiene su propia URL (/en/), así que una preferencia
+       'en' guardada no debe aplicarse aquí: dejaría la página española traducida
+       por JavaScript sobre la URL española, que es justo el contenido duplicado
+       que evitamos al crear /en/. Se ignora y se sirve el idioma de la página;
+       al inglés se llega por el enlace del selector. Alemán y francés sí se
+       aplican por JS porque no tienen URL propia. */
+    if (currentLang === 'en') {
+      currentLang = document.documentElement.getAttribute('lang') || 'es';
+      if (!T[currentLang]) currentLang = 'es';
+    }
     applyTranslations(currentLang);
     detectBrowserLang();
     /* 2025-04-26 02:09 | Try init dropdown immediately, fallback to main.js call */
