@@ -36,6 +36,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* 2026-08-11 | Selector de idioma en páginas SIN i18n.js (todo /en/).
+       La lógica que abre y cierra el desplegable vivía solo en i18n.js, que las
+       páginas inglesas no cargan: el botón de la bandera no hacía nada y quien
+       estaba en /en/ no podía volver al español. Aquí se replica únicamente el
+       abrir/cerrar; en las páginas españolas i18n.js sigue siendo el dueño
+       (window.I18N existe porque se carga antes que este script) y esta rama
+       no se activa, evitando dobles manejadores. */
+    if (!window.I18N) {
+        const flagBtn = document.getElementById('lang-flag-btn');
+        const dropdown = document.getElementById('lang-dropdown');
+        if (flagBtn && dropdown) {
+            flagBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const open = dropdown.classList.toggle('open');
+                flagBtn.classList.toggle('open', open);
+                flagBtn.setAttribute('aria-expanded', String(open));
+            });
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.lang-switcher')) {
+                    dropdown.classList.remove('open');
+                    flagBtn.classList.remove('open');
+                    flagBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            /* Recordar la elección al navegar a la otra lengua */
+            dropdown.querySelectorAll('a.lang-option[hreflang]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    try {
+                        localStorage.setItem('pr3cise_lang', link.getAttribute('hreflang').slice(0, 2));
+                    } catch (_) { /* modo privado */ }
+                });
+            });
+        }
+    }
+
     // Año dinámico del footer
     const yearElement = document.getElementById('current-year');
     if (yearElement) {

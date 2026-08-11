@@ -156,7 +156,8 @@
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo.png?v=2">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo.png?v=2">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260811">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260812">
+    <link rel="stylesheet" href="/assets/css/reforma-interactiva.css?v=20260812">
 </head>
 <body>
     <header class="site-header" id="site-header">
@@ -210,6 +211,568 @@
                 </div>
             </div>
         </section>
+
+        <!-- INTERACTIVE SECTION: renovation floor plan (ported 2026-08-11 from the Spanish home; prices in USD, no i18n.js dependency) -->
+        <section id="reforma-interactiva" class="ri-section" aria-label="Interactive renovation budget floor plan">
+
+          <div class="ri-scene">
+
+            <!-- Top bar: title + phase indicator + budget counter -->
+            <div class="ri-topbar">
+              <div class="ri-title-group">
+                <span class="ri-intro-label">Real-time budget</span>
+                <span class="ri-scene-title">Your project, line by line</span>
+              </div>
+              <div id="ri-phase-label" class="ri-phase-label"></div>
+              <div class="ri-total-wrap">
+                <span class="ri-total-label">accumulated budget</span>
+                <div class="ri-total-amount" id="ri-total">$0</div>
+              </div>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="ri-progress">
+              <div class="ri-progress-fill" id="ri-progress-fill"></div>
+            </div>
+
+            <!-- Mobile interactive slider -->
+            <div class="ri-mobile-slider-wrap" id="ri-mobile-slider-wrap">
+              <div class="ri-slider-header">
+                <svg class="ri-slider-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+                <span class="ri-slider-label">DRAG · BUDGET CONTROL</span>
+                <svg class="ri-slider-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+              <input type="range" id="ri-slider" class="ri-slider" min="0" max="100" value="0" step="1" aria-label="Control de gastos">
+            </div>
+
+            <!-- Floor plan -->
+            <div class="ri-plan-wrapper" id="ri-plan-wrapper">
+                <svg id="ri-floorplan" viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg">
+
+                  <!-- Room fills -->
+                  <rect class="ri-rf" x="61" y="71" width="379" height="219"/>
+                  <rect class="ri-rf" x="61" y="291" width="189" height="179"/>
+                  <rect class="ri-rf" x="251" y="291" width="189" height="179"/>
+                  <rect class="ri-rf" x="441" y="71" width="299" height="159"/>
+                  <rect class="ri-rf" x="441" y="231" width="299" height="239"/>
+
+                  <!-- Room labels -->
+                  <text class="ri-rl" x="251" y="185">LIVING / DINING ROOM</text>
+                  <text class="ri-rl" x="152" y="388">KITCHEN</text>
+                  <text class="ri-rl" x="346" y="388">BATHROOM</text>
+                  <text class="ri-rl" x="590" y="160">BEDROOM 1</text>
+                  <text class="ri-rl" x="590" y="360">BEDROOM 2</text>
+                  <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'IBM Plex Mono',monospace;text-anchor:middle" x="251" y="200">~ 29 m²</text>
+                  <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'IBM Plex Mono',monospace;text-anchor:middle" x="590" y="173">~ 14 m²</text>
+                  <text style="font-size:8px;fill:rgba(140,175,200,.12);font-family:'IBM Plex Mono',monospace;text-anchor:middle" x="590" y="373">~ 16 m²</text>
+
+                  <!-- EXTERIOR WALLS -->
+                  <line class="ri-wt" x1="60" y1="70" x2="740" y2="70"/>
+                  <line class="ri-wt" x1="60" y1="70" x2="60" y2="235"/>
+                  <line class="ri-wt" x1="60" y1="290" x2="60" y2="470"/>
+                  <line class="ri-wt" x1="60" y1="470" x2="740" y2="470"/>
+                  <line class="ri-wt" x1="740" y1="70" x2="740" y2="470"/>
+
+                  <!-- INTERIOR WALLS -->
+                  <line class="ri-w" x1="440" y1="70" x2="440" y2="85"/>
+                  <line class="ri-w" x1="440" y1="130" x2="440" y2="233"/>
+                  <line class="ri-w" x1="440" y1="278" x2="440" y2="470"/>
+                  <line class="ri-w" x1="60" y1="290" x2="115" y2="290"/>
+                  <line class="ri-w" x1="163" y1="290" x2="290" y2="290"/>
+                  <line class="ri-w" x1="340" y1="290" x2="440" y2="290"/>
+                  <line class="ri-w" x1="250" y1="291" x2="250" y2="470"/>
+                  <line class="ri-w" x1="440" y1="230" x2="740" y2="230"/>
+
+                  <!-- Door/wall edge marks -->
+                  <line class="ri-w" x1="56" y1="235" x2="64" y2="235"/>
+                  <line class="ri-w" x1="56" y1="290" x2="64" y2="290"/>
+                  <line class="ri-w" x1="115" y1="286" x2="115" y2="294"/>
+                  <line class="ri-w" x1="163" y1="286" x2="163" y2="294"/>
+                  <line class="ri-w" x1="436" y1="85" x2="444" y2="85"/>
+                  <line class="ri-w" x1="436" y1="130" x2="444" y2="130"/>
+                  <line class="ri-w" x1="436" y1="233" x2="444" y2="233"/>
+                  <line class="ri-w" x1="436" y1="278" x2="444" y2="278"/>
+                  <line class="ri-w" x1="290" y1="286" x2="290" y2="294"/>
+                  <line class="ri-w" x1="340" y1="286" x2="340" y2="294"/>
+
+                  <text style="font-size:8px;fill:rgba(143,175,200,.18);font-family:'IBM Plex Mono',monospace;text-anchor:end" x="736" y="490">SCALE 1:50 · 85 m² · GROUND FLOOR</text>
+                  <text style="font-size:9px;fill:rgba(143,175,200,.25);font-family:'IBM Plex Mono',monospace;text-anchor:middle" x="72" y="510">N↑</text>
+
+                  <!-- ===== FONTANERÍA / CLIMATIZACIÓN ===== -->
+                  <g id="ri-layer-p" class="ri-sys-layer">
+
+                    <!-- Red distribución principal (dashed backbone) -->
+                    <path class="ri-sp" d="M65,460 L65,308 L440,308 L440,140 L700,140"
+                          style="stroke-dasharray:7 3;opacity:.48"/>
+                    <path class="ri-sp" d="M620,140 L620,246" style="stroke-dasharray:5 3;opacity:.40"/>
+
+                    <!-- COCINA: bajantes a aparatos -->
+                    <path class="ri-sp" d="M97,308 L97,447"/>
+                    <path class="ri-sp" d="M140,308 L140,450"/>
+                    <path class="ri-sp" d="M179,308 L179,449"/>
+                    <!-- Fregadero doble -->
+                    <rect class="ri-fix-p" x="74"  y="447" width="43" height="19" rx="2"/>
+                    <line style="stroke:#38bdf8;stroke-width:.8;opacity:.7" x1="95"  y1="447" x2="95"  y2="466"/>
+                    <!-- Lavavajillas -->
+                    <rect class="ri-fix-p" x="120" y="450" width="24" height="16" rx="1"/>
+                    <!-- Lavadora -->
+                    <rect class="ri-fix-p" x="156" y="449" width="26" height="17" rx="3"/>
+                    <circle style="stroke:#38bdf8;stroke-width:1.2;fill:none;opacity:.8" cx="169" cy="457" r="6"/>
+
+                    <!-- BAÑO: bajantes -->
+                    <path class="ri-sp" d="M268,308 L268,443"/>
+                    <path class="ri-sp" d="M315,308 L315,441"/>
+                    <path class="ri-sp" d="M401,308 L401,365"/>
+                    <!-- Lavabo -->
+                    <rect class="ri-fix-p" x="253" y="443" width="31" height="21" rx="2"/>
+                    <path style="stroke:#38bdf8;stroke-width:1;fill:none;opacity:.6" d="M258,464 A8,8 0 0,0 280,464"/>
+                    <!-- WC -->
+                    <rect class="ri-fix-p" x="298" y="441" width="35" height="25" rx="3"/>
+                    <ellipse style="stroke:#38bdf8;stroke-width:.9;fill:none;opacity:.65" cx="315" cy="451" rx="11" ry="7"/>
+                    <!-- Ducha -->
+                    <rect class="ri-fix-p" x="363" y="302" width="73" height="63" rx="2"/>
+                    <circle style="stroke:#38bdf8;stroke-width:1;fill:none;opacity:.7" cx="399" cy="333" r="10"/>
+                    <line style="stroke:#38bdf8;stroke-width:.7;opacity:.55" x1="393" y1="333" x2="405" y2="333"/>
+                    <line style="stroke:#38bdf8;stroke-width:.7;opacity:.55" x1="399" y1="327" x2="399" y2="339"/>
+
+                    <!-- CLIMATIZACIÓN: conducción de refrigerante (ceiling dashed) -->
+                    <path class="ri-sp" d="M130,75 L440,75 L440,140" style="stroke-dasharray:5 3;opacity:.35"/>
+                    <!-- Salón: unidad interior split -->
+                    <rect class="ri-fix-p" x="75"  y="71" width="110" height="13" rx="2"/>
+                    <path class="ri-sp" d="M130,84 L130,75" style="opacity:.55"/>
+                    <!-- Dormitorio 1: unidad interior split -->
+                    <rect class="ri-fix-p" x="490" y="71" width="110" height="13" rx="2"/>
+                    <path class="ri-sp" d="M545,84 L545,140" style="opacity:.55"/>
+                    <!-- Dormitorio 1: lavabo ensuite -->
+                    <path class="ri-sp" d="M700,140 L700,173" style="opacity:.6"/>
+                    <rect class="ri-fix-p" x="684" y="173" width="34" height="21" rx="2"/>
+                    <path style="stroke:#38bdf8;stroke-width:1;fill:none;opacity:.55" d="M689,194 A8,8 0 0,0 714,194"/>
+                    <!-- Dormitorio 2: unidad interior split -->
+                    <rect class="ri-fix-p" x="490" y="231" width="110" height="13" rx="2"/>
+                    <path class="ri-sp" d="M545,244 L545,246 L620,246" style="opacity:.55"/>
+
+                  </g>
+
+                  <!-- ===== ELECTRICAL LAYER ===== -->
+                  <g id="ri-layer-e" class="ri-sys-layer">
+                    <rect class="ri-fix-e" x="60" y="215" width="14" height="20" rx="1"/>
+                    <line class="ri-se" x1="74" y1="225" x2="252" y2="225"/>
+                    <circle class="ri-fix-e" cx="252" cy="185" r="13"/>
+                    <line class="ri-se" x1="252" y1="212" x2="252" y2="198"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="246" y1="185" x2="258" y2="185"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="252" y1="179" x2="252" y2="191"/>
+                    <line class="ri-se" x1="100" y1="225" x2="100" y2="280"/>
+                    <rect class="ri-fix-e" x="93" y="280" width="14" height="9" rx="1"/>
+                    <line class="ri-se" x1="380" y1="225" x2="380" y2="282"/>
+                    <rect class="ri-fix-e" x="373" y="282" width="14" height="9" rx="1"/>
+                    <line class="ri-se" x1="74" y1="225" x2="74" y2="320"/>
+                    <line class="ri-se" x1="74" y1="320" x2="160" y2="320"/>
+                    <line class="ri-se" x1="160" y1="320" x2="160" y2="378"/>
+                    <circle class="ri-fix-e" cx="160" cy="386" r="11"/>
+                    <line class="ri-se" x1="190" y1="320" x2="230" y2="320"/>
+                    <rect class="ri-fix-e" x="230" y="313" width="14" height="9" rx="1"/>
+                    <line class="ri-se" x1="74" y1="320" x2="74" y2="430"/>
+                    <line class="ri-se" x1="74" y1="430" x2="346" y2="430"/>
+                    <circle class="ri-fix-e" cx="346" cy="385" r="11"/>
+                    <line class="ri-se" x1="346" y1="419" x2="346" y2="396"/>
+                    <line class="ri-se" x1="740" y1="155" x2="592" y2="155"/>
+                    <circle class="ri-fix-e" cx="592" cy="155" r="13"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="586" y1="155" x2="598" y2="155"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="592" y1="149" x2="592" y2="161"/>
+                    <line class="ri-se" x1="740" y1="350" x2="592" y2="350"/>
+                    <circle class="ri-fix-e" cx="592" cy="350" r="13"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="586" y1="350" x2="598" y2="350"/>
+                    <line style="stroke:#fcd34d;stroke-width:1;opacity:.6" x1="592" y1="344" x2="592" y2="356"/>
+                    <line class="ri-se" x1="592" y1="155" x2="592" y2="110"/>
+                    <rect class="ri-fix-e" x="620" y="110" width="14" height="9" rx="1"/>
+                    <line class="ri-se" x1="592" y1="350" x2="592" y2="445"/>
+                    <rect class="ri-fix-e" x="620" y="445" width="14" height="9" rx="1"/>
+                  </g>
+
+                  <!-- ===== WINDOWS LAYER ===== -->
+                  <g id="ri-layer-w" class="ri-sys-layer">
+                    <line class="ri-sw" x1="110" y1="70" x2="300" y2="70"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="110" y1="70" x2="110" y2="86"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="300" y1="70" x2="300" y2="86"/>
+                    <line style="stroke:#f87171;stroke-width:.8;opacity:.5" x1="205" y1="70" x2="205" y2="86"/>
+                    <line class="ri-sw" x1="60" y1="90" x2="60" y2="200"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="60" y1="90" x2="76" y2="90"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="60" y1="200" x2="76" y2="200"/>
+                    <line style="stroke:#f87171;stroke-width:.8;opacity:.5" x1="60" y1="145" x2="76" y2="145"/>
+                    <line class="ri-sw" x1="60" y1="320" x2="60" y2="430"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="60" y1="320" x2="76" y2="320"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="60" y1="430" x2="76" y2="430"/>
+                    <line class="ri-sw" x1="480" y1="70" x2="680" y2="70"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="480" y1="70" x2="480" y2="86"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="680" y1="70" x2="680" y2="86"/>
+                    <line style="stroke:#f87171;stroke-width:.8;opacity:.5" x1="580" y1="70" x2="580" y2="86"/>
+                    <line class="ri-sw" x1="740" y1="270" x2="740" y2="440"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="740" y1="270" x2="724" y2="270"/>
+                    <line style="stroke:#f87171;stroke-width:1.5" x1="740" y1="440" x2="724" y2="440"/>
+                    <line style="stroke:#f87171;stroke-width:.8;opacity:.5" x1="740" y1="355" x2="724" y2="355"/>
+                  </g>
+
+                  <!-- ===== DOORS LAYER ===== -->
+                  <g id="ri-layer-d" class="ri-sys-layer">
+                    <!-- Entrada: left wall gap + leaf → right into salón (hinge top) -->
+                    <line class="ri-sd" x1="60" y1="235" x2="60" y2="290"/>
+                    <line class="ri-sd" x1="60" y1="235" x2="115" y2="235" style="opacity:.65"/>
+                    <!-- Salón→Cocina: y=290 gap + leaf ↑ into salón (hinge left) -->
+                    <line class="ri-sd" x1="115" y1="290" x2="163" y2="290"/>
+                    <line class="ri-sd" x1="115" y1="290" x2="115" y2="242" style="opacity:.65"/>
+                    <!-- Salón→Dorm1: x=440 gap + leaf ← into salón (hinge top, near ext. wall) -->
+                    <line class="ri-sd" x1="440" y1="85" x2="440" y2="130"/>
+                    <line class="ri-sd" x1="440" y1="85" x2="395" y2="85" style="opacity:.65"/>
+                    <!-- Salón→Dorm2: x=440 gap + leaf → into dorm2 (hinge top, near dorm1 wall) -->
+                    <line class="ri-sd" x1="440" y1="233" x2="440" y2="278"/>
+                    <line class="ri-sd" x1="440" y1="233" x2="485" y2="233" style="opacity:.65"/>
+                    <!-- Salón→Baño: y=290 gap + leaf ↓ into baño (hinge left, near cocina wall) -->
+                    <line class="ri-sd" x1="290" y1="290" x2="340" y2="290"/>
+                    <line class="ri-sd" x1="290" y1="290" x2="290" y2="340" style="opacity:.65"/>
+                  </g>
+
+                </svg>
+
+                <!-- ===== PRICE TAGS ===== -->
+
+                <!-- PLUMBING -->
+                <!-- cocina: bottom-left -->
+                <div class="ri-tag" data-sys="p" data-idx="0"
+                  style="top:71%;left:1%;color:#38bdf8;border-color:rgba(56,189,248,.35)">
+                  <span class="pt-name">plumbing · kitchen</span>
+                  <span class="pt-amount">$2,800</span>
+                  <span class="pt-desc">Sink + dishwasher + washing machine</span>
+                </div>
+                <!-- baño: bottom-center, horizontally clear of cocina -->
+                <div class="ri-tag" data-sys="p" data-idx="1"
+                  style="top:78%;left:40%;color:#38bdf8;border-color:rgba(56,189,248,.35)">
+                  <span class="pt-name">plumbing · bathroom</span>
+                  <span class="pt-amount">$4,200</span>
+                  <span class="pt-desc">Shower, WC, basin + full pipework</span>
+                </div>
+                <!-- red: right column row 3 -->
+                <div class="ri-tag" data-sys="p" data-idx="2"
+                  style="top:42%;right:1%;color:#38bdf8;border-color:rgba(56,189,248,.2)">
+                  <span class="pt-name">HVAC</span>
+                  <span class="pt-amount">$7,500</span>
+                  <span class="pt-desc">4× splits + ducts + installation</span>
+                </div>
+
+                <!-- ELECTRICAL — right column, rows 1-2-4 (skip row 3 = fontanería·red) -->
+                <div class="ri-tag" data-sys="e" data-idx="0"
+                  style="top:2%;right:1%;color:#fcd34d;border-color:rgba(252,211,77,.35)">
+                  <span class="pt-name">electrical · panel</span>
+                  <span class="pt-amount">$2,200</span>
+                  <span class="pt-desc">MCB + 9 protected circuits</span>
+                </div>
+                <div class="ri-tag" data-sys="e" data-idx="1"
+                  style="top:22%;right:1%;color:#fcd34d;border-color:rgba(252,211,77,.35)">
+                  <span class="pt-name">electrical · lighting</span>
+                  <span class="pt-amount">$2,400</span>
+                  <span class="pt-desc">LED light points throughout</span>
+                </div>
+                <!-- enchufes: row 4 — below fontanería·red -->
+                <div class="ri-tag" data-sys="e" data-idx="2"
+                  style="top:58%;right:1%;color:#fcd34d;border-color:rgba(252,211,77,.35)">
+                  <span class="pt-name">electrical · sockets</span>
+                  <span class="pt-amount">$1,800</span>
+                  <span class="pt-desc">24 power outlets</span>
+                </div>
+
+                <!-- WINDOWS: salón top-left, dormitorios top-center-right (clear of cuadro), cocina left-mid -->
+                <div class="ri-tag" data-sys="w" data-idx="0"
+                  style="top:2%;left:1%;color:#f87171;border-color:rgba(248,113,113,.35)">
+                  <span class="pt-name">windows · living room</span>
+                  <span class="pt-amount">$2,200</span>
+                  <span class="pt-desc">2× PVC double glazing</span>
+                </div>
+                <div class="ri-tag" data-sys="w" data-idx="1"
+                  style="top:2%;left:50%;color:#f87171;border-color:rgba(248,113,113,.35)">
+                  <span class="pt-name">windows · bedrooms</span>
+                  <span class="pt-amount">$2,600</span>
+                  <span class="pt-desc">3× window + roller blind</span>
+                </div>
+                <div class="ri-tag" data-sys="w" data-idx="2"
+                  style="top:54%;left:1%;color:#f87171;border-color:rgba(248,113,113,.35)">
+                  <span class="pt-name">windows · kitchen</span>
+                  <span class="pt-amount">$850</span>
+                  <span class="pt-desc">Sliding with mosquito screen</span>
+                </div>
+
+                <!-- DOORS: entrada left col row-mid, interiores center-upper -->
+                <div class="ri-tag" data-sys="d" data-idx="0"
+                  style="top:37%;left:1%;color:#4ade80;border-color:rgba(74,222,128,.35)">
+                  <span class="pt-name">doors · entrance</span>
+                  <span class="pt-amount">$1,650</span>
+                  <span class="pt-desc">Security class 3 + deadbolt</span>
+                </div>
+                <div class="ri-tag" data-sys="d" data-idx="1"
+                  style="top:12%;left:28%;color:#4ade80;border-color:rgba(74,222,128,.35)">
+                  <span class="pt-name">doors · interior</span>
+                  <span class="pt-amount">$2,200</span>
+                  <span class="pt-desc">4× white lacquered door</span>
+                </div>
+
+            </div><!-- /ri-plan-wrapper -->
+
+            <!-- Legend bar -->
+            <div class="ri-legend">
+              <div class="ri-leg-item" id="ri-leg-p">
+                <div class="ri-leg-dash" style="background:#38bdf8"></div>
+                <span>Plumbing / HVAC</span>
+              </div>
+              <div class="ri-leg-item" id="ri-leg-e">
+                <div class="ri-leg-dash" style="background:transparent;border-top:2px dashed #fcd34d;height:0"></div>
+                <span>Electrical</span>
+              </div>
+              <div class="ri-leg-item" id="ri-leg-w">
+                <div class="ri-leg-dash" style="background:#f87171;height:5px"></div>
+                <span>Windows</span>
+              </div>
+              <div class="ri-leg-item" id="ri-leg-d">
+                <div class="ri-leg-dash" style="background:#4ade80"></div>
+                <span>Doors</span>
+              </div>
+            </div>
+
+            <div class="ri-scroll-hint">↓ scroll to explore ↓</div>
+
+          </div><!-- /ri-scene -->
+
+          <!-- Summary bar — slides in from bottom when all phases complete -->
+          <div class="ri-summary" id="ri-summary">
+            <div class="ri-sum-item">
+              <span class="ri-sum-label">Plumbing / HVAC</span>
+              <span class="ri-sum-val" style="color:#38bdf8">$11,500</span>
+            </div>
+            <div class="ri-sum-item">
+              <span class="ri-sum-label">Electrical</span>
+              <span class="ri-sum-val" style="color:#fcd34d">$2,510</span>
+            </div>
+            <div class="ri-sum-item">
+              <span class="ri-sum-label">Windows</span>
+              <span class="ri-sum-val" style="color:#f87171">$4,780</span>
+            </div>
+            <div class="ri-sum-item">
+              <span class="ri-sum-label">Doors</span>
+              <span class="ri-sum-val" style="color:#4ade80">$2,900</span>
+            </div>
+            <div class="ri-sum-item">
+              <span class="ri-sum-label">Total renovation</span>
+              <span class="ri-sum-val ri-sum-total">$21,690</span>
+            </div>
+          </div>
+
+        </section>
+
+        <script>
+        (function () {
+          var SENSITIVITY = 2600;
+          var riProgress = 0;
+          var touchStartY = 0;
+
+          var RI_PHASES = {
+            p: { start: 0.04, end: 0.28, cost: 14500, key: '01 · PLUMBING / HVAC' },
+            e: { start: 0.28, end: 0.52, cost: 6400,  key: '02 · ELECTRICAL' },
+            w: { start: 0.52, end: 0.72, cost: 5650,  key: '03 · WINDOWS' },
+            d: { start: 0.72, end: 0.92, cost: 3850,  key: '04 · DOORS' }
+          };
+          var RI_ORDER = ['p', 'e', 'w', 'd'];
+
+          function riInitPaths() {
+            RI_ORDER.forEach(function (sys) {
+              var layer = document.getElementById('ri-layer-' + sys);
+              if (!layer) return;
+              layer.querySelectorAll('path,line').forEach(function (el) {
+                if (typeof el.getTotalLength !== 'function') return;
+                try {
+                  var len = el.getTotalLength();
+                  el.dataset.riLen = len;
+                  el.style.strokeDasharray = len;
+                  el.style.strokeDashoffset = len;
+                } catch (e) {}
+              });
+            });
+          }
+
+          var riDisplayedTotal = 0;
+          var riRafId = null;
+
+          function riUpdateCounter(target) {
+            var node = document.getElementById('ri-total');
+            if (!node) return;
+            if (riRafId) cancelAnimationFrame(riRafId);
+            (function tick() {
+              var diff = target - riDisplayedTotal;
+              if (Math.abs(diff) < 5) {
+                riDisplayedTotal = target;
+                node.textContent = '$' + Math.round(riDisplayedTotal).toLocaleString('en-US');
+                return;
+              }
+              riDisplayedTotal += diff * 0.12;
+              node.textContent = '$' + Math.round(riDisplayedTotal).toLocaleString('en-US');
+              riRafId = requestAnimationFrame(tick);
+            })();
+          }
+
+          function riDraw(sp) {
+            var pf = document.getElementById('ri-progress-fill');
+            if (pf) pf.style.width = (sp * 100) + '%';
+
+            /* Sync mobile slider */
+            var sl = document.getElementById('ri-slider');
+            if (sl) {
+              sl.value = Math.round(sp * 100);
+              var pct = (sp * 100).toFixed(1);
+              sl.style.background = 'linear-gradient(to right,#B08D57 0%,#B08D57 ' + pct + '%,rgba(176,141,87,0.18) ' + pct + '%,rgba(176,141,87,0.18) 100%)';
+            }
+
+            var hint = document.querySelector('.ri-scroll-hint');
+            if (hint) hint.style.opacity = sp > 0.02 ? '0' : '';
+
+            var totalVisible = 0;
+            var activePhase = null;
+            var allDone = true;
+
+            RI_ORDER.forEach(function (sys) {
+              var ph = RI_PHASES[sys];
+              var raw = (sp - ph.start) / (ph.end - ph.start);
+              var p = Math.max(0, Math.min(1, raw));
+
+              if (p < 1) allDone = false;
+              if (p > 0 && p < 1) activePhase = sys;
+              totalVisible += ph.cost * p;
+
+              var layer = document.getElementById('ri-layer-' + sys);
+              if (layer) {
+                layer.style.opacity = p > 0 ? 1 : 0;
+                layer.querySelectorAll('path,line').forEach(function (el, i) {
+                  if (!el.dataset.riLen) return;
+                  var len = parseFloat(el.dataset.riLen);
+                  var stagger = i * 0.055;
+                  var ep = Math.max(0, Math.min(1, (p - stagger) / (1 - Math.min(stagger, 0.7))));
+                  el.style.strokeDashoffset = len * (1 - ep);
+                });
+              }
+
+              var legItem = document.getElementById('ri-leg-' + sys);
+              if (legItem) legItem.classList.toggle('active', p > 0);
+
+              var tags = Array.prototype.slice.call(
+                document.querySelectorAll('.ri-tag[data-sys="' + sys + '"]')
+              ).sort(function (a, b) { return +a.dataset.idx - +b.dataset.idx; });
+              tags.forEach(function (tag, i) {
+                var threshold = (i + 1) / (tags.length + 1);
+                tag.classList.toggle('show', p >= threshold);
+              });
+            });
+
+            var phaseEl = document.getElementById('ri-phase-label');
+            if (phaseEl) {
+              if (activePhase) {
+                var _k = RI_PHASES[activePhase].key;
+                phaseEl.textContent = _k;
+                phaseEl.classList.add('vis');
+              } else if (allDone) {
+                phaseEl.textContent = 'RENOVATION COMPLETE';
+                phaseEl.classList.add('vis');
+              } else {
+                phaseEl.classList.remove('vis');
+              }
+            }
+
+            var summary = document.getElementById('ri-summary');
+            if (summary) summary.classList.toggle('vis', allDone);
+
+            riUpdateCounter(Math.round(totalVisible));
+
+            /* Mobile: sequential one-at-a-time tag carousel */
+            if (window.innerWidth <= 768) {
+              var allTags = document.querySelectorAll('.ri-tag');
+              var lastShown = null;
+              allTags.forEach(function (tag) {
+                tag.classList.remove('ri-mobile-current');
+                if (tag.classList.contains('show')) lastShown = tag;
+              });
+              if (lastShown) lastShown.classList.add('ri-mobile-current');
+            }
+          }
+
+          function riSectionTop() {
+            var s = document.getElementById('reforma-interactiva');
+            return s ? s.getBoundingClientRect().top : 9999;
+          }
+
+          function riUpdateViewing() {
+            var top = riSectionTop();
+            var inZone = top <= 5 && top > -(window.innerHeight - 5);
+            document.body.classList.toggle('ri-viewing', inZone);
+          }
+
+          window.addEventListener('wheel', function (e) {
+            var delta = e.deltaY;
+            if (e.deltaMode === 1) delta *= 30;
+            if (e.deltaMode === 2) delta *= 300;
+
+            var top = riSectionTop();
+            /* outside lock zone: before section arrives or well past it */
+            if (top > 5 || top < -(window.innerHeight - 5)) return;
+
+            var np = riProgress + delta / SENSITIVITY;
+            /* release at boundaries */
+            if (np < 0 && delta < 0) return;
+            if (np > 1 && delta > 0) return;
+
+            e.preventDefault();
+            /* snap page to section top on first lock */
+            if (Math.abs(top) > 1) window.scrollTo(0, window.scrollY + top);
+
+            riProgress = Math.max(0, Math.min(1, np));
+            riDraw(riProgress);
+          }, { passive: false });
+
+          window.addEventListener('touchstart', function (e) {
+            if (e.target.closest && e.target.closest('#ri-mobile-slider-wrap')) return;
+            touchStartY = e.touches[0].clientY;
+          }, { passive: true });
+
+          window.addEventListener('touchmove', function (e) {
+            /* Let the slider handle its own touch natively */
+            if (e.target.closest && e.target.closest('#ri-mobile-slider-wrap')) return;
+
+            var dy = touchStartY - e.touches[0].clientY;
+            touchStartY = e.touches[0].clientY;
+
+            var top = riSectionTop();
+            if (top > 5 || top < -(window.innerHeight - 5)) return;
+
+            var np = riProgress + dy / (SENSITIVITY * 0.4);
+            if (np < 0 && dy < 0) return;
+            if (np > 1 && dy > 0) return;
+
+            e.preventDefault();
+            riProgress = Math.max(0, Math.min(1, np));
+            riDraw(riProgress);
+          }, { passive: false });
+
+          window.addEventListener('scroll', riUpdateViewing, { passive: true });
+
+          document.addEventListener('DOMContentLoaded', function () {
+            riInitPaths();
+            riDraw(0);
+            riUpdateViewing();
+
+            /* Mobile slider input → drive animation */
+            var sliderEl = document.getElementById('ri-slider');
+            if (sliderEl) {
+              sliderEl.addEventListener('input', function () {
+                riProgress = parseFloat(this.value) / 100;
+                riDraw(riProgress);
+              });
+            }
+          });
+        })();
+        </script>
 
         <section id="process" class="section-padding bg-alt fade-in" aria-labelledby="h2-process">
             <div class="container">
@@ -389,7 +952,7 @@
     <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 </footer>
 
-<script src="/assets/js/main.js?v=20260811"></script>
-<script src="/assets/js/nav-scramble.js?v=20260811"></script>
+<script src="/assets/js/main.js?v=20260812"></script>
+<script src="/assets/js/nav-scramble.js?v=20260812"></script>
 </body>
 </html>

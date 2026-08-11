@@ -1721,6 +1721,10 @@ a {
 
 .problem-img {
     width: 100%;
+    /* 2026-08-11 | height:auto es imprescindible: las <img> llevan width/height
+       en el HTML (contra el CLS) y, sin esto, el alto del atributo (800px) se
+       queda fijo mientras el ancho se encoge a la columna -> imagen estirada. */
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
     display: block;
@@ -1830,6 +1834,7 @@ a {
 
 .faq-img {
     width: 100%;
+    height: auto; /* 2026-08-11 | mismo motivo que .problem-img */
     border-radius: 8px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     display: block;
