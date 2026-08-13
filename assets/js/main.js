@@ -61,10 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             /* Recordar la elección al navegar a la otra lengua */
-            dropdown.querySelectorAll('a.lang-option[hreflang]').forEach((link) => {
+            dropdown.querySelectorAll('a.lang-option[hreflang], a.lang-option[data-lang]').forEach((link) => {
                 link.addEventListener('click', () => {
+                    /* de/fr usan data-lang: el destino es una URL espanola que i18n.js
+                       traduce al llegar, asi que hreflang alli seria una declaracion falsa */
+                    const code = link.dataset.lang || link.getAttribute('hreflang').slice(0, 2);
                     try {
-                        localStorage.setItem('pr3cise_lang', link.getAttribute('hreflang').slice(0, 2));
+                        localStorage.setItem('pr3cise_lang', code);
                     } catch (_) { /* modo privado */ }
                 });
             });

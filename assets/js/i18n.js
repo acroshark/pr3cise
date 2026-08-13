@@ -981,6 +981,15 @@
      selector y las etiquetas hreflang, que es lo que recomienda Google. */
 
   function init() {
+    /* 2026-08-12 | ?lang= explicito en la URL manda sobre lo guardado (deep-link
+       desde los footers ingleses hacia /legal.html?lang=en) */
+    var qLang = null;
+    try { qLang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (qLang && T[qLang]) {
+      currentLang = qLang;
+      try { localStorage.setItem('pr3cise_lang', qLang); } catch (e) {}
+    }
+
     if (!T[currentLang]) currentLang = 'es';
 
     /* 2026-08-10 | El inglés tiene su propia URL (/en/), así que una preferencia
@@ -989,7 +998,7 @@
        que evitamos al crear /en/. Se ignora y se sirve el idioma de la página;
        al inglés se llega por el enlace del selector. Alemán y francés sí se
        aplican por JS porque no tienen URL propia. */
-    if (currentLang === 'en') {
+    if (currentLang === 'en' && qLang !== 'en') {
       currentLang = document.documentElement.getAttribute('lang') || 'es';
       if (!T[currentLang]) currentLang = 'es';
     }
