@@ -138,7 +138,7 @@
 
       /* NOSOTROS PAGE */
       'nosotros.h2':      'Más que números: Arquitectura al servicio de tu rentabilidad.',
-      'nosotros.sub':     'Pr3cise no es una gestoría de presupuestos; somos una firma de arquitectura técnica y superior con décadas de experiencia en el sector de la edificación en Europa. Entendemos que un presupuesto mal calculado es una obra que nace muerta.',
+      'nosotros.sub':     'Pr3cise es una firma de arquitectura técnica y superior con décadas de experiencia en el sector de la edificación en Europa: convertimos cada presupuesto en una herramienta real de toma de decisiones, porque un presupuesto mal calculado es una obra que nace muerta.',
       'nosotros.p1':      'Nuestro equipo está formado por arquitectos técnicos y superiores, ingenieros de instalaciones y especialistas en gestión de proyectos con una trayectoria consolidada en el sector de la edificación. Combinamos la precisión técnica con una visión estratégica del coste que convierte cada presupuesto en una herramienta real de toma de decisiones, no en un simple listado de partidas.',
       'nosotros.p2':      'Trabajamos bajo los estándares internacionales de gestión de proyectos (PMBOK, IPMA) y las normativas técnicas españolas vigentes (CTE, RITE, RSCIEI, REBT), garantizando que cada partida refleje la realidad constructiva con total rigor. Cuando entregamos un presupuesto, entregamos una línea base de coste autorizada, trazable y defendible ante cualquier cliente, administración o auditoría.',
       'nosotros.1.h':     'Experiencia Real en Obra',
@@ -151,7 +151,7 @@
 
       /* EJEMPLOS PAGE */
       'ejemplos.h2':     'Presupuestos con Inteligencia de Obra: El estándar Pr3cise',
-      'ejemplos.sub':    'No entregamos simples listados de precios. Entregamos herramientas de gestión para tu obra.',
+      'ejemplos.sub':    'Entregamos herramientas de gestión para tu obra: cada partida llega con su medición detallada, sus mermas reales y sus márgenes (GG y BI) desglosados, no un simple listado de precios.',
       'ejemplos.1.h':    '1. CONTROL DE MERMAS Y DESPERDICIOS',
       'ejemplos.1.p':    'Calculamos el coeficiente de paso y mermas reales por material (cerámicos, áridos, acero). Evita roturas de stock y sobrecostes ocultos en la compra.',
       'ejemplos.2.h':    '2. GASTOS GENERALES (GG) Y BENEFICIO INDUSTRIAL (BI)',
@@ -356,7 +356,7 @@
 
       /* NOSOTROS PAGE */
       'nosotros.h2':      'More than numbers: Architecture at the service of your profitability.',
-      'nosotros.sub':     'Pr3cise is not a budgeting service; we are a technical and higher architecture firm with decades of experience in the European construction sector. We understand that a poorly calculated budget is a project that is born dead.',
+      'nosotros.sub':     'Pr3cise is a technical and higher architecture firm with decades of experience in the European construction sector. We understand that a poorly calculated budget is a project that is born dead.',
       'nosotros.p1':      'Our team consists of technical and higher architects, installation engineers and project management specialists with a proven track record in the construction sector. We combine technical precision with a strategic vision of cost that turns each budget into a real decision-making tool, not just a list of line items.',
       'nosotros.p2':      'We work under international project management standards (PMBOK, IPMA) and current Spanish technical regulations (CTE, RITE, RSCIEI, REBT), guaranteeing that each item reflects construction reality with total rigour. When we deliver a budget, we deliver an authorised, traceable and defensible cost baseline before any client, administration or audit.',
       'nosotros.1.h':     'Real On-Site Experience',
