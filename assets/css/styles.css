@@ -2309,3 +2309,27 @@ a.lang-option {
     .proceso-conector svg { opacity: 1; animation: none !important; }
     .fade-in.visible .pc-linea { animation: none; }
 }
+
+
+/* 2026-08-16 | Intro de las paginas de contacto.
+   Antes del formulario solo habia 19 palabras, asi que Google no tenia
+   material y componia el fragmento de busqueda con los enlaces del pie
+   ("Aviso Legal · Politica de Privacidad"). Este bloque le da contenido
+   real y de venta que mostrar. */
+.contacto-intro {
+    max-width: 780px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.contacto-intro p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-main);
+}
+
+.contacto-intro p:last-child {
+    margin-bottom: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
