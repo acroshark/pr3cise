@@ -84,7 +84,7 @@
           "name": "What formats do you deliver in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Excel and PDF as standard, with color-coded takeoff markups attached. If you bid from your own spreadsheet template or use software such as Bluebeam, PlanSwift, On-Screen Takeoff or STACK, we will deliver into the format your team already works in."
+            "text": "Excel and PDF as standard, with color-coded takeoff markups attached. If you bid from your own spreadsheet template or use software such as Bluebeam, PlanSwift, On-Screen Takeoff, STACK or Presto, we will deliver into the format your team already works in."
           }
         },
         {
@@ -97,10 +97,10 @@
         },
         {
           "@type": "Question",
-          "name": "Do you only work in the US, or internationally too?",
+          "name": "Do you work internationally?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Internationally. We work fully remotely with contractors, developers and design studios wherever the project is — the United States, Spain and the rest of Europe among them. There is no geographic limit: every document is exchanged digitally. Each project is priced with cost data for the market it is actually built in rather than a national average, so a Miami job carries Miami-Dade labor and material rates and a Madrid job carries Madrid's."
+            "text": "Internationally. We work fully remotely with contractors, developers and design studios wherever the project is — the United States, Latin America, Spain and the rest of Europe among them. There is no geographic limit: every document is exchanged digitally. Each project is priced with cost data for the market it is actually built in rather than a national average, so a Miami job carries Miami-Dade labor and material rates and a Madrid job carries Madrid's."
           }
         },
         {
@@ -140,7 +140,7 @@
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo.png?v=2">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo.png?v=2">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260819">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260820">
 </head>
 <body>
     <header class="site-header" id="site-header">
@@ -178,8 +178,8 @@
                 <h1>Request a construction estimate</h1>
                 <p class="section-subtitle">Send us your drawings and we will come back within one business day with a fixed fee and a delivery date. No obligation.</p>
                 <div class="contacto-intro">
-                    <p>You get a line-item estimate you can bid from: quantities measured off your drawings, priced with current regional material and labor rates, organized by CSI MasterFormat division with overhead, profit and waste factors broken out separately. <strong>Standard turnaround is 24 to 72 hours</strong>, and the fee is agreed in writing before any work starts.</p>
-                    <p>The initial review and the quote are free. We work with general contractors, subcontractors, developers and architecture studios wherever the project is — the United States, Spain and the rest of Europe among them — with cost data refreshed monthly and every estimate shipped with color-coded takeoff markups, so any quantity can be audited in seconds.</p>
+                    <p>You get a line-item estimate you can bid from: quantities measured off your drawings, priced with current regional material and labor rates, organized by CSI MasterFormat division — or your own template — with overhead, profit and waste factors broken out separately. <strong>Standard turnaround is 24 to 72 hours</strong>, and the fee is agreed in writing before any work starts.</p>
+                    <p>The initial review and the quote are free. We work with general contractors, subcontractors, developers and architecture studios wherever the project is — the United States, Latin America, Spain and the rest of Europe among them — with cost data refreshed monthly and every estimate shipped with color-coded takeoff markups, so any quantity can be audited in seconds.</p>
                 </div>
                 <div class="form-container">
                 <form id="contact-form" novalidate
@@ -210,7 +210,8 @@
                                 <option value="+34">🇪🇸 +34</option>
                                 <option value="+351">🇵🇹 +351</option>
                                 <option value="+44">🇬🇧 +44</option>
-                                <option value="+1" selected>🇺🇸 +1</option>
+                                <option value="" selected>Code</option>
+                                <option value="+1">🇺🇸 +1</option>
                                 <option value="+52">🇲🇽 +52</option>
                                 <option value="+54">🇦🇷 +54</option>
                                 <option value="+57">🇨🇴 +57</option>
@@ -244,7 +245,7 @@
                             <input type="tel" id="telefono_numero" name="telefono_numero"
                                    class="phone-number-input"
                                    inputmode="numeric" pattern="[0-9 ]*"
-                                   maxlength="20" placeholder="305 000 0000"
+                                   maxlength="20" placeholder="Phone number"
                                    autocomplete="tel-national">
                         </div>
                     </div>
@@ -334,7 +335,7 @@
                             <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
                         <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
-                            <p>Excel and PDF as standard, with color-coded takeoff markups attached. If you bid from your own spreadsheet template or use software such as Bluebeam, PlanSwift, On-Screen Takeoff or STACK, we will deliver into the format your team already works in.</p>
+                            <p>Excel and PDF as standard, with color-coded takeoff markups attached. If you bid from your own spreadsheet template or use software such as Bluebeam, PlanSwift, On-Screen Takeoff, STACK or Presto, we will deliver into the format your team already works in.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -348,11 +349,11 @@
                     </div>
                     <div class="faq-item">
                         <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
-                            <span>Do you only work in the US, or internationally too?</span>
+                            <span>Do you work internationally?</span>
                             <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
                         <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
-                            <p>Internationally. We work <strong>fully remotely</strong> with contractors, developers and design studios wherever the project is — the United States, Spain and the rest of Europe among them. There is no geographic limit: every document is exchanged digitally. Each project is priced with cost data for the market it is actually built in rather than a national average, so a Miami job carries Miami-Dade labor and material rates and a Madrid job carries Madrid's.</p>
+                            <p>Internationally. We work <strong>fully remotely</strong> with contractors, developers and design studios wherever the project is — the United States, Latin America, Spain and the rest of Europe among them. There is no geographic limit: every document is exchanged digitally. Each project is priced with cost data for the market it is actually built in rather than a national average, so a Miami job carries Miami-Dade labor and material rates and a Madrid job carries Madrid's.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -381,7 +382,7 @@
     <div class="container footer-grid">
         <div class="footer-col brand-col">
             <div class="footer-logo"><a href="/en/">Pr3cise</a></div>
-            <p class="brand-desc">Construction cost estimating and quantity takeoff services for general contractors, subcontractors, developers and architects. Line-item estimates you can bid from.</p>
+            <p class="brand-desc">Construction cost estimating, quantity takeoff and bill of quantities (BoQ) services for general contractors, subcontractors, developers and architects. Line-item estimates you can bid or tender from.</p>
         </div>
 
         <div class="footer-col services-col">
@@ -425,8 +426,8 @@
     <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 </footer>
 
-<script src="/assets/js/main.js?v=20260819"></script>
-<script src="/assets/js/nav-scramble.js?v=20260819"></script>
+<script src="/assets/js/main.js?v=20260820"></script>
+<script src="/assets/js/nav-scramble.js?v=20260820"></script>
 <script>
     (function(){
       /* ── CAPTCHA conditions ────────────────────────────────── */

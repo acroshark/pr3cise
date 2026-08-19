@@ -126,6 +126,20 @@ jobs:
           # admin/data/    : datos de ejecución.
           # admin/config.php: configuración propia del servidor.
 
+      # IndexNow avisa a Bing (que alimenta DuckDuckGo, Ecosia y Yahoo),
+      # Yandex, Naver y Seznam de que el sitio ha cambiado, sin esperar a que
+      # vengan a rastrear. Google lo ignora (para eso está Search Console).
+      # La clave vive publicada en la raíz del sitio: no es un secreto, el
+      # protocolo la exige pública para verificar la propiedad del dominio.
+      - name: Avisar a los buscadores (IndexNow)
+        if: github.event_name != 'workflow_dispatch' || !inputs.dry_run
+        run: |
+          urls=$(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<[^>]*>//g' | sed 's/.*/"&"/' | paste -sd, -)
+          code=$(curl -s -o /tmp/inr.txt -w '%{http_code}' -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"pr3cise.com\",\"key\":\"3eb628a296701d38a4a549dc9668eaf5\",\"keyLocation\":\"https://pr3cise.com/3eb628a296701d38a4a549dc9668eaf5.txt\",\"urlList\":[${urls}]}") || true
+          echo "IndexNow: HTTP ${code:-sin respuesta}"
+
       - name: Resumen
         if: always()
         run: |
