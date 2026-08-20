@@ -125,6 +125,12 @@
       'faq.2.a':   'Realizamos estimaciones integrales para edificación residencial, proyectos comerciales, naves industriales y obra civil. Adaptamos nuestras métricas al tipo de estructura y acabados requeridos.',
       'faq.3.q':   '¿Qué nivel de precisión tienen vuestros presupuestos de obra?',
       'faq.3.a':   'Trabajamos con los márgenes de error más bajos del sector gracias a la combinación de tecnología de medición digital (BIM) y la validación manual de ingenieros civiles experimentados.',
+      'faq.4.q':   '¿Qué diferencia hay entre una medición y un presupuesto de ejecución?',
+      'faq.4.a':   'La medición es el recuento: cuántos metros de tabique, cuántos puntos de luz, cuántos metros cúbicos de hormigón, y cada cifra trazable hasta el plano. El presupuesto es esa medición ya valorada, con precios de mercado, mermas, mano de obra y los gastos generales y el beneficio industrial desglosados. Entregamos las dos cosas, porque sin la medición detrás un presupuesto no se puede defender ante nadie.',
+      'faq.5.q':   '¿Trabajáis con modelos BIM o solo con planos en PDF?',
+      'faq.5.a':   'Con ambos. Si nos pasas un modelo BIM extraemos las mediciones del propio modelo, lo que reduce el margen de error y acorta el plazo. Si solo tienes PDF o DWG, medimos sobre plano con marcado por colores, para que puedas auditar cualquier partida en segundos. No exigimos un formato concreto para empezar.',
+      'faq.6.q':   '¿Podéis preparar el presupuesto para una licitación pública?',
+      'faq.6.a':   'Sí, es uno de nuestros encargos habituales. Ajustamos el desglose al formato que exija el pliego, entregamos en BC3 para los programas de gestión de obra, y dejamos por escrito las exclusiones y las hipótesis: eso es lo que suele decidir una adjudicación cuando dos ofertas van parejas.',
 
       /* SERVICES PAGE */
       'services.h2':      'Sectores de Actuación y Especialidades',
@@ -353,6 +359,12 @@
       'faq.2.a':   'We produce comprehensive estimates for residential buildings, commercial projects, industrial warehouses and civil works. We adapt our metrics to the structure type and finishes required.',
       'faq.3.q':   'How accurate are your construction budgets?',
       'faq.3.a':   'We work to the lowest error margins in the industry, combining digital measurement technology (BIM) and manual validation by experienced civil engineers.',
+      'faq.4.q':   'What is the difference between a takeoff and a cost estimate?',
+      'faq.4.a':   'The takeoff is the count: how many linear metres of partition, how many light points, how many cubic metres of concrete, every figure traceable back to the drawing. The estimate is that takeoff priced up, with market rates, waste factors, labour, and overhead and profit broken out. We deliver both, because without the takeoff behind it an estimate cannot be defended to anyone.',
+      'faq.5.q':   'Do you work from BIM models or only from PDF drawings?',
+      'faq.5.a':   'Both. If you send a BIM model we pull quantities from the model itself, which cuts the error margin and shortens the turnaround. If you only have PDF or DWG, we measure on the drawing with colour-coded markups so you can audit any line item in seconds. We do not require a particular format to start.',
+      'faq.6.q':   'Can you prepare the estimate for a public tender?',
+      'faq.6.a':   'Yes, it is one of our regular jobs. We match the breakdown to the format the tender documents demand, deliver in the formats your project management software reads, and put exclusions and assumptions in writing: that is usually what decides an award when two bids are close.',
 
       /* SERVICES PAGE */
       'services.h2':      'Sectors of Operation and Specialties',
@@ -551,6 +563,12 @@
       'faq.2.a':   'Wir erstellen umfassende Schätzungen für Wohngebäude, Gewerbeprojekte, Industriehallen und Tiefbau. Wir passen unsere Metriken an Struktur und Ausbaustandard an.',
       'faq.3.q':   'Wie präzise sind Ihre Baukostenvoranschläge?',
       'faq.3.a':   'Wir arbeiten mit den niedrigsten Fehlerquoten der Branche, kombiniert aus digitaler Messtechnologie (BIM) und manueller Validierung durch erfahrene Bauingenieure.',
+      'faq.4.q':   'Was ist der Unterschied zwischen Massenermittlung und Kostenschätzung?',
+      'faq.4.a':   'Die Massenermittlung ist die Zählung: wie viele laufende Meter Trennwand, wie viele Lichtpunkte, wie viele Kubikmeter Beton — jede Zahl bis zum Plan nachvollziehbar. Die Kostenschätzung ist diese Massenermittlung mit Preisen: Marktpreise, Verschnitt, Lohnkosten sowie Gemeinkosten und Gewinn getrennt ausgewiesen. Wir liefern beides, denn ohne die Massenermittlung dahinter lässt sich eine Kalkulation niemandem gegenüber verteidigen.',
+      'faq.5.q':   'Arbeiten Sie mit BIM-Modellen oder nur mit PDF-Plänen?',
+      'faq.5.a':   'Mit beidem. Schicken Sie uns ein BIM-Modell, entnehmen wir die Mengen direkt daraus, was die Fehlerquote senkt und die Bearbeitungszeit verkürzt. Haben Sie nur PDF oder DWG, messen wir auf dem Plan mit farbiger Kennzeichnung, sodass Sie jede Position in Sekunden prüfen können. Ein bestimmtes Format ist für den Start nicht erforderlich.',
+      'faq.6.q':   'Können Sie die Kalkulation für eine öffentliche Ausschreibung erstellen?',
+      'faq.6.a':   'Ja, das gehört zu unserem Alltag. Wir passen die Gliederung an das von den Vergabeunterlagen geforderte Format an, liefern in den Formaten, die Ihre Bausoftware liest, und halten Ausschlüsse und Annahmen schriftlich fest: genau das entscheidet in der Regel den Zuschlag, wenn zwei Angebote dicht beieinanderliegen.',
 
       /* SERVICES PAGE */
       'services.h2':      'Einsatzbereiche und Spezialisierungen',
@@ -746,6 +764,12 @@
       'faq.2.a':   'Nous réalisons des estimations complètes pour la construction résidentielle, les projets commerciaux, les entrepôts industriels et le génie civil. Nous adaptons nos métriques au type de structure et aux finitions requises.',
       'faq.3.q':   'Quelle est la précision de vos budgets de construction ?',
       'faq.3.a':   "Nous travaillons avec les marges d'erreur les plus faibles du secteur, grâce à la technologie de mesure numérique (BIM) et la validation manuelle par des ingénieurs civils expérimentés.",
+      'faq.4.q':   'Quelle différence entre un métré et un devis d\'exécution ?',
+      'faq.4.a':   'Le métré, c\'est le comptage : combien de mètres linéaires de cloison, combien de points lumineux, combien de mètres cubes de béton, chaque chiffre traçable jusqu\'au plan. Le devis, c\'est ce métré chiffré, avec prix du marché, pertes, main-d\'œuvre, frais généraux et bénéfice détaillés. Nous livrons les deux, car sans le métré derrière, un devis ne se défend devant personne.',
+      'faq.5.q':   'Travaillez-vous à partir de maquettes BIM ou seulement de plans PDF ?',
+      'faq.5.a':   'Les deux. Si vous envoyez une maquette BIM, nous extrayons les quantités du modèle lui-même, ce qui réduit la marge d\'erreur et raccourcit le délai. Si vous n\'avez que du PDF ou du DWG, nous mesurons sur plan avec un repérage en couleurs, pour que vous puissiez vérifier n\'importe quel poste en quelques secondes. Aucun format particulier n\'est exigé pour démarrer.',
+      'faq.6.q':   'Pouvez-vous préparer le devis pour un appel d\'offres public ?',
+      'faq.6.a':   'Oui, c\'est l\'une de nos missions courantes. Nous adaptons la décomposition au format exigé par le dossier de consultation, livrons dans les formats que lit votre logiciel de gestion de chantier, et consignons par écrit les exclusions et les hypothèses : c\'est souvent ce qui décide de l\'attribution quand deux offres sont proches.',
 
       /* SERVICES PAGE */
       'services.h2':      'Secteurs d\'intervention et spécialités',
