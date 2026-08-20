@@ -110,6 +110,7 @@ jobs:
               --exclude '_deploy-.*\.zip\$' \
               --exclude '^assets/Textos legales/' \
               --exclude '\.psd\$' \
+              --include '^admin/borradores/' \
               --exclude '\.md\$' \
               --exclude '\.db\$' \
               --exclude '\.sqlite\$' \
@@ -125,6 +126,14 @@ jobs:
           #                  sobrescribiría presupuestos reales de clientes.
           # admin/data/    : datos de ejecución.
           # admin/config.php: configuración propia del servidor.
+          #
+          # admin/borradores/ lleva un --include DELANTE del filtro de .md
+          # porque los borradores de artículos SON .md y el panel los lee desde
+          # el servidor. Sin esa línea la sección de artículos saldría vacía en
+          # producción, sin ningún error visible. lftp aplica la primera regla
+          # que casa, así que el orden importa: include antes que exclude.
+          # No son públicos: admin/borradores/.htaccess bloquea el acceso
+          # directo, igual que hace admin/data/ con la base de datos.
 
       # IndexNow avisa a Bing (que alimenta DuckDuckGo, Ecosia y Yahoo),
       # Yandex, Naver y Seznam de que el sitio ha cambiado, sin esperar a que
