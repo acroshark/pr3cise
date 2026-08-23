@@ -34,6 +34,7 @@ on:
     paths-ignore:
       - 'presupuestos/**'
       - '_source-no-deploy/**'
+      - 'tools/**'
       - '**.md'
       - '.gitignore'
   workflow_dispatch:
@@ -107,6 +108,7 @@ jobs:
               --exclude '^\.claude/' \
               --exclude '^node_modules/' \
               --exclude '^_source-no-deploy/' \
+              --exclude '^tools/' \
               --exclude '_deploy-.*\.zip\$' \
               --exclude '^assets/Textos legales/' \
               --exclude '\.psd\$' \

@@ -7,10 +7,16 @@
     <meta name="description" content="Aviso legal, política de privacidad, política de cookies y términos y condiciones de Pr3cise (Clear Ascend OÜ).">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://pr3cise.com/legal.html">
+    <link rel="alternate" hreflang="es" href="https://pr3cise.com/legal.html">
+    <link rel="alternate" hreflang="de" href="https://pr3cise.com/de/rechtliches.html">
+    <link rel="alternate" hreflang="fr" href="https://pr3cise.com/fr/mentions-legales.html">
+    <link rel="alternate" hreflang="x-default" href="https://pr3cise.com/legal.html">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Pr3cise">
     <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
     <meta property="og:url" content="https://pr3cise.com/legal.html">
     <meta property="og:title" content="Información Legal | Pr3cise">
     <meta property="og:description" content="Aviso legal, política de privacidad, política de cookies y términos y condiciones de Pr3cise (Clear Ascend OÜ).">
@@ -166,8 +172,8 @@
             <div class="lang-dropdown" id="lang-dropdown" role="listbox">
                 <a class="lang-option active" href="/legal.html" hreflang="es"><img src="/assets/img/flags/es.svg" width="20" height="14" alt=""> Español</a>
                 <a class="lang-option" href="/en/" hreflang="en"><img src="/assets/img/flags/us.svg" width="20" height="14" alt=""> English</a>
-                <button class="lang-option" type="button" data-lang="de"><img src="/assets/img/flags/de.svg" width="20" height="14" alt=""> Deutsch</button>
-                <button class="lang-option" type="button" data-lang="fr"><img src="/assets/img/flags/fr.svg" width="20" height="14" alt=""> Français</button>
+                <a class="lang-option" href="/de/rechtliches.html" hreflang="de"><img src="/assets/img/flags/de.svg" width="20" height="14" alt=""> Deutsch</a>
+                <a class="lang-option" href="/fr/mentions-legales.html" hreflang="fr"><img src="/assets/img/flags/fr.svg" width="20" height="14" alt=""> Français</a>
             </div>
         </div>
     </nav>
@@ -778,7 +784,7 @@
     <button id="back-to-top" class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
 </footer>
 
-    <script src="/assets/js/i18n.js?v=20260822"></script>
+    <script src="/assets/js/i18n.js?v=20260823"></script>
     <!-- 2025-04-25 21:00 | Tab logic + language block display for legal page -->
     <script>
         (function () {
@@ -788,7 +794,20 @@
             var lang = null;
             try { lang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
             if (['es','en','de','fr'].indexOf(lang) === -1) {
-                lang = localStorage.getItem('pr3cise_lang') || 'es';
+                /* 2026-08-23 | Aleman y frances tienen ya pagina propia
+                   (/de/rechtliches.html, /fr/mentions-legales.html) con un solo
+                   bloque: manda el idioma de la pagina, no lo guardado. Si no,
+                   una preferencia 'es' guardada ocultaba el unico bloque y la
+                   pagina alemana se abria vacia. En la pagina espanola solo se
+                   respeta 'en' guardado, porque el ingles no tiene aviso propio. */
+                var pageLang = document.documentElement.getAttribute('lang') || 'es';
+                if (pageLang !== 'es') {
+                    lang = pageLang;
+                } else {
+                    var stored = null;
+                    try { stored = localStorage.getItem('pr3cise_lang'); } catch (e) {}
+                    lang = stored === 'en' ? 'en' : 'es';
+                }
             } else {
                 try { localStorage.setItem('pr3cise_lang', lang); } catch (e) {}
             }

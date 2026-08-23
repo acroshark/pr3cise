@@ -1056,18 +1056,23 @@
 
     if (!T[currentLang]) currentLang = 'es';
 
-    /* 2026-08-10 | El inglés tiene su propia URL (/en/), así que una preferencia
-       'en' guardada no debe aplicarse aquí: dejaría la página española traducida
-       por JavaScript sobre la URL española, que es justo el contenido duplicado
-       que evitamos al crear /en/. Se ignora y se sirve el idioma de la página;
-       al inglés se llega por el enlace del selector. Alemán y francés sí se
-       aplican por JS porque no tienen URL propia. */
-    if (currentLang === 'en' && qLang !== 'en') {
-      currentLang = document.documentElement.getAttribute('lang') || 'es';
-      if (!T[currentLang]) currentLang = 'es';
+    /* 2026-08-23 | Los cuatro idiomas tienen ya URL propia: /, /en/, /de/ y
+       /fr/. El idioma de una página es el que declara su <html lang>, y no se
+       traduce nada en caliente: traducir por JavaScript sobre otra URL es el
+       contenido duplicado que evitamos al crear /en/, y además dejaba /de/ en
+       español a cualquier visitante sin preferencia guardada (el valor por
+       defecto era 'es'). El diccionario sigue aquí porque el plano interactivo
+       de la portada pide sus textos con I18N.t(). Al resto de idiomas se llega
+       por los enlaces reales del selector y por hreflang, que es lo que
+       recomienda Google. applyTranslations() y detectBrowserLang() quedan sin
+       llamar a propósito. */
+    var pageLang = document.documentElement.getAttribute('lang') || 'es';
+    currentLang = T[pageLang] ? pageLang : 'es';
+    var flagImg = document.getElementById('lang-flag-img');
+    if (flagImg && FLAG_IMGS[currentLang]) {
+      flagImg.src = FLAG_IMGS[currentLang];
+      flagImg.alt = currentLang.toUpperCase();
     }
-    applyTranslations(currentLang);
-    detectBrowserLang();
     /* 2025-04-26 02:09 | Try init dropdown immediately, fallback to main.js call */
     initDropdown();
   }
