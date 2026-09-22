@@ -28,3 +28,9 @@ _source-no-deploy/
 
 # Paquetes de despliegue generados: son artefactos, se regeneran cuando haga falta
 _deploy-*.zip
+
+# Habilidades y agentes de marketing/SEO (copias de repos de terceros).
+# La copia maestra vive en M:/OneDrive/agentes-equipomarketing; aquí solo se
+# copian con scripts/instalar-agentes-marketing.ps1 y no van al repositorio.
+.claude/skills/
+.claude/agents/

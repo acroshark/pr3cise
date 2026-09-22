@@ -13,8 +13,11 @@
  * Flujo:
  *   1. Se genera el .md en local  ->  admin/borradores/
  *   2. Se revisa aquí
- *   3. Al aprobarlo se convierte en página HTML dentro de /blog/ y entra en el
- *      sitemap (eso lo hace el asistente, que además le pone el marcado SEO)
+ *   3. Al aprobarlo se convierte en página HTML dentro de /articulos/ (o
+ *      /en/articles/) y entra en el sitemap (eso lo hace el asistente con
+ *      _source-no-deploy/generar-articulos.py, que además le pone el marcado SEO)
+ *
+ * 2026-09-10: la sección pública se llama /articulos/ (antes estaba previsto /blog/).
  */
 require_once __DIR__ . '/config.php';
 
@@ -24,8 +27,8 @@ if (!admin_is_authed()) {
 }
 
 const DIR_BORRADORES = __DIR__ . '/borradores';
-const DIR_BLOG_ES    = __DIR__ . '/../blog';
-const DIR_BLOG_EN    = __DIR__ . '/../en/blog';
+const DIR_BLOG_ES    = __DIR__ . '/../articulos';
+const DIR_BLOG_EN    = __DIR__ . '/../en/articles';
 
 /** Lee el front matter YAML sencillo de la cabecera de un .md. */
 function leer_articulo(string $ruta): array {
@@ -127,7 +130,7 @@ if (is_dir(DIR_BORRADORES)) {
 }
 
 $publicados = [];
-foreach ([['ES', DIR_BLOG_ES, '/blog/'], ['EN', DIR_BLOG_EN, '/en/blog/']] as [$idi, $dir, $url]) {
+foreach ([['ES', DIR_BLOG_ES, '/articulos/'], ['EN', DIR_BLOG_EN, '/en/articles/']] as [$idi, $dir, $url]) {
     if (!is_dir($dir)) continue;
     foreach (glob($dir . '/*.html') as $ruta) {
         if (basename($ruta) === 'index.html') continue;
@@ -204,6 +207,7 @@ if ($pedido !== '' && preg_match('/^[\w.-]+\.md$/', $pedido)) {
   <div class="tag">Artículos de captación</div>
   <div class="right">
     <a href="index.php">Leads</a>
+    <a href="trafico.php">Tráfico</a>
     <a href="../index.html">Ver web</a>
     <a href="index.php?logout=1">Salir</a>
   </div>
@@ -250,7 +254,7 @@ if ($pedido !== '' && preg_match('/^[\w.-]+\.md$/', $pedido)) {
   --contexto contexto-pr3cise.txt \
   -o "RUTA/pr3cise/admin/borradores/mi-articulo-es.md"</div>
           <p class="nota">Termina el nombre en <code>-en.md</code> si el artículo va en inglés: la lista lo
-          etiqueta sola. Cuando lo apruebes, se convierte en página dentro de <code>/blog/</code> con su
+          etiqueta sola. Cuando lo apruebes, se convierte en página dentro de <code>/articulos/</code> con su
           marcado SEO y entra en el sitemap.</p>
         </div>
       <?php endif; ?>

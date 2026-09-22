@@ -150,6 +150,7 @@ function url_con(array $extra = []): string {
   <div class="right">
     <span>Hoy: <strong style="color:#fff"><?= $stats['enviados_hoy'] ?></strong> emails</span>
     <a href="articulos.php">Artículos</a>
+    <a href="trafico.php">Tráfico</a>
     <a href="../index.html">Ver web</a>
     <a href="?logout=1">Salir</a>
   </div>
