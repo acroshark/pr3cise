@@ -2107,7 +2107,10 @@ a {
     align-items: center;
     gap: 0.5rem;
     list-style: none;
-    margin: 0;
+    /* 2026-09-22 | "margin: 0" pisaba el "margin: 0 auto" de .container, asi que
+       las migas se pegaban al borde izquierdo y "Inicio" se cortaba en pantallas
+       estrechas. Con auto vuelven a centrarse dentro del mismo ancho que el resto. */
+    margin: 0 auto;
     padding: 0.9rem 0;
 }
 
