@@ -22,6 +22,38 @@ header_remove('X-Powered-By');
 
 function fin(int $codigo = 204): void { http_response_code($codigo); exit; }
 
+function ruta_db(): string {
+    foreach ([dirname(__DIR__, 2) . '/pr3cise_data', dirname(__DIR__) . '/admin/data'] as $dir) {
+        if (is_dir($dir) && is_writable($dir)) return $dir . '/trafico.db';
+    }
+    return dirname(__DIR__) . '/admin/data/trafico.db';
+}
+
+
+// ── Comprobación de salud ────────────────────────────────────────────────
+// Responde solo SÍ/NO: si la carpeta es escribible, si la tabla existe y si
+// hay algún dato reciente. Ni cifras de tráfico ni rutas ni nada privado, así
+// que puede ser pública y sirve para comprobar de un vistazo que esto mide.
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET' && isset($_GET['estado'])) {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: no-store');
+    $r = ['escribible' => false, 'tabla' => false, 'hay_datos' => false, 'dato_ultimas_24h' => false];
+    try {
+        $r['escribible'] = is_writable(dirname(ruta_db()));
+        if (is_file(ruta_db())) {
+            $bd = new PDO('sqlite:' . ruta_db(), null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+            $r['tabla'] = (bool)$bd->query("SELECT name FROM sqlite_master WHERE type='table' AND name='visitas'")->fetchColumn();
+            if ($r['tabla']) {
+                $ult = (int)$bd->query('SELECT COALESCE(MAX(ts),0) FROM visitas')->fetchColumn();
+                $r['hay_datos'] = $ult > 0;
+                $r['dato_ultimas_24h'] = $ult > time() - 86400;
+            }
+        }
+    } catch (Throwable $e) { /* se responde con los NO que haya */ }
+    echo json_encode($r);
+    exit;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') fin(405);
 
 $bruto = file_get_contents('php://input', false, null, 0, 4096);
@@ -78,12 +110,6 @@ $aparato = preg_match('/iPad|Tablet/i', $ua) ? 'tableta'
 
 // ── Base de datos ────────────────────────────────────────────────────────
 // Fuera de la carpeta pública si se puede; si no, junto a la de leads.
-function ruta_db(): string {
-    foreach ([dirname(__DIR__, 2) . '/pr3cise_data', dirname(__DIR__) . '/admin/data'] as $dir) {
-        if (is_dir($dir) && is_writable($dir)) return $dir . '/trafico.db';
-    }
-    return dirname(__DIR__) . '/admin/data/trafico.db';
-}
 
 try {
     $bd = new PDO('sqlite:' . ruta_db(), null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
