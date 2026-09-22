@@ -16,5 +16,8 @@ Disallow: /presupuestos/
 # ── No son páginas ────────────────────────────────────────────────────
 # Archivos fuente que no deben servirse (por si acaban subidos por error).
 Disallow: /_source-no-deploy/
+# Copias de trabajo de las traducciones: casi idénticas a las páginas
+# publicadas. No se despliegan, pero el despliegue va sin --delete.
+Disallow: /tools/
 
 Sitemap: https://pr3cise.com/sitemap.xml

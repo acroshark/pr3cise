@@ -105,5 +105,11 @@ Options -Indexes
     SetEnvIf Request_URI "^/demoweb/" PR3_NOINDEX
 </IfModule>
 <IfModule mod_headers.c>
+    # Cabeceras de seguridad basicas (22-09-2026). No se pone HSTS a proposito:
+    # con max-age de un ano, un fallo del certificado dejaria la web inaccesible
+    # en vez de mostrar un aviso. Esa decision es de Hugo.
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
     Header set X-Robots-Tag "noindex, follow" env=PR3_NOINDEX
 </IfModule>

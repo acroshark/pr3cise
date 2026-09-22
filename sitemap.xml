@@ -357,5 +357,45 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
   </url>
+  <url>
+    <loc>https://pr3cise.com/articulos/estimador-en-plantilla-o-externalizar.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/estimador-en-plantilla-o-externalizar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/in-house-estimator-vs-outsourced-estimating.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/in-house-estimator-vs-outsourced-estimating.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/in-house-estimator-vs-outsourced-estimating.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/estimador-en-plantilla-o-externalizar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/in-house-estimator-vs-outsourced-estimating.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/in-house-estimator-vs-outsourced-estimating.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/articulos/como-revisar-el-presupuesto-de-un-contratista.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/como-revisar-el-presupuesto-de-un-contratista.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/how-to-review-a-contractor-estimate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/how-to-review-a-contractor-estimate.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/how-to-review-a-contractor-estimate.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/como-revisar-el-presupuesto-de-un-contratista.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/how-to-review-a-contractor-estimate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/how-to-review-a-contractor-estimate.html"/>
+  </url>
   <!-- ARTICULOS:FIN -->
+  <url>
+    <loc>https://pr3cise.com/en/construction-takeoff-services.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/construction-takeoff-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/construction-takeoff-services.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/outsourced-construction-estimating.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/outsourced-construction-estimating.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/outsourced-construction-estimating.html"/>
+  </url>
 </urlset>
