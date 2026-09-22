@@ -32,6 +32,83 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "ProfessionalService",
+      "@id": "https://pr3cise.com/#organization",
+      "name": "Pr3cise",
+      "legalName": "Clear Ascend OÜ",
+      "url": "https://pr3cise.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pr3cise.com/assets/img/logo.png",
+        "width": 300,
+        "height": 299
+      },
+      "image": "https://pr3cise.com/assets/img/logo.png",
+      "email": "contact@pr3cise.com",
+      "telephone": "+34722879218",
+      "taxID": "17448615",
+      "description": "Remote construction cost estimating and quantity takeoff office. Line-item estimates, bills of quantities and material lists for contractors, developers and architects, priced against the local code — including Florida Building Code, Miami-Dade HVHZ and NOA requirements.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Keskpuiestee 44-49",
+        "addressLocality": "Kiviõli",
+        "addressRegion": "Ida-Viru maakond",
+        "postalCode": "43122",
+        "addressCountry": "EE"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Miami-Dade County, Florida"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Broward County, Florida"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Palm Beach County, Florida"
+        },
+        {
+          "@type": "State",
+          "name": "Florida"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "España"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        }
+      ],
+      "availableLanguage": [
+        "en",
+        "es",
+        "de",
+        "fr"
+      ],
+      "knowsAbout": [
+        "Construction cost estimating",
+        "Quantity takeoff",
+        "Bill of quantities",
+        "Florida Building Code",
+        "High-Velocity Hurricane Zone (HVHZ)",
+        "Miami-Dade Notice of Acceptance (NOA)",
+        "CSI MasterFormat",
+        "AACE International cost estimate classification",
+        "Preconstruction budgeting"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/pr3cise/"
+      ],
+      "priceRange": "$$"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://pr3cise.com/articulos/como-ahorra-dinero-la-estimacion-de-costes.html#breadcrumb",
       "itemListElement": [
@@ -68,9 +145,7 @@
       "datePublished": "2026-09-22",
       "dateModified": "2026-09-22",
       "author": {
-        "@type": "Organization",
-        "name": "Pr3cise",
-        "url": "https://pr3cise.com/"
+        "@id": "https://pr3cise.com/#organization"
       },
       "publisher": {
         "@type": "Organization",
