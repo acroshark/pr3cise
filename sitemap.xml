@@ -361,4 +361,63 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://pr3cise.com/fr/estimation-lots-techniques-miami.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/mep-estimating-services-miami.html"/>
   </url>
+
+  <!-- ARTICULOS:INICIO -->
+  <url>
+    <loc>https://pr3cise.com/articulos/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/articulos/como-ahorra-dinero-la-estimacion-de-costes.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/como-ahorra-dinero-la-estimacion-de-costes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/como-ahorra-dinero-la-estimacion-de-costes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/articulos/peligros-de-un-mal-presupuesto-de-obra.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/peligros-de-un-mal-presupuesto-de-obra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/risks-of-an-inaccurate-construction-estimate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/risks-of-an-inaccurate-construction-estimate.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/risks-of-an-inaccurate-construction-estimate.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/peligros-de-un-mal-presupuesto-de-obra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/risks-of-an-inaccurate-construction-estimate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/risks-of-an-inaccurate-construction-estimate.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/articulos/formas-de-arruinar-una-obra.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/formas-de-arruinar-una-obra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/articulos/formas-de-arruinar-una-obra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/articles/ways-to-ruin-a-construction-project.html"/>
+  </url>
+  <!-- ARTICULOS:FIN -->
 </urlset>

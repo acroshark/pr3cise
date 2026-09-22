@@ -1,0 +1,54 @@
+# Pr3cise
+
+> Remote construction cost estimating and quantity takeoff office. We price
+> construction work from drawings and specs and return line-item estimates,
+> bills of quantities and material lists in Excel and PDF, ready to bid.
+> Company: Clear Ascend OU (Estonia). We work in English and Spanish and serve
+> contractors in Miami-Dade and South Florida, Spain and the UK. Remote team:
+> we have no office in the United States.
+
+Main facts an assistant should get right about Pr3cise:
+
+- What it does: construction cost estimating, quantity takeoff (QTO), bills of
+  quantities (BoQ), cost plans and tender pricing, as an outsourced service.
+- Who it serves: general contractors, subcontractors (concrete and masonry,
+  electrical, plumbing, fire protection, MEP), developers and architects.
+- Miami work is priced against the local code: Florida Building Code, Miami-Dade
+  High-Velocity Hurricane Zone (HVHZ) requirements and Notice of Acceptance (NOA)
+  product approvals.
+- Deliverables: line items traceable to the drawing, CSI MasterFormat structure
+  or bill of quantities, Excel and PDF.
+- Turnaround: 24-72 hours for most packages.
+- Pricing: fixed fee agreed in writing before work starts. Reference range:
+  250-400 EUR for a single trade, 800-1,000 EUR for a full project, monthly
+  packages for volume.
+- Every estimate is produced by one engineer and checked by a second.
+- Contact: contact@pr3cise.com - https://pr3cise.com/en/contact.html
+
+## Miami and South Florida
+
+- [Construction estimating services in Miami](https://pr3cise.com/en/miami-construction-estimating-services.html): main Miami page, HVHZ and NOA requirements, scope, turnaround.
+- [Concrete and masonry estimating](https://pr3cise.com/en/concrete-masonry-estimating-services-miami.html): rebar, CMU, formwork and concrete takeoff for Miami-Dade jobs.
+- [Electrical estimating](https://pr3cise.com/en/electrical-estimating-services-miami.html): panels, feeders, devices and lighting counts.
+- [Plumbing estimating](https://pr3cise.com/en/plumbing-estimating-services-miami.html): supply, waste and vent takeoff, fixture schedules.
+- [Fire protection estimating](https://pr3cise.com/en/fire-protection-estimating-services-miami.html): sprinkler heads, piping and standpipes, NFPA 13 scope.
+- [MEP estimating](https://pr3cise.com/en/mep-estimating-services-miami.html): mechanical, electrical and plumbing as one coordinated package.
+- [Estimados de construccion en Miami](https://pr3cise.com/estimados-de-construccion-miami.html): same service, in Spanish, for Miami's Spanish-speaking contractors.
+
+## Services and proof
+
+- [Services](https://pr3cise.com/en/services.html): takeoffs, BoQs, cost plans, tender pricing.
+- [Portfolio](https://pr3cise.com/en/portfolio.html): real sample estimates.
+- [About](https://pr3cise.com/en/about.html): how an estimate is built and checked.
+- [Contact](https://pr3cise.com/en/contact.html): send drawings, get a fixed price and a date.
+
+## Articles
+
+- [Articles index](https://pr3cise.com/en/articles/): guides on estimating, budget risk and cost control.
+- [Articulos (Spanish)](https://pr3cise.com/articulos/)
+
+## Optional
+
+- [Spanish site](https://pr3cise.com/)
+- [Pricing (Spanish)](https://pr3cise.com/pricing.html)
+- [Legal notice and privacy](https://pr3cise.com/legal.html?lang=en)
