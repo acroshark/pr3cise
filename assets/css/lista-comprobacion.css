@@ -28,6 +28,23 @@
     margin-bottom: 2.5rem;
 }
 
+/* Enlaces de texto: el mismo subrayado dorado que en los artículos */
+.erc-intro a,
+.erc-note a,
+.erc-outro a {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.erc-intro a:hover,
+.erc-note a:hover,
+.erc-outro a:hover {
+    color: var(--accent-gold);
+}
+
 /* ── Barra de progreso (pegada bajo la cabecera) ─────────────────────── */
 .erc-bar {
     position: sticky;
@@ -485,30 +502,29 @@
         margin-top: 1pt;
     }
 
-    /* La casilla se dibuja con bordes: se imprime sin depender de los fondos */
-    .erc-cb {
-        width: 11pt;
-        height: 11pt;
-        flex: 0 0 11pt;
+    /* La casilla se dibuja con bordes negros sobre blanco: se imprime igual
+       aunque el navegador descarte los fondos. Va con !important porque la
+       regla de pantalla .erc-cb:checked pinta la casilla de oro y tiene la
+       misma especificidad. */
+    .erc-cb,
+    .erc-cb:checked {
+        width: 11pt !important;
+        height: 11pt !important;
+        flex: 0 0 11pt !important;
         margin-top: 1.5pt;
-        border: 0.9pt solid #000;
+        border: 0.9pt solid #000 !important;
         border-radius: 1pt;
         background: #fff !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
-    .erc-cb:checked {
-        background: #fff !important;
-        border-color: #000;
-    }
-
     .erc-cb:checked::after {
-        width: 7pt;
-        height: 3.4pt;
-        border-left: 1.4pt solid #000;
-        border-bottom: 1.4pt solid #000;
-        transform: rotate(-45deg) scale(1);
+        width: 7pt !important;
+        height: 3.4pt !important;
+        border-left: 1.4pt solid #000 !important;
+        border-bottom: 1.4pt solid #000 !important;
+        transform: rotate(-45deg) scale(1) !important;
     }
 
     a,
