@@ -398,4 +398,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/outsourced-construction-estimating.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/outsourced-construction-estimating.html"/>
   </url>
+  <url>
+    <loc>https://pr3cise.com/revisar-presupuesto-lista.html</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/revisar-presupuesto-lista.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/estimate-review-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/estimate-review-checklist.html"/>
+  </url>
+  <url>
+    <loc>https://pr3cise.com/en/estimate-review-checklist.html</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pr3cise.com/revisar-presupuesto-lista.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pr3cise.com/en/estimate-review-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pr3cise.com/en/estimate-review-checklist.html"/>
+  </url>
 </urlset>

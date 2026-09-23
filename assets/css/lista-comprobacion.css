@@ -1,0 +1,519 @@
+/* lista-comprobacion.css — herramienta gratuita: lista de comprobación
+ * interactiva para revisar un presupuesto de obra antes de firmarlo.
+ *
+ * La usan /en/estimate-review-checklist.html y /revisar-presupuesto-lista.html.
+ * Todo va con el prefijo .erc- para no pisar nada de styles.css y usa las
+ * variables de marca (--accent-gold, --primary-dark, --border-lux...).
+ *
+ * Al final está la hoja de impresión: la lista tiene que salir en papel como
+ * una lista de verdad, en blanco y negro, sin cabecera, sin menú y sin botones.
+ */
+
+/* ── Bloque general ──────────────────────────────────────────────────── */
+.erc {
+    margin-top: 2.5rem;
+}
+
+.erc-intro {
+    max-width: 820px;
+    margin-bottom: 1.2rem;
+}
+
+.erc-note {
+    max-width: 820px;
+    font-size: 0.95rem;
+    color: #64748b;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* ── Barra de progreso (pegada bajo la cabecera) ─────────────────────── */
+.erc-bar {
+    position: sticky;
+    top: var(--erc-top, 78px);
+    z-index: 900;
+    background: var(--white);
+    border: 1px solid var(--border-lux);
+    border-top: 3px solid var(--accent-gold);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+    padding: 1rem 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.erc-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.erc-count {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--primary-dark);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.erc-count b {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    color: var(--accent-gold);
+    letter-spacing: 0;
+    vertical-align: -2px;
+}
+
+.erc-full .erc-count b {
+    color: #15803d;
+}
+
+.erc-track {
+    flex: 1 1 180px;
+    min-width: 140px;
+    height: 9px;
+    background: var(--bg-stone);
+    border: 1px solid var(--border-lux);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.erc-fill {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--accent-gold);
+    border-radius: 99px;
+    transition: width 0.28s cubic-bezier(0.165, 0.84, 0.44, 1), background 0.28s;
+}
+
+.erc-full .erc-fill {
+    background: #15803d;
+}
+
+.erc-actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.erc-btn {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 0.72rem 1.35rem;
+    border: 2px solid var(--border-lux);
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.erc-btn:hover {
+    border-color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.erc-btn:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 3px;
+}
+
+.erc-btn-main {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--white);
+}
+
+.erc-btn-main:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.erc-btn-warn {
+    border-color: #b91c1c;
+    color: #b91c1c;
+}
+
+.erc-btn-warn:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+    color: var(--white);
+}
+
+/* ── Bloques de comprobaciones ───────────────────────────────────────── */
+.erc-block {
+    background: var(--white);
+    border: 1px solid var(--border-lux);
+    border-top: 3px solid var(--primary-dark);
+    border-radius: 8px;
+    padding: 2rem 2.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.erc-block-h {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    font-size: 1.05rem;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 1.4rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--border-lux);
+}
+
+.erc-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+}
+
+.erc-tally {
+    margin-left: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #64748b;
+}
+
+.erc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.erc-item {
+    margin: 0;
+}
+
+.erc-item label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.95rem;
+    cursor: pointer;
+}
+
+.erc-cb {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    margin: 3px 0 0;
+    border: 2px solid #cbd5e1;
+    border-radius: 4px;
+    background: var(--white);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.erc-cb::after {
+    content: "";
+    width: 11px;
+    height: 6px;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    transform: rotate(-45deg) scale(0);
+    transform-origin: center;
+    transition: transform 0.13s ease;
+}
+
+.erc-item label:hover .erc-cb {
+    border-color: var(--accent-gold);
+}
+
+.erc-cb:checked {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+}
+
+.erc-cb:checked::after {
+    transform: rotate(-45deg) scale(1);
+}
+
+.erc-cb:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 3px;
+}
+
+.erc-text {
+    flex: 1;
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+
+.erc-text strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.erc-why {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #64748b;
+}
+
+.erc-cb:checked ~ .erc-text strong,
+.erc-cb:checked ~ .erc-text {
+    color: #94a3b8;
+}
+
+/* ── Cierre y aviso de guardado ──────────────────────────────────────── */
+.erc-storage {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Solo para el papel */
+.erc-printonly {
+    display: none;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .erc-block {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .erc-bar {
+        padding: 0.85rem 1rem;
+    }
+
+    .erc-bar-inner {
+        gap: 0.9rem;
+    }
+
+    .erc-track {
+        order: 3;
+        flex: 1 1 100%;
+    }
+
+    .erc-actions {
+        margin-left: auto;
+    }
+
+    .erc-btn {
+        padding: 0.62rem 1rem;
+        font-size: 0.66rem;
+    }
+
+    .erc-text {
+        font-size: 0.97rem;
+    }
+}
+
+/* ── Papel ───────────────────────────────────────────────────────────── */
+@media print {
+    @page {
+        margin: 14mm 12mm;
+    }
+
+    html,
+    body {
+        background: #fff !important;
+    }
+
+    body {
+        font-size: 10.5pt;
+        line-height: 1.42;
+        color: #000;
+    }
+
+    .site-header,
+    .breadcrumbs,
+    .site-footer,
+    .back-to-top,
+    .lang-switcher,
+    .mobile-menu-toggle,
+    .cta-final-section,
+    .erc-actions,
+    .erc-track,
+    .erc-intro,
+    .erc-note,
+    .erc-storage,
+    .erc-outro,
+    .erc-noprint {
+        display: none !important;
+    }
+
+    /* Las animaciones de entrada no pueden dejar la hoja en blanco */
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .page-container {
+        min-height: 0 !important;
+        display: block !important;
+    }
+
+    .section-padding {
+        padding: 0 !important;
+    }
+
+    .bg-alt {
+        background: #fff !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    h1 {
+        font-size: 15pt;
+        margin: 0 0 3pt;
+        color: #000;
+    }
+
+    .section-subtitle {
+        font-size: 9.5pt;
+        text-align: left;
+        max-width: none;
+        margin: 0 0 6pt;
+        color: #000;
+    }
+
+    .erc-printonly {
+        display: block;
+    }
+
+    .erc-print-fields {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 9pt;
+        margin: 0 0 8pt;
+        color: #000;
+    }
+
+    .erc-print-foot {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 8pt;
+        color: #333;
+        border-top: 0.5pt solid #999;
+        padding-top: 4pt;
+        margin-top: 8pt;
+    }
+
+    .erc {
+        margin-top: 0;
+    }
+
+    .erc-bar {
+        position: static;
+        box-shadow: none;
+        border: 0;
+        border-bottom: 1.2pt solid #000;
+        border-radius: 0;
+        padding: 0 0 4pt;
+        margin: 0 0 9pt;
+    }
+
+    .erc-count,
+    .erc-count b {
+        font-size: 9.5pt;
+        color: #000;
+    }
+
+    .erc-block {
+        border: 0;
+        border-top: 1pt solid #000;
+        border-radius: 0;
+        padding: 5pt 0 0;
+        margin: 0 0 10pt;
+    }
+
+    .erc-block-h {
+        font-size: 10pt;
+        margin-bottom: 5pt;
+        padding-bottom: 3pt;
+        border-bottom: 0.5pt solid #bbb;
+        color: #000;
+    }
+
+    .erc-num,
+    .erc-tally {
+        color: #000;
+    }
+
+    .erc-list {
+        gap: 5pt;
+    }
+
+    .erc-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .erc-item label {
+        gap: 6pt;
+    }
+
+    .erc-text,
+    .erc-text strong,
+    .erc-cb:checked ~ .erc-text,
+    .erc-cb:checked ~ .erc-text strong {
+        color: #000 !important;
+        font-size: 9.6pt;
+    }
+
+    .erc-why {
+        color: #444;
+        font-size: 8.6pt;
+        margin-top: 1pt;
+    }
+
+    /* La casilla se dibuja con bordes: se imprime sin depender de los fondos */
+    .erc-cb {
+        width: 11pt;
+        height: 11pt;
+        flex: 0 0 11pt;
+        margin-top: 1.5pt;
+        border: 0.9pt solid #000;
+        border-radius: 1pt;
+        background: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .erc-cb:checked {
+        background: #fff !important;
+        border-color: #000;
+    }
+
+    .erc-cb:checked::after {
+        width: 7pt;
+        height: 3.4pt;
+        border-left: 1.4pt solid #000;
+        border-bottom: 1.4pt solid #000;
+        transform: rotate(-45deg) scale(1);
+    }
+
+    a,
+    a:visited {
+        color: #000;
+        text-decoration: none;
+    }
+}

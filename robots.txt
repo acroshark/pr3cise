@@ -20,4 +20,9 @@ Disallow: /_source-no-deploy/
 # publicadas. No se despliegan, pero el despliegue va sin --delete.
 Disallow: /tools/
 
+# ── Contexto para asistentes de IA ────────────────────────────────
+# Nota de cortesía, no son directivas: el resumen del sitio para
+# modelos de lenguaje está en https://pr3cise.com/llms.txt y la
+# versión ampliada en https://pr3cise.com/llms-full.txt
+
 Sitemap: https://pr3cise.com/sitemap.xml
