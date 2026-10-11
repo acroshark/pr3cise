@@ -429,7 +429,7 @@
               </div>
               <div id="ri-phase-label" class="ri-phase-label"></div>
               <div class="ri-total-wrap">
-                <span class="ri-total-label">accumulated budget (USD)</span>
+                <span class="ri-total-label">accumulated budget · sample (USD)</span>
                 <div class="ri-total-amount" id="ri-total">$0</div>
               </div>
             </div>
@@ -747,23 +747,23 @@
           <div class="ri-summary" id="ri-summary">
             <div class="ri-sum-item">
               <span class="ri-sum-label">Plumbing / HVAC</span>
-              <span class="ri-sum-val" style="color:#38bdf8">$11,500</span>
+              <span class="ri-sum-val" data-ri-sum="p" style="color:#38bdf8">$14,500</span>
             </div>
             <div class="ri-sum-item">
               <span class="ri-sum-label">Electrical</span>
-              <span class="ri-sum-val" style="color:#fcd34d">$2,510</span>
+              <span class="ri-sum-val" data-ri-sum="e" style="color:#fcd34d">$6,400</span>
             </div>
             <div class="ri-sum-item">
               <span class="ri-sum-label">Windows</span>
-              <span class="ri-sum-val" style="color:#f87171">$4,780</span>
+              <span class="ri-sum-val" data-ri-sum="w" style="color:#f87171">$5,650</span>
             </div>
             <div class="ri-sum-item">
               <span class="ri-sum-label">Doors</span>
-              <span class="ri-sum-val" style="color:#4ade80">$2,900</span>
+              <span class="ri-sum-val" data-ri-sum="d" style="color:#4ade80">$3,850</span>
             </div>
             <div class="ri-sum-item">
               <span class="ri-sum-label">Total renovation (USD)</span>
-              <span class="ri-sum-val ri-sum-total">$21,690</span>
+              <span class="ri-sum-val ri-sum-total" data-ri-sum="total">$30,400</span>
             </div>
           </div>
 
@@ -775,13 +775,54 @@
           var riProgress = 0;
           var touchStartY = 0;
 
+          /* 2026-10-11 | Los importes ya no se escriben aquí. Había tres copias que
+             no cuadraban: el «cost» de cada fase, las etiquetas del plano y el
+             resumen final escrito a mano (decía 21.690 cuando las partidas suman
+             30.400). Además el contador interpolaba el coste de la fase y enseñaba
+             cifras que no estaban en pantalla. Ahora la única fuente es el texto
+             de cada etiqueta (.pt-amount): el contador suma las etiquetas visibles
+             y el resumen se calcula al cargar. Para cambiar un precio, se cambia
+             solo la etiqueta (y su cifra en el resumen, para quien no ejecuta JS). */
           var RI_PHASES = {
-            p: { start: 0.04, end: 0.28, cost: 14500, key: '01 · PLUMBING / HVAC' },
-            e: { start: 0.28, end: 0.52, cost: 6400,  key: '02 · ELECTRICAL' },
-            w: { start: 0.52, end: 0.72, cost: 5650,  key: '03 · WINDOWS' },
-            d: { start: 0.72, end: 0.92, cost: 3850,  key: '04 · DOORS' }
+            p: { start: 0.04, end: 0.28, key: '01 · PLUMBING / HVAC' },
+            e: { start: 0.28, end: 0.52, key: '02 · ELECTRICAL' },
+            w: { start: 0.52, end: 0.72, key: '03 · WINDOWS' },
+            d: { start: 0.72, end: 0.92, key: '04 · DOORS' }
           };
           var RI_ORDER = ['p', 'e', 'w', 'd'];
+
+          /* Etiquetas de un sistema, en su orden de aparición */
+          function riTags(sys) {
+            return Array.prototype.slice.call(
+              document.querySelectorAll('.ri-tag[data-sys="' + sys + '"]')
+            ).sort(function (a, b) { return +a.dataset.idx - +b.dataset.idx; });
+          }
+
+          /* Importe de una etiqueta tal y como se lee en pantalla */
+          function riAmount(tag) {
+            var el = tag.querySelector('.pt-amount');
+            var n = el ? parseInt(el.textContent.replace(/[^\d]/g, ''), 10) : 0;
+            return isNaN(n) ? 0 : n;
+          }
+
+          /* Mismo formato que las etiquetas («$2,800») */
+          function riFormat(n) {
+            return '$' + String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          }
+
+          /* Resumen final = suma de las etiquetas de cada sistema */
+          function riInitSummary() {
+            var grand = 0;
+            RI_ORDER.forEach(function (sys) {
+              var sum = 0;
+              riTags(sys).forEach(function (tag) { sum += riAmount(tag); });
+              grand += sum;
+              var el = document.querySelector('.ri-sum-val[data-ri-sum="' + sys + '"]');
+              if (el) el.textContent = riFormat(sum);
+            });
+            var tot = document.querySelector('.ri-sum-val[data-ri-sum="total"]');
+            if (tot) tot.textContent = riFormat(grand);
+          }
 
           function riInitPaths() {
             RI_ORDER.forEach(function (sys) {
@@ -810,11 +851,11 @@
               var diff = target - riDisplayedTotal;
               if (Math.abs(diff) < 5) {
                 riDisplayedTotal = target;
-                node.textContent = '$' + Math.round(riDisplayedTotal).toLocaleString('en-US');
+                node.textContent = riFormat(riDisplayedTotal);
                 return;
               }
               riDisplayedTotal += diff * 0.12;
-              node.textContent = '$' + Math.round(riDisplayedTotal).toLocaleString('en-US');
+              node.textContent = riFormat(riDisplayedTotal);
               riRafId = requestAnimationFrame(tick);
             })();
           }
@@ -845,7 +886,6 @@
 
               if (p < 1) allDone = false;
               if (p > 0 && p < 1) activePhase = sys;
-              totalVisible += ph.cost * p;
 
               var layer = document.getElementById('ri-layer-' + sys);
               if (layer) {
@@ -862,12 +902,13 @@
               var legItem = document.getElementById('ri-leg-' + sys);
               if (legItem) legItem.classList.toggle('active', p > 0);
 
-              var tags = Array.prototype.slice.call(
-                document.querySelectorAll('.ri-tag[data-sys="' + sys + '"]')
-              ).sort(function (a, b) { return +a.dataset.idx - +b.dataset.idx; });
+              var tags = riTags(sys);
               tags.forEach(function (tag, i) {
                 var threshold = (i + 1) / (tags.length + 1);
-                tag.classList.toggle('show', p >= threshold);
+                var shown = p >= threshold;
+                tag.classList.toggle('show', shown);
+                /* El contador suma solo las partidas que se ven */
+                if (shown) totalVisible += riAmount(tag);
               });
             });
 
@@ -963,6 +1004,7 @@
 
           document.addEventListener('DOMContentLoaded', function () {
             riInitPaths();
+            riInitSummary();
             riDraw(0);
             riUpdateViewing();
 

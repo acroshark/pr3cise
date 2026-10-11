@@ -602,36 +602,65 @@ header{
 <div id="summary">
   <div class="sum-item">
     <span class="sum-label">Fontanería</span>
-    <span class="sum-val" style="color:var(--blue)">3.120 €</span>
+    <span class="sum-val" data-sum="p" style="color:var(--blue)">3.120 €</span>
   </div>
   <div class="sum-item">
     <span class="sum-label">Electricidad</span>
-    <span class="sum-val" style="color:var(--yellow)">2.510 €</span>
+    <span class="sum-val" data-sum="e" style="color:var(--yellow)">2.510 €</span>
   </div>
   <div class="sum-item">
     <span class="sum-label">Ventanas</span>
-    <span class="sum-val" style="color:var(--red)">4.780 €</span>
+    <span class="sum-val" data-sum="w" style="color:var(--red)">4.780 €</span>
   </div>
   <div class="sum-item">
     <span class="sum-label">Puertas</span>
-    <span class="sum-val" style="color:var(--green)">2.900 €</span>
+    <span class="sum-val" data-sum="d" style="color:var(--green)">2.900 €</span>
   </div>
   <div class="sum-item" style="border-left:1px solid rgba(255,255,255,.1);padding-left:48px">
     <span class="sum-label">Total reforma</span>
-    <span class="sum-val" style="color:var(--yellow);font-size:1.4rem">13.310 €</span>
+    <span class="sum-val" data-sum="total" style="color:var(--yellow);font-size:1.4rem">13.310 €</span>
   </div>
 </div>
 
 <script>
 // ─── CONFIG ──────────────────────────────────────────
+// 2026-10-11 | Los importes salen solo del texto de las etiquetas (.pt-amount),
+// como en la portada: el contador suma las partidas visibles (antes interpolaba
+// el «cost» de la fase y enseñaba cifras que no estaban en pantalla) y el
+// resumen se calcula al cargar. Para cambiar un precio, se cambia la etiqueta.
 const PHASES = {
-  p: { start: 0.04, end: 0.28, cost: 3120, label: '01 · FONTANERÍA' },
-  e: { start: 0.28, end: 0.52, cost: 2510, label: '02 · ELECTRICIDAD' },
-  w: { start: 0.52, end: 0.72, cost: 4780, label: '03 · VENTANAS' },
-  d: { start: 0.72, end: 0.92, cost: 2900, label: '04 · PUERTAS' }
+  p: { start: 0.04, end: 0.28, label: '01 · FONTANERÍA' },
+  e: { start: 0.28, end: 0.52, label: '02 · ELECTRICIDAD' },
+  w: { start: 0.52, end: 0.72, label: '03 · VENTANAS' },
+  d: { start: 0.72, end: 0.92, label: '04 · PUERTAS' }
 };
-const GRAND = 13310;
 const ORDER = ['p','e','w','d'];
+
+// ─── IMPORTES ─────────────────────────────────────────
+const tagsOf = sys => [...document.querySelectorAll(`.price-tag[data-sys="${sys}"]`)]
+  .sort((a,b) => +a.dataset.idx - +b.dataset.idx);
+
+function amountOf(tag) {
+  const el = tag.querySelector('.pt-amount');
+  const n = el ? parseInt(el.textContent.replace(/[^\d]/g, ''), 10) : 0;
+  return isNaN(n) ? 0 : n;
+}
+
+// Mismo formato que las etiquetas: toLocaleString('es-ES') no separa los miles
+// con 4 cifras y el contador ponía «1240 €» junto a la etiqueta «1.240 €».
+const fmt = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' €';
+
+function initSummary() {
+  let grand = 0;
+  ORDER.forEach(sys => {
+    const sum = tagsOf(sys).reduce((acc, tag) => acc + amountOf(tag), 0);
+    grand += sum;
+    const el = document.querySelector(`.sum-val[data-sum="${sys}"]`);
+    if (el) el.textContent = fmt(sum);
+  });
+  const tot = document.querySelector('.sum-val[data-sum="total"]');
+  if (tot) tot.textContent = fmt(grand);
+}
 
 // ─── INIT PATHS ───────────────────────────────────────
 function initPaths() {
@@ -658,11 +687,11 @@ function updateCounter(target) {
     const diff = target - displayedTotal;
     if (Math.abs(diff) < 5) {
       displayedTotal = target;
-      el.textContent = Math.round(displayedTotal).toLocaleString('es-ES') + ' €';
+      el.textContent = fmt(displayedTotal);
       return;
     }
     displayedTotal += diff * 0.1;
-    el.textContent = Math.round(displayedTotal).toLocaleString('es-ES') + ' €';
+    el.textContent = fmt(displayedTotal);
     rafId = requestAnimationFrame(tick);
   }
   tick();
@@ -694,8 +723,6 @@ function onScroll() {
     if (p < 1) allDone = false;
     if (p > 0 && p < 1) activePhase = sys;
 
-    totalVisible += ph.cost * p;
-
     // layer visibility
     const layer = document.getElementById('layer-' + sys);
     layer.style.opacity = p > 0 ? 1 : 0;
@@ -714,13 +741,14 @@ function onScroll() {
     if (p > 0) legItem.classList.add('active');
     else legItem.classList.remove('active');
 
-    // price tags
-    const tags = [...document.querySelectorAll(`.price-tag[data-sys="${sys}"]`)]
-      .sort((a,b) => +a.dataset.idx - +b.dataset.idx);
+    // price tags (el contador suma solo las partidas que se ven)
+    const tags = tagsOf(sys);
     tags.forEach((tag, i) => {
       const threshold = (i + 1) / (tags.length + 1);
-      if (p >= threshold) tag.classList.add('show');
-      else tag.classList.remove('show');
+      if (p >= threshold) {
+        tag.classList.add('show');
+        totalVisible += amountOf(tag);
+      } else tag.classList.remove('show');
     });
   });
 
@@ -748,6 +776,7 @@ function onScroll() {
 // ─── BOOT ─────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initPaths();
+  initSummary();
   onScroll();
 });
 window.addEventListener('scroll', onScroll, { passive: true });
