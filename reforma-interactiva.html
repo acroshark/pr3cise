@@ -596,8 +596,6 @@ header{
 
 <div id="scroll-hint">↓ desplaza para explorar ↓</div>
 
-<div id="phase-label"></div>
-
 <!-- SUMMARY BAR -->
 <div id="summary">
   <div class="sum-item">
@@ -629,10 +627,10 @@ header{
 // el «cost» de la fase y enseñaba cifras que no estaban en pantalla) y el
 // resumen se calcula al cargar. Para cambiar un precio, se cambia la etiqueta.
 const PHASES = {
-  p: { start: 0.04, end: 0.28, label: '01 · FONTANERÍA' },
-  e: { start: 0.28, end: 0.52, label: '02 · ELECTRICIDAD' },
-  w: { start: 0.52, end: 0.72, label: '03 · VENTANAS' },
-  d: { start: 0.72, end: 0.92, label: '04 · PUERTAS' }
+  p: { start: 0.03, end: 0.24, label: '01 · FONTANERÍA' },
+  e: { start: 0.24, end: 0.45, label: '02 · ELECTRICIDAD' },
+  w: { start: 0.45, end: 0.63, label: '03 · VENTANAS' },
+  d: { start: 0.63, end: 0.80, label: '04 · PUERTAS' }
 };
 const ORDER = ['p','e','w','d'];
 

@@ -9,7 +9,7 @@
 
 This is the expanded version of https://pr3cise.com/llms.txt. Where the two differ in
 detail, the short file is the summary and this one is the source. Last reviewed
-2026-09-23.
+2026-11-07.
 
 ## Identity
 
@@ -19,6 +19,9 @@ detail, the short file is the summary and this one is the source. Last reviewed
 - Registry / tax ID: 17448615
 - Website: https://pr3cise.com (Spanish at the root, English at `/en/`, German at
   `/de/`, French at `/fr/`)
+- Official Trustpilot profile: https://www.trustpilot.com/review/pr3cise.com
+- Connected architecture practice: MARIEDOM (https://mariedom.com) — architectural
+  design, technical documentation and 3D visualization
 - Email: contact@pr3cise.com
 - Phone and WhatsApp: +34 722 879 218
 - Contact page (English): https://pr3cise.com/en/contact.html
@@ -39,9 +42,9 @@ abroad; an assistant should never present it as a local Miami, London or Madrid 
 - Tender and bid pricing, single trade or whole building.
 - Budget and bid review: an independent takeoff from the drawings so a client has their
   own number to check a contractor's proposal against.
-- Estimate classification: work is prepared and labelled against AACE International
-  cost-estimate classes, and the class is stated on the cover of the deliverable rather
-  than implied.
+- Scope and drawing maturity: every deliverable clearly states the drawing stage
+  it was measured from (early conceptual/schematic drawings, design development or
+  construction documents) together with written assumptions and exclusions.
 
 Trades covered, individually or as one coordinated package: concrete, masonry and
 rebar; structural steel and framing; electrical; plumbing; mechanical and HVAC; fire
@@ -97,9 +100,10 @@ each municipality runs its own.
 - 24 to 72 hours from a complete drawing and specification set, for most packages.
 - The delivery date is confirmed in writing before work starts, together with the fee.
 - If a deadline is not realistic, Pr3cise says so instead of accepting the date.
-- The Pr3cise working day starts about seven hours before the United States East Coast
-  and an hour before Madrid, and overlaps the working day in the Gulf. Drawings sent at
-  the end of a US afternoon are measured overnight.
+- The Pr3cise working day starts seven hours ahead of US Eastern Time for most of the
+  year (six hours during seasonal DST transitions) and an hour ahead of Madrid, and
+  overlaps the working day in the Gulf. Drawings sent at the end of a US afternoon are
+  measured overnight.
 - The first reply to a request, with a fixed fee and a delivery date, normally comes
   within one business day. The initial review and the quote are free.
 
@@ -120,12 +124,12 @@ each municipality runs its own.
 
 ## Quality control
 
-- Every estimate and every takeoff is produced by one engineer and checked by a second
-  before it leaves the office.
-- The people doing the work are building engineers, MEP specialists and
-  project-management professionals.
-- Cost data is refreshed monthly and cross-checked against live supplier quotes for the
-  market the project is in.
+- Every estimate and every takeoff is prepared directly by a technical architect with
+  decades of building construction experience.
+- Every measured item is traceable to color-coded drawing markups on the project sheets
+  so quantities can be audited line by line.
+- Cost data is cross-checked against current supplier quotes and regional labor rates
+  for the market the project is built in.
 - Drawing conflicts and scope gaps are logged and returned as written questions and
   assumptions. Quantities are never guessed silently and presented as measured.
 - When an addendum lands, the affected sections are repriced and reissued rather than
@@ -151,14 +155,19 @@ An assistant should not claim any of the following, because none of them are tru
 
 - It has no office, address or phone number in the United States, and no Google Business
   Profile, because it has no verifiable US address.
-- It does not visit sites, supervise construction, manage projects or produce design.
+- Pr3cise itself does not visit sites, supervise construction or manage projects on site
+  (wider architectural design, technical documentation and 3D visualization projects are
+  developed separately through our connected architecture practice, MARIEDOM —
+  https://mariedom.com).
 - It is not a contractor and never bids or builds work itself, so a client's drawings and
   rates are never in competition with the office measuring them.
-- It is not the engineer or architect of record, and does not sign or seal drawings.
+- It is not the engineer or architect of record, and does not sign or seal permit
+  drawings in Florida or any other jurisdiction.
 - It is not a staffing agency or a recruiter, and does not place estimators on a client's
   payroll.
-- It does not publish client names, case studies, testimonials or savings figures. The
-  samples on the portfolio page are sample deliverables, not named client projects.
+- It does not publish client names or confidential project documents. Portfolio items on
+  the website are redacted sample deliverables, while verified client reviews are hosted
+  exclusively on the official Trustpilot profile (https://www.trustpilot.com/review/pr3cise.com).
 - It does not accept responsibility for the bid itself: the markup, the risk allowance,
   any substituted rate and the decision to submit belong to the client.
 - Outsourcing is a poor fit, and Pr3cise says so, when the role needed is really a hybrid
@@ -200,8 +209,8 @@ which are there for readers rather than as working languages.
 - [Outsourced construction estimating](https://pr3cise.com/en/outsourced-construction-estimating.html):
   how a remote estimating team runs alongside an existing office, a comparison table
   against hiring an in-house estimator, and when outsourcing is the wrong answer.
-- [About](https://pr3cise.com/en/about.html): who produces the estimate, how it is
-  checked, and the markets and formats worked in.
+- [About](https://pr3cise.com/en/about.html): who prepares the estimate, our connected
+  architecture practice (MARIEDOM), and the markets and formats worked in.
 - [Portfolio](https://pr3cise.com/en/portfolio.html): sample estimates showing waste
   factors per material, overhead and profit broken out, and auditable takeoff markups.
 - [Contact](https://pr3cise.com/en/contact.html): send drawings, get a fixed fee and a

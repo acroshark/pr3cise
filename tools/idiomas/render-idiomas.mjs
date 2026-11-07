@@ -8,22 +8,21 @@
  *                 i18n.js en servidor, igual que hacía el navegador. Lo que el
  *                 diccionario no cubre (title, description, JSON-LD, alt, texto
  *                 suelto) sale de extra-<lang>.json.
- *   fuente 'en' → la página sólo existe en inglés (landings por oficio, Miami).
- *                 La traducción completa la produce un agente y se recoge de
- *                 pr3cise-traducciones/<lang>/<fichero-en>.html; aquí sólo se
- *                 ajusta la cabecera, los enlaces y el selector.
+ *   fuente 'en' → la traducción completa se recoge de
+ *                 pr3cise-traducciones/<lang>/<fichero-en>.html; aquí se
+ *                 ajusta la cabecera, los enlaces, el JSON-LD y el selector.
  *
  * Uso:
- *   node render-pr3cise-idiomas.mjs --informe   lista lo que falta por traducir
- *   node render-pr3cise-idiomas.mjs             escribe las páginas, actualiza
- *                                               hreflang/selector en es y en, y
- *                                               reescribe sitemap.xml
+ *   node tools/idiomas/render-idiomas.mjs --informe   lista lo que falta por traducir
+ *   node tools/idiomas/render-idiomas.mjs             escribe las páginas, actualiza
+ *                                                     hreflang/selector en es y en, y
+ *                                                     reescribe sitemap.xml
  */
 import fs from 'node:fs'
 import path from 'node:path'
 import * as cheerio from 'cheerio' // npm i cheerio (no se versiona node_modules)
 
-// En Windows, pathname de un file:// empieza por "/M:/..."; se quita esa barra.
+// En Windows, pathname de un file:// empieza por "/C:/..."; se quita esa barra.
 const AQUI = path.dirname(decodeURIComponent(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1'))
 const RAIZ = path.resolve(AQUI, '..', '..')
 const ORIGEN = 'https://pr3cise.com'
@@ -31,34 +30,103 @@ const TRADUCCIONES = path.join(AQUI, 'pr3cise-traducciones')
 const NUEVOS = ['de', 'fr']
 const INFORME = process.argv.includes('--informe')
 
-/** Rutas relativas a la raíz del sitio. `null` = esa versión no existe. */
+/** Rutas relativas a la raíz del sitio. `null` = esa versión no existe como URL propia. */
 export const CLUSTERS = [
-  { id: 'home',      fuente: 'es', es: 'index.html',                           en: 'en/index.html',                                     de: 'de/index.html',                              fr: 'fr/index.html' },
-  { id: 'servicios', fuente: 'es', es: 'servicios.html',                       en: 'en/services.html',                                  de: 'de/leistungen.html',                         fr: 'fr/services.html' },
-  { id: 'ejemplos',  fuente: 'es', es: 'ejemplos.html',                        en: 'en/portfolio.html',                                 de: 'de/portfolio.html',                          fr: 'fr/portfolio.html' },
-  { id: 'nosotros',  fuente: 'es', es: 'nosotros.html',                        en: 'en/about.html',                                     de: 'de/ueber-uns.html',                          fr: 'fr/a-propos.html' },
-  { id: 'contacto',  fuente: 'es', es: 'contacto.html',                        en: 'en/contact.html',                                   de: 'de/kontakt.html',                            fr: 'fr/contact.html' },
-  // El sitio inglés no tiene aviso legal; el selector manda a su portada.
-  { id: 'legal',     fuente: 'es', es: 'legal.html',                           en: null,                                                de: 'de/rechtliches.html',                        fr: 'fr/mentions-legales.html' },
-  { id: 'miami',     fuente: 'en', es: 'estimados-de-construccion-miami.html', en: 'en/miami-construction-estimating-services.html',    de: 'de/baukostenschaetzung-miami.html',          fr: 'fr/estimation-construction-miami.html' },
-  { id: 'plumbing',  fuente: 'en', es: null,                                   en: 'en/plumbing-estimating-services-miami.html',        de: 'de/sanitaer-kalkulation-miami.html',         fr: 'fr/estimation-plomberie-miami.html' },
-  { id: 'electric',  fuente: 'en', es: null,                                   en: 'en/electrical-estimating-services-miami.html',      de: 'de/elektro-kalkulation-miami.html',          fr: 'fr/estimation-electricite-miami.html' },
-  { id: 'concrete',  fuente: 'en', es: null,                                   en: 'en/concrete-masonry-estimating-services-miami.html', de: 'de/beton-mauerwerk-kalkulation-miami.html', fr: 'fr/estimation-beton-maconnerie-miami.html' },
-  { id: 'fire',      fuente: 'en', es: null,                                   en: 'en/fire-protection-estimating-services-miami.html', de: 'de/brandschutz-kalkulation-miami.html',      fr: 'fr/estimation-protection-incendie-miami.html' },
-  { id: 'mep',       fuente: 'en', es: null,                                   en: 'en/mep-estimating-services-miami.html',             de: 'de/tga-kalkulation-miami.html',              fr: 'fr/estimation-lots-techniques-miami.html' },
+  { id: 'home',      fuente: 'es', es: 'index.html',                                       en: 'en/index.html',                                      de: 'de/index.html',                              fr: 'fr/index.html' },
+  { id: 'servicios', fuente: 'es', es: 'servicios.html',                                   en: 'en/services.html',                                   de: 'de/leistungen.html',                         fr: 'fr/services.html' },
+  { id: 'ejemplos',  fuente: 'es', es: 'ejemplos.html',                                    en: 'en/portfolio.html',                                  de: 'de/portfolio.html',                          fr: 'fr/portfolio.html' },
+  { id: 'nosotros',  fuente: 'es', es: 'nosotros.html',                                    en: 'en/about.html',                                      de: 'de/ueber-uns.html',                          fr: 'fr/a-propos.html' },
+  { id: 'contacto',  fuente: 'es', es: 'contacto.html',                                    en: 'en/contact.html',                                    de: 'de/kontakt.html',                            fr: 'fr/contact.html' },
+  // El sitio inglés muestra el bloque inglés de legal.html mediante ?lang=en.
+  { id: 'legal',     fuente: 'es', es: 'legal.html',                                       en: null,                                                 de: 'de/rechtliches.html',                        fr: 'fr/mentions-legales.html' },
+  { id: 'miami',     fuente: 'en', es: 'estimados-de-construccion-miami.html',             en: 'en/miami-construction-estimating-services.html',     de: 'de/baukostenschaetzung-miami.html',          fr: 'fr/estimation-construction-miami.html' },
+  { id: 'plumbing',  fuente: 'en', es: 'estimados-fontaneria-miami.html',                  en: 'en/plumbing-estimating-services-miami.html',         de: 'de/sanitaer-kalkulation-miami.html',         fr: 'fr/estimation-plomberie-miami.html' },
+  { id: 'electric',  fuente: 'en', es: 'estimados-electricidad-miami.html',                en: 'en/electrical-estimating-services-miami.html',       de: 'de/elektro-kalkulation-miami.html',          fr: 'fr/estimation-electricite-miami.html' },
+  { id: 'concrete',  fuente: 'en', es: 'estimados-hormigon-albanileria-miami.html',        en: 'en/concrete-masonry-estimating-services-miami.html', de: 'de/beton-mauerwerk-kalkulation-miami.html', fr: 'fr/estimation-beton-maconnerie-miami.html' },
+  { id: 'fire',      fuente: 'en', es: 'estimados-proteccion-contra-incendios-miami.html', en: 'en/fire-protection-estimating-services-miami.html',  de: 'de/brandschutz-kalkulation-miami.html',      fr: 'fr/estimation-protection-incendie-miami.html' },
+  { id: 'mep',       fuente: 'en', es: 'estimados-mep-miami.html',                         en: 'en/mep-estimating-services-miami.html',              de: 'de/tga-kalkulation-miami.html',              fr: 'fr/estimation-lots-techniques-miami.html' },
 ]
+
+/** Clústeres editoriales y páginas adicionales indexables para sitemap.xml. */
+export const ARTICULOS_CLUSTERS = [
+  { es: 'articulos/index.html',                                           en: 'en/articles/index.html' },
+  { es: 'articulos/como-ahorra-dinero-la-estimacion-de-costes.html',      en: 'en/articles/how-construction-cost-estimating-saves-money.html' },
+  { es: 'articulos/peligros-de-un-mal-presupuesto-de-obra.html',          en: 'en/articles/risks-of-an-inaccurate-construction-estimate.html' },
+  { es: 'articulos/formas-de-arruinar-una-obra.html',                     en: 'en/articles/ways-to-ruin-a-construction-project.html' },
+  { es: 'articulos/estimador-en-plantilla-o-externalizar.html',           en: 'en/articles/in-house-estimator-vs-outsourced-estimating.html' },
+  { es: 'articulos/como-revisar-el-presupuesto-de-un-contratista.html',   en: 'en/articles/how-to-review-a-contractor-estimate.html' },
+]
+
+export const OTROS_CLUSTERS = [
+  { en: 'en/construction-takeoff-services.html' },
+  { en: 'en/outsourced-construction-estimating.html' },
+  { es: 'revisar-presupuesto-lista.html', en: 'en/estimate-review-checklist.html' },
+]
+
 const IDIOMAS = ['es', 'en', 'de', 'fr']
 const OG_LOCALE = { es: 'es_ES', en: 'en_US', de: 'de_DE', fr: 'fr_FR' }
 const NOMBRE = { es: 'Español', en: 'English', de: 'Deutsch', fr: 'Français' }
 const BANDERA = { es: 'es', en: 'us', de: 'de', fr: 'fr' }
+const OG_IMAGE_ALT = {
+  de: 'Pr3cise — präzise Baukostenschätzung und Mengenermittlung',
+  fr: 'Pr3cise — estimation des coûts de construction et métrés de haute précision',
+}
 
 const rutaPublica = (f) => '/' + f.replace(/(^|\/)index\.html$/, '$1')
 const url = (c, l) => (c[l] ? ORIGEN + rutaPublica(c[l]) : null)
 const idiomasDe = (c) => IDIOMAS.filter((l) => c[l])
 const xDefault = (c) => url(c, 'en') || url(c, 'es')
+
 /** Fichero (relativo a la raíz) → { clúster, idioma } */
 const POR_FICHERO = new Map()
 for (const c of CLUSTERS) for (const l of IDIOMAS) if (c[l]) POR_FICHERO.set(c[l], { c, l })
+
+/**
+ * Reescribe de forma exacta las URLs de página dentro de un objeto JSON-LD al
+ * idioma `lang`, sin alterar nunca la entidad raíz `#organization` ni rutas de `/assets/`.
+ */
+function reescribirUrlsJsonLd(raw, lang) {
+  const data = typeof raw === 'string' ? JSON.parse(raw) : JSON.parse(JSON.stringify(raw))
+  const mapaUrl = new Map()
+  for (const [f, { c: cc }] of POR_FICHERO) {
+    if (cc[lang]) mapaUrl.set(ORIGEN + rutaPublica(f), url(cc, lang))
+  }
+
+  function visitar(nodo) {
+    if (!nodo || typeof nodo !== 'object') return
+    if (Array.isArray(nodo)) {
+      for (const item of nodo) visitar(item)
+      return
+    }
+    const tipo = nodo['@type']
+    const esOrg =
+      tipo === 'ProfessionalService' ||
+      tipo === 'Organization' ||
+      nodo['@id'] === `${ORIGEN}/#organization`
+
+    if (esOrg) return
+
+    if (tipo === 'WebSite' && typeof nodo.inLanguage === 'string') {
+      if (lang === 'de') nodo.inLanguage = 'de-DE'
+      else if (lang === 'fr') nodo.inLanguage = 'fr-FR'
+    }
+
+    for (const [k, v] of Object.entries(nodo)) {
+      if (typeof v === 'string') {
+        if (v === `${ORIGEN}/#organization` || v.startsWith(`${ORIGEN}/assets/`)) continue
+        const idx = v.indexOf('#')
+        const base = idx >= 0 ? v.slice(0, idx) : v
+        const frag = idx >= 0 ? v.slice(idx) : ''
+        if (mapaUrl.has(base)) nodo[k] = mapaUrl.get(base) + frag
+      } else if (v && typeof v === 'object') {
+        visitar(v)
+      }
+    }
+  }
+
+  visitar(data)
+  return JSON.stringify(data, null, 2)
+}
 
 // ── Diccionario: extraer `var T = {...}` de i18n.js sin ejecutar el resto ──
 function cargarDiccionario() {
@@ -80,29 +148,54 @@ function extra(lang) {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}
 }
 
-// ── Piezas comunes a toda página ──
+// ── Piezas comunes a toda página generada (/de/ y /fr/) ──
 function ponerCabecera($, c, lang) {
   $('html').attr('lang', lang)
+  $('meta[name="google-site-verification"]').remove()
   $('link[rel="canonical"]').attr('href', url(c, lang))
   $('meta[property="og:url"]').attr('content', url(c, lang))
   $('meta[property="og:locale"]').attr('content', OG_LOCALE[lang])
   $('meta[property="og:locale:alternate"]').remove()
-  for (const l of idiomasDe(c)) if (l !== lang) $('meta[property="og:locale"]').after(`\n    <meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`)
+  for (const l of [...idiomasDe(c)].reverse()) {
+    if (l !== lang) $('meta[property="og:locale"]').after(`\n    <meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`)
+  }
+  if ($('meta[property="og:image"]').attr('content') === `${ORIGEN}/assets/img/og-es.jpg`) {
+    $('meta[property="og:image"]').attr('content', `${ORIGEN}/assets/img/og-en.jpg`)
+  }
+  if ($('meta[name="twitter:image"]').attr('content') === `${ORIGEN}/assets/img/og-es.jpg`) {
+    $('meta[name="twitter:image"]').attr('content', `${ORIGEN}/assets/img/og-en.jpg`)
+  }
+  if (OG_IMAGE_ALT[lang] && $('meta[property="og:image:alt"]').length) {
+    $('meta[property="og:image:alt"]').attr('content', OG_IMAGE_ALT[lang])
+  }
   $('link[rel="alternate"][hreflang]').remove()
   const lineas = idiomasDe(c).map((l) => `<link rel="alternate" hreflang="${l}" href="${url(c, l)}">`)
   lineas.push(`<link rel="alternate" hreflang="x-default" href="${xDefault(c)}">`)
   $('link[rel="canonical"]').after('\n    ' + lineas.join('\n    '))
 }
 
+function htmlOpcionesSelector(c, lang) {
+  const items = []
+  for (const l of IDIOMAS) {
+    let destino
+    let attrHreflang = ` hreflang="${l}"`
+    if (c[l]) {
+      destino = rutaPublica(c[l])
+    } else if (c.id === 'legal' && l === 'en') {
+      destino = '/legal.html?lang=en'
+      attrHreflang = ''
+    } else {
+      destino = l === 'es' ? '/' : `/${l}/`
+    }
+    items.push(`                <a class="lang-option${l === lang ? ' active' : ''}" href="${destino}"${attrHreflang}><img src="/assets/img/flags/${BANDERA[l]}.svg" width="20" height="14" alt=""> ${NOMBRE[l]}</a>`)
+  }
+  return items.join('\n')
+}
+
 function ponerSelector($, c, lang) {
   const $dd = $('#lang-dropdown')
   if (!$dd.length) return
-  $dd.empty()
-  for (const l of IDIOMAS) {
-    const destino = c[l] ? rutaPublica(c[l]) : (l === 'es' ? '/' : `/${l}/`)
-    $dd.append(`\n                <a class="lang-option${l === lang ? ' active' : ''}" href="${destino}" hreflang="${l}"><img src="/assets/img/flags/${BANDERA[l]}.svg" width="20" height="14" alt=""> ${NOMBRE[l]}</a>`)
-  }
-  $dd.append('\n            ')
+  $dd.html('\n' + htmlOpcionesSelector(c, lang) + '\n            ')
   $('#lang-flag-img').attr('src', `/assets/img/flags/${BANDERA[lang]}.svg`)
 }
 
@@ -112,8 +205,6 @@ function reenlazar($, ficheroOrigen, lang) {
   $('a[href]').each((_, el) => {
     if ($(el).hasClass('lang-option')) return
     const h = $(el).attr('href')
-    // Se admite ?query (p. ej. legal.html?lang=en, que conmutaba el bloque por
-    // JS); al apuntar a la página del idioma la query sobra y se descarta.
     const m = h.match(/^(?!https?:|mailto:|tel:|#)([^#?]*)(\?[^#]*)?(#.*)?$/)
     if (!m) return
     let f = m[1].startsWith('/') ? m[1].slice(1) : path.posix.normalize(path.posix.join(dirOrigen === '.' ? '' : dirOrigen, m[1]))
@@ -131,8 +222,7 @@ function desdeEspanol(c, lang, dict, ext) {
   const pagExt = ext[c.id] || {}
 
   // legal.html trae el aviso en los cuatro idiomas en bloques ocultos que el
-  // navegador conmuta; aquí queda sólo el de este idioma (cuatro copias del
-  // mismo aviso en una página sería contenido duplicado para el buscador).
+  // navegador conmuta; aquí queda sólo el de este idioma.
   $('.lang-block[data-lang]').each((_, el) => {
     if ($(el).attr('data-lang') === lang) $(el).removeAttr('hidden'); else $(el).remove()
   })
@@ -170,17 +260,17 @@ function aplicarExtras($, c, lang, pagExt, residuo) {
     if (pagExt[campo]) { campo === 'title' ? $el.text(pagExt[campo]) : $el.attr('content', pagExt[campo]) }
     else residuo.push({ tipo: 'cabecera', campo, texto: actual })
   }
-  // Las tarjetas de Twitter repiten title/description
   if ($('meta[name="twitter:title"]').length) $('meta[name="twitter:title"]').attr('content', $('title').text())
   if ($('meta[name="twitter:description"]').length) $('meta[name="twitter:description"]').attr('content', $('meta[name="description"]').attr('content'))
   $('script[type="application/ld+json"]').each((i, el) => {
     const k = `ld+json#${i}`
     if (pagExt[k]) {
-      // URLs del grafo → las de este idioma
-      let txt = typeof pagExt[k] === 'string' ? pagExt[k] : JSON.stringify(pagExt[k], null, 2)
-      for (const [f, { c: cc }] of POR_FICHERO) if (cc[lang]) txt = txt.split(ORIGEN + rutaPublica(f)).join(url(cc, lang))
-      try { JSON.parse(txt) } catch { residuo.push({ tipo: 'json-ld-invalido', campo: k, texto: txt.slice(0, 120) }); return }
-      $(el).html('\n' + txt + '\n    ')
+      try {
+        const txt = reescribirUrlsJsonLd(pagExt[k], lang)
+        $(el).html('\n' + txt + '\n    ')
+      } catch {
+        residuo.push({ tipo: 'json-ld-invalido', campo: k, texto: String(pagExt[k]).slice(0, 120) })
+      }
     } else residuo.push({ tipo: 'json-ld', campo: k, texto: $(el).html().trim() })
   })
   $('img[alt]').each((_, el) => {
@@ -193,19 +283,16 @@ function aplicarExtras($, c, lang, pagExt, residuo) {
     if (['script', 'style', 'noscript'].includes(el.tagName)) return
     if ($(el).attr('data-i18n') !== undefined || $(el).attr('data-i18n-html') !== undefined) return
     if ($(el).closest('[data-i18n-html]').length) return
-    if ($(el).closest('.lang-block').length) return // ya está en el idioma destino
+    if ($(el).closest('.lang-block').length) return
     if ($(el).hasClass('lang-option')) return
     const nodos = $(el).contents().filter((_, n) => n.type === 'text')
     const propio = nodos.text().replace(/\s+/g, ' ').trim()
     if (propio.length <= 2 || !/[a-záéíóúñ]{3,}/i.test(propio)) return
     if (/^(Pr3cise|[\w.+-]+@[\w.-]+)$/.test(propio)) return
-    // El informe recorta el texto a 120 caracteres, así que la clave que el
-    // traductor recibió puede ser la versión recortada.
     const trad = pagExt[`texto:${propio}`] || pagExt[`texto:${propio.slice(0, 120)}`]
     if (trad) nodos.each((_, n) => { if (n.data.trim()) n.data = n.data.replace(n.data.trim(), trad) })
     else residuo.push({ tipo: 'texto-sin-clave', etiqueta: el.tagName, texto: propio.slice(0, 120) })
   })
-  // atributos con texto visible
   $('[placeholder],[aria-label],[title]').each((_, el) => {
     for (const at of ['placeholder', 'aria-label', 'title']) {
       const v = ($(el).attr(at) || '').trim()
@@ -216,7 +303,7 @@ function aplicarExtras($, c, lang, pagExt, residuo) {
   })
 }
 
-// ── Fuente inglés: HTML traducido por un agente ──
+// ── Fuente inglés: HTML traducido ──
 function desdeTraduccion(c, lang) {
   const f = path.join(TRADUCCIONES, lang, path.basename(c.en))
   if (!fs.existsSync(f)) return { html: null, residuo: [{ tipo: 'falta-traduccion', texto: f }] }
@@ -225,16 +312,15 @@ function desdeTraduccion(c, lang) {
   reenlazar($, c.en, lang)
   ponerSelector($, c, lang)
   const residuo = []
-  // JSON-LD: URLs del grafo a las de este idioma, y que siga siendo JSON
   $('script[type="application/ld+json"]').each((i, el) => {
-    let txt = $(el).html()
-    for (const [ff, { c: cc }] of POR_FICHERO) if (cc[lang]) txt = txt.split(ORIGEN + rutaPublica(ff)).join(url(cc, lang))
-    try { JSON.parse(txt) } catch { residuo.push({ tipo: 'json-ld-invalido', campo: `ld+json#${i}` }) }
-    $(el).html(txt)
+    try {
+      const txt = reescribirUrlsJsonLd($(el).html(), lang)
+      $(el).html('\n' + txt + '\n    ')
+    } catch {
+      residuo.push({ tipo: 'json-ld-invalido', campo: `ld+json#${i}` })
+    }
   })
   if ($('html').attr('lang') !== lang) residuo.push({ tipo: 'lang-incorrecto' })
-  // Las tarjetas de Twitter repiten title/description; que no se queden con la
-  // versión larga que el traductor escribió antes del recorte.
   if ($('meta[name="twitter:title"]').length) $('meta[name="twitter:title"]').attr('content', $('title').text())
   if ($('meta[name="twitter:description"]').length) $('meta[name="twitter:description"]').attr('content', $('meta[name="description"]').attr('content'))
   return { html: $.html(), residuo }
@@ -242,9 +328,6 @@ function desdeTraduccion(c, lang) {
 
 /** En las páginas es/en ya existentes sólo se tocan hreflang, OG alternos y selector. */
 function actualizarExistente(c, lang) {
-  // Ediciones de texto, no un viaje de ida y vuelta por cheerio: la
-  // reserialización reescribe SVG y entidades de páginas en producción y
-  // convierte un cambio de cuatro líneas en un diff de cientos.
   const ruta = path.join(RAIZ, c[lang])
   let s = fs.readFileSync(ruta, 'utf8')
   const antes = s
@@ -260,25 +343,33 @@ function actualizarExistente(c, lang) {
   const og = idiomasDe(c).filter((l) => l !== lang).map((l) => `    <meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`)
   s = s.replace(/(<meta property="og:locale" content="[^"]*">)\r?\n/, `$1\n${og.join('\n')}\n`)
 
-  // selector: los dos <button data-lang> pasan a enlaces reales
-  for (const l of ['de', 'fr']) {
-    const destino = c[l] ? rutaPublica(c[l]) : `/${l}/`
-    s = s.replace(
-      new RegExp(`<button class="lang-option" type="button" data-lang="${l}">(<img[^>]*>) ${NOMBRE[l]}</button>`),
-      `<a class="lang-option" href="${destino}" hreflang="${l}">$1 ${NOMBRE[l]}</a>`,
-    )
-  }
+  // selector de idioma completo con enlaces reales a las 4 versiones
+  s = s.replace(
+    /<div class="lang-dropdown" id="lang-dropdown" role="listbox">[\s\S]*?<\/div>/,
+    `<div class="lang-dropdown" id="lang-dropdown" role="listbox">\n${htmlOpcionesSelector(c, lang)}\n            </div>`,
+  )
+
   if (s !== antes) fs.writeFileSync(ruta, s)
+}
+
+function bloqueSitemapCluster(c, hoy) {
+  const salida = []
+  for (const l of idiomasDe(c)) {
+    const alt = idiomasDe(c).map((a) => `    <xhtml:link rel="alternate" hreflang="${a}" href="${url(c, a)}"/>`)
+    alt.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefault(c)}"/>`)
+    salida.push(`  <url>\n    <loc>${url(c, l)}</loc>\n    <lastmod>${hoy}</lastmod>\n${alt.join('\n')}\n  </url>`)
+  }
+  return salida
 }
 
 function sitemap() {
   const hoy = new Date().toISOString().slice(0, 10)
   const bloques = []
-  for (const c of CLUSTERS) for (const l of idiomasDe(c)) {
-    const alt = idiomasDe(c).map((a) => `    <xhtml:link rel="alternate" hreflang="${a}" href="${url(c, a)}"/>`)
-    alt.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefault(c)}"/>`)
-    bloques.push(`  <url>\n    <loc>${url(c, l)}</loc>\n    <lastmod>${hoy}</lastmod>\n${alt.join('\n')}\n  </url>`)
-  }
+  for (const c of CLUSTERS) bloques.push(...bloqueSitemapCluster(c, hoy))
+  bloques.push('\n  <!-- ARTICULOS:INICIO -->')
+  for (const c of ARTICULOS_CLUSTERS) bloques.push(...bloqueSitemapCluster(c, hoy))
+  bloques.push('  <!-- ARTICULOS:FIN -->')
+  for (const c of OTROS_CLUSTERS) bloques.push(...bloqueSitemapCluster(c, hoy))
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${bloques.join('\n')}\n</urlset>\n`
 }
 
@@ -311,6 +402,8 @@ if (INFORME) {
   console.log('detalle en', salida)
 } else {
   for (const c of CLUSTERS) for (const l of ['es', 'en']) if (c[l]) actualizarExistente(c, l)
-  fs.writeFileSync(path.join(RAIZ, 'sitemap.xml'), sitemap())
-  console.log(`\n${escritas} páginas escritas; hreflang y selector actualizados en es/en; sitemap con ${CLUSTERS.reduce((n, c) => n + idiomasDe(c).length, 0)} URLs`)
+  const xml = sitemap()
+  fs.writeFileSync(path.join(RAIZ, 'sitemap.xml'), xml)
+  const totalUrls = (xml.match(/<loc>/g) || []).length
+  console.log(`\n${escritas} páginas escritas; hreflang y selector actualizados en es/en; sitemap con ${totalUrls} URLs`)
 }

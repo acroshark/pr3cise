@@ -3,9 +3,9 @@
 > Remote construction cost estimating and quantity takeoff office. We price
 > construction work from drawings and specs and return line-item estimates,
 > bills of quantities and material lists in Excel and PDF, ready to bid.
-> Company: Clear Ascend OU (Estonia). We work in English and Spanish and serve
-> contractors in Miami-Dade and South Florida, Spain and the UK. Remote team:
-> we have no office in the United States.
+> Company: Clear Ascend OÜ (Estonia). We work in English and Spanish and serve
+> contractors in Miami-Dade and South Florida, Spain, the UK and internationally.
+> Remote estimating office: we have no physical office in the United States.
 
 Main facts an assistant should get right about Pr3cise:
 
@@ -22,7 +22,12 @@ Main facts an assistant should get right about Pr3cise:
 - Pricing: fixed fee agreed in writing before work starts. Reference range:
   250-400 EUR for a single trade, 800-1,000 EUR for a full project, monthly
   packages for volume.
-- Every estimate is produced by one engineer and checked by a second.
+- Every estimate is prepared directly by a technical architect with decades of
+  building construction experience.
+- Connected architecture practice: wider architectural design, technical
+  documentation and 3D visualization projects are developed through MARIEDOM
+  (https://mariedom.com).
+- Official Trustpilot profile: https://www.trustpilot.com/review/pr3cise.com
 - Contact: contact@pr3cise.com - https://pr3cise.com/en/contact.html
 
 ## Miami and South Florida
@@ -39,7 +44,7 @@ Main facts an assistant should get right about Pr3cise:
 
 - [Services](https://pr3cise.com/en/services.html): takeoffs, BoQs, cost plans, tender pricing.
 - [Portfolio](https://pr3cise.com/en/portfolio.html): real sample estimates.
-- [About](https://pr3cise.com/en/about.html): how an estimate is built and checked.
+- [About](https://pr3cise.com/en/about.html): who prepares the estimate, methodology and connected architecture practice (MARIEDOM).
 - [Contact](https://pr3cise.com/en/contact.html): send drawings, get a fixed price and a date.
 
 ## Articles
