@@ -338,9 +338,10 @@ function actualizarExistente(c, lang) {
   hl.push(`    <link rel="alternate" hreflang="x-default" href="${xDefault(c)}">`)
   s = s.replace(/(<link rel="canonical" href="[^"]*">)\r?\n/, `$1\n${hl.join('\n')}\n`)
 
-  // og:locale:alternate: uno por idioma hermano, detrás de og:locale
+  // og:locale:alternate: uno por idioma hermano cuyo locale difiera del og:locale real
   s = s.replace(/[ \t]*<meta property="og:locale:alternate" content="[^"]*">\r?\n/g, '')
-  const og = idiomasDe(c).filter((l) => l !== lang).map((l) => `    <meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`)
+  const ogActual = (s.match(/<meta property="og:locale" content="([^"]*)">/) || [])[1]
+  const og = idiomasDe(c).map((l) => OG_LOCALE[l]).filter((loc) => loc !== ogActual).map((loc) => `    <meta property="og:locale:alternate" content="${loc}">`)
   s = s.replace(/(<meta property="og:locale" content="[^"]*">)\r?\n/, `$1\n${og.join('\n')}\n`)
 
   // selector de idioma completo con enlaces reales a las 4 versiones
