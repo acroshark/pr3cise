@@ -109,7 +109,7 @@
     transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 .art-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -20px rgba(15, 23, 42, .45); border-color: var(--accent-gold); }
-.art-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.art-card img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
 .art-card-body { padding: 1.15rem 1.25rem 1.35rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
 /* h3 en "Sigue leyendo", h2 en el índice de la sección: mismo aspecto */
 .art-card-body h2, .art-card-body h3 { font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.12rem; line-height: 1.35; margin: 0; }
@@ -125,6 +125,9 @@
 }
 .art-index-head p { font-size: 1.1rem; line-height: 1.65; color: var(--text-main); margin: 0; }
 .art-index-grid { max-width: 1100px; margin: 0 auto; }
+/* 2026-11-08 | Índice de artículos: la fila incompleta va centrada (5 artículos = 3 + 2 centrados) */
+.art-index-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.art-index-grid > * { flex: 0 1 calc((100% - 2 * 1.6rem) / 3); min-width: min(100%, 280px); }
 
 @media (max-width: 640px) {
     .art-wrap { padding: 2rem 1rem 3rem; }

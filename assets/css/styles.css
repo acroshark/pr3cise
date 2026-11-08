@@ -6501,6 +6501,15 @@ h3 + .media-split:not(.container) {
     margin-bottom: 0;
 }
 
+/* Card grids never leave an orphan row on desktop: 3, 6 or 9 cards go 3 per row (3+3, not 4+2) */
+@media (min-width: 993px) {
+    .grid-tecnico:has(> :nth-child(3):last-child),
+    .grid-tecnico:has(> :nth-child(6):last-child),
+    .grid-tecnico:has(> :nth-child(9):last-child) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 /* Long German/French trade names must wrap inside the 4-column card grid */
 .card-ejemplo h3 {
     overflow-wrap: anywhere;
@@ -7133,5 +7142,131 @@ h3 + .media-split:not(.container) {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+}
+
+/* ── Opiniones: reseña real de Trustpilot, copiada tal cual y enlazada al original (2026-11-08) ── */
+.tp-reviews {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.tp-review {
+    margin: 0;
+    padding: clamp(24px, 4vw, 40px);
+    background: #fff;
+    border: 1px solid var(--line, #E2E8F0);
+    border-radius: var(--r-panel, 20px);
+    box-shadow: var(--sh-media, 0 16px 36px -20px rgba(15, 23, 42, 0.32));
+}
+
+.tp-review-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    margin-bottom: 18px;
+}
+
+.tp-stars {
+    display: inline-flex;
+    gap: 3px;
+}
+
+.tp-star {
+    display: inline-grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    background: #00B67A;
+    border-radius: 3px;
+}
+
+.tp-star svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+
+.tp-review-source {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--ink-soft, #526075);
+}
+
+.tp-review-quote {
+    margin: 0;
+}
+
+.tp-review-title {
+    margin: 0 0 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+    line-height: 1.3;
+    color: var(--navy, #0F172A);
+    text-wrap: balance;
+}
+
+.tp-review-quote p:not(.tp-review-title) {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--ink, #334155);
+    text-wrap: pretty;
+}
+
+.tp-review-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 16px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line, #E2E8F0);
+    font-size: 0.9375rem;
+    color: var(--ink-soft, #526075);
+}
+
+.tp-review-author {
+    font-weight: 600;
+    color: var(--navy, #0F172A);
+}
+
+.tp-review-note {
+    font-style: italic;
+}
+
+.tp-review-meta a {
+    margin-left: auto;
+    color: var(--gold-ink, #7D5F30);
+    text-underline-offset: 3px;
+}
+
+.tp-reviews-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 28px;
+    margin: 18px 0 0;
+    font-size: 0.9375rem;
+}
+
+.tp-reviews-more a {
+    color: var(--ink, #334155);
+    text-underline-offset: 3px;
+}
+
+.tp-review-meta a:focus-visible,
+.tp-reviews-more a:focus-visible {
+    outline: 2px solid var(--gold, #B08D57);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+    .tp-review-meta a {
+        margin-left: 0;
+        flex-basis: 100%;
     }
 }
