@@ -65,24 +65,12 @@
       },
       "areaServed": [
         {
-          "@type": "Place",
-          "name": "Worldwide"
+          "@type": "State",
+          "name": "Florida"
         },
         {
-          "@type": "Country",
-          "name": "United States"
-        },
-        {
-          "@type": "Country",
-          "name": "United Kingdom"
-        },
-        {
-          "@type": "Country",
-          "name": "Spain"
-        },
-        {
-          "@type": "Country",
-          "name": "United Arab Emirates"
+          "@type": "AdministrativeArea",
+          "name": "Miami-Dade County, Florida"
         },
         {
           "@type": "Place",
@@ -90,7 +78,7 @@
         },
         {
           "@type": "Place",
-          "name": "Latin America"
+          "name": "Worldwide"
         }
       ],
       "availableLanguage": [
@@ -135,7 +123,7 @@
           "name": "What format do you deliver a material takeoff in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pr3cise delivers an Excel workbook you can filter and formula against, a PDF of the same content, and the marked-up drawings showing where each quantity came from. Coding follows your market: CSI MasterFormat for North America, NRM2 or SMM for a UK bill of quantities, capítulos y partidas for Spain, or your own bid template."
+            "text": "Pr3cise delivers an Excel workbook you can filter and formula against, a PDF of the same content, and the marked-up drawings showing where each quantity came from. Coding follows your tender: CSI MasterFormat, an NRM2 or SMM bill of quantities, capítulos y partidas (BC3), or your own bid template."
           }
         },
         {
@@ -143,7 +131,7 @@
           "name": "Do you offer takeoff services near me?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pr3cise works remotely for contractors in the United States, the United Kingdom, Spain, the Gulf and the rest of Europe, in English and Spanish. Measurement happens on the drawings, not on site, so distance changes nothing — and a team several time zones ahead measures your set overnight."
+            "text": "Pr3cise works remotely, primarily for contractors in the State of Florida and for clients across Europe and around the world, with no border limits, in English and Spanish. Measurement happens on the drawings, not on site, so distance changes nothing — and a team several time zones ahead measures your set overnight."
           }
         }
       ]
@@ -158,7 +146,7 @@
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo.png?v=2">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo.png?v=2">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20261107">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20261108c">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -188,6 +176,10 @@
   },
   "areaServed": [
     {
+      "@type": "State",
+      "name": "Florida"
+    },
+    {
       "@type": "AdministrativeArea",
       "name": "Miami-Dade County, Florida"
     },
@@ -200,20 +192,12 @@
       "name": "Palm Beach County, Florida"
     },
     {
-      "@type": "State",
-      "name": "Florida"
+      "@type": "Place",
+      "name": "Europe"
     },
     {
-      "@type": "Country",
-      "name": "United States"
-    },
-    {
-      "@type": "Country",
-      "name": "España"
-    },
-    {
-      "@type": "Country",
-      "name": "United Kingdom"
+      "@type": "Place",
+      "name": "Worldwide"
     }
   ],
   "availableLanguage": [
@@ -274,7 +258,7 @@
             <div class="container">
                 <h1>Construction takeoff services, wherever you are building</h1>
                 <p class="section-subtitle">A construction takeoff is the measured schedule of quantities a drawing set contains, with nothing priced. Pr3cise produces quantity and material takeoffs from your drawings, traceable sheet by sheet, in Excel and PDF, coded to CSI MasterFormat, NRM, or the way your own market measures.</p>
-                <p>Pr3cise is a remote estimating office — Clear Ascend OÜ, registered in Estonia — that measures drawings for general contractors, subcontractors, developers and architects in the United States, the United Kingdom, Spain, the Gulf and the rest of Europe, in English and Spanish. A takeoff is normally delivered within 24 to 72 hours of a complete drawing set, at a fixed fee per project agreed in writing before work starts. Every takeoff is prepared directly by a technical architect with decades of building construction experience, and arrives with the colour-coded markups that show which shape on which sheet every quantity came from.</p>
+                <p>Pr3cise is a remote estimating office — Clear Ascend OÜ, registered in Estonia — that measures drawings for general contractors, subcontractors, developers and architects, primarily in the State of Florida and across Europe and the rest of the world, in English and Spanish. A takeoff is normally delivered within 24 to 72 hours of a complete drawing set, at a fixed fee per project agreed in writing before work starts. Every takeoff is prepared directly by a technical architect with decades of building construction experience, and arrives with the colour-coded markups that show which shape on which sheet every quantity came from.</p>
                 <p>Most people looking for <strong>construction takeoff services</strong> have a drawing set, a tender date, and an estimator already pricing two other jobs. They need the measurement done properly, in a form the rest of the bid can be built on.</p>
                 <p>That is the whole service. You send the drawings, a technical architect measures them sheet by sheet, and the quantities come back with markups showing where every number came from. No rates attached unless you ask, and nothing rolled into a lump sum to cover a gap.</p>
                 <p>Pr3cise is an estimating office, not a staffing agency and not a software licence: you send a project, a technical architect measures it, and the quantities come back — <a href="/en/about.html">how the office works</a> — and you can read real deliverables in <a href="/en/portfolio.html">the Pr3cise sample estimates and takeoffs</a>.</p>
@@ -331,30 +315,37 @@
             <div class="container">
                 <h2 id="deliver-h">Deliverable formats: Excel, PDF and the coding your market tenders in</h2>
                 <div class="methodology-box">
-                    <ul class="methodology-list">
-                        <li><strong>An Excel workbook and a PDF of the same content.</strong> One row per measured item, quantity, unit and sheet reference in their own columns, so you can filter it, pivot it or send a trade out to a supplier.</li>
-                        <li><strong>The marked-up drawings.</strong> Every measured shape colour-coded on the sheet it came from. That is what makes a quantity auditable: pick a line, find the shape.</li>
-                        <li><strong>CSI MasterFormat coding for North American work</strong>, division by division, so the takeoff drops into the structure your bid and accounting software already expects.</li>
-                        <li><strong>NRM2 or SMM measurement for United Kingdom tenders</strong>, written up as a bill of quantities with the descriptions a quantity surveyor expects — or NRM1 at cost-plan stage.</li>
-                        <li><strong>Mediciones in the Spanish convention</strong> — capítulos and partidas, each partida carrying its measurement lines with the uds × long × anch × alt breakdown.</li>
-                        <li><strong>A bill of quantities for Gulf tenders</strong>, measured to POMI or NRM2 as the documents require — what most FIDIC-based contracts in the United Arab Emirates run on.</li>
-                        <li><strong>Imperial or metric, your choice</strong>, consistent throughout, plus a written scope and exclusion list: what was measured, what was not, what the drawings left ambiguous.</li>
-                    </ul>
-                    <p>If you have your own template, send it — fitting a takeoff into a form your team already reads beats anything Pr3cise would choose.</p>
+                    <div class="media-split">
+                        <div class="media-split__text">
+                            <ul class="methodology-list">
+                                <li><strong>An Excel workbook and a PDF of the same content.</strong> One row per measured item, quantity, unit and sheet reference in their own columns, so you can filter it, pivot it or send a trade out to a supplier.</li>
+                                <li><strong>The marked-up drawings.</strong> Every measured shape colour-coded on the sheet it came from. That is what makes a quantity auditable: pick a line, find the shape.</li>
+                                <li><strong>CSI MasterFormat coding</strong>, division by division, so the takeoff drops into the structure your bid and accounting software already expects.</li>
+                                <li><strong>NRM2 or SMM measurement</strong> where the tender calls for a bill of quantities, written up with the descriptions a quantity surveyor expects — or NRM1 at cost-plan stage.</li>
+                                <li><strong>Mediciones by capítulos and partidas (BC3)</strong> — each partida carrying its measurement lines with the uds × long × anch × alt breakdown.</li>
+                                <li><strong>A bill of quantities measured to POMI or NRM2</strong> for FIDIC-based contracts, as the documents require.</li>
+                                <li><strong>Imperial or metric, your choice</strong>, consistent throughout, plus a written scope and exclusion list: what was measured, what was not, what the drawings left ambiguous.</li>
+                            </ul>
+                            <p>If you have your own template, send it — fitting a takeoff into a form your team already reads beats anything Pr3cise would choose.</p>
+                        </div>
+                        <figure class="media-split__media">
+                            <img src="/assets/img/6.webp?v=20261108" width="1096" height="886" alt="Sample Pr3cise material takeoff: item codes, units, base and waste-adjusted quantities, and totals" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
                 </div>
                 <div class="table-responsive">
                     <table class="table-tecnica">
-                        <caption>How Pr3cise delivers a takeoff, market by market</caption>
+                        <caption>How Pr3cise delivers a takeoff, standard by standard</caption>
                         <thead>
-                            <tr><th scope="col">Market</th><th scope="col">Measurement standard or structure</th><th scope="col">Delivered as</th></tr>
+                            <tr><th scope="col">Standard or structure</th><th scope="col">Typical use</th><th scope="col">Delivered as</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>United States and Canada</td><td>CSI MasterFormat, division by division</td><td>Excel and PDF, imperial or metric, plus the marked-up drawings</td></tr>
-                            <tr><td>United Kingdom and Ireland</td><td>NRM2 or SMM bill of quantities; NRM1 at cost-plan stage</td><td>Excel and PDF, plus the marked-up drawings</td></tr>
-                            <tr><td>Spain and Spanish-speaking markets</td><td>Capítulos y partidas, each partida carrying its uds × long × anch × alt measurement lines</td><td>BC3 as well as Excel and PDF, plus the marked-up drawings</td></tr>
-                            <tr><td>United Arab Emirates and the Gulf</td><td>Bill of quantities measured to POMI or NRM2, as the tender documents require</td><td>Excel and PDF, plus the marked-up drawings</td></tr>
-                            <tr><td>Rest of Europe</td><td>The structure the tender asks for, priced against the Eurocodes and their national annexes when rates are added</td><td>Excel and PDF, metric, plus the marked-up drawings</td></tr>
-                            <tr><td>Any market</td><td>Your own bid template, when you send one</td><td>Your template, plus Excel, PDF and the marked-up drawings</td></tr>
+                            <tr><td>CSI MasterFormat</td><td>Division-by-division takeoffs that drop into your bid and accounting software</td><td>Excel and PDF, imperial or metric, plus the marked-up drawings</td></tr>
+                            <tr><td>NRM2 or SMM bill of quantities</td><td>Tenders that call for a bill of quantities; NRM1 at cost-plan stage</td><td>Excel and PDF, plus the marked-up drawings</td></tr>
+                            <tr><td>Capítulos y partidas</td><td><em>Mediciones y presupuestos</em>, each partida carrying its uds × long × anch × alt measurement lines</td><td>BC3 as well as Excel and PDF, plus the marked-up drawings</td></tr>
+                            <tr><td>POMI or NRM2 bill of quantities</td><td>FIDIC-based tenders, as the documents require</td><td>Excel and PDF, plus the marked-up drawings</td></tr>
+                            <tr><td>Eurocodes and their national annexes</td><td>European projects, in the structure the tender asks for, when rates are added</td><td>Excel and PDF, metric, plus the marked-up drawings</td></tr>
+                            <tr><td>Your own bid template</td><td>Whenever you send one</td><td>Your template, plus Excel, PDF and the marked-up drawings</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -403,7 +394,7 @@
             <div class="container">
                 <h2 id="time-h">Turnaround, and what a time zone actually buys you</h2>
                 <p>A takeoff comes back in 24 to 72 hours. Which end depends on the set, not on what you are willing to pay: a single trade on a clean, fully scheduled set sits at the fast end, a full multi-trade package with coordination problems at the slow one. The date and the fixed fee are agreed before work starts — no hourly billing.</p>
-                <p>The time zone works for you. Our day starts seven hours ahead of US Eastern Time for most of the year (six hours during seasonal DST transitions) and an hour ahead of Madrid, so a set sent at the end of a North American afternoon is measured overnight; for clients in the Gulf our working day overlaps yours, and a question raised in the morning is answered the same afternoon. Which is why it is worth saying if the tender closes on Friday — we would rather decline than hand back a rushed measurement.</p>
+                <p>The time zone works for you. Our day starts seven hours ahead of US Eastern Time for most of the year (six hours during seasonal DST transitions) and an hour ahead of Central European Time, so a set sent at the end of a Florida afternoon is measured overnight; for clients in Europe and further east our working day overlaps yours, and a question raised in the morning is answered the same afternoon. Which is why it is worth saying if the tender closes on Friday — we would rather decline than hand back a rushed measurement.</p>
             </div>
         </section>
 
@@ -411,8 +402,8 @@
             <div class="container">
                 <h2 id="where-h">Takeoff services near you — which, in this trade, means anywhere</h2>
                 <p>Measurement happens on the drawings, not on site. That is why <strong>takeoff services near me</strong> behaves differently here than for a plumber: it really asks whether a firm covers your market, knows the code your project is permitted under, and delivers in the format your tender demands.</p>
-                <p>We work for contractors across the <strong>United States</strong>, the <strong>United Kingdom</strong>, <strong>Spain</strong>, the <strong>United Arab Emirates</strong> and the wider Gulf, and the rest of <strong>Europe</strong>, in English and Spanish. What changes between markets is not the measurement — a cubic metre of concrete is a cubic metre everywhere — but the classification, the units, the description conventions and the rules on what is measured net and what gross.</p>
-                <p>The United States is our largest English-language market, and South Florida is where most of that work sits: projects in Miami-Dade fall inside the High-Velocity Hurricane Zone, which changes assemblies and therefore quantities throughout a building, so it has <a href="/en/miami-construction-estimating-services.html">its own page on construction estimating in Miami</a>. That is a specialism, not a boundary — a job in Manchester, Madrid, Dubai or Warsaw gets the same method and the same direct technical architect measurement. If you need a standing arrangement rather than one package, read <a href="/en/outsourced-construction-estimating.html">the case for outsourced construction estimating</a>.</p>
+                <p>We work primarily for contractors in the <strong>State of Florida</strong>, and for clients across <strong>Europe</strong> and around the world, with no border limits, in English and Spanish. What changes between markets is not the measurement — a cubic metre of concrete is a cubic metre everywhere — but the classification, the units, the description conventions and the rules on what is measured net and what gross.</p>
+                <p>Florida is our primary focus, and South Florida is where most of that work sits: projects in Miami-Dade fall inside the High-Velocity Hurricane Zone, which changes assemblies and therefore quantities throughout a building, so it has <a href="/en/miami-construction-estimating-services.html">its own page on construction estimating in Miami</a>. That is a specialism, not a boundary — a job anywhere in Europe or elsewhere in the world gets the same method and the same direct technical architect measurement. If you need a standing arrangement rather than one package, read <a href="/en/outsourced-construction-estimating.html">the case for outsourced construction estimating</a>.</p>
             </div>
         </section>
 
@@ -446,14 +437,14 @@
                             <span>What format do you deliver a material takeoff in?</span>
                             <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
-                        <div class="accordion-content"><p>Pr3cise delivers an Excel workbook you can filter and formula against, a PDF of the same content, and the marked-up drawings showing where each quantity came from. Coding follows your market: CSI MasterFormat for North America, NRM2 or SMM for a UK bill of quantities, capítulos y partidas for Spain, or your own bid template.</p></div>
+                        <div class="accordion-content"><p>Pr3cise delivers an Excel workbook you can filter and formula against, a PDF of the same content, and the marked-up drawings showing where each quantity came from. Coding follows your tender: CSI MasterFormat, an NRM2 or SMM bill of quantities, capítulos y partidas (BC3), or your own bid template.</p></div>
                     </div>
                     <div class="accordion-item">
                         <button class="accordion-trigger" type="button" aria-expanded="false">
                             <span>Do you offer takeoff services near me?</span>
                             <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
-                        <div class="accordion-content"><p>Pr3cise works remotely for contractors in the United States, the United Kingdom, Spain, the Gulf and the rest of Europe, in English and Spanish. Measurement happens on the drawings, not on site, so distance changes nothing — and a team several time zones ahead measures your set overnight.</p></div>
+                        <div class="accordion-content"><p>Pr3cise works remotely, primarily for contractors in the State of Florida and for clients across Europe and around the world, with no border limits, in English and Spanish. Measurement happens on the drawings, not on site, so distance changes nothing — and a team several time zones ahead measures your set overnight.</p></div>
                     </div>
                 </div>
             </div>
@@ -469,58 +460,41 @@
             </div>
         </section>
     </main>
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div class="footer-col brand-col">
-            <div class="footer-logo"><a href="/en/">Pr3cise</a></div>
-            <p class="brand-desc">Construction cost estimating, quantity takeoff and bill of quantities (BoQ) services for general contractors, subcontractors, developers and architects. Line-item estimates you can bid or tender from.</p>
+<footer class="site-footer footer-v3">
+    <div class="container footer-v3-inner">
+        <div class="footer-v3-top">
+            <div class="footer-v3-brand">
+                <a href="/en/" class="footer-v3-logo"><img src="/assets/img/logo.png" alt="" width="26" height="26" loading="lazy"><span data-cipher-hover>Pr3cise</span></a>
+                <p>Construction takeoffs and cost estimates for Florida, Europe and the rest of the world.</p>
+            </div>
+            <nav class="footer-v3-nav" aria-label="Footer">
+                <a href="/en/services.html">Services</a>
+                <a href="/en/portfolio.html">Portfolio</a>
+                <a href="/en/about.html">About</a>
+                <a href="/en/miami-construction-estimating-services.html">Florida</a>
+                <a href="/en/articles/">Articles</a>
+                <a href="/en/contact.html">Contact</a>
+            </nav>
+            <div class="footer-v3-contact">
+                <a href="https://wa.me/34722879218" class="footer-v3-chip" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="mailto:contact@pr3cise.com" class="footer-v3-chip">contact@pr3cise.com</a>
+            </div>
         </div>
-
-        <div class="footer-col services-col">
-            <h2 class="footer-h">Featured Services</h2>
-            <ul>
-                <li><a href="/en/mep-estimating-services-miami.html">MEP estimating services</a></li>
-                <li><a href="/en/electrical-estimating-services-miami.html">Electrical estimating services</a></li>
-                <li><a href="/en/plumbing-estimating-services-miami.html">Plumbing estimating services</a></li>
-                <li><a href="/en/fire-protection-estimating-services-miami.html">Fire protection estimating</a></li>
-                <li><a href="/en/concrete-masonry-estimating-services-miami.html">Concrete &amp; masonry estimating</a></li>
-                <li><a href="/en/miami-construction-estimating-services.html">Construction estimating in Miami</a></li>
-                <li><a href="/en/articles/">Construction estimating articles</a></li>
-                <li><a href="/en/estimate-review-checklist.html">Estimate review checklist</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col contact-col">
-            <h2 class="footer-h">Get in touch</h2>
-            <a href="https://wa.me/34722879218" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                <span class="wa-icon" aria-hidden="true">💬</span> <span>Message us on WhatsApp</span>
-            </a>
-            <p class="footer-mail"><a href="mailto:contact@pr3cise.com">contact@pr3cise.com</a></p>
-            <p class="footer-mail"><a href="/" hreflang="es">¿Prefiere español? Ver el sitio en español &rarr;</a></p>
-        </div>
-
-        <div class="footer-col legal-col">
-            <h2 class="footer-h">Legal</h2>
-            <ul>
+        <div class="footer-v3-bottom">
+            <p>&copy; <span id="current-year">2026</span> Pr3cise · Clear Ascend OÜ</p>
+            <ul class="footer-v3-legal">
                 <li><a href="/legal.html?lang=en#aviso">Legal notice</a></li>
-                <li><a href="/legal.html?lang=en#privacidad">Privacy policy</a></li>
-                <li><a href="/legal.html?lang=en#cookies">Cookie policy</a></li>
-                <li><a href="/legal.html?lang=en#terminos">Terms &amp; conditions</a></li>
+                <li><a href="/legal.html?lang=en#privacidad">Privacy</a></li>
+                <li><a href="/legal.html?lang=en#cookies">Cookies</a></li>
+                <li><a href="/legal.html?lang=en#terminos">Terms</a></li>
             </ul>
         </div>
     </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <p>&copy; <span id="current-year">2026</span> Pr3cise — Clear Ascend OÜ · Construction cost estimating services.</p>
-        </div>
-    </div>
-
     <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 </footer>
 
-<script src="/assets/js/main.js?v=20261107"></script>
-<script src="/assets/js/nav-scramble.js?v=20261107"></script>
-    <script src="/assets/js/medir.js?v=20260922" defer></script>
+<script src="/assets/js/main.js?v=20261108c"></script>
+<script src="/assets/js/nav-scramble.js?v=20261108c"></script>
+    <script src="/assets/js/medir.js?v=20261108c" defer></script>
 </body>
 </html>

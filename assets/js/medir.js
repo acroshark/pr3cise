@@ -49,7 +49,10 @@
     if (href.indexOf('mailto:') === 0) return evento('correo', href.replace('mailto:', ''));
     if (href.indexOf('tel:') === 0) return evento('telefono', href.replace('tel:', ''));
     if (a.classList && a.classList.contains('btn-cta')) {
-      return evento('cta', (a.textContent || '').trim().slice(0, 60) + ' -> ' + (href || 'submit'));
+      // 2026-11-08 | El efecto de cifrado (nav-scramble.js) cambia el texto del botón
+      // mientras rueda; su aria-label conserva siempre el texto real.
+      var etiqueta = (a.getAttribute('aria-label') || a.textContent || '').replace(/\s+/g, ' ').trim();
+      return evento('cta', etiqueta.slice(0, 60) + ' -> ' + (href || 'submit'));
     }
     if (href && /^https?:\/\//i.test(href) && href.indexOf(location.host) === -1) {
       return evento('salida', href.slice(0, 200));

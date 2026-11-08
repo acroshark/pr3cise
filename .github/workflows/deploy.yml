@@ -57,6 +57,24 @@ jobs:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
 
+      # Red de seguridad (2026-11-08): si algún PHP tiene un error de sintaxis
+      # no se sube nada. No hay entorno de pruebas con PHP en local y un fallo
+      # en api/send_mail.php dejaría el formulario de contacto roto en
+      # producción sin que nadie lo note.
+      - name: Validar sintaxis PHP
+        run: |
+          set -euo pipefail
+          command -v php >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq php-cli; }
+          php -v | head -n 1
+          fallos=0
+          while IFS= read -r -d '' f; do
+            if ! php -l "$f" >/dev/null; then
+              echo "::error file=$f::Error de sintaxis PHP"
+              fallos=1
+            fi
+          done < <(find api admin -name '*.php' -print0)
+          exit $fallos
+
       - name: Instalar lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 

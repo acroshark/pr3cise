@@ -343,6 +343,15 @@
 }
 
 /* ── Papel ───────────────────────────────────────────────────────────── */
+/* 2026-11-08 | Imagen de cabecera de la lista: mismo ancho que la introducción y sin recortar */
+.erc-noprint.content-figure {
+    max-width: 820px;
+}
+
+.erc-noprint.content-figure img {
+    aspect-ratio: 1344 / 768;
+}
+
 @media print {
     @page {
         margin: 14mm 12mm;

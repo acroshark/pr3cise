@@ -32,28 +32,28 @@
         en: {
             badge: 'Official Profile on Trustpilot',
             status: 'Independent client reviews are published directly on our public Trustpilot profile as projects are completed.',
-            note: 'Every review on Trustpilot is posted by real construction professionals — never edited or curated on this website.',
+            note: 'Every review on Trustpilot is posted by real construction professionals. Never edited or curated on this website.',
             ctaView: 'View Pr3cise on Trustpilot',
             ctaWrite: 'Leave a Client Review'
         },
         es: {
             badge: 'Perfil oficial en Trustpilot',
             status: 'Las opiniones verificadas de nuestros clientes se publican directamente en nuestro perfil público de Trustpilot.',
-            note: 'Cada reseña en Trustpilot la publican profesionales reales del sector — sin edición ni selección previa en esta web.',
+            note: 'Cada reseña en Trustpilot la publican profesionales reales del sector. Sin edición ni selección previa en esta web.',
             ctaView: 'Ver perfil en Trustpilot',
             ctaWrite: 'Dejar una reseña'
         },
         de: {
             badge: 'Offizielles Profil auf Trustpilot',
             status: 'Unabhängige Kundenbewertungen werden direkt auf unserem öffentlichen Trustpilot-Profil veröffentlicht.',
-            note: 'Jede Bewertung auf Trustpilot stammt von echten Baufachleuten — ohne Vorabauswahl oder Bearbeitung auf dieser Website.',
+            note: 'Jede Bewertung auf Trustpilot stammt von echten Baufachleuten. Ohne Vorabauswahl oder Bearbeitung auf dieser Website.',
             ctaView: 'Pr3cise auf Trustpilot ansehen',
             ctaWrite: 'Bewertung abgeben'
         },
         fr: {
             badge: 'Profil officiel sur Trustpilot',
             status: 'Les avis indépendants de nos clients sont publiés directement sur notre profil public Trustpilot.',
-            note: 'Chaque avis sur Trustpilot est déposé par des professionnels du bâtiment — sans sélection ni modification sur ce site.',
+            note: 'Chaque avis sur Trustpilot est déposé par des professionnels du bâtiment. Sans sélection ni modification sur ce site.',
             ctaView: 'Voir Pr3cise sur Trustpilot',
             ctaWrite: 'Laisser un avis'
         }
