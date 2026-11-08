@@ -410,6 +410,22 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (_) { /* ignore malformed query */ }
         }
 
+        // ?plan= (sección de precios de la portada): deja escrito en el mensaje el plan elegido
+        try {
+            const planParam = (new URLSearchParams(window.location.search).get('plan') || '').toLowerCase();
+            const PLAN_MSG = {
+                es: { basic: 'Me interesa el plan Básico (suscripción mensual).', pro: 'Me interesa el plan Profesional (suscripción mensual).', business: 'Me interesa el plan Empresa (suscripción mensual).', job: 'Me interesa un presupuesto puntual (pago por obra).' },
+                en: { basic: 'I am interested in the Starter plan (monthly subscription).', pro: 'I am interested in the Professional plan (monthly subscription).', business: 'I am interested in the Business plan (monthly subscription).', job: 'I need a one-off estimate (pay per project).' },
+                de: { basic: 'Ich interessiere mich für das Paket Basis (Monatsabo).', pro: 'Ich interessiere mich für das Paket Professional (Monatsabo).', business: 'Ich interessiere mich für das Paket Business (Monatsabo).', job: 'Ich brauche eine einzelne Kalkulation (Abrechnung pro Projekt).' },
+                fr: { basic: 'La formule Essentiel m’intéresse (abonnement mensuel).', pro: 'La formule Professionnel m’intéresse (abonnement mensuel).', business: 'La formule Entreprise m’intéresse (abonnement mensuel).', job: 'J’ai besoin d’une estimation ponctuelle (paiement par projet).' }
+            };
+            const planText = (PLAN_MSG[pageLang] || PLAN_MSG.es)[planParam];
+            const mensajeField = document.getElementById('mensaje');
+            if (planText && mensajeField && !mensajeField.value.trim()) {
+                mensajeField.value = planText + '\n\n';
+            }
+        } catch (_) { /* ignore malformed query */ }
+
         // ── Errores por campo ───────────────────────────────────────────────
         const addDescribedBy = (el, id) => {
             const ids = (el.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean);

@@ -956,9 +956,25 @@
     }
   }
 
+  /* ── Pricing: the launch discount ends by itself ───────────────────────
+     data-promo-until="YYYY-MM-DD" is the last day of the offer (US Eastern time).
+     Afterwards the section gets .promo-ended (CSS hides [data-promo-only]) and every
+     price shows its data-final value, so the page never advertises an expired offer. */
+  function initPromo() {
+    var sections = document.querySelectorAll('[data-promo-until]');
+    Array.prototype.forEach.call(sections, function (sec) {
+      var end = Date.parse(sec.getAttribute('data-promo-until') + 'T23:59:59-05:00');
+      if (isNaN(end) || Date.now() <= end) return;
+      sec.classList.add('promo-ended');
+      Array.prototype.forEach.call(sec.querySelectorAll('[data-final]'), function (el) {
+        el.textContent = el.getAttribute('data-final');
+      });
+    });
+  }
+
   function boot() {
     var modules = [initScrollChrome, initHeroWord, initHeroTelemetry,
-      initDeliverableZoom, initScopeConfigurator, initProcess, initTimezones, initContractStepper];
+      initDeliverableZoom, initScopeConfigurator, initProcess, initTimezones, initContractStepper, initPromo];
     modules.forEach(function (fn) {
       try { fn(); } catch (err) {
         if (window.console && console.error) console.error('[interactive] ' + (fn.name || 'module') + ':', err);
