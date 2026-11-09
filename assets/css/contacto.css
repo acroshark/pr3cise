@@ -624,7 +624,8 @@
     display: none;
 }
 
-.form-nojs-note:target {
+.form-nojs-note:target,
+.form-nojs-note.form-nojs-noscript {
     display: block;
     max-width: 760px;
     margin: 0 auto 1.25rem;
@@ -648,6 +649,14 @@
     color: var(--ct-error);
     background: #FEF2F2;
     border: 1px solid #FECACA;
+}
+
+/* 2026-11-09 | The form no longer has an action (form-filling robots used it): without
+      JavaScript a <noscript> hides it and shows this note with email and WhatsApp. */
+.form-nojs-noscript {
+    color: #7C2D12;
+    background: #FFF7ED;
+    border: 1px solid #FED7AA;
 }
 
 .form-nojs-note a {

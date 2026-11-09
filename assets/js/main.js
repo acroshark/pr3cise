@@ -242,10 +242,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //    - Tras el envío, un panel de confirmación sustituye a los campos ("Enviar otra solicitud")
     //      y se lanza 'pr3cise:form-sent' en document (solo envíos aceptados por el servidor).
     //    - assets/js/medir.js escucha el evento submit de este mismo formulario: no cambiar su id.
-    //    - Sin este script (JS desactivado, un navegador antiguo, main.js sin cargar) el formulario
-    //      se envía igual: method="post" action="/api/send_mail.php" con validación nativa
-    //      (el HTML no lleva novalidate; aquí se pone noValidate). PHP devuelve a la página con
-    //      #form-enviado o #form-fallo, avisos que se muestran solo con CSS (:target).
+    //    - 2026-11-09 | Token anti-robots (api/form-guard.inc.php): al cargar se pide uno a
+    //      /api/form-token.php y va como form_token en el POST, con la cabecera X-Pr3cise-Form.
+    //      El servidor lo acepta desde 2 s hasta 8 h después de emitirlo: si hace falta se espera
+    //      a los 2 s y, pasadas 2 h, se pide otro. Si el servidor lo rechaza (403 code "token")
+    //      se pide uno nuevo y se reintenta una vez; si no se consigue, se ofrecen email y WhatsApp.
+    //    - El formulario ya no lleva action (lo usaban robots que leen el HTML): sin JavaScript
+    //      la página muestra un <noscript> con email y WhatsApp. Los avisos #form-enviado /
+    //      #form-fallo (CSS :target) se conservan para enlaces antiguos.
     //    - En móvil y tableta el botón "volver arriba" se oculta mientras pasa por encima de la
     //      tarjeta del formulario (tapaba el botón de envío y los campos).
     const contactForm = document.getElementById('contact-form');
@@ -253,6 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submit-btn');
 
     const FORM_ENDPOINT = '/api/send_mail.php';   // ruta absoluta: vale desde /, /en/, /de/ y /fr/
+    const TOKEN_ENDPOINT = '/api/form-token.php';
+    const TOKEN_MIN_AGE_MS = 2500;                // el servidor exige 2 s desde que lo emite
+    const TOKEN_REFRESH_MS = 2 * 60 * 60 * 1000;  // el servidor lo admite 8 h; se renueva a las 2
     const FORM_TIMEOUT_MS = 20000;
     const CONTACT_EMAIL = 'contact@pr3cise.com';
     const CONTACT_WHATSAPP = 'https://wa.me/34722879218';
@@ -795,6 +802,77 @@ document.addEventListener('DOMContentLoaded', () => {
             showSuccessPanel();
         };
 
+        // ── Token anti-robots (api/form-token.php) ──────────────────────────
+        let formToken = '';
+        let tokenAt = 0;
+        let tokenRequest = null;
+
+        const fetchToken = () => {
+            if (tokenRequest) return tokenRequest;
+            tokenRequest = fetch(TOKEN_ENDPOINT, {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'same-origin',
+                headers: { Accept: 'application/json' }
+            })
+                .then((r) => (r.ok ? r.json() : null))
+                .then((data) => {
+                    if (data && typeof data.token === 'string' && data.token) {
+                        formToken = data.token;
+                        tokenAt = Date.now();
+                    }
+                })
+                .catch((err) => {
+                    console.warn('[contacto] token no disponible:', err && (err.name || err.message));
+                })
+                .then(() => {
+                    tokenRequest = null;
+                    return formToken;
+                });
+            return tokenRequest;
+        };
+
+        // Devuelve un token utilizable ('' si no se pudo conseguir), esperando a la edad mínima
+        const ensureToken = async (renew) => {
+            if (renew) formToken = '';
+            if (!formToken || Date.now() - tokenAt > TOKEN_REFRESH_MS) await fetchToken();
+            if (!formToken) return '';
+            const wait = TOKEN_MIN_AGE_MS - (Date.now() - tokenAt);
+            if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
+            return formToken;
+        };
+
+        fetchToken();
+
+        // Un POST a send_mail.php con límite de tiempo. Nunca lanza excepción.
+        const postForm = async (formData, token) => {
+            formData.set('form_token', token);
+            const controller = typeof AbortController === 'function' ? new AbortController() : null;
+            let timedOut = false;
+            const timer = controller ? setTimeout(() => {
+                timedOut = true;
+                controller.abort();
+            }, FORM_TIMEOUT_MS) : 0;
+            try {
+                const response = await fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { Accept: 'application/json', 'X-Pr3cise-Form': '1' },
+                    signal: controller ? controller.signal : undefined
+                });
+                let payload = null;
+                try {
+                    payload = await response.json();
+                } catch (_) { /* respuesta sin JSON */ }
+                return { response, payload, timedOut: false };
+            } catch (err) {
+                console.warn('[contacto] envío fallido:', err && (err.name || err.message));
+                return { response: null, payload: null, timedOut };
+            } finally {
+                if (timer) clearTimeout(timer);
+            }
+        };
+
         const sendForm = async () => {
             sending = true;
             setBusy(true);
@@ -807,38 +885,32 @@ document.addEventListener('DOMContentLoaded', () => {
             // Solo se llega aquí con el honeypot vacío o rellenado por el autocompletado del navegador
             if (honeypot) formData.set('website', '');
 
-            const controller = typeof AbortController === 'function' ? new AbortController() : null;
-            let timedOut = false;
-            const timer = controller ? setTimeout(() => {
-                timedOut = true;
-                controller.abort();
-            }, FORM_TIMEOUT_MS) : 0;
-
             let outcome = 'error';
             try {
-                const response = await fetch(FORM_ENDPOINT, {
-                    method: 'POST',
-                    body: formData,
-                    headers: { Accept: 'application/json' },
-                    signal: controller ? controller.signal : undefined
-                });
-                let payload = null;
-                try {
-                    payload = await response.json();
-                } catch (_) { /* respuesta sin JSON */ }
-                if (response.ok && payload && payload.status === 'success') {
+                let token = await ensureToken(false);
+                let result = token ? await postForm(formData, token) : null;
+                // Token caducado o rechazado: se pide otro y se reintenta una sola vez
+                if (result && result.response && result.response.status === 403
+                    && result.payload && result.payload.code === 'token') {
+                    token = await ensureToken(true);
+                    result = token ? await postForm(formData, token) : null;
+                }
+                const response = result && result.response;
+                const payload = result && result.payload;
+                if (!result) {
+                    console.warn('[contacto] sin token del formulario: no se envía');
+                } else if (response && response.ok && payload && payload.status === 'success') {
                     outcome = 'ok';
-                } else if (response.status === 400 && payload && payload.field === 'email') {
+                } else if (response && response.status === 400 && payload && payload.field === 'email') {
                     outcome = 'email';
                 } else {
-                    outcome = timedOut ? 'timeout' : 'error';
-                    console.warn('[contacto] envío no aceptado:', response.status, payload && payload.message);
+                    outcome = result.timedOut ? 'timeout' : 'error';
+                    if (response) console.warn('[contacto] envío no aceptado:', response.status, payload && payload.message);
                 }
             } catch (err) {
-                outcome = timedOut ? 'timeout' : 'error';
+                outcome = 'error';
                 console.warn('[contacto] envío fallido:', err && (err.name || err.message));
             } finally {
-                if (timer) clearTimeout(timer);
                 sending = false;
                 setBusy(false);
             }

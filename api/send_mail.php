@@ -2,9 +2,10 @@
 /**
  * api/send_mail.php — formulario de contacto de pr3cise.com (es / en / de / fr)
  *
- * Recibe el POST de assets/js/main.js (fetch con "Accept: application/json") o,
- * si main.js no llegó a ejecutarse, el envío normal del formulario
- * (<form method="post" action="/api/send_mail.php">). Envía dos correos:
+ * Recibe el POST de assets/js/main.js (fetch con "Accept: application/json",
+ * cabecera X-Pr3cise-Form: 1 y el campo form_token). Desde el 2026-11-09 el
+ * formulario no lleva action: sin JavaScript no se envía (la página ofrece email
+ * y WhatsApp). Envía dos correos:
  *   1. aviso interno a contact@pr3cise.com (Reply-To = cliente), con todos los datos
  *   2. confirmación al cliente, en su idioma: texto fijo + email, teléfono y alcance.
  *      Nunca repite texto libre del formulario (nombre, empresa, mensaje): así nadie
@@ -34,11 +35,21 @@
  *     5 envíos en una hora, sin confirmación al cliente; más de 20, sin correos.
  *     La solicitud se guarda siempre.
  *
+ * 2026-11-09 | Token del formulario (api/form-guard.inc.php, api/form-token.php):
+ *   - Sin token válido (firmado, de 2 s a 8 h de antigüedad) no se envía ningún
+ *     correo. Se anota en contact-spam.jsonl con el motivo, por si fuera una persona.
+ *   - Con la cabecera X-Pr3cise-Form (main.js) se responde 403 {"code":"token"} y
+ *     main.js pide otro token y reintenta una vez. Sin ella (robots que leen el HTML)
+ *     se responde como si todo hubiera ido bien, para que no insistan ni cambien.
+ *   - Cabecera de diagnóstico en la respuesta: X-Pr3cise-Form: ok | blocked.
+ *
  * Compatible con PHP 7.4+. Sin dependencias.
  */
 
 // Ningún warning puede colarse en la respuesta: rompería el JSON.
 ini_set('display_errors', '0');
+
+require __DIR__ . '/form-guard.inc.php';
 
 // 1. Configuración de Destinatario
 /* 2025-04-26 01:00 | Updated destination to contact@pr3cise.com */
@@ -273,6 +284,34 @@ if (campo('website') !== '') {
     ], 2000000);
     responder(200, $respuesta_ok);
 }
+
+// Token del formulario (form-guard.inc.php): demuestra que la página se cargó en un
+// navegador con JavaScript. Sin él no sale ningún correo, ni a nosotros ni a terceros.
+$token_estado = fg_token_estado(campo('form_token'));
+if ($token_estado !== 'ok') {
+    header('X-Pr3cise-Form: blocked');
+    guardar_linea('contact-spam.jsonl', [
+        'ts'      => gmdate('c'),
+        'motivo'  => 'token-' . $token_estado,
+        'via'     => pide_json() ? 'json' : 'post',
+        'lang'    => idioma(),
+        'ua'      => recortar(isset($_SERVER['HTTP_USER_AGENT']) ? (string) $_SERVER['HTTP_USER_AGENT'] : '', 200),
+        'nombre'  => recortar(campo('nombre'), 200),
+        'empresa' => recortar(campo('empresa'), 200),
+        'email'   => recortar(campo('email'), 320),
+        'mensaje' => recortar(campo('mensaje'), 2000)
+    ], 2000000);
+    if (isset($_SERVER['HTTP_X_PR3CISE_FORM'])) {
+        // main.js: pide un token nuevo y reintenta una vez
+        responder(403, [
+            "status"  => "error",
+            "code"    => "token",
+            "message" => "El formulario ha caducado. Inténtelo de nuevo."
+        ]);
+    }
+    responder(200, $respuesta_ok);
+}
+header('X-Pr3cise-Form: ok');
 
 // 2. Captura de Datos (en bruto; se escapan después de validar)
 $nombre_raw   = campo('nombre');
