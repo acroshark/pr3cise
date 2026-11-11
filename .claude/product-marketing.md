@@ -6,10 +6,16 @@
 
 ## Qué es
 
-**Oficina técnica de estimación de costes de obra** (construction cost estimating
-+ quantity takeoff) que trabaja **en remoto** para empresas de construcción.
-Entrega presupuestos por partidas, mediciones trazables al plano y listas de
-materiales en Excel y PDF, listos para licitar.
+**Oficina técnica de estimación de costes de obra** (construction cost estimating)
+que trabaja **en remoto** para empresas de construcción. **El cliente envía su hoja
+de mediciones** (quantity takeoff / estado de mediciones sin valorar) y Pr3cise la
+valora partida a partida: entrega presupuestos por partidas en Excel y PDF, listos
+para licitar.
+
+**Pr3cise NO mide sobre planos ni vende mediciones** (corrección de Hugo,
+11-11-2026: «no trabajamos con planos, trabajamos con hojas de mediciones; no me
+vale que me manden un plano y yo tenga que estar midiendo»). Toda la web se
+reescribió ese día con este criterio.
 
 - Web: https://pr3cise.com (ES raíz, EN `/en/`, DE `/de/`, FR `/fr/`)
 - Empresa: Clear Ascend OÜ (Estonia). Voz y CEO: Hugo Karreflow.
@@ -29,7 +35,7 @@ de ellos hispanohablantes: se trabaja en inglés de EE. UU. y en español.
 
 Lo que hace creíble a Pr3cise en Miami y hay que repetir en el contenido:
 - **HVHZ** (High-Velocity Hurricane Zone) y **NOA** de Miami-Dade: el producto
-  se mide contra el código local, no genérico.
+  se valora contra el código local, no genérico.
 - **Florida Building Code** y permisos de Miami-Dade / City of Miami.
 - CSI MasterFormat, clasificaciones AACE, precio cerrado por proyecto.
 - Entrega en 24-72 h.
@@ -38,7 +44,7 @@ Lo que hace creíble a Pr3cise en Miami y hay que repetir en el contenido:
 
 | Servicio | Qué incluye | Precio de referencia |
 |---|---|---|
-| Presupuesto de un gremio | Medición + precios + partidas de un oficio | 250-400 € |
+| Presupuesto de un gremio | Valoración de la hoja de mediciones de un oficio (precios + partidas) | 250-400 € |
 | Obra completa | Todos los gremios, BoQ y resumen por capítulos | 800-1.000 € |
 | Paquete mensual | Volumen continuado para empresas | a medida |
 
@@ -63,6 +69,14 @@ Nunca se inventan precios, plazos, clientes ni testimonios fuera de esta tabla.
 
 ## Restricciones duras
 
+- **No trabajamos con planos.** El único documento de partida es la hoja de
+  mediciones que aporta el cliente (la haya hecho él, su arquitecto o un programa).
+  Nunca escribir «envía tus planos», «medimos», «takeoff desde planos», «planos
+  marcados por colores» ni ofrecer un servicio de medición, en ningún idioma.
+  Tampoco decir que el cliente «mide»: se nombra el documento, no quién lo hizo.
+  Fórmulas: ES «envíanos tu hoja de mediciones, la valoramos partida a partida»;
+  EN «send your takeoff, we price every line»; DE «Ihre Mengenermittlung, Position
+  für Position bepreist»; FR «votre métré, chiffré ligne par ligne».
 - **Nada de datos inventados**: ni cifras de ahorro, ni clientes, ni reseñas,
   ni dirección o teléfono de EE. UU. que no existan de verdad. Pr3cise **no
   tiene sede física en Miami**: es un equipo remoto que sirve a Miami. El

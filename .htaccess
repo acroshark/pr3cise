@@ -29,6 +29,9 @@ ErrorDocument 404 /404.html
     ExpiresByType image/png               "access plus 1 year"
     ExpiresByType image/svg+xml           "access plus 1 year"
     ExpiresByType image/x-icon            "access plus 1 year"
+    # Vídeo y subtítulos de la portada: van con ?v= en la URL, así que pueden cachearse igual
+    ExpiresByType video/mp4               "access plus 1 year"
+    ExpiresByType text/vtt                "access plus 1 year"
     # El HTML se revalida siempre para que los cambios se publiquen al instante
     ExpiresByType text/html               "access plus 0 seconds"
 </IfModule>
@@ -37,6 +40,8 @@ ErrorDocument 404 /404.html
 <IfModule mod_mime.c>
     AddType image/webp .webp
     AddType image/svg+xml .svg
+    AddType video/mp4 .mp4
+    AddType text/vtt .vtt
 </IfModule>
 
 # ── Protección de áreas privadas ──────────────────────────────────────

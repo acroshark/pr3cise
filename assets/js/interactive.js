@@ -33,8 +33,8 @@
       slide: 'paso',
       goTo: 'Ir al paso {n}: {t}',
       stepOf: 'Paso {n} de {total}',
-      tzOpen: 'Nuestra oficina está abierta: son las {eu} aquí y las {fl} en Florida. Si nos envías los planos ahora, empezamos a revisarlos hoy mismo.',
-      tzNext: 'Si nos envías los planos ahora, empezamos a revisarlos el {day} a las {eu} de nuestra mañana, que son las {fl} en Florida.',
+      tzOpen: 'Nuestra oficina está abierta: son las {eu} aquí y las {fl} en Florida. Si nos envías tus mediciones ahora, empezamos a revisarlas hoy mismo.',
+      tzNext: 'Si nos envías tus mediciones ahora, empezamos a revisarlas el {day} a las {eu} de nuestra mañana, que son las {fl} en Florida.',
       tzAria: 'Jornada en Florida de {a} a {b}. Jornada de nuestra oficina de {c} a {d}, en hora de Florida.',
       tzAriaOverlap: ' Horas en común: de {e} a {f}.'
     },
@@ -48,8 +48,8 @@
       slide: 'step',
       goTo: 'Go to step {n}: {t}',
       stepOf: 'Step {n} of {total}',
-      tzOpen: 'Our office is open: it is {eu} here and {fl} in Florida. Send your drawings now and we start reviewing them today.',
-      tzNext: 'Send your drawings now and we start reviewing them on {day} at {eu} our time, which is {fl} in Florida.',
+      tzOpen: 'Our office is open: it is {eu} here and {fl} in Florida. Send your takeoff now and we start reviewing it today.',
+      tzNext: 'Send your takeoff now and we start reviewing it on {day} at {eu} our time, which is {fl} in Florida.',
       tzAria: 'Florida working day from {a} to {b}. Our office works from {c} to {d}, Florida time.',
       tzAriaOverlap: ' Shared hours: {e} to {f}.'
     },
@@ -63,8 +63,8 @@
       slide: 'Schritt',
       goTo: 'Zu Schritt {n}: {t}',
       stepOf: 'Schritt {n} von {total}',
-      tzOpen: 'Unser Büro ist geöffnet: Hier ist es {eu} Uhr, in Florida {fl} Uhr. Senden Sie uns Ihre Pläne jetzt, und wir prüfen sie noch heute.',
-      tzNext: 'Senden Sie uns Ihre Pläne jetzt: Wir beginnen am {day} um {eu} Uhr unserer Zeit mit der Prüfung, in Florida ist es dann {fl} Uhr.',
+      tzOpen: 'Unser Büro ist geöffnet: Hier ist es {eu} Uhr, in Florida {fl} Uhr. Senden Sie uns Ihre Mengenermittlung jetzt, und wir prüfen sie noch heute.',
+      tzNext: 'Senden Sie uns Ihre Mengenermittlung jetzt: Wir beginnen am {day} um {eu} Uhr unserer Zeit mit der Prüfung, in Florida ist es dann {fl} Uhr.',
       tzAria: 'Arbeitstag in Florida von {a} bis {b}. Unser Büro arbeitet von {c} bis {d}, Ortszeit Florida.',
       tzAriaOverlap: ' Gemeinsame Stunden: {e} bis {f}.'
     },
@@ -78,8 +78,8 @@
       slide: 'étape',
       goTo: 'Aller à l’étape {n} : {t}',
       stepOf: 'Étape {n} sur {total}',
-      tzOpen: 'Notre bureau est ouvert : il est {eu} ici et {fl} en Floride. Envoyez vos plans maintenant, nous commençons à les examiner aujourd’hui.',
-      tzNext: 'Envoyez vos plans maintenant : nous commençons à les examiner {day} à {eu}, heure de notre bureau, soit {fl} en Floride.',
+      tzOpen: 'Notre bureau est ouvert : il est {eu} ici et {fl} en Floride. Envoyez votre métré maintenant, nous commençons à l’examiner aujourd’hui.',
+      tzNext: 'Envoyez votre métré maintenant : nous commençons à l’examiner {day} à {eu}, heure de notre bureau, soit {fl} en Floride.',
       tzAria: 'Journée de travail en Floride de {a} à {b}. Notre bureau travaille de {c} à {d}, heure de Floride.',
       tzAriaOverlap: ' Heures communes : de {e} à {f}.'
     }
@@ -359,24 +359,24 @@
 
     var SCOPE_OUTPUTS = {
       es: {
-        full: 'Excel + PDF + BC3 / CSI + Planos marcados',
-        mep: 'Desglose MEP + Mano de obra + Planos marcados',
-        takeoff: 'Medición cuantificada + Marcado por colores'
+        full: 'Excel + PDF + BC3 / CSI',
+        mep: 'Desglose MEP + Mano de obra + GG y BI',
+        takeoff: 'Un oficio valorado partida a partida · Excel + PDF'
       },
       en: {
-        full: 'Excel + PDF + CSI / BoQ + Colour-coded markups',
-        mep: 'MEP line-item breakdown + Labor + Markups',
-        takeoff: 'Quantified takeoff + Colour-coded markups'
+        full: 'Excel + PDF + CSI / BoQ',
+        mep: 'MEP line-item breakdown + Labor + O&P',
+        takeoff: 'One trade priced line by line · Excel + PDF'
       },
       de: {
-        full: 'Excel + PDF + LV / CSI + Farbmarkierte Pläne',
-        mep: 'TGA-Aufschlüsselung + Lohnstunden + Pläne',
-        takeoff: 'Mengenermittlung + Farbmarkierte Pläne'
+        full: 'Excel + PDF + LV / CSI',
+        mep: 'TGA-Aufschlüsselung + Lohnstunden + Zuschläge',
+        takeoff: 'Ein Gewerk, Position für Position bepreist · Excel + PDF'
       },
       fr: {
-        full: 'Excel + PDF + DPGF / CSI + Plans annotés',
-        mep: 'Détail CVC-élec-plomberie + Main-d’œuvre + Plans',
-        takeoff: 'Métré quantitatif + Plans annotés couleur'
+        full: 'Excel + PDF + DPGF / CSI',
+        mep: 'Détail CVC-élec-plomberie + Main-d’œuvre + frais généraux',
+        takeoff: 'Un lot chiffré ligne par ligne · Excel + PDF'
       }
     };
 

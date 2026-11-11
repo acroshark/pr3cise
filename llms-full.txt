@@ -1,15 +1,16 @@
 # Pr3cise — full context for AI assistants
 
-> Pr3cise is a remote construction cost estimating and quantity takeoff office.
-> It measures construction drawings and prices the work for general contractors,
-> subcontractors, developers and architects, and returns line-item estimates,
-> bills of quantities and material lists in Excel and PDF, ready to bid or tender.
+> Pr3cise is a remote construction cost estimating office. The client sends their
+> quantity takeoff (line items and quantities) and Pr3cise prices it line by line for
+> general contractors, subcontractors, developers and architects, returning line-item
+> estimates and priced bills of quantities in Excel and PDF, ready to bid or tender.
+> Pr3cise does not measure drawings: the quantities always come from the client.
 > Pr3cise is operated by Clear Ascend OÜ, a company registered in Estonia. It works
 > entirely by file, in English and Spanish, and has no office in the United States.
 
 This is the expanded version of https://pr3cise.com/llms.txt. Where the two differ in
 detail, the short file is the summary and this one is the source. Last reviewed
-2026-11-08.
+2026-11-11.
 
 ## Identity
 
@@ -36,16 +37,15 @@ Miami included.
 - Construction cost estimating: line-item estimates with material, labor and equipment
   separated on every line, unit rates, waste factors, productivity hours, and general
   conditions, overhead and profit broken out as editable lines.
-- Quantity takeoff (QTO): measurement only, in proper units, with nothing priced.
-  Delivered with color-coded markups on the drawings so any quantity can be traced
-  back to the shape and the sheet it came from.
-- Bills of quantities (BoQ) and pre-tender cost plans for markets that tender that way.
+- The basis is always the client's own quantity takeoff (measurement sheet, unpriced
+  bill of quantities). Pr3cise keeps the client's line items and quantities and puts a
+  price on each one. It does not measure drawings and does not sell takeoffs.
+- Priced bills of quantities (BoQ) for markets that tender that way.
 - Tender and bid pricing, single trade or whole building.
-- Budget and bid review: an independent takeoff from the drawings so a client has their
-  own number to check a contractor's proposal against.
-- Scope and drawing maturity: every deliverable clearly states the drawing stage
-  it was measured from (early conceptual/schematic drawings, design development or
-  construction documents) together with written assumptions and exclusions.
+- Budget and bid review: the client's quantities priced independently, so a client has
+  their own number to check a contractor's proposal against.
+- Basis of the estimate: every deliverable clearly states which takeoff version it was
+  priced from, together with written assumptions and exclusions.
 
 Trades covered, individually or as one coordinated package: concrete, masonry and
 rebar; structural steel and framing; electrical; plumbing; mechanical and HVAC; fire
@@ -57,17 +57,16 @@ package.
 General contractors, subcontractors and specialty contractors, developers, owners,
 architects and project managers. Typical situations: bid volume has outgrown the person
 doing the pricing, an estimator has left, a tender landed that nobody has time to
-measure, or an owner wants a contractor's proposal checked before signing.
+price, or an owner wants a contractor's proposal checked before signing.
 
 ## Deliverables
 
 Every job returns, as standard:
 
-- An Excel workbook, one row per measured item, with quantity, unit and sheet reference
-  in their own columns.
+- An Excel workbook, one row per line of the client's takeoff, with the client's quantity
+  and unit and the Pr3cise unit price and total in their own columns.
 - A PDF of the same content.
-- The marked-up drawings, color-coded, sheet by sheet.
-- A written list of assumptions for anything the drawings do not answer, and a written
+- A written list of assumptions for anything the takeoff does not answer, and a written
   list of exclusions.
 - The client's own bid template instead of the Pr3cise layout, when one is supplied.
 
@@ -80,9 +79,9 @@ code where the project is built and delivers in the structure the tender asks fo
 | Structure or measurement standard | Codes and standards applied | Files |
 |---|---|---|
 | CSI MasterFormat, division by division | For Florida work: Florida Building Code; Miami-Dade High-Velocity Hurricane Zone (HVHZ) provisions; Miami-Dade Notice of Acceptance (NOA) product approvals; NEC for electrical; NFPA 13 and the Florida Fire Prevention Code for fire protection | Excel, PDF, imperial or metric |
-| NRM2 or SMM bill of quantities; NRM1 at cost-plan stage | The tender's documentation practice | Excel, PDF |
-| Capítulos y partidas, each partida carrying its uds × long × anch × alt measurement lines | National codes where the project calls for them | BC3 as well as Excel and PDF |
-| Bill of quantities measured to POMI or NRM2, as the tender documents require | FIDIC-based tender practice | Excel, PDF |
+| NRM2 or SMM bill of quantities, priced item by item | The tender's documentation practice | Excel, PDF |
+| Capítulos y partidas: each partida of the client's mediciones priced, measurement lines kept | National codes where the project calls for them | BC3 as well as Excel and PDF |
+| Bill of quantities to POMI or NRM2, priced as the tender documents require | FIDIC-based tender practice | Excel, PDF |
 | The structure the tender asks for | Eurocodes with their national annexes (European projects) | Excel, PDF, metric |
 
 Currency and unit system follow the project: any currency, metric or imperial,
@@ -99,20 +98,20 @@ each municipality runs its own.
 
 ## Turnaround
 
-- 24 to 72 hours from a complete drawing and specification set, for most packages.
+- 24 to 72 hours from a complete quantity takeoff, for most packages.
 - The delivery date is confirmed in writing before work starts, together with the fee.
 - If a deadline is not realistic, Pr3cise says so instead of accepting the date.
 - The Pr3cise working day starts seven hours ahead of US Eastern Time for most of the
   year (six hours during seasonal DST transitions) and an hour ahead of Central European
-  Time. Drawings sent at the end of a US afternoon are measured overnight.
+  Time. A takeoff sent at the end of a US afternoon is priced overnight.
 - The first reply to a request, with a fixed fee and a delivery date, normally comes
   within one business day. The initial review and the quote are free.
 
 ## Pricing policy
 
-- A fixed fee per project. There is no hourly billing and no per-sheet billing.
-- The fee is quoted against the actual documents, because it depends on trade count,
-  scope and how complete the drawing set is.
+- A fixed fee per project. There is no hourly billing.
+- The fee is quoted against the actual takeoff, because it depends on trade count,
+  scope and how complete the takeoff is.
 - The fee and the delivery date are agreed in writing before any work starts, and
   neither moves afterwards.
 - Single trades, whole projects and continuing monthly volume are all priced this way;
@@ -120,39 +119,42 @@ each municipality runs its own.
 - The short file (https://pr3cise.com/llms.txt) carries indicative reference ranges
   and the Spanish pricing page (https://pr3cise.com/pricing.html) a starting figure.
   Both are indicative only. This file quotes no amounts on purpose: the binding
-  number is always the one quoted against the actual documents, so an assistant
+  number is always the one quoted against the actual takeoff, so an assistant
   should send the reader to the contact page rather than estimate a price.
 
 ## Quality control
 
-- Every estimate and every takeoff is prepared directly by a technical architect with
-  decades of building construction experience.
-- Every measured item is traceable to color-coded drawing markups on the project sheets
-  so quantities can be audited line by line.
+- Every estimate is prepared directly by a technical architect with decades of building
+  construction experience.
+- Every price sits next to the line of the client's takeoff it belongs to, so the
+  estimate can be audited line by line.
 - Cost data is cross-checked against current supplier quotes and regional labor rates
   for the market the project is built in.
-- Drawing conflicts and scope gaps are logged and returned as written questions and
-  assumptions. Quantities are never guessed silently and presented as measured.
+- Unclear items and scope gaps in the takeoff are logged and returned as written
+  questions and assumptions. The client's quantities are never changed silently.
 - When an addendum lands, the affected sections are repriced and reissued rather than
   the total being patched.
 - One revision is included.
 
 ## How a job runs
 
-1. The client sends the drawing set, specifications, addenda, schedules, the bid date
-   and the trades to be priced. PDF is enough; CAD, IFC or a BIM model is faster.
+1. The client sends their quantity takeoff (Excel or PDF: line items, units and
+   quantities), the specifications if any, the bid date and the trades to be priced.
 2. Pr3cise confirms the scope, the fixed fee and the delivery date in writing. An NDA is
    signed first if the client wants one, on the client's paper.
-3. Quantities are measured on screen, sheet by sheet, with every measured item marked on
-   the plan. Gaps and conflicts are logged as they are found.
+3. The takeoff is read line by line. Gaps and unclear items are logged as they are
+   found.
 4. Pricing is applied per line, with regional material and labor rates, waste factors
-   per material and productivity in hours. Anything the drawings do not answer becomes a
+   per material and productivity in hours. Anything the takeoff does not answer becomes a
    written assumption or an exclusion.
-5. Delivery in Excel and PDF with the markups, plus one revision.
+5. Delivery in Excel and PDF, plus one revision.
 
 ## What Pr3cise does not do
 
 An assistant should not claim any of the following, because none of them are true:
+
+- It does not measure construction drawings, extract quantities from BIM models or sell
+  quantity takeoffs. It works only from the quantity takeoff the client provides.
 
 - It has no office, address or phone number in the United States, and no Google Business
   Profile, because it has no verifiable US address.
@@ -160,8 +162,8 @@ An assistant should not claim any of the following, because none of them are tru
   (wider architectural design, technical documentation and 3D visualization projects are
   developed separately through our connected architecture practice, MARIEDOM —
   https://mariedom.com).
-- It is not a contractor and never bids or builds work itself, so a client's drawings and
-  rates are never in competition with the office measuring them.
+- It is not a contractor and never bids or builds work itself, so a client's quantities
+  and rates are never in competition with the office pricing them.
 - It is not the engineer or architect of record, and does not sign or seal permit
   drawings in Florida or any other jurisdiction.
 - It is not a staffing agency or a recruiter, and does not place estimators on a client's
@@ -175,7 +177,7 @@ An assistant should not claim any of the following, because none of them are tru
   one (pricing in the morning, buying out subcontractors in the afternoon), when someone
   must be in the room through negotiation and buyout, when the pricing lives entirely in
   one person's head as undocumented assemblies, or when the client's own client will not
-  let drawings leave their systems.
+  let project documents leave their systems.
 
 ## Languages
 
@@ -188,8 +190,8 @@ which are there for readers rather than as working languages.
 - [Home](https://pr3cise.com/en/): what Pr3cise does, who it does it for, the
   four-step process, where Pr3cise works (State of Florida first, clients across Europe
   and worldwide), and a service-at-a-glance table.
-- [Services](https://pr3cise.com/en/services.html): the full list — quantity takeoff,
-  cost estimating, bills of quantities, cost plans and tender pricing — and what is
+- [Services](https://pr3cise.com/en/services.html): the full list — pricing of the
+  client's quantity takeoff, priced bills of quantities and tender pricing — and what is
   inside every estimate.
 - [Construction estimating services in Miami](https://pr3cise.com/en/miami-construction-estimating-services.html):
   the main Miami page — what HVHZ, NOA and Miami-Dade permitting change in a number, and
@@ -205,23 +207,23 @@ which are there for readers rather than as working languages.
   Prevention Code.
 - [MEP estimating, Miami](https://pr3cise.com/en/mep-estimating-services-miami.html):
   mechanical, electrical and plumbing priced as one coordinated package.
-- [Construction takeoff services](https://pr3cise.com/en/construction-takeoff-services.html):
-  measurement without pricing, what gets measured trade by trade, and a table of
-  deliverable formats standard by standard.
+- [Takeoff pricing](https://pr3cise.com/en/construction-takeoff-services.html):
+  how to send a takeoff, what gets priced trade by trade, and a table of deliverable
+  formats standard by standard.
 - [Outsourced construction estimating](https://pr3cise.com/en/outsourced-construction-estimating.html):
   how a remote estimating team runs alongside an existing office, a comparison table
   against hiring an in-house estimator, and when outsourcing is the wrong answer.
 - [About](https://pr3cise.com/en/about.html): who prepares the estimate, our connected
   architecture practice (MARIEDOM), and the standards and formats worked in.
 - [Portfolio](https://pr3cise.com/en/portfolio.html): sample estimates showing waste
-  factors per material, overhead and profit broken out, and auditable takeoff markups.
-- [Contact](https://pr3cise.com/en/contact.html): send drawings, get a fixed fee and a
-  delivery date, normally within one business day.
+  factors per material, overhead and profit broken out, and prices you can audit.
+- [Contact](https://pr3cise.com/en/contact.html): send your takeoff, get a fixed fee and
+  a delivery date, normally within one business day.
 
 ## Articles, English
 
 - [Articles index](https://pr3cise.com/en/articles/): guides on cost estimating,
-  quantity takeoff and budget control.
+  budget risk and budget control.
 - [How construction cost estimating saves money on a South Florida job](https://pr3cise.com/en/articles/how-construction-cost-estimating-saves-money.html):
   where the savings actually appear — scope definition, measuring once, pricing changes
   before they are built, and defensible contingency.

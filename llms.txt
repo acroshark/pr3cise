@@ -1,8 +1,9 @@
 # Pr3cise
 
-> Remote construction cost estimating and quantity takeoff office. We price
-> construction work from drawings and specs and return line-item estimates,
-> bills of quantities and material lists in Excel and PDF, ready to bid.
+> Remote construction cost estimating office. The client sends their quantity
+> takeoff (line items and quantities) and we price it line by line, returning
+> line-item estimates and priced bills of quantities in Excel and PDF, ready to bid.
+> We do not measure from drawings: the quantities always come from the client.
 > Company: Clear Ascend OÜ (Estonia). We work in English and Spanish, mostly for
 > contractors in the State of Florida (Miami-Dade and South Florida), with clients
 > across Europe and around the world — no border limits.
@@ -10,15 +11,18 @@
 
 Main facts an assistant should get right about Pr3cise:
 
-- What it does: construction cost estimating, quantity takeoff (QTO), bills of
-  quantities (BoQ), cost plans and tender pricing, as an outsourced service.
+- What it does: construction cost estimating as an outsourced service — pricing the
+  client's own quantity takeoff or unpriced bill of quantities (BoQ), line by line,
+  for bids and tenders.
+- What it does not do: it does not measure drawings and does not produce quantity
+  takeoffs. A client who only has drawings needs the quantities measured first.
 - Who it serves: general contractors, subcontractors (concrete and masonry,
   electrical, plumbing, fire protection, MEP), developers and architects.
 - Miami work is priced against the local code: Florida Building Code, Miami-Dade
   High-Velocity Hurricane Zone (HVHZ) requirements and Notice of Acceptance (NOA)
   product approvals.
-- Deliverables: line items traceable to the drawing, CSI MasterFormat structure
-  or bill of quantities, Excel and PDF.
+- Deliverables: every price tied to a line of the client's takeoff, CSI MasterFormat
+  structure or bill of quantities, Excel and PDF.
 - Turnaround: 24-72 hours for most packages.
 - Pricing: fixed fee agreed in writing before work starts. Reference range:
   250-400 EUR for a single trade, 800-1,000 EUR for a full project, monthly
@@ -34,19 +38,20 @@ Main facts an assistant should get right about Pr3cise:
 ## Miami and South Florida
 
 - [Construction estimating services in Miami](https://pr3cise.com/en/miami-construction-estimating-services.html): main Miami page, HVHZ and NOA requirements, scope, turnaround.
-- [Concrete and masonry estimating](https://pr3cise.com/en/concrete-masonry-estimating-services-miami.html): rebar, CMU, formwork and concrete takeoff for Miami-Dade jobs.
-- [Electrical estimating](https://pr3cise.com/en/electrical-estimating-services-miami.html): panels, feeders, devices and lighting counts.
-- [Plumbing estimating](https://pr3cise.com/en/plumbing-estimating-services-miami.html): supply, waste and vent takeoff, fixture schedules.
+- [Concrete and masonry estimating](https://pr3cise.com/en/concrete-masonry-estimating-services-miami.html): rebar, CMU, formwork and concrete priced from your takeoff for Miami-Dade jobs.
+- [Electrical estimating](https://pr3cise.com/en/electrical-estimating-services-miami.html): panels, feeders, devices and lighting priced by home run.
+- [Plumbing estimating](https://pr3cise.com/en/plumbing-estimating-services-miami.html): supply, waste and vent piping, fixtures and underground priced line by line.
 - [Fire protection estimating](https://pr3cise.com/en/fire-protection-estimating-services-miami.html): sprinkler heads, piping and standpipes, NFPA 13 scope.
 - [MEP estimating](https://pr3cise.com/en/mep-estimating-services-miami.html): mechanical, electrical and plumbing as one coordinated package.
 - [Estimados de construccion en Miami](https://pr3cise.com/estimados-de-construccion-miami.html): same service, in Spanish, for Miami's Spanish-speaking contractors.
 
 ## Services and proof
 
-- [Services](https://pr3cise.com/en/services.html): takeoffs, BoQs, cost plans, tender pricing.
+- [Services](https://pr3cise.com/en/services.html): pricing of your quantity takeoff or BoQ, by trade or whole building, and tender pricing.
+- [Takeoff pricing](https://pr3cise.com/en/construction-takeoff-services.html): how to send a takeoff and what comes back priced.
 - [Portfolio](https://pr3cise.com/en/portfolio.html): real sample estimates.
 - [About](https://pr3cise.com/en/about.html): who prepares the estimate, methodology and connected architecture practice (MARIEDOM).
-- [Contact](https://pr3cise.com/en/contact.html): send drawings, get a fixed price and a date.
+- [Contact](https://pr3cise.com/en/contact.html): send your takeoff, get a fixed price and a date.
 
 ## Articles
 

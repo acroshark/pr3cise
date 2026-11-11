@@ -7584,3 +7584,146 @@ h3 + .media-split:not(.container) {
         flex-direction: column;
     }
 }
+
+/* ── 3.2b Vídeo de presentación (2026-11-11) ──────────────────────────
+   Entre la banda de cifras y «Qué recibes en cada presupuesto». Solo lleva relleno
+   superior: el margen de debajo lo pone el padding de la sección siguiente, que
+   comparte el fondo blanco. En pantallas estrechas se enseña la versión vertical. */
+.home-v3 .sec-video {
+    padding: var(--section-y) 0 0;
+}
+
+.home-v3 .video-v3 {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.home-v3 .video-v3-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--r-media);
+    background: var(--navy-950);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 28px 60px -28px rgba(15, 23, 42, 0.45);
+}
+
+.home-v3 .video-v3-wide {
+    aspect-ratio: 16 / 9;
+}
+
+.home-v3 .video-v3-tall {
+    display: none;
+    width: min(100%, 340px);
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;
+}
+
+.home-v3 .video-v3-frame video {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--navy-950);
+}
+
+/* Botón de reproducción: lo activa main.js (sin JavaScript sigue oculto y mandan los controles nativos). */
+.home-v3 .video-v3-play {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    background: transparent;
+    color: var(--navy);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.home-v3 .video-v3-play[hidden] {
+    display: none;
+}
+
+.home-v3 .video-v3-disc {
+    position: absolute;
+    left: 50%;
+    top: 59.2%;               /* el hueco entre el titular y los muñecos de la carátula */
+    display: grid;
+    place-items: center;
+    width: 7.2%;              /* proporcional al marco, para que quepa siempre en ese hueco */
+    min-width: 52px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--gold-glow);
+    box-shadow: 0 0 0 6px rgba(229, 198, 135, 0.2), 0 12px 30px rgba(5, 10, 20, 0.5);
+    translate: -50% -50%;
+    transition: scale 200ms var(--ease-ui), background-color 200ms var(--ease-ui);
+}
+
+.home-v3 .video-v3-tall .video-v3-disc {
+    top: 47.8%;
+    width: 19%;
+}
+
+.home-v3 .video-v3-disc svg {
+    width: 44%;
+    height: 44%;
+    margin-left: 6%;          /* centro óptico del triángulo */
+}
+
+.home-v3 .video-v3-play:hover .video-v3-disc {
+    scale: 1.07;
+    background: #F3DFB3;
+}
+
+.home-v3 .video-v3-play:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.home-v3 .video-v3-time {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    padding: 4px 9px;
+    border-radius: var(--r-chip);
+    background: rgba(5, 10, 20, 0.72);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.home-v3 .video-v3 figcaption {
+    margin-top: var(--s-4);
+    text-align: center;
+    font-size: var(--fs-small);
+    line-height: 1.5;
+    color: var(--ink-soft);
+}
+
+.home-v3 .video-v3 video::cue {
+    background: rgba(5, 10, 20, 0.78);
+    color: #fff;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
+}
+
+@media (max-width: 720px) {
+    .home-v3 .video-v3-wide {
+        display: none;
+    }
+
+    .home-v3 .video-v3-tall {
+        display: block;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-v3 .video-v3-disc {
+        transition: none;
+    }
+}

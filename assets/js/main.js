@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             waText: 'Hola, he intentado enviar el formulario de contacto de pr3cise.com y no ha funcionado.',
             successTitle: 'Solicitud recibida',
             successNext: 'Te responderemos en menos de 24 h laborables con alcance, precio cerrado y fecha de entrega.',
-            successPlans: '¿Quieres adelantar los planos? Envíalos a {email}.',
+            successPlans: '¿Quieres adelantar tu hoja de mediciones? Envíala a {email}.',
             successAgain: 'Enviar otra solicitud'
         },
         en: {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             waText: 'Hi, I tried to send the contact form on pr3cise.com and it did not go through.',
             successTitle: 'Request received',
             successNext: 'We will reply within one business day with the scope, a fixed price and a delivery date.',
-            successPlans: 'Want to send the drawings now? Email them to {email}.',
+            successPlans: 'Want to send your takeoff now? Email it to {email}.',
             successAgain: 'Send another request'
         },
         de: {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             waText: 'Hallo, ich habe versucht, das Kontaktformular auf pr3cise.com zu senden, aber es hat nicht funktioniert.',
             successTitle: 'Anfrage erhalten',
             successNext: 'Wir antworten innerhalb eines Werktags mit Leistungsumfang, Festpreis und Liefertermin.',
-            successPlans: 'Möchten Sie die Pläne schon vorab senden? Schicken Sie sie an {email}.',
+            successPlans: 'Möchten Sie Ihre Mengenermittlung schon vorab senden? Schicken Sie sie an {email}.',
             successAgain: 'Weitere Anfrage senden'
         },
         fr: {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             waText: 'Bonjour, j’ai essayé d’envoyer le formulaire de contact de pr3cise.com, sans succès.',
             successTitle: 'Demande reçue',
             successNext: 'Nous vous répondrons sous 24 h ouvrées avec le périmètre, un prix ferme et une date de livraison.',
-            successPlans: 'Vous souhaitez transmettre vos plans dès maintenant ? Envoyez-les à {email}.',
+            successPlans: 'Vous souhaitez transmettre votre métré dès maintenant ? Envoyez-le à {email}.',
             successAgain: 'Envoyer une autre demande'
         }
     };
@@ -1133,5 +1133,45 @@ document.addEventListener('DOMContentLoaded', () => {
         delete formMessage.dataset.kind;      // 'validation' | 'send': lo pone quien lo necesita
         formMessage.textContent = text;
         formMessage.className = text ? `form-message show ${type}` : 'form-message';
+    }
+});
+
+/* 2026-11-11 | Vídeo de la portada (.video-v3). El HTML lleva los <video> con sus controles
+   nativos para que funcione sin JavaScript; aquí se esconden hasta el primer clic y se enseña
+   un botón de reproducción propio sobre la carátula. Hay dos <video> (horizontal y, por debajo
+   de 720 px, vertical): al pasar de uno a otro se pausa el que deja de verse. */
+document.addEventListener('DOMContentLoaded', () => {
+    const frames = document.querySelectorAll('.video-v3-frame');
+    if (!frames.length) return;
+
+    frames.forEach((frame) => {
+        const video = frame.querySelector('video');
+        const btn = frame.querySelector('.video-v3-play');
+        if (!video || !btn) return;
+
+        video.controls = false;
+        btn.hidden = false;
+
+        const reveal = () => {
+            btn.hidden = true;
+            video.controls = true;
+        };
+
+        btn.addEventListener('click', () => {
+            reveal();
+            const started = video.play();
+            if (started && typeof started.catch === 'function') started.catch(() => {});
+        });
+        video.addEventListener('play', reveal);
+    });
+
+    if (window.matchMedia) {
+        const narrow = window.matchMedia('(max-width: 720px)');
+        const pauseAll = () => frames.forEach((frame) => {
+            const video = frame.querySelector('video');
+            if (video && !video.paused) video.pause();
+        });
+        if (narrow.addEventListener) narrow.addEventListener('change', pauseAll);
+        else if (narrow.addListener) narrow.addListener(pauseAll);
     }
 });

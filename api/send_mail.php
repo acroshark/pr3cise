@@ -440,44 +440,44 @@ $email_body = "
 /* Multilingual confirmation strings — 4 languages (sin texto libre del formulario) */
 $conf = [
     'es' => [
-        'tagline'  => 'Mediciones y Estimación de Costes',
+        'tagline'  => 'Estimación de Costes de Obra',
         'subject'  => 'Hemos recibido su solicitud — Pr3cise',
         'greeting' => 'Hola,',
-        'p1'       => 'Hemos recibido correctamente su solicitud. Revisaremos el alcance y le responderemos habitualmente en menos de 24 horas laborables con el precio cerrado por proyecto y la fecha de entrega. Si desea enviar planos o documentación técnica adicional, puede hacerlo directamente a contact@pr3cise.com.',
+        'p1'       => 'Hemos recibido correctamente su solicitud. Revisaremos el alcance y le responderemos habitualmente en menos de 24 horas laborables con el precio cerrado por proyecto y la fecha de entrega. Si desea enviar su hoja de mediciones o documentación técnica adicional, puede hacerlo directamente a contact@pr3cise.com.',
         'p2'       => 'Estos son los datos que hemos registrado:',
         'f'        => ['Nombre', 'Empresa', 'Email', 'Teléfono', 'Tipo de proyecto', 'Mensaje'],
         'thanks'   => 'Gracias por confiar en Pr3cise.',
-        'auto'     => 'Este es un mensaje automático generado por el formulario de contacto de <strong>pr3cise.com</strong>. Para enviar planos o consultas adicionales escríbanos a <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
+        'auto'     => 'Este es un mensaje automático generado por el formulario de contacto de <strong>pr3cise.com</strong>. Para enviar su hoja de mediciones o consultas adicionales escríbanos a <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
     ],
     'en' => [
-        'tagline'  => 'Construction Cost Estimating & Takeoffs',
+        'tagline'  => 'Construction Cost Estimating',
         'subject'  => 'We have received your request — Pr3cise',
         'greeting' => 'Hello,',
-        'p1'       => 'We have received your estimate request. We will review your scope and reply within one business day with a fixed project fee and a confirmed delivery date. If you still need to share drawings or specifications, you can send files or a cloud link directly to contact@pr3cise.com.',
+        'p1'       => 'We have received your estimate request. We will review your scope and reply within one business day with a fixed project fee and a confirmed delivery date. If you still need to share your takeoff or specifications, you can send files or a cloud link directly to contact@pr3cise.com.',
         'p2'       => 'These are the details we have recorded:',
         'f'        => ['Name', 'Company', 'Email', 'Phone', 'Project type', 'Message'],
         'thanks'   => 'Thank you for trusting Pr3cise.',
-        'auto'     => 'This is an automated confirmation from <strong>pr3cise.com</strong>. To send drawings, addenda or enquiries write directly to <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
+        'auto'     => 'This is an automated confirmation from <strong>pr3cise.com</strong>. To send your takeoff, addenda or enquiries write directly to <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
     ],
     'de' => [
-        'tagline'  => 'Baukostenschätzung & Mengenermittlung',
+        'tagline'  => 'Baukostenschätzung',
         'subject'  => 'Wir haben Ihre Anfrage erhalten — Pr3cise',
         'greeting' => 'Guten Tag,',
-        'p1'       => 'Wir haben Ihre Angebotsanfrage erfolgreich erhalten. Wir prüfen den Umfang und melden uns in der Regel innerhalb eines Werktags mit einem schriftlichen Festpreis und Liefertermin. Pläne oder Cloud-Links können Sie jederzeit direkt an contact@pr3cise.com senden.',
+        'p1'       => 'Wir haben Ihre Angebotsanfrage erfolgreich erhalten. Wir prüfen den Umfang und melden uns in der Regel innerhalb eines Werktags mit einem schriftlichen Festpreis und Liefertermin. Ihre Mengenermittlung oder Cloud-Links können Sie jederzeit direkt an contact@pr3cise.com senden.',
         'p2'       => 'Diese Angaben haben wir erfasst:',
         'f'        => ['Name', 'Unternehmen', 'E-Mail', 'Telefon', 'Projektart', 'Nachricht'],
         'thanks'   => 'Vielen Dank für Ihr Vertrauen in Pr3cise.',
-        'auto'     => 'Dies ist eine automatische Bestätigung von <strong>pr3cise.com</strong>. Für Pläne oder Rückfragen schreiben Sie bitte direkt an <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
+        'auto'     => 'Dies ist eine automatische Bestätigung von <strong>pr3cise.com</strong>. Für Ihre Mengenermittlung oder Rückfragen schreiben Sie bitte direkt an <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
     ],
     'fr' => [
-        'tagline'  => 'Estimation des Coûts & Métrés',
+        'tagline'  => 'Estimation des Coûts de Construction',
         'subject'  => 'Nous avons reçu votre demande — Pr3cise',
         'greeting' => 'Bonjour,',
-        'p1'       => "Nous avons bien reçu votre demande de chiffrage. Nous reviendrons vers vous généralement sous 24 heures ouvrées avec un prix forfaitaire et une date de livraison. Vous pouvez également envoyer vos plans ou liens de téléchargement directement à contact@pr3cise.com.",
+        'p1'       => "Nous avons bien reçu votre demande de chiffrage. Nous reviendrons vers vous généralement sous 24 heures ouvrées avec un prix forfaitaire et une date de livraison. Vous pouvez également envoyer votre métré ou des liens de téléchargement directement à contact@pr3cise.com.",
         'p2'       => 'Voici les informations que nous avons enregistrées :',
         'f'        => ['Nom', 'Entreprise', 'E-mail', 'Téléphone', 'Type de projet', 'Message'],
         'thanks'   => 'Merci de faire confiance à Pr3cise.',
-        'auto'     => 'Confirmation automatique générée par <strong>pr3cise.com</strong>. Pour transmettre vos plans ou toute question, écrivez-nous à <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
+        'auto'     => 'Confirmation automatique générée par <strong>pr3cise.com</strong>. Pour transmettre votre métré ou toute question, écrivez-nous à <a href="mailto:contact@pr3cise.com" style="color:#B08D57;">contact@pr3cise.com</a>.',
     ],
 ];
 $s = $conf[$user_lang];
@@ -486,10 +486,10 @@ $s = $conf[$user_lang];
 // teléfono si solo lleva cifras y signos telefónicos, y el alcance si es una opción
 // del desplegable (valores de las 4 páginas de contacto).
 $alcances = [
-    'Presupuesto completo de obra', 'Solo mediciones / Takeoff', 'Estimación conceptual / Viabilidad',
+    'Presupuesto completo de obra', 'Valoración de un solo oficio', 'Valoración preliminar / Viabilidad',
     'Instalaciones MEP / Climatización', 'Instalaciones eléctricas', 'Fontanería y saneamiento',
     'PCI (Protección Contra Incendios)', 'Estructura, hormigón y albañilería', 'Carpintería y acabados', 'Otro',
-    'Full building estimate', 'Quantity takeoff only', 'Conceptual budget', 'MEP / HVAC', 'Electrical',
+    'Full building estimate', 'Single-trade takeoff pricing', 'Early-stage pricing', 'MEP / HVAC', 'Electrical',
     'Plumbing', 'Fire protection', 'Concrete / Masonry', 'Drywall / Framing / Finishes', 'Other'
 ];
 $alcance_conf  = in_array($tipo_raw, $alcances, true) ? $tipo_proyecto : '';

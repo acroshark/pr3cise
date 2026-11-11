@@ -1,22 +1,3474 @@
 {
-  "de/home": [],
-  "de/servicios": [],
-  "de/ejemplos": [],
-  "de/nosotros": [],
-  "de/contacto": [],
-  "de/legal": [],
+  "de/home": [
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.badge",
+      "texto": "Muestra interactiva"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.1",
+      "texto": "Forjado y losa de hormigón HA‑30"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.1m",
+      "texto": "420 m² · Merma +5 % · Mano de obra incl."
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.2",
+      "texto": "Acero corrugado B500S elaborado"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.2m",
+      "texto": "18.400 kg · Acero valorado por partida"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.3",
+      "texto": "Cimentación y encofrado visto"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.3m",
+      "texto": "Partidas valoradas · Div. 03 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.1",
+      "texto": "Climatización aerotermia y conductos"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.1m",
+      "texto": "Equipos + montaje · Div. 23 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.2",
+      "texto": "Instalación eléctrica y cuadros BT"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.2m",
+      "texto": "Circuitos + luminarias · Div. 26 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.3",
+      "texto": "Fontanería, saneamiento y PCI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.3m",
+      "texto": "Tubería multicapa + rociadores"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.1",
+      "texto": "Carpintería exterior aluminio RPT"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.1m",
+      "texto": "Vidrio laminar / impacto · Div. 08"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.2",
+      "texto": "Tabiquería seca y aislamiento acústico"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.2m",
+      "texto": "580 m² · Merma +7 % calculada"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.3",
+      "texto": "Pavimento porcelánico gran formato"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.3m",
+      "texto": "Adhesivo + nivelación · Merma +10 %"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.turnaround",
+      "texto": "Entrega 24–72 h"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de presupuesto Pr3cise con el descompuesto de un precio unitario: material, mano de obra, rendimientos e importes"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de presupuesto Pr3cise: partidas con cantidad, precio unitario, importe y especificación técnica"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de resumen de presupuesto Pr3cise con notas, exclusiones, base imponible, IVA y total"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Arquitecto técnico revisando mediciones y precios de obra sobre mesa de estudio"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Profesional de la construcción enviando su hoja de mediciones desde un portátil"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnico revisando la hoja de mediciones y preparando la propuesta junto a su portátil"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Mano de un contratista firmando una propuesta en una tableta, junto a un casco blanco"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnico valorando una hoja de mediciones en su mesa de trabajo"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnica con casco y chaleco revisando la entrega en una tableta, en una obra con palmeras"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Edificación contemporánea en construcción en la costa de Florida con estructura de hormigón y fachada acristalada"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Dos jefes de obra con casco blanco y chaleco revisan planos impresos en una obra, con la estructura de hormigón y una grúa torre al fondo"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Instalador con casco, subido a una escalera, monta bandejas de cableado bajo el forjado de un edificio en construcción"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Un promotor y una arquitecta revisan la maqueta de un edificio residencial en una sala de reuniones con vistas a la ciudad"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Estudio de arquitectura luminoso con dos profesionales trabajando entre maquetas y planos"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Estudio europeo de arquitectura técnica revisando planos de edificación y presupuestos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Saltar al contenido"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h1",
+      "texto": "Tus mediciones, convertidas en para licitar con margen"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "presupuestos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Nos envías tu hoja de mediciones y un arquitecto técnico valora cada partida. No medimos sobre planos. Sobre todo en el "
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Estado de Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver ejemplos reales"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Precio cerrado por escrito"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega en 24–72 h"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "CSI · BC3 · Excel"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Estructura"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "MEP / HVAC"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Subtotal (ejemplo)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Entrega estándar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Revisión inicial del alcance"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Ronda de revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Documentación editable y lista para licitar, con honorarios fijos acordados antes de empezar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Excel · PDF · BC3"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Descompuestos de mano de obra y material"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Materiales, rendimientos, equipos y mermas, línea a línea."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "CSI MasterFormat"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Tus mediciones, valoradas línea a línea"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cada precio enlazado a una línea de tu hoja de mediciones."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Resumen editable"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Márgenes, hipótesis y exclusiones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Gastos generales y beneficio editables, con exclusiones por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Qué alcance necesitas?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Obra completa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "MEP u oficio único"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Un solo oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega estimada"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Excel + PDF + BC3 / CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones de este alcance"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Precio cerrado previo"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Importe y fecha por escrito antes de empezar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Décadas de experiencia en edificación."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Confidencialidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "NDA disponible. Tu documentación no sale de nuestro equipo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "100 % digital, sin fronteras"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Mediciones y entregas por enlace, desde cualquier lugar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "En el estudio de , casi 9 de cada 10 proyectos superaron su presupuesto. Si ofertas alto pierdes la licitación; si te qu"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Flyvbjerg, Holm y Buhl (2002)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Proyectos con sobrecoste"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Desviación media en 258 proyectos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Así trabajamos contigo, paso a paso"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sin compromiso hasta que aceptas el precio. Tú envías tu hoja de mediciones; del resto nos encargamos nosotros."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Envías tus mediciones y fecha límite"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "2 min"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Aceptas y arrancamos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "1 clic"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Valoración partida a partida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega y revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Listo para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Pausar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Mediciones recibidas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "PDF"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Pliego_condiciones.pdf"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "XLSX"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Mediciones_mudas.xlsx"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Envías tus mediciones y fecha límite"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "2 min"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "PDF, DWG o BIM por enlace o email. Revisión inicial gratuita y NDA si lo necesitas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Honorarios fijos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Confirmados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Entrega"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dd",
+      "texto": "jueves 14:00"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Alcance, honorarios fijos y fecha de entrega, por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Propuesta aceptada"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Aceptas y arrancamos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "1 clic"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Solo empezamos con tu aprobación. Sin facturación por horas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Valorado por capítulos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Estructura"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "MEP"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Valoración partida a partida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Un arquitecto técnico valora tu hoja de mediciones partida a partida, con precios del mercado de tu obra."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Entrega lista para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "XLSX"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "PDF"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega y revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Listo para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Excel editable, PDF, BC3 o CSI, con hipótesis y exclusiones. Una ronda de revisión incluida."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones (paso 1)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Foco en Florida. Clientes en Europa y en todo el mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "La mayor parte de nuestro trabajo está en el Estado de Florida y colaboramos con clientes de toda Europa y del resto del"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida Building Code, zona HVHZ y NOA"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Métrico o imperial, en tu moneda y tu estándar (CSI, BC3, BoQ)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ventaja horaria: valoramos mientras tu oficina descansa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Nuestra oficina técnica"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Europa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Oficina"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Horas en común (hora de Florida)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Si nos envías tus mediciones al cerrar tu jornada, las valoramos mientras tu oficina descansa."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Adaptamos el entregable a cómo presentas tu oferta."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Licitaciones multioficio, con los huecos de alcance señalados por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Las mediciones de tu oficio, valoradas antes del cierre de la oferta."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Costes para viabilidad y financiación, al día con el proyecto."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Contraste de costes independiente para no recortar el diseño después."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Planes y precios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Una suscripción mensual si presupuestas cada mes, o pago por obra si solo necesitas un presupuesto."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precio de lanzamiento hasta el 31 de diciembre de 2026."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Básico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Ideal para empresas pequeñas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 500 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 2 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 200 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Básico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Profesional"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Para constructoras y subcontratas que licitan con frecuencia."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 1.000 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 5 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 300 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Profesional"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Para empresas con un volumen constante de obras."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 1.875 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 10 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 400 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega prioritaria"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Elaborado por un arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega en 24–72 h"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Excel, PDF, BC3 o CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "1 ronda de revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Pago por obra"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Solo necesitas un presupuesto? Te damos un precio cerrado por escrito antes de empezar, sin suscripción."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Pedir precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precios en dólares estadounidenses (US$)."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Lo que dicen nuestros clientes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Opiniones publicadas por clientes reales en Trustpilot."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Reseña en Trustpilot"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Professional service from start to finish"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "I requested estimates from Pr3cise and everything went smoothly from start to finish. They were professional and easy to"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Marisa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "time",
+      "texto": "7 de noviembre de 2026"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Reseña original en inglés"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver la reseña en Trustpilot"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver todas las opiniones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Deja tu opinión"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Preguntas frecuentes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precios, plazos y formatos, antes de enviarnos tus mediciones."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sobre todo en el Estado de Florida, y con clientes en toda Europa y en el resto del mundo. Sin fronteras: todo se interc"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "A tu favor. Nuestra jornada empieza unas siete horas antes que en Florida: las mediciones que envías al cerrar tu jornad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Envía tu hoja de mediciones y recibe una propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Alcance, importe fijo y fecha de entrega por escrito, sin compromiso."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "o escríbenos a contact@pr3cise.com"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Vista previa interactiva de partidas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Disciplinas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: descompuestos de mano de obra y material"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: tus mediciones, valoradas línea a línea"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: márgenes, hipótesis y exclusiones"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pasos del proceso de contratación"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Jornadas de trabajo en Florida y en nuestra oficina técnica, en hora de Florida"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Incluido en todos los planes"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Valoración: 5 de 5 estrellas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "de/servicios": [
+    {
+      "tipo": "alt",
+      "texto": "Estructura de hormigón en construcción: pilares, vigas encofradas y malla de armado sobre la losa, con dos operarios trabajando"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Muestra real de un presupuesto Pr3cise: descompuesto del precio unitario con materiales y mano de obra, rendimientos, precios e importes"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Edificio en construcción con grúa torre en la costa de Florida, junto al mar y a una avenida con palmeras"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "de/ejemplos": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "de/nosotros": [
+    {
+      "tipo": "alt",
+      "texto": "Dos jóvenes arquitectos europeos, una mujer y un hombre, caminan conversando con planos enrollados por una calle empedrada de una ciudad europea"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Puesto de trabajo de estimación con dos monitores y una hoja de mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "de/contacto": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h1",
+      "texto": "Solicita tu presupuesto de obra a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cuéntanos tu proyecto y te responderemos en menos de 24 horas con alcance, precio cerrado y fecha de entrega. Sin compro"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cada presupuesto lo elabora un arquitecto técnico, partida a partida y con precios actuales del mercado donde se constru"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Entrega en 24 a 72 horas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Te responderemos en menos de 24 h laborables con alcance, precio cerrado y fecha de entrega."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Solicitud recibida."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Inténtalo de nuevo o escríbenos a o por ."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "No hemos podido enviar tu solicitud."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Website"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Nombre"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Email"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Teléfono (opcional)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Alcance / oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Selecciona el alcance a presupuestar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Presupuesto completo de obra (todos los oficios)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Valoración de la hoja de mediciones de un oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Valoración preliminar / estudio de viabilidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Instalaciones MEP / Climatización"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Instalaciones eléctricas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Fontanería y saneamiento"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "PCI (Protección Contra Incendios)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Estructura, hormigón y albañilería"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Carpintería, tabiquería y acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Otro"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Detalles del proyecto y enlace a tu hoja de mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Tienes lista tu hoja de mediciones (Excel o PDF)? Pega aquí un enlace de Drive, Dropbox, WeTransfer, OneDrive o Procore"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Verificación · Nivela la burbuja antes de enviar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Solicitar Presupuesto a Precio Cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Preguntas Frecuentes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Todo lo que necesitas saber antes de solicitar tu presupuesto. Si tienes más dudas, escríbenos."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Cuánto tiempo tardáis en entregar un presupuesto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "El plazo estándar es de desde que recibimos tu hoja de mediciones completa. Para proyectos de mayor complejidad o volume"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "72 horas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Qué documentación necesitáis para elaborar el presupuesto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Con tu hoja de mediciones en Excel o PDF (partidas, unidades y cantidades) es suficiente para comenzar. Si dispones de m"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿El servicio tiene algún coste inicial?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "La consulta inicial y el análisis de viabilidad son . El presupuesto del servicio se facilita antes de iniciar cualquier"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "gratuitos y sin compromiso"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿En qué formatos entregáis el presupuesto final?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Entregamos el presupuesto en de forma estándar, y también estructurado según CSI MasterFormat si lo necesitas. El archiv"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Excel, PDF y BC3"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Podéis modificar el presupuesto si cambia el proyecto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí. Incluimos una ronda de revisiones dentro del servicio para ajustar partidas, cambiar especificaciones o actualizar p"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Trabajáis con empresas de cualquier país?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí. Trabajamos de forma con constructoras, promotoras y estudios: sobre todo en el estado de Florida, pero también con c"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "100% remota"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Podéis presupuestar instalaciones especializadas (eléctrica, PCI, fontanería)?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí, es una de nuestras especialidades. Realizamos desgloses completos de instalaciones eléctricas, PCI, fontanería, sane"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Los precios están actualizados con el mercado actual?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Siempre. Utilizamos bases de datos de precios actualizadas mensualmente y contrastadas con precios reales de proveedores"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "placeholder",
+      "texto": "Ubicación de la obra, superficie aproximada, fecha límite de entrega y enlace a tu hoja de mediciones…"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "de/legal": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
   "de/miami": [],
   "de/plumbing": [],
   "de/electric": [],
   "de/concrete": [],
   "de/fire": [],
   "de/mep": [],
-  "fr/home": [],
-  "fr/servicios": [],
-  "fr/ejemplos": [],
-  "fr/nosotros": [],
-  "fr/contacto": [],
-  "fr/legal": [],
+  "fr/home": [
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.badge",
+      "texto": "Muestra interactiva"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.1",
+      "texto": "Forjado y losa de hormigón HA‑30"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.1m",
+      "texto": "420 m² · Merma +5 % · Mano de obra incl."
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.2",
+      "texto": "Acero corrugado B500S elaborado"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.2m",
+      "texto": "18.400 kg · Acero valorado por partida"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.3",
+      "texto": "Cimentación y encofrado visto"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r1.3m",
+      "texto": "Partidas valoradas · Div. 03 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.1",
+      "texto": "Climatización aerotermia y conductos"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.1m",
+      "texto": "Equipos + montaje · Div. 23 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.2",
+      "texto": "Instalación eléctrica y cuadros BT"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.2m",
+      "texto": "Circuitos + luminarias · Div. 26 CSI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.3",
+      "texto": "Fontanería, saneamiento y PCI"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r2.3m",
+      "texto": "Tubería multicapa + rociadores"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.1",
+      "texto": "Carpintería exterior aluminio RPT"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.1m",
+      "texto": "Vidrio laminar / impacto · Div. 08"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.2",
+      "texto": "Tabiquería seca y aislamiento acústico"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.2m",
+      "texto": "580 m² · Merma +7 % calculada"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.3",
+      "texto": "Pavimento porcelánico gran formato"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.r3.3m",
+      "texto": "Adhesivo + nivelación · Merma +10 %"
+    },
+    {
+      "tipo": "clave-sin-traducir",
+      "clave": "tel.turnaround",
+      "texto": "Entrega 24–72 h"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de presupuesto Pr3cise con el descompuesto de un precio unitario: material, mano de obra, rendimientos e importes"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de presupuesto Pr3cise: partidas con cantidad, precio unitario, importe y especificación técnica"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Ejemplo real de resumen de presupuesto Pr3cise con notas, exclusiones, base imponible, IVA y total"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Arquitecto técnico revisando mediciones y precios de obra sobre mesa de estudio"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Profesional de la construcción enviando su hoja de mediciones desde un portátil"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnico revisando la hoja de mediciones y preparando la propuesta junto a su portátil"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Mano de un contratista firmando una propuesta en una tableta, junto a un casco blanco"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnico valorando una hoja de mediciones en su mesa de trabajo"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Técnica con casco y chaleco revisando la entrega en una tableta, en una obra con palmeras"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Edificación contemporánea en construcción en la costa de Florida con estructura de hormigón y fachada acristalada"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Dos jefes de obra con casco blanco y chaleco revisan planos impresos en una obra, con la estructura de hormigón y una grúa torre al fondo"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Instalador con casco, subido a una escalera, monta bandejas de cableado bajo el forjado de un edificio en construcción"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Un promotor y una arquitecta revisan la maqueta de un edificio residencial en una sala de reuniones con vistas a la ciudad"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Estudio de arquitectura luminoso con dos profesionales trabajando entre maquetas y planos"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Estudio europeo de arquitectura técnica revisando planos de edificación y presupuestos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Saltar al contenido"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h1",
+      "texto": "Tus mediciones, convertidas en para licitar con margen"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "presupuestos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Nos envías tu hoja de mediciones y un arquitecto técnico valora cada partida. No medimos sobre planos. Sobre todo en el "
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Estado de Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver ejemplos reales"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Precio cerrado por escrito"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega en 24–72 h"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "CSI · BC3 · Excel"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Estructura"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "MEP / HVAC"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Subtotal (ejemplo)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Entrega estándar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Revisión inicial del alcance"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Ronda de revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Documentación editable y lista para licitar, con honorarios fijos acordados antes de empezar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Excel · PDF · BC3"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Descompuestos de mano de obra y material"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Materiales, rendimientos, equipos y mermas, línea a línea."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "CSI MasterFormat"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Tus mediciones, valoradas línea a línea"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cada precio enlazado a una línea de tu hoja de mediciones."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Resumen editable"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ampliar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Márgenes, hipótesis y exclusiones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Gastos generales y beneficio editables, con exclusiones por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Qué alcance necesitas?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Obra completa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "MEP u oficio único"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Un solo oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega estimada"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Excel + PDF + BC3 / CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones de este alcance"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Precio cerrado previo"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Importe y fecha por escrito antes de empezar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Décadas de experiencia en edificación."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Confidencialidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "NDA disponible. Tu documentación no sale de nuestro equipo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "100 % digital, sin fronteras"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Mediciones y entregas por enlace, desde cualquier lugar."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "En el estudio de , casi 9 de cada 10 proyectos superaron su presupuesto. Si ofertas alto pierdes la licitación; si te qu"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Flyvbjerg, Holm y Buhl (2002)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Proyectos con sobrecoste"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Desviación media en 258 proyectos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Así trabajamos contigo, paso a paso"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sin compromiso hasta que aceptas el precio. Tú envías tu hoja de mediciones; del resto nos encargamos nosotros."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Envías tus mediciones y fecha límite"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "2 min"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Aceptas y arrancamos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "1 clic"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Valoración partida a partida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega y revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Listo para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Pausar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Mediciones recibidas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "PDF"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Pliego_condiciones.pdf"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "XLSX"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Mediciones_mudas.xlsx"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Envías tus mediciones y fecha límite"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "2 min"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "PDF, DWG o BIM por enlace o email. Revisión inicial gratuita y NDA si lo necesitas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Honorarios fijos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Confirmados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dt",
+      "texto": "Entrega"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "dd",
+      "texto": "jueves 14:00"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Alcance, honorarios fijos y fecha de entrega, por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Propuesta aceptada"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Aceptas y arrancamos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "1 clic"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Solo empezamos con tu aprobación. Sin facturación por horas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Valorado por capítulos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Estructura"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "MEP"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Valoración partida a partida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Un arquitecto técnico valora tu hoja de mediciones partida a partida, con precios del mercado de tu obra."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Entrega lista para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "XLSX"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "PDF"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Entrega y revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Listo para licitar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Excel editable, PDF, BC3 o CSI, con hipótesis y exclusiones. Una ronda de revisión incluida."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones (paso 1)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Foco en Florida. Clientes en Europa y en todo el mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "La mayor parte de nuestro trabajo está en el Estado de Florida y colaboramos con clientes de toda Europa y del resto del"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida Building Code, zona HVHZ y NOA"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Métrico o imperial, en tu moneda y tu estándar (CSI, BC3, BoQ)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Ventaja horaria: valoramos mientras tu oficina descansa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Nuestra oficina técnica"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Europa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Oficina"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Horas en común (hora de Florida)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Si nos envías tus mediciones al cerrar tu jornada, las valoramos mientras tu oficina descansa."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Adaptamos el entregable a cómo presentas tu oferta."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Licitaciones multioficio, con los huecos de alcance señalados por escrito."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Las mediciones de tu oficio, valoradas antes del cierre de la oferta."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Costes para viabilidad y financiación, al día con el proyecto."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Contraste de costes independiente para no recortar el diseño después."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Planes y precios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Una suscripción mensual si presupuestas cada mes, o pago por obra si solo necesitas un presupuesto."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precio de lanzamiento hasta el 31 de diciembre de 2026."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Básico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Ideal para empresas pequeñas."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 500 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 2 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 200 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Básico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Profesional"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Para constructoras y subcontratas que licitan con frecuencia."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 1.000 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 5 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 300 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Profesional"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Para empresas con un volumen constante de obras."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "/mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Después, 1.875 $/mes."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 10 presupuestos al mes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Hasta 400 partidas por presupuesto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega prioritaria"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Elegir Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Elaborado por un arquitecto técnico"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Entrega en 24–72 h"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "Excel, PDF, BC3 o CSI"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "li",
+      "texto": "1 ronda de revisión incluida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h3",
+      "texto": "Pago por obra"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Solo necesitas un presupuesto? Te damos un precio cerrado por escrito antes de empezar, sin suscripción."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Pedir precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precios en dólares estadounidenses (US$)."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Lo que dicen nuestros clientes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Opiniones publicadas por clientes reales en Trustpilot."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Reseña en Trustpilot"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Professional service from start to finish"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "I requested estimates from Pr3cise and everything went smoothly from start to finish. They were professional and easy to"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Marisa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "time",
+      "texto": "7 de noviembre de 2026"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "Reseña original en inglés"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver la reseña en Trustpilot"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ver todas las opiniones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Deja tu opinión"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Preguntas frecuentes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Precios, plazos y formatos, antes de enviarnos tus mediciones."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sobre todo en el Estado de Florida, y con clientes en toda Europa y en el resto del mundo. Sin fronteras: todo se interc"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "A tu favor. Nuestra jornada empieza unas siete horas antes que en Florida: las mediciones que envías al cerrar tu jornad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Envía tu hoja de mediciones y recibe una propuesta a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Alcance, importe fijo y fecha de entrega por escrito, sin compromiso."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Enviar mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "o escríbenos a contact@pr3cise.com"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Vista previa interactiva de partidas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Disciplinas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: descompuestos de mano de obra y material"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: tus mediciones, valoradas línea a línea"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Ampliar muestra: márgenes, hipótesis y exclusiones"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pasos del proceso de contratación"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Jornadas de trabajo en Florida y en nuestra oficina técnica, en hora de Florida"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Incluido en todos los planes"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Valoración: 5 de 5 estrellas"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "fr/servicios": [
+    {
+      "tipo": "alt",
+      "texto": "Estructura de hormigón en construcción: pilares, vigas encofradas y malla de armado sobre la losa, con dos operarios trabajando"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Muestra real de un presupuesto Pr3cise: descompuesto del precio unitario con materiales y mano de obra, rendimientos, precios e importes"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Edificio en construcción con grúa torre en la costa de Florida, junto al mar y a una avenida con palmeras"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "fr/ejemplos": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "fr/nosotros": [
+    {
+      "tipo": "alt",
+      "texto": "Dos jóvenes arquitectos europeos, una mujer y un hombre, caminan conversando con planos enrollados por una calle empedrada de una ciudad europea"
+    },
+    {
+      "tipo": "alt",
+      "texto": "Puesto de trabajo de estimación con dos monitores y una hoja de mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "fr/contacto": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h1",
+      "texto": "Solicita tu presupuesto de obra a precio cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cuéntanos tu proyecto y te responderemos en menos de 24 horas con alcance, precio cerrado y fecha de entrega. Sin compro"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Cada presupuesto lo elabora un arquitecto técnico, partida a partida y con precios actuales del mercado donde se constru"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Entrega en 24 a 72 horas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Te responderemos en menos de 24 h laborables con alcance, precio cerrado y fecha de entrega."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Solicitud recibida."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Inténtalo de nuevo o escríbenos a o por ."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "No hemos podido enviar tu solicitud."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Website"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Nombre"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Empresa"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Email"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Teléfono (opcional)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Alcance / oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Selecciona el alcance a presupuestar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Presupuesto completo de obra (todos los oficios)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Valoración de la hoja de mediciones de un oficio"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Valoración preliminar / estudio de viabilidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Instalaciones MEP / Climatización"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Instalaciones eléctricas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Fontanería y saneamiento"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "PCI (Protección Contra Incendios)"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Estructura, hormigón y albañilería"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Carpintería, tabiquería y acabados"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "option",
+      "texto": "Otro"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "label",
+      "texto": "Detalles del proyecto y enlace a tu hoja de mediciones"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "¿Tienes lista tu hoja de mediciones (Excel o PDF)? Pega aquí un enlace de Drive, Dropbox, WeTransfer, OneDrive o Procore"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Verificación · Nivela la burbuja antes de enviar"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "button",
+      "texto": "Solicitar Presupuesto a Precio Cerrado"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "h2",
+      "texto": "Preguntas Frecuentes"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Todo lo que necesitas saber antes de solicitar tu presupuesto. Si tienes más dudas, escríbenos."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Cuánto tiempo tardáis en entregar un presupuesto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "El plazo estándar es de desde que recibimos tu hoja de mediciones completa. Para proyectos de mayor complejidad o volume"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "72 horas"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Qué documentación necesitáis para elaborar el presupuesto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Con tu hoja de mediciones en Excel o PDF (partidas, unidades y cantidades) es suficiente para comenzar. Si dispones de m"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿El servicio tiene algún coste inicial?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "La consulta inicial y el análisis de viabilidad son . El presupuesto del servicio se facilita antes de iniciar cualquier"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "gratuitos y sin compromiso"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿En qué formatos entregáis el presupuesto final?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Entregamos el presupuesto en de forma estándar, y también estructurado según CSI MasterFormat si lo necesitas. El archiv"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "Excel, PDF y BC3"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Podéis modificar el presupuesto si cambia el proyecto?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí. Incluimos una ronda de revisiones dentro del servicio para ajustar partidas, cambiar especificaciones o actualizar p"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Trabajáis con empresas de cualquier país?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí. Trabajamos de forma con constructoras, promotoras y estudios: sobre todo en el estado de Florida, pero también con c"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "strong",
+      "texto": "100% remota"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Podéis presupuestar instalaciones especializadas (eléctrica, PCI, fontanería)?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Sí, es una de nuestras especialidades. Realizamos desgloses completos de instalaciones eléctricas, PCI, fontanería, sane"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "span",
+      "texto": "¿Los precios están actualizados con el mercado actual?"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Siempre. Utilizamos bases de datos de precios actualizadas mensualmente y contrastadas con precios reales de proveedores"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "placeholder",
+      "texto": "Ubicación de la obra, superficie aproximada, fecha límite de entrega y enlace a tu hoja de mediciones…"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
+  "fr/legal": [
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "Presupuestos de obra a partir de tus mediciones, para Florida, Europa y el resto del mundo."
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Servicios"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Ejemplos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Nosotros"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Florida"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Artículos"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Contacto"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "WhatsApp"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "p",
+      "texto": "© Pr3cise · Clear Ascend OÜ"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Aviso legal"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Privacidad"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Cookies"
+    },
+    {
+      "tipo": "texto-sin-clave",
+      "etiqueta": "a",
+      "texto": "Términos"
+    },
+    {
+      "tipo": "atributo",
+      "campo": "aria-label",
+      "texto": "Pie de página"
+    }
+  ],
   "fr/miami": [],
   "fr/plumbing": [],
   "fr/electric": [],
