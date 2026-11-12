@@ -95,6 +95,14 @@ Options -Indexes
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP:X-Forwarded-Proto} !=https
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # 3) Páginas antiguas retiradas (2026-11-12, decisión de Hugo).
+    #    pricing.html mostraba tarifas viejas (desde 300 € por presupuesto) y
+    #    reforma-interactiva.html una copia de la demo con cifras distintas a
+    #    las de la portada. Se redirigen a las secciones vigentes de la
+    #    portada. NE evita que Apache convierta el "#" en %23.
+    RewriteRule ^pricing\.html$ /#precios [R=301,L,NE]
+    RewriteRule ^reforma-interactiva\.html$ /#reforma-interactiva [R=301,L,NE]
 </IfModule>
 
 # ═══════════════════════════════════════════════════════════════════════

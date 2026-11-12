@@ -7679,8 +7679,13 @@ h3 + .media-split:not(.container) {
     background: #F3DFB3;
 }
 
+/* El anillo de foco va en el disco: en el botón (que ocupa todo el marco) lo recortaba el overflow del marco. */
 .home-v3 .video-v3-play:focus-visible {
-    outline: 3px solid var(--gold);
+    outline: none;
+}
+
+.home-v3 .video-v3-play:focus-visible .video-v3-disc {
+    outline: 3px solid #fff;
     outline-offset: 4px;
 }
 
@@ -7720,6 +7725,12 @@ h3 + .media-split:not(.container) {
     .home-v3 .video-v3-tall {
         display: block;
     }
+}
+
+/* Un vídeo a pantalla completa no puede quedarse sin marco aunque cambie el ancho (girar el móvil,
+   ventana estrecha que pasa a pantalla completa): main.js marca su marco con .is-fullscreen. */
+.home-v3 .video-v3-frame.is-fullscreen {
+    display: block;
 }
 
 @media (prefers-reduced-motion: reduce) {

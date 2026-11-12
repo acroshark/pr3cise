@@ -1139,10 +1139,25 @@ document.addEventListener('DOMContentLoaded', () => {
 /* 2026-11-11 | Vídeo de la portada (.video-v3). El HTML lleva los <video> con sus controles
    nativos para que funcione sin JavaScript; aquí se esconden hasta el primer clic y se enseña
    un botón de reproducción propio sobre la carátula. Hay dos <video> (horizontal y, por debajo
-   de 720 px, vertical): al pasar de uno a otro se pausa el que deja de verse. */
+   de 720 px, vertical): al pasar de uno a otro se pausa el que deja de verse, salvo que esté a
+   pantalla completa, en cuyo caso su marco se mantiene visible (.is-fullscreen). */
 document.addEventListener('DOMContentLoaded', () => {
     const frames = document.querySelectorAll('.video-v3-frame');
     if (!frames.length) return;
+
+    const fullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement || null;
+
+    // Marca el marco del vídeo que está a pantalla completa y pausa el que ha quedado oculto.
+    const sync = () => {
+        const fs = fullscreenElement();
+        frames.forEach((frame) => {
+            const video = frame.querySelector('video');
+            if (!video) return;
+            const isFs = (!!fs && (fs === video || frame.contains(fs))) || video.webkitDisplayingFullscreen === true;
+            frame.classList.toggle('is-fullscreen', isFs);
+            if (!isFs && !video.paused && frame.offsetParent === null) video.pause();
+        });
+    };
 
     frames.forEach((frame) => {
         const video = frame.querySelector('video');
@@ -1155,23 +1170,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const reveal = () => {
             btn.hidden = true;
             video.controls = true;
+            video.setAttribute('tabindex', '0');
         };
 
         btn.addEventListener('click', () => {
             reveal();
+            // El botón desaparece con el foco puesto: se pasa al vídeo para que el teclado siga en el reproductor.
+            try { video.focus({ preventScroll: true }); } catch (e) { /* focus() sin opciones */ }
             const started = video.play();
             if (started && typeof started.catch === 'function') started.catch(() => {});
         });
         video.addEventListener('play', reveal);
+        video.addEventListener('webkitbeginfullscreen', sync);   // pantalla completa nativa de iOS
+        video.addEventListener('webkitendfullscreen', sync);
     });
 
+    document.addEventListener('fullscreenchange', sync);
+    document.addEventListener('webkitfullscreenchange', sync);
     if (window.matchMedia) {
         const narrow = window.matchMedia('(max-width: 720px)');
-        const pauseAll = () => frames.forEach((frame) => {
-            const video = frame.querySelector('video');
-            if (video && !video.paused) video.pause();
-        });
-        if (narrow.addEventListener) narrow.addEventListener('change', pauseAll);
-        else if (narrow.addListener) narrow.addListener(pauseAll);
+        if (narrow.addEventListener) narrow.addEventListener('change', sync);
+        else if (narrow.addListener) narrow.addListener(sync);
     }
 });

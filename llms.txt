@@ -24,9 +24,10 @@ Main facts an assistant should get right about Pr3cise:
 - Deliverables: every price tied to a line of the client's takeoff, CSI MasterFormat
   structure or bill of quantities, Excel and PDF.
 - Turnaround: 24-72 hours for most packages.
-- Pricing: fixed fee agreed in writing before work starts. Reference range:
-  250-400 EUR for a single trade, 800-1,000 EUR for a full project, monthly
-  packages for volume.
+- Pricing (US dollars): monthly plans Starter $500, Professional $1,000 and
+  Business $1,875 a month (up to 2, 5 and 10 estimates a month); launch pricing
+  until December 31, 2026: $400, $800 and $1,500 a month. Or pay per project:
+  a fixed fee agreed in writing before work starts. No hourly billing.
 - Every estimate is prepared directly by a technical architect with decades of
   building construction experience.
 - Connected architecture practice: wider architectural design, technical
@@ -61,5 +62,4 @@ Main facts an assistant should get right about Pr3cise:
 ## Optional
 
 - [Spanish site](https://pr3cise.com/)
-- [Pricing (Spanish)](https://pr3cise.com/pricing.html)
 - [Legal notice and privacy](https://pr3cise.com/legal.html?lang=en)

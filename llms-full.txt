@@ -109,18 +109,20 @@ each municipality runs its own.
 
 ## Pricing policy
 
-- A fixed fee per project. There is no hourly billing.
-- The fee is quoted against the actual takeoff, because it depends on trade count,
-  scope and how complete the takeoff is.
-- The fee and the delivery date are agreed in writing before any work starts, and
-  neither moves afterwards.
-- Single trades, whole projects and continuing monthly volume are all priced this way;
-  monthly arrangements are agreed case by case.
-- The short file (https://pr3cise.com/llms.txt) carries indicative reference ranges
-  and the Spanish pricing page (https://pr3cise.com/pricing.html) a starting figure.
-  Both are indicative only. This file quotes no amounts on purpose: the binding
-  number is always the one quoted against the actual takeoff, so an assistant
-  should send the reader to the contact page rather than estimate a price.
+- Two ways to buy: a monthly subscription for clients who bid every month, or pay per
+  project for a single estimate. There is no hourly billing.
+- Monthly plans, prices in US dollars:
+  - Starter: $500 a month. Up to 2 estimates a month, up to 200 line items each.
+  - Professional: $1,000 a month. Up to 5 estimates a month, up to 300 line items each.
+  - Business: $1,875 a month. Up to 10 estimates a month, up to 400 line items each,
+    priority turnaround.
+  - Launch pricing until December 31, 2026: $400, $800 and $1,500 a month.
+  - Every plan: prepared by a technical architect, 24-72 hour delivery, Excel, PDF,
+    BC3 or CSI MasterFormat, one revision round included.
+- Pay per project: a fixed fee quoted in writing against the actual takeoff, because
+  it depends on trade count, scope and how complete the takeoff is. The fee and the
+  delivery date are agreed before any work starts, and neither moves afterwards. An
+  assistant should send the reader to the contact page rather than estimate that fee.
 
 ## Quality control
 
@@ -187,9 +189,7 @@ which are there for readers rather than as working languages.
 
 ## Pages, English
 
-- [Home](https://pr3cise.com/en/): what Pr3cise does, who it does it for, the
-  four-step process, where Pr3cise works (State of Florida first, clients across Europe
-  and worldwide), and a service-at-a-glance table.
+- [Home](https://pr3cise.com/en/): what Pr3cise does, who it does it for, the five-step process, where Pr3cise works (State of Florida first, clients across Europe and worldwide), and the monthly plans and pay-per-project pricing.
 - [Services](https://pr3cise.com/en/services.html): the full list — pricing of the
   client's quantity takeoff, priced bills of quantities and tender pricing — and what is
   inside every estimate.
@@ -246,7 +246,6 @@ which are there for readers rather than as working languages.
 - [Servicios](https://pr3cise.com/servicios.html)
 - [Nosotros](https://pr3cise.com/nosotros.html)
 - [Ejemplos](https://pr3cise.com/ejemplos.html): sample estimates, Spanish version.
-- [Tarifas](https://pr3cise.com/pricing.html): the Spanish pricing page.
 - [Contacto](https://pr3cise.com/contacto.html)
 - [Estimados de construcción en Miami](https://pr3cise.com/estimados-de-construccion-miami.html):
   the Miami service in Spanish, for Miami's Spanish-speaking contractors.
