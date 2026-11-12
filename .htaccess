@@ -100,9 +100,11 @@ Options -Indexes
     #    pricing.html mostraba tarifas viejas (desde 300 € por presupuesto) y
     #    reforma-interactiva.html una copia de la demo con cifras distintas a
     #    las de la portada. Se redirigen a las secciones vigentes de la
-    #    portada. NE evita que Apache convierta el "#" en %23.
-    RewriteRule ^pricing\.html$ /#precios [R=301,L,NE]
-    RewriteRule ^reforma-interactiva\.html$ /#reforma-interactiva [R=301,L,NE]
+    #    portada. NE evita que Apache convierta el "#" en %23. El destino va
+    #    con dominio completo: con una ruta relativa Apache respondía
+    #    "https://pr3cise.com:443/..." (el SSL lo termina el proxy de OVH).
+    RewriteRule ^pricing\.html$ https://pr3cise.com/#precios [R=301,L,NE]
+    RewriteRule ^reforma-interactiva\.html$ https://pr3cise.com/#reforma-interactiva [R=301,L,NE]
 </IfModule>
 
 # ═══════════════════════════════════════════════════════════════════════
